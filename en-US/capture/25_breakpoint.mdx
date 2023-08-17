@@ -1,0 +1,45 @@
+# Breakpoint
+
+Breakpoint is one of the core debugging feature of Reqable. By setting matching rules, the request and response can be controlled and modified in real time after the breakpoint is triggered.
+
+Breakpoint can be enabled or disabled in four ways:
+- Click directly on the breakpoint icon
+- Right click on the breakpoint icon -> Enable/Disable
+- Tray -> Breakpoint -> Enable/Disable
+- Shortcut key <Shortcut>Shift + Control + B</Shortcut>
+
+When the breakpoint is enabled, the breakpoint icon on the `QuickBar` will turn green and active.
+
+![](arts/breakpoint_01.png)
+
+### Create Breakpoint
+
+There are six ways to create a breakpoint rule:
+- Right click on the breakpoint icon -> Add Breakpoint
+- Tray -> Breakpoint ->Add Breakpoint
+- Breakpoint List -> Click the `+` icon in the upper right corner
+- Breakpoint List -> Right-Click Menu -> New
+- Traffic list -> Select a item -> Right-click menu -> Breakpoint
+- Shortcut key <Shortcut>Shift + Alt + B</Shortcut>
+
+![](arts/breakpoint_02.png)
+
+Enter the rule name and matching URL, the URL supports wildcard * and ? matching. When the request or response matches, it will automatically enter the breakpoint operation interface.
+
+### Executor {#executor}
+
+After the breakpoint takes effect, the operation interface as shown in the figure below will pop up automatically. On this page, we can modify the data and submit.
+
+![](arts/breakpoint_03.png)
+
+:::caution
+
+Each breakpoint request (response) has **180s** time to operate. After the timeout, the breakpoint will automatically fail, and the suspended request and response will continue.
+
+:::
+
+### Import and Export
+
+Reqable supports batch import and export of breakpoint rules, which is convenient for sharing and collaboration with others.
+
+![](arts/breakpoint_04.png)

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_editor_text</title>
+    <g id="ic_editor_text" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4.99378882,3.5 C4.33126294,3.5 4,3.83333333 4,4.5 C4,5.16666667 4.33126294,5.5 4.99378882,5.5 L10.9602375,5.47201499 L10.9602375,19.5504276 C10.9742782,20.1834759 11.3068149,20.5 11.9578476,20.5 C12.6088803,20.5 12.9343966,20.1834759 12.9343966,19.5504276 L12.9343966,5.47201499 L19.0034829,5.47201499 C19.6678276,5.47201499 20,5.14800999 20,4.5 C20,3.85199001 19.6678276,3.51865667 19.0034829,3.5 L4.99378882,3.5 Z" id="路径" fill="#FCB334" fill-rule="nonzero"></path>
+    </g>
+</svg>

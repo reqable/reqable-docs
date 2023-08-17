@@ -1,0 +1,49 @@
+# 请求头部
+
+import Shortcut from '@site/src/components/Shortcut';
+
+Reqable可以编辑HTTP的请求头部，提供了表格编辑模式和文本编辑模式。
+
+![](arts/header_01.png)
+
+### 表格模式
+
+表格模式是HTTP请求头部的默认编辑模式，此模式的优点是支持查看[内置请求头](#builtin-headers)以及输入自动填充功能，缺点是无法批量操作请求头。
+
+![](arts/header_02.png)
+
+### 文本模式
+
+点击右上角文本按钮，可以切换到文本编辑模式，此模式的优点是支持对请求头进行快速和批量编辑。
+
+:::info 注释请求头
+
+在请求头最前面使用 `//` 注释可以反勾选此请求头。  
+注释和取消注释的快捷键都是 <Shortcut>Control + /</Shortcut> 。
+
+:::
+
+![](arts/header_03.png)
+
+### 内置请求头 {#builtin}
+
+Reqable默认隐藏了部分必要的但无需开发者关心的请求头部，称之为内置请求头。在表格模式下点击右上角的眼镜按钮，可以切换是否显示内置请求头部。
+
+![](arts/header_04.png)
+
+:::info 修改内置请求头
+
+内置请求头无法直接删除，但是没有锁标记的值都是可以修改覆写的哦！
+
+:::
+
+常见内置请求头说明：
+
+- **[Reqable-Id](request_id)** 请求唯一ID标志符，可以在设置中禁用。
+- **Host** 请求头中自动添加的域名信息，注意在HTTP2和HTTP3协议中使用 `:authority` 表示。
+- **User-Agent** 默认使用Reqable的应用版本号。
+- **Connection** 连接保持或关闭，注意在HTTP2和HTTP3协议中无效。
+- **Content-Length** 如果使用请求体，发送请求时会自动计算此值。
+- **Content-Type** 如果使用请求体，将会自动追加类型（MIME）到内置请求头部列表中。
+- **[Cookie](cookie)** 启用Cookie时，将会在自动追加到内置请求头部列表中。
+- **[Authorization](authorization)** 启用授权时，将会在自动追加到内置请求头部列表中。

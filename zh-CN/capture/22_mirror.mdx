@@ -1,0 +1,46 @@
+# 镜像
+
+import Shortcut from '@site/src/components/Shortcut';
+
+镜像是Reqable的核心调试功能之一，镜像是指域名映射。例如，访问域名A（`www.foo.com`），映射为访问域名B（`www.bar.com`）, 客户端所有发给域名A的请求都将发向域名B。此功能实现是在代理层处理，而不是应用层，属于整体重定向，如果有需要对指定路径请求进行重定向，请使用[重写——重定向](rewrite#redirect)功能。
+
+镜像功能可以通过四种方式启用或关闭：
+- 直接点击镜像图标
+- 右键镜像图标 -> 启用/禁用
+- 托盘 -> 镜像 -> 启用/禁用
+- 快捷键 <Shortcut>Shift + Control + M</Shortcut>
+
+当镜像功能开启后，快捷操作栏（Quickbar）上的镜像图标将变为绿色激活状态。
+
+![](arts/mirror_01.png)
+
+### 创建规则
+
+创建一个镜像规则有下面六种方式：
+- 右键镜像图标 -> 新建规则
+- 托盘 -> 镜像 -> 新建规则
+- 镜像列表 -> 点击右上角 `+` 号图标
+- 镜像列表 -> 右键菜单 -> 新建
+- 调试列表 -> 选中一个列表项 -> 右键菜单 -> 镜像
+- 快捷键 <Shortcut>Shift + Alt + M</Shortcut>
+
+![](arts/mirror_02.png)
+
+原始域名支持简单的Wildcard * 和 ? 匹配。上图映射的规则是将所有foo.com为后缀的域名全部映射为`www.reqable.com`。
+
+:::note 关于端口号
+
+如果不指定端口号，HTTP请求默认为**80**端口，HTTPS请求默认为**443**端口。  
+当然，也可以显示地指定端口号，例如：*.foo.com:8080 -> www.bar.com:9000
+
+:::
+
+### 导入导出
+
+Reqable支持镜像规则的批量导入和导出，方便与他人进行分享和协同。
+
+![](arts/mirror_03.png)
+
+### 使用教程
+
+[Reqable镜像功能实战案例](https://reqable.com/blog/2023/06/07/post)
