@@ -1,5 +1,15 @@
 # Windows
 
+## v1.2.1 <small><small>*2023-08-28*</small></small>
+- 🚀 [New] SSL bypass supports switch and silent mode.
+- 🚀 [New] Supports adding SSL bypass from traffic list.
+- 💪 [Opt] Automatically changing context menu text color when hovering.
+- 💪 [Opt] The right click of the traffic list supports batch copying of URLs.
+- 🐞 [Fix] An exception occurs when generating python code when the root node of JSON is a list.
+- 🐞 [Fix] The bug that localhost requests will not be displayed when the API test is followed by debugging.
+- 🐞 [Fix] The bug that the SSL Bypass requests will not be displayed when the API test is followed by debugging.
+- 🐞 [Fix] The bug that the `Proxy-Connection` header was not removed when sending to remote server.
+
 ## v1.2.0 <small><small>*2023-08-24*</small></small>
 - 🚀 [New] Apps are signed with EV certificates.
 - 💪 [Opt] Change version upgrade pop-up window.
