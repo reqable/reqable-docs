@@ -1,5 +1,15 @@
 # Windows
 
+## v1.2.3 <small><small>*2023-08-31*</small></small>
+- 💪 [Opt] The way to obtain the system network proxy status is changed from Shell command to API.
+- 🚀 [New] The traffic list read items are grayed out.
+- 🚀 [New] The traffic history supports configuring the cache duration, which is 7 days by default.
+- 🚀 [New] Traffic history supports renaming.
+- 🚀 [New] Traffic history supports adding/removing stars.
+- 🚀 [New] Query parameter list viewing supports text mode.
+- 💪 [Opt] The traffic list removes gray highlighting and adds teal highlighting.
+- 💪 [Opt] Use the resident daemon process to get the CA root certificate installation status.
+
 ## v1.2.1 <small><small>*2023-08-28*</small></small>
 - 🚀 [New] SSL bypass supports switch and silent mode.
 - 🚀 [New] Supports adding SSL bypass from traffic list.
