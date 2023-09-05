@@ -1,5 +1,25 @@
 # Windows
 
+## v1.3.0 <small><small>*2023-09-05*</small></small>
+- 🚀 [New] Display the application where the traffic from.
+- 🚀 [New] Support filtering traffic according to application in the explorer.
+- 💪 [Opt] When the traffic list is at the bottom, it will automatically scroll if new data appears.
+- 💪 [Opt] The read items in the structure tree are grayed out.
+- 💪 [Opt] Added type icon display in the structure tree.
+- 💪 [Opt] Importing cURL will automatically recognize the JSON/XML type.
+- 💪 [Opt] Explorer UI details adjustment.
+- 🐞 [Fix] The bug that the sub-window icon in the taskbar does not display the logo.
+- 🐞 [Fix] The bug that import cURL does not support the --insecure option.
+- 🐞 [Fix] The bug that import cURL escape character is lost.
+- 🐞 [Fix] the bug that cURL syntax highlighting causes the content to be incompletely displayed.
+
+## v1.2.5 <small><small>*2023-09-01*</small></small>
+- 🐞 [Fix] Fixed the bug that scripting broken the connection.
+
+## v1.2.4 <small><small>*2023-09-01*</small></small>
+- 🐞 [Fix] Fixed the bug that an error was reported when opening the app after updating to version 1.2.3.
+- 🐞 [Fix] Fixed the bug that the name of the opened tab could not be updated synchronously after modifying the name of the capture history.
+
 ## v1.2.3 <small><small>*2023-08-31*</small></small>
 - 💪 [Opt] The way to obtain the system network proxy status is changed from Shell command to API.
 - 🚀 [New] The traffic list read items are grayed out.
