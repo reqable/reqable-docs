@@ -94,6 +94,18 @@ Displays which interceptors have processed this request, and each interceptor wi
 |![](icons/ic_state_breakpoint.svg)|Indicates that this request has been processed by a breakpoint.|
 |![](icons/ic_state_script.svg)|Indicates that this request has been processed by a script.|
 
+:::info
+This feature is supported in `v1.1.4`.
+:::
+
+### Application
+
+Displays the application (or executable) that this traffic belongs to, normally show the name and icon of the application (or executable). Note, since some applications (or executable) may not have icons, a default icon will be used here instead. Also, some application (or executable) may not be located due to certain non-deterministic conditions.
+
+:::info
+This feature is supported in `v1.3.0`.
+:::
+
 ### Address - Remote Ip
 
 Indicates the server IP address, which may be IPv4 or IPv6.
