@@ -1,5 +1,19 @@
 # Linux
 
+## v1.3.1 <small><small>*2023-09-11*</small></small>
+- 🚀 [New] Support `Reverse Proxy` now.
+- 🚀 [New] Add `Proxy` application menu group bar.
+- 🚀 [New] When you paste the cURL into the API testing URL input field, the import cURL dialog will automatically pop up.
+- 💪 [Opt] Cancel the certificate status detection polling mechanism.
+- 💪 [Opt] API query parameters created from the traffic list are automatically URL decoded.
+- 💪 [Opt] The URL displayed in the traffic list removes the display of the default root path `/`.
+- 💪 [Opt] A new `Help` button is added to the secondary proxy configuration page.
+- 🐞 [Fix] A bug where expanding the sidebar may cause the gateway, mirror, script, rewrite, and breakpoint to not work.
+- 🐞 [Fix] A bug where clicking the start button might cause the content layout size to jump back to its previous size.
+- 🐞 [Fix] The bug that may cause the CONNECT proxy request status to be displayed as interrupted after the gateway successfully silences the request.
+- 🐞 [Fix] The bug of incorrect Toast style used in some error prompts.
+- 🐞 [Fix] The bug of incomplete display of changelogs in the version update window.
+
 ## v1.3.0 <small><small>*2023-09-05*</small></small>
 - 🚀 [New] Display the application where the traffic from.
 - 🚀 [New] Support filtering traffic according to application in the explorer.
