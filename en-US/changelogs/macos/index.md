@@ -1,5 +1,24 @@
 # Macos
 
+## v1.4.0 <small><small>*2023-09-14*</small></small>
+- 🚀 [New] `Code Snippet` supports cURL and Guzzle for PHP language.
+- 🚀 [New] Add `Certificate` application menu bar.
+- 🚀 [New] Add `Raw` display for request details.
+- 🚀 [New] Add `Automatic Debugging` switch in app settings.
+- 🚀 [New] Support reviewing Charles Session files.
+- 💪 [Opt] A prompt pop-up dialog will be displayed when Reqable exits.
+- 💪 [Opt] A prompt will be displayed after dragging unsupported files to the Reqable main window and releasing them.
+- 💪 [Opt] The session content area displays information about file or history opening failure.
+- 💪 [Opt] Opening HAR files no longer filters out `CONNECT` requests.
+- 🐞 [Fix] Reverse proxy certificate trust issue.
+- 🐞 [Fix] A bug where SSL handshake failure are not displayed.
+- 🐞 [Fix] A bug in which operations such as deleting, clearing, and editing bookmarks lead to incorrect bookmark selection status.
+- 🐞 [Fix] A bug in importing cURL that causes the URL parsing to fail due to the `--location` parameter.
+- 🐞 [Fix] The bug that the request cannot be sent due to malformed `Content-Type`.
+- 🐞 [Fix] The bug of incorrect application window position and size on certain resolution devices.
+- 🐞 [Fix] SOCKS proxy causing MySql database to be unable to connect.
+- 🐞[Fix] The bug that the `Webkit Networking` related request icon displays incorrectly.
+
 ## v1.3.1 <small><small>*2023-09-11*</small></small>
 - 🚀 [New] Support `Reverse Proxy` now.
 - 🚀 [New] Add `Proxy` application menu group bar.
