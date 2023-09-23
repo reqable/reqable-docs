@@ -4,6 +4,12 @@ import Shortcut from '@site/src/components/Shortcut';
 
 镜像是Reqable的核心调试功能之一，镜像是指域名映射。例如，访问域名A（`www.foo.com`），映射为访问域名B（`www.bar.com`）, 客户端所有发给域名A的请求都将发向域名B。此功能实现是在代理层处理，而不是应用层，属于整体重定向，如果有需要对指定路径请求进行重定向，请使用[重写——重定向](rewrite#redirect)功能。
 
+:::info
+
+镜像的功能类似修改系统的`hosts.txt`配置，类似于修改了DNS，所以无法将`https`请求映射到`http`请求（例如本地localhost服务），处理此问题请使用[重写——重定向](rewrite#redirect)功能。
+
+:::
+
 镜像功能可以通过四种方式启用或关闭：
 - 直接点击镜像图标
 - 右键镜像图标 -> 启用/禁用
@@ -30,8 +36,14 @@ import Shortcut from '@site/src/components/Shortcut';
 
 :::note 关于端口号
 
-如果不指定端口号，HTTP请求默认为**80**端口，HTTPS请求默认为**443**端口。  
+如果不指定端口号，HTTP请求默认为**80**端口，HTTPS请求默认为**443**端口。
 当然，也可以显示地指定端口号，例如：*.foo.com:8080 -> www.bar.com:9000
+
+:::
+
+:::caution
+
+由于浏览器或者应用程序的HTTP请求可能使用了`KeepAlive`，导致配置完镜像无法立即生效，所以建议配置镜像后立即重启浏览器或者目标应用程序。
 
 :::
 
