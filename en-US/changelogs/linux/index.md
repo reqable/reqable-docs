@@ -1,5 +1,44 @@
 # Linux
 
+## v1.5.1 <small><small>*2023-09-25*</small></small>
+- 💪 [Opt] The count of free tabs for history and file viewing has been increased from 1 to 2.
+- 💪 [Opt] The pop-up dialog supports the `Enter` shortcut key to trigger positive button.
+- 💪 [Opt] When saving API collection, the last save path will be used by default.
+- 💪 [Opt] When saving API collection, the host will be used as the name by default.
+- 💪 [Opt] Automatically change the port when MITM proxy port conflict is detected.
+- 💪 [Opt] Python scripts can be directly opened with `Visual Studio Code` for editing.
+- 💪 [Opt] Automatically merge the Cookie value of the request header when generating code snippet.
+- 🐞 [Fix] The bug that API testing request body `compress` and `prettify` did not take effect when actually sent.
+- 🐞 [Fix] The bug that API testing traffic will not appear in the traffic list when following the redirection in debug mode.
+- 🐞 [Fix] The bug that API testing traffic with mirroring is not displayed in the traffic list in debug mode.
+- 🐞 [Fix] The bug that rewriting redirected requests will automatically perform redirection based on the response.
+- 🐞 [Fix] The bug that `Reset App` in settings is not working.
+- 🐞 [Fix] A bug that caused abnormal composing input in some text fields.
+- 🐞 [Fix] The bug that the application info cannot be displayed for requests that have established a TCP connection before capture is enabled.
+- 🐞 [Fix] A Bug where `Host` header is missing in the raw message.
+- 🐞 [Fix] A bug that causes crash when exiting the app under certain circumstances.
+- 🐞 [Fix] A Bug where proxy protocol cannot be correctly identified in some cases.
+
+## v1.5.0 <small><small>*2023-09-21*</small></small>
+- 🚀 [New] Add HTTP request and response diff tool.
+- 🚀 [New] Add `JWT` decoder in the toolbox.
+- 🚀 [New] API JSON data editing supports one-click compression.
+- 💪 [Opt] Supports `Control + W` shortcut key to close sub windows.
+- 💪 [Opt] Use name instead of timestamp when exporting traffic history.
+- 💪 [Opt] Raw packet syntax supports JSON and XML highlighting.
+- 🐞 [Fix] In the API testing, the cURL import dialog will not automatically pop up if the command containing `WIDTH NO-BREAK SPACE`.
+- 🐞 [Fix] The bug of uploading crash and statistic configuration not taking effect.
+- 🐞 [Fix] `Space` and `*` in the `urlencode` of the Python script may cause some servers to fail to correctly obtain the request path.
+
+## v1.4.1 <small><small>*2023-09-18*</small></small>
+- 💪 [Opt] Traffic list supports drag selection.
+- 💪 [Opt] Traffic list requests and responses are saved with default file names.
+- 🐞 [Fix] The bug that some JavaScript content searches have no results.
+- 🐞 [Fix] The bug that sending a request when the URL contains `WIDTH NO-BREAK SPACE` characters will cause the application to crash.
+- 🐞 [Fix] The bug that cURL export cannot parse commands containing `WIDTH NO-BREAK SPACE` characters.
+- 🐞 [Fix] The bug that the HTTP raw data copy content does not correctly handle the CRLF.
+- 🐞 [Fix] The bug of copying from a rewrite modification rule.
+
 ## v1.4.0 <small><small>*2023-09-14*</small></small>
 - 🚀 [New] `Code Snippet` supports cURL and Guzzle for PHP language.
 - 🚀 [New] Add `Certificate` application menu bar.
