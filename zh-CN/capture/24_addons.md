@@ -1,5 +1,11 @@
 # 脚本API
 
+:::info 源码
+
+https://github.com/reqable/python-scripting-api
+
+:::
+
 脚本框架中涉及的python类的API文档说明。
 
 :::tip
@@ -402,9 +408,9 @@ import hashlib
 
 def onRequest(context, request):
   # 对query列表进行排序
-  queries = sorted(request.queries)
+  request.queries = sorted(request.queries)
   # 拼接query数据
-  text = queries.concat()
+  text = request.queries.concat()
   # 选用md5算法进行签名
   algorithm = hashlib.md5()
   # 计算字符串的签名

@@ -1,6 +1,12 @@
 # Addons API
 
-API documentation for the Reqable script.
+:::info Source Code
+
+https://github.com/reqable/python-scripting-api
+
+:::
+
+API documentation for the Reqable scripting.
 
 :::tip
 
