@@ -1,5 +1,11 @@
 # Linux
 
+## v1.6.0 <small><small>*2023-09-27*</small></small>
+- 🚀 [New] Supports detaching a new window to view traffic data details.
+- 🚀 [New] The middle mouse button can close the Tab.
+- 🚀 [New] The middle mouse button can close the sub-window.
+- 💪 [Opt] Better performance and memory usage.
+
 ## v1.5.1 <small><small>*2023-09-25*</small></small>
 - 💪 [Opt] The count of free tabs for history and file viewing has been increased from 1 to 2.
 - 💪 [Opt] The pop-up dialog supports the `Enter` shortcut key to trigger positive button.
