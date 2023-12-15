@@ -88,7 +88,7 @@ Multipart类型会在[内置请求头](header#builtin)中自动追加 `Content-T
 
 文件类型支持选择一个文件作为请求体，为了简化操作，Reqable提供了文件拖拽的功能，直接将文件拖入虚线框内即可。
 
-![](arts/body_09.png)
+![](arts/body_11.png)
 
 :::info Content-Type推导
 

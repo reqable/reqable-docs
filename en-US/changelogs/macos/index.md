@@ -1,5 +1,66 @@
 # Macos
 
+## v2.0.0 <small><small>*2023-12-15*</small></small>
+- 🚀 [New] Supports collaboration with Reqable mobile apps.
+- 🚀 [New] Supports importing and exporting pkcs12 root certificate file.
+- 🚀 [New] Supports viewing the currently used root certificate file.
+- 🚀 [New] Diff tool supports header name lowercase comparation.
+- 🚀 [New] Adds a search icon for Code Editor and Hex Viewer.
+- 💪 [Opt] Supports some non-standard proxy protocol messages.
+- 💪 [Opt] Redo traffic overview UI/UX.
+- 💪 [Opt] Redo Websocket UI/UX.
+- 💪 [Opt] Redo styling of settings window option switches.
+- 💪 [Opt] More `Certificate` menu bar options.
+- 💪 [Opt] Code Editor removes unnecessary padding areas.
+- 💪 [Opt] Reduces drag and scroll speed of Code Editor and HexViewer.
+- 💪 [Opt] Code editor will not lose the currently selection when dragging to expand the selection area.
+- 💪 [Opt] Android certificate setup adds network security configuration guides.
+- 💪 [Opt] Android certificate setup adds certificate file permission tips.
+- 💪 [Opt] Diff tool enables sorting headers by default.
+- 💪 [Opt] New sub windows no longer flicker on startup.
+- 💪 [Opt] Copying API cURL will close the pop-up window automatically.
+- 💪 [Opt] Tips will be displayed in the bottom bar if the current API testing has a proxy setting.
+- 💪 [Opt] Max redirection button will automatically wrap when there is insufficient display space.
+- 💪 [Opt] You can click the cookie list item to edit it.
+- 💪 [Opt] In table mode, long press the cell will copy the key or value.
+- 💪 [Opt] License registration automatically fills in the last email address and license code.
+- 💪 [Opt] Try using SSL SNI as the host of the URL instead of the IP.
+- 💪 [Opt] Adds some prompts in SSL bypass editor.
+- 💪 [Opt] Double-clicking outside the traffic list will automatically close the details panel.
+- 💪 [Opt] Supports `Control + L` shortcut key to quickly locate the currently selected traffic item.
+- 🐞 [Fix] A bug that unverified license will cause the page to remain in the loading state forever.
+- 🐞 [Fix] A bug that code syntax highlighting may cause content display to be lost.
+- 🐞 [Fix] A bug where URL port number displayed in the traffic list was incorrectly in some cases.
+- 🐞 [Fix] A bug where clicking outside the traffic list may cancel the selected item.
+- 🐞 [Fix] A bug where response body replacement cannot automatically fill the original payload.
+- 🐞 [Fix] A bug that failed to import Postman collection if containing multi-file values.
+- 🐞 [Fix] A bug that failed to open some HAR files.
+- 🐞 [Fix] An infinite loop bug occurs when directly requesting the proxy port.
+- 🐞 [Fix] A bug where the close frame of Websocket was displayed incorrectly.
+- 🐞 [Fix] App may crash when failed to send a POST request.
+- 🐞 [Fix] A bug where the response content may not be updated after sending a request.
+- 🐞 [Fix] The bug of URL display overflow in API testing explorer.
+- 🐞 [Fix] A bug that the file content is empty when VS Code opens a new script.
+- 🐞 [Fix] A bug that the reset application in settings does not take effect.
+- 🐞 [Fix] A bug where proxy configuration failed due to disabled network devices on Mac.
+
+## v1.6.2 <small><small>*2023-10-12*</small></small>
+- 💪 [Opt] Reduce the number of traffic capture cache files.
+- 🐞 [Fix] The issue of flashing when opening a new window.
+- 🐞 [Fix] The bug of missing query parameters in rewrite redirection.
+
+## v1.6.1 <small><small>*2023-10-09*</small></small>
+- 💪 [Opt] Traffic list application filtering option displays remote device IP.
+- 💪 [Opt] The API editor URL input box will display the historical URL and you can choose to enter it.
+- 💪 [Opt] URL rule wildcard matching.
+- 💪 [Opt] When a lower version application opens a higher version database, it will reset the database instead of reporting an error.
+- 💪 [Opt] The raw message displays the body encoding type.
+- 🐞 [Fix] The API testing tab that is no save prompt after the application is restarted.
+- 🐞 [Fix] The bug that API testing may prompt saving again when a saved API is closed.
+- 🐞 [Fix] The bug that requests in socks proxy mode cannot trigger interceptors such as rewriting, breakpoints, and scripts.
+- 🐞 [Fix] A bug where quotes were not escaped during code generation..
+- 🐞 [Fix] A bug where some cache files failed to be automatically cleared in incognito mode.
+
 ## v1.6.0 <small><small>*2023-09-27*</small></small>
 - 🚀 [New] Supports detaching a new window to view traffic data details.
 - 🚀 [New] The middle mouse button can close the Tab.

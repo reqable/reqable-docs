@@ -88,7 +88,7 @@ No need to add `Boundary` header manually, Reqable will automatically generate a
 
 The file type supports selecting a file as the request body. In order to simplify the operation, Reqable provides the function of dragging and dropping the file, just drag the file directly into the dotted layout.
 
-![](arts/body_09.png)
+![](arts/body_11.png)
 
 :::info Content-Type Guess
 
