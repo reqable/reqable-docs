@@ -1,5 +1,31 @@
 # Macos
 
+## v2.2.0 <small><small>*2023-12-28*</small></small>
+- 🚀 [NEW] API testing supports splitting merged cookies into multiple ones.
+- 🚀 [NEW] API testing supports opening additional editors to edit cookies.
+- 🐞 [FIX] The bug where some items in the traffic list were sorted incorrectly.
+- 🐞 [FIX] The bug that the application cannot start in some cases.
+- 🚀 [NEW] Remember and restore previous system proxy configuration when exiting the app.
+- 🚀 [NEW] Introduce the proxy helper tool, which replaces `networksetup CLI` to configure system proxy.
+
+## v2.1.1 <small><small>*2023-12-25*</small></small>
+- 🚀 [NEW] Allow root certificate regeneration.
+- 💪 [OPT] API testing `reqableId` supports displaying in two lines.
+- 💪 [OPT] API testing will automatically fill key-value entries when switching from text.
+- 🐞 [FIX] The bug that it is unable to install root certificate.
+- 🐞 [FIX] The bug of abnormal display of collaborative QR code when there is no local IP.
+- 🐞 [FIX] A bug that the mirror icon will display incorrectly in some cases.
+- 🚀 [NEW] You can pin application filter and domain filter now.
+- 🚀 [NEW] You can configure interceptors such as rewriting in auto-highlighting.
+- 🚀 [NEW] A shortcut key `Alt + Ctrl + ↑/↓` for traffic list, switch browsing history before and after.
+- 🚀 [NEW] A shortcut key `Shift + Contrl + I` for all list, invert the current selection.
+- 💪 [OPT] The domain filter list is expanded by default.
+- 💪 [OPT] Slightly increase the size of the diff tool window.
+- 🐞 [FIX] A debug that interceptor icon color is not highlighted.
+- 💪 [OPT] The application cache directory is migrated from `Cache` to `Application Support`.
+- 💪 [OPT] The logic of automatically overwriting system network proxy.
+- 🐞 [FIX] The bug of incorrect coloring of the status bar icon.
+
 ## v2.0.0 <small><small>*2023-12-15*</small></small>
 - 🚀 [New] Supports collaboration with Reqable mobile apps.
 - 🚀 [New] Supports importing and exporting pkcs12 root certificate file.
