@@ -1,5 +1,28 @@
 # Windows
 
+## v2.3.2 <small><small>*2024-01-08*</small></small>
+- 💪 [OPT] Adjustment of some UI details.
+- 🐞 [FIX] The bug that the raw message in the traffic details cannot be code highlighted.
+- 🐞 [FIX] The bug that JSON array type throws an error int code snippet.
+- 🐞 [FIX] The bug that the root certificate installed to the current user cannot be recognized.
+
+## v2.3.0 <small><small>*2024-01-05*</small></small>
+- 🚀 [NEW] Upgrade the Flutter framework to the latest version 3.16.5.
+- 🚀 [NEW] Use Material Design 3 styles.
+- 🚀 [NEW] 15 code syntax highlighting color options.
+- 🚀 [NEW] Add the application ID column for traffic list.
+- 🚀 [NEW] Context menu for traffic overview URL.
+- 🚀 [NEW] Introduce secondary proxy for SOCKS and VPN modes.
+- 🚀 [NEW] Remote app can control the recording status of the host app.
+- 💪 [OPT] Adjust the proxy port detection logic and automatically change the port number when a conflict is detected.
+- 💪 [OPT] URL syntax highlighting supports universal schemes.
+- 💪 [OPT] Apply URL syntax highlighting for QR code input text.
+- 💪 [OPT] The traffic record in collaborative mode will display domain name instead of IP address.
+- 🐞 [FIX] The bug that the urlencode request body may be lost when parsing HAR files.
+- 🐞 [FIX] A failure with non-standard HAR connection fields.
+- 🐞 [FIX] The bug that the uppercase encoding value such as GZIP cannot be recognized.
+- 🚀 [NEW] Allow auto-dismiss the QR code pop-up dialog when the remote device connected.
+
 ## v2.2.1 <small><small>*2023-12-29*</small></small>
 - 🐞 [FIX] The bug that the status of system proxy indicator icon is not correct.
 
