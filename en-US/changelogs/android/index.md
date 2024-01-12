@@ -1,5 +1,15 @@
 # Android
 
+## v2.4.0 <small><small>*2024-01-12*</small></small>
+- 🚀 [New] Introduce a new secondary proxy feature.
+- 🐞 [FIX] The bug that the generated cURL does not merge cookies.
+- 🐞 [FIX] The bug that the `Referer` header cannot be sent in API requests.
+- 🐞 [FIX] The bug of missing `application/x-www-form-urlencoded` header in code snippet.
+- 🐞 [FIX] A bug that may crash when exporting P12 format certificate.
+- 🚀 [New] Supports double-clicking the title to open the search bar.
+- 🐞 [FIX] The bug where the proxy port number display is inconsistent with the actual one.
+- 🐞 [FIX] The bug that the remote device may not be able to coordinate after the address is changed.
+
 ## v2.3.2 <small><small>*2024-01-08*</small></small>
 - 💪 [OPT] Adjustment of some UI details.
 - 🐞 [FIX] The bug that the raw message in the traffic details cannot be code highlighted.

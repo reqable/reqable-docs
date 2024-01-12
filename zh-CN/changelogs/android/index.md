@@ -1,5 +1,15 @@
 # Android
 
+## v2.4.0 <small><small>*2024-01-12*</small></small>
+- 🚀【新功能】重做二级代理相关功能。
+- 🐞【修复】生成的cURL未合并Cookie的bug。
+- 🐞【修复】API请求无法发送`Referer`头部的bug。
+- 🐞【修复】生成代码丢失`application/x-www-form-urlencoded`头部的bug。
+- 🐞【修复】导出P12格式证书可能崩溃的bug。
+- 🚀【新功能】支持双击标题打开搜索栏。
+- 🐞【修复】代理端口号显示和实际不一致的bug。
+- 🐞【修复】远程设备地址变更后可能无法协同的bug。
+
 ## v2.3.2 <small><small>*2024-01-08*</small></small>
 - 💪【优化】部分UI细节的调整。
 - 🐞【修复】调试详情部分原始报文无法代码高亮的bug。

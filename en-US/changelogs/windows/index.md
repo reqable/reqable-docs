@@ -1,5 +1,17 @@
 # Windows
 
+## v2.4.0 <small><small>*2024-01-12*</small></small>
+- 🚀 [New] Introduce a new secondary proxy feature.
+- 🐞 [FIX] The bug that the generated cURL does not merge cookies.
+- 🐞 [FIX] The bug that the `Referer` header cannot be sent in API requests.
+- 🐞 [FIX] The bug of missing `application/x-www-form-urlencoded` header in code snippet.
+- 🐞 [FIX] A bug that may crash when exporting P12 format certificate.
+- 🚀 [New] Supports drag sorting of working tabs.
+- 🚀 [New] You can select or unselect a search condition for traffic list.
+- 💪 [OPT] The time threshold for triggering drag is reduced from 500ms to 150ms.
+- 🐞 [FIX] A bug that may jump abnormally when selecting a debug list.
+- 💪 [OPT] Supports mouse wheel to control horizontal layout scrolling.
+
 ## v2.3.2 <small><small>*2024-01-08*</small></small>
 - 💪 [OPT] Adjustment of some UI details.
 - 🐞 [FIX] The bug that the raw message in the traffic details cannot be code highlighted.
