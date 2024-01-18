@@ -1,5 +1,19 @@
 # Windows
 
+## v2.4.1 <small><small>*2024-01-16*</small></small>
+- 💪 [OPT] Use form body when creating API requests from the form request cURL.
+- 🐞 [FIX] The bug of duplicate cookie values in the code snippet.
+- 🐞 [FIX] The bug that unable to decode deflate data.
+- 🐞 [FIX] A bug that may trigger content selection when scrolling the editor.
+- 🐞 [FIX] The bug that unable to copy cURL of the WebSocket request.
+- 🐞 [FIX] The bug of failing to handle WebSocket compression extension correctly.
+- 🐞 [FIX] The bug that cannot create form request or copy cURL from traffic list.
+- 💪 [OPT] Remove the application ID option from the default column of the traffic list.
+- 💪 [OPT] Tabs on the home page can be directly dragged and sorted without long pressing.
+- 🐞 [FIX] A bug where the tab title on the home page may be displayed incompletely.
+- 🐞 [FIX] The bug that cannot resize traffic list column width.
+- 🐞 [FIX] The bug that the application window cannot be restored by tapping the tray icon.
+
 ## v2.4.0 <small><small>*2024-01-12*</small></small>
 - 🚀 [New] Introduce a new secondary proxy feature.
 - 🐞 [FIX] The bug that the generated cURL does not merge cookies.

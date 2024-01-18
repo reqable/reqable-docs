@@ -1,5 +1,17 @@
 # Android
 
+## v2.4.1 <small><small>*2024-01-16*</small></small>
+- 💪【优化】从cURL创建API请求时自动识别form请求体。
+- 🐞【修复】生成的代码中出现重复Cookie值的bug。
+- 🐞【修复】deflate数据解码失败的bug。
+- 🐞【修复】编辑器滑动时可能触发内容选择的bug。
+- 🐞【修复】WebSocket无法复制cURL的bug。
+- 🐞【修复】未能正确处理WebSocket压缩扩展的bug。
+- 🐞【修复】无法从调试列表创建Form请求或者复制cURL的bug。
+- 💪【优化】调试列表响应状态高亮显示。
+- 🐞【修复】自动高亮等配置返回无法自动保存的bug。
+- 🐞【修复】搜索功能失效的bug。
+
 ## v2.4.0 <small><small>*2024-01-12*</small></small>
 - 🚀【新功能】重做二级代理相关功能。
 - 🐞【修复】生成的cURL未合并Cookie的bug。
