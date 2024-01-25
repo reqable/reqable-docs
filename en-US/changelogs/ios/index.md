@@ -1,4 +1,24 @@
+---
+sidebar_position: 5
+---
+
 # iOS
+
+## v2.5.0 <small><small>*2024-01-25*</small></small>
+- 🚀 [NEW] Introduce scripting for API testing.
+- 🚀 [NEW] Introduce script templates.
+- 🚀 [NEW] Fork templates from public script repositories.
+- 🚀 [NEW] Introduce zen mode.
+- 💪 [OPT] New console for script editor.
+- 💪 [OPT] Remember highlight and application informations when saving HAR files.
+- 🐞 [FIX] The secondary proxy may cause an infinite loop of requests.
+- 🐞 [FIX] The bug that unable to capture HTTP2 plaintext traffic.
+- 🐞 [FIX] The bug that handling HTTP trailer incorrectly.
+- 🐞 [FIX] The bug of failing to handle WebSocket compression extension correctly.
+- 🐞 [FIX] The bug that text selection is incorrect after double-clicking a word.
+- 🐞 [FIX] The bug that the editor composing menu does not follow the input position.
+- 💪 [OPT] Try to reconnect after the remote device is disconnected.
+- 🐞 [FIX] The bug that the remote device connection status displays incorrectly.
 
 ## v2.4.1 <small><small>*2024-01-16*</small></small>
 - 💪 [OPT] Use form body when creating API requests from the form request cURL.
