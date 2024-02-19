@@ -4,6 +4,26 @@ sidebar_position: 4
 
 # Android
 
+## v2.6.3 <small><small>*2024-02-07*</small></small>
+- 💪 [OPT] Remote device will wait for 5 seconds to reconnect.
+- 🐞 [FIX] A bug in which the status of magic service is not determined before recording is started.
+
+## v2.6.2 <small><small>*2024-02-04*</small></small>
+- 🐞 [FIX] A bug where some webSocket requests are not recognized.
+- 💪 [OPT] Determination logic for entering picture-in-picture mode.
+
+## v2.6.1 <small><small>*2024-01-31*</small></small>
+- 🚀 [NEW] Code editor supports code auto-completion.
+- 🐞 [FIX] The bug that text syntax highlighting may be incorrect.
+- 🐞 [FIX] The bug that missing `\` at the end of URL.
+- 🐞 [FIX] The bug that `HexViewer` will get focus by default.
+- 🐞 [FIX] The bug that IP was displayed rather than host.
+- 🚀 [NEW] Supports manual input the remote device address in collaboration mode initialization.
+- 🐞 [FIX] The bug that the rescanned device address displays incorrectly after the remote device address changes.
+- 🚀 [NEW] Will display the picture-in-picture window in collaboration mode.
+- 💪 [OPT] Correct the guidance command for adb installation certificate.
+- 🐞 [FIX] The bug that Android 6.0 will crash when scanning QR code.
+
 ## v2.5.0 <small><small>*2024-01-25*</small></small>
 - 🚀 [NEW] Introduce scripting for API testing.
 - 🚀 [NEW] Introduce script templates.

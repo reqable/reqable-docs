@@ -4,6 +4,25 @@ sidebar_position: 1
 
 # Macos
 
+## v2.6.3 <small><small>*2024-02-07*</small></small>
+- 💪 [OPT] Runtime error of API testing scripts will output to the console.
+- 💪 [OPT] The auto-complete list of text input field supports up and down key selection.
+- 🐞 [FIX] Some prompts of Python scripting api are incorrect.
+- 🐞 [FIX] The bug that response body is not automatically decoded when scripting is enabled.
+
+## v2.6.2 <small><small>*2024-02-04*</small></small>
+- 🐞 [FIX] A bug where some webSocket requests are not recognized.
+- 🐞 [FIX] A bug in the API request script caused the request path to be incorrectly encoded.
+
+## v2.6.1 <small><small>*2024-01-31*</small></small>
+- 🚀 [NEW] Code editor supports code auto-completion.
+- 🐞 [FIX] The bug that text syntax highlighting may be incorrect.
+- 🐞 [FIX] The bug that missing `\` at the end of URL.
+- 🐞 [FIX] The bug that `HexViewer` will get focus by default.
+- 🐞 [FIX] The bug that IP was displayed rather than host.
+- 🚀 [NEW] Console tab for traffic details.
+- 🚀 [NEW] Console tab for API testing response.
+
 ## v2.5.0 <small><small>*2024-01-25*</small></small>
 - 🚀 [NEW] Introduce scripting for API testing.
 - 🚀 [NEW] Introduce script templates.

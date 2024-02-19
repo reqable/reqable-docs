@@ -4,6 +4,22 @@ sidebar_position: 5
 
 # iOS
 
+## v2.6.3 <small><small>*2024-02-07*</small></small>
+- 💪 [OPT] Remote device will wait for 5 seconds to reconnect.
+
+## v2.6.2 <small><small>*2024-02-04*</small></small>
+- 🐞 [FIX] A bug where some webSocket requests are not recognized.
+
+## v2.6.1 <small><small>*2024-01-31*</small></small>
+- 🚀 [NEW] Code editor supports code auto-completion.
+- 🐞 [FIX] The bug that text syntax highlighting may be incorrect.
+- 🐞 [FIX] The bug that missing `\` at the end of URL.
+- 🐞 [FIX] The bug that `HexViewer` will get focus by default.
+- 🐞 [FIX] The bug that IP was displayed rather than host.
+- 🚀 [NEW] Supports manual input the remote device address in collaboration mode initialization.
+- 🐞 [FIX] The bug that the rescanned device address displays incorrectly after the remote device address changes.
+- 🐞 [FIX] The bug that the collaboration mode does not work after the app moves to background for a period of time.
+
 ## v2.5.0 <small><small>*2024-01-25*</small></small>
 - 🚀 [NEW] Introduce scripting for API testing.
 - 🚀 [NEW] Introduce script templates.
