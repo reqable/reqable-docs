@@ -4,6 +4,11 @@ sidebar_position: 4
 
 # Android
 
+## v2.7.0 <small><small>*2024-02-20*</small></small>
+- 🐞 [FIX] The bug that the unmodified API will prompt to save when closing.
+- 🐞 [FIX] The bug that closing other tabs will close all tabs.
+- 🐞 [FIX] The bug of incorrect encoding of `space` and `=` in request query parameters.
+
 ## v2.6.3 <small><small>*2024-02-07*</small></small>
 - 💪 [OPT] Remote device will wait for 5 seconds to reconnect.
 - 🐞 [FIX] A bug in which the status of magic service is not determined before recording is started.

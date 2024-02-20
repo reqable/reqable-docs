@@ -4,6 +4,11 @@ sidebar_position: 4
 
 # Android
 
+## v2.7.0 <small><small>*2024-02-20*</small></small>
+- 🐞【修复】未修改的API Tab关闭时会提示保存的bug。
+- 🐞【修复】关闭其他Tab会关闭全部Tab的bug。
+- 🐞【修复】请求参数中`空格`和`=`编码不正确的bug。
+
 ## v2.6.3 <small><small>*2024-02-07*</small></small>
 - 💪【优化】远程设备断开后立即重连改为等待5秒重连。
 - 🐞【修复】启动调试前未判断辅助服务状态的bug。

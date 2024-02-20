@@ -4,6 +4,18 @@ sidebar_position: 1
 
 # Macos
 
+## v2.7.0 <small><small>*2024-02-20*</small></small>
+- 🐞 [FIX] The bug that the unmodified API will prompt to save when closing.
+- 🐞 [FIX] The bug that closing other tabs will close all tabs.
+- 🐞 [FIX] The bug of incorrect encoding of `space` and `=` in request query parameters.
+- 🚀 [NEW] Supports to adjust app display scaling.
+- 🚀 [NEW] Will restore the previous window position and size when restarting.
+- 🚀 [NEW] Supports deleting API request history URLs.
+- 💪 [OPT] No longer automatically checked the rewrite-replace checkbox.
+- 🐞 [FIX] The bug that the original response data may not be brought in when creating a rewrite-replacement response rule.
+- 🐞 [FIX] The bug that URL rules may not match in rewrite, breakpoint and scripting rules.
+- 🚀 [NEW] Shortcut key `Control + Command + F` to toggle to full screen mode.
+
 ## v2.6.3 <small><small>*2024-02-07*</small></small>
 - 💪 [OPT] Runtime error of API testing scripts will output to the console.
 - 💪 [OPT] The auto-complete list of text input field supports up and down key selection.
