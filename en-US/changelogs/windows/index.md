@@ -4,6 +4,28 @@ sidebar_position: 0
 
 # Windows
 
+## v2.8.0 <small><small>*2024-02-29*</small></small>
+- 🚀 [NEW] Available API tabs of community version are increased from 2 to 4.
+- 🚀 [NEW] Adds three new tabs, Cookies, Set-Cookies and Comment.
+- 🚀 [NEW] Now you can comment a traffic record.
+- 🚀 [NEW] Custom request and response tabs.
+- 🐞 [FIX] The cookie automatic update mechanism causes a bug that requires saving when closing a API Tab.
+- 🐞 [FIX] The bug of incorrect parsing of the '--data-urlencode' parameter when importing a cURL.
+- 🐞 [FIX] The bug in which the content displayed in the Tab title is truncated.
+- 🐞 [FIX] The bug where `wss` in HAR file is recognized as `ws`.
+- 💪 [OPT] Supports recovery of the damaged `SharedPreferences` file.
+- 🐞 [FIX] The bug that the application cannot exit normally when right-clicking on the taskbar to close the window.
+- 🐞 [FIX] A bug where an error dialog appears when the os is shutdown and the system network proxy cannot be automatically reset.
+
+## v2.7.1 <small><small>*2024-02-22*</small></small>
+- 🐞 [FIX] The bug of incorrect encoding and decoding of URL query parameters.
+- 🐞 [FIX] The bug in parsing HAR files does not correctly handle the MIME type.
+- 🐞 [FIX] The bug of secondary proxy account authentication not works.
+- 💪 [OPT] HEX will be displayed first when the image data decoding fails.
+- 🐞 [FIX] The bug that data displayed after modifying `Content-Type` through script does not take effect.
+- 🐞 [FIX] A bug where the white window flashes obviously when the app starts.
+- 🐞 [FIX] The bug that the sub window may be reset to the default size when maximized.
+
 ## v2.7.0 <small><small>*2024-02-20*</small></small>
 - 🐞 [FIX] The bug that the unmodified API will prompt to save when closing.
 - 🐞 [FIX] The bug that closing other tabs will close all tabs.
@@ -14,7 +36,7 @@ sidebar_position: 0
 - 💪 [OPT] No longer automatically checked the rewrite-replace checkbox.
 - 🐞 [FIX] The bug that the original response data may not be brought in when creating a rewrite-replacement response rule.
 - 🐞 [FIX] The bug that URL rules may not match in rewrite, breakpoint and scripting rules.
-- 🐞[FIX] The bug that the encoding of API scripting console is not utf-8.
+- 🐞 [FIX] The bug that the encoding of API scripting console is not utf-8.
 
 ## v2.6.3 <small><small>*2024-02-07*</small></small>
 - 💪 [OPT] Runtime error of API testing scripts will output to the console.

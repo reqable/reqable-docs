@@ -4,6 +4,24 @@ sidebar_position: 1
 
 # Macos
 
+## v2.8.0 <small><small>*2024-02-29*</small></small>
+- 🚀 [NEW] Available API tabs of community version are increased from 2 to 4.
+- 🚀 [NEW] Adds three new tabs, Cookies, Set-Cookies and Comment.
+- 🚀 [NEW] Now you can comment a traffic record.
+- 🚀 [NEW] Custom request and response tabs.
+- 🐞 [FIX] The cookie automatic update mechanism causes a bug that requires saving when closing a API Tab.
+- 🐞 [FIX] The bug of incorrect parsing of the '--data-urlencode' parameter when importing a cURL.
+- 🐞 [FIX] The bug in which the content displayed in the Tab title is truncated.
+- 🐞 [FIX] The bug where `wss` in HAR file is recognized as `ws`.
+
+## v2.7.1 <small><small>*2024-02-22*</small></small>
+- 🐞 [FIX] The bug of incorrect encoding and decoding of URL query parameters.
+- 🐞 [FIX] The bug in parsing HAR files does not correctly handle the MIME type.
+- 🐞 [FIX] The bug of secondary proxy account authentication not works.
+- 💪 [OPT] HEX will be displayed first when the image data decoding fails.
+- 🐞 [FIX] The bug that data displayed after modifying `Content-Type` through script does not take effect.
+- 🐞 [FIX] The bug that the app will crash when clicking the URL input if the `KeyboardHolder` is running.
+
 ## v2.7.0 <small><small>*2024-02-20*</small></small>
 - 🐞 [FIX] The bug that the unmodified API will prompt to save when closing.
 - 🐞 [FIX] The bug that closing other tabs will close all tabs.

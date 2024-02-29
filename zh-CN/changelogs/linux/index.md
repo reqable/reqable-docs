@@ -4,6 +4,24 @@ sidebar_position: 3
 
 # Linux
 
+## v2.8.0 <small><small>*2024-02-29*</small></small>
+- 🚀【新功能】社区版API请求Tab可用数量由2调整到4。
+- 🚀【新功能】新增Cookies、Set-Cookies和备注三个Tab选项卡。
+- 🚀【新功能】支持对流量记录进行备注。
+- 🚀【新功能】支持自定义请求和响应Tab选项卡。
+- 🐞【修复】Cookie自动更新机制导致关闭Tab时提示需要保存的bug。
+- 🐞【修复】导入cURL功能'--data-urlencode'参数解析不正确的bug。
+- 🐞【修复】Tab标题显示内容被截断的bug。
+- 🐞【修复】HAR文件中的`wss`识别成`ws`的bug。
+- 💪【优化】支持对损坏的SharedPreferences文件进行恢复。
+
+## v2.7.1 <small><small>*2024-02-22*</small></small>
+- 🐞【修复】URL参数编解码处理不正确的bug。
+- 🐞【修复】解析HAR文件未正确处理MIME类型的bug。
+- 🐞【修复】二级代理账号认证不成功的bug。
+- 💪【优化】图片资源解码失败时优先显示HEX内容。
+- 🐞【修复】API测试通过脚本修改`Content-Type`后显示的数据类型不生效的bug。
+
 ## v2.7.0 <small><small>*2024-02-20*</small></small>
 - 🐞【修复】未修改的API Tab关闭时会提示保存的bug。
 - 🐞【修复】关闭其他Tab会关闭全部Tab的bug。
