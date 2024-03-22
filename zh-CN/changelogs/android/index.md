@@ -4,6 +4,23 @@ sidebar_position: 4
 
 # Android
 
+## v2.9.0 <small><small>*2024-03-22*</small></small>
+- 🚀【新功能】支持环境变量。
+- 💪【优化】生成Python-Requests代码使用请求参数而不是长url。
+- 🐞【修复】API测试请求无法使用Python脚本处理Form数据的bug。
+- 🐞【修复】API测试请求urlencode空格编码成`%20`而不是`+`的bug。
+- 🐞【修复】API测试请求关闭标签页提示保存逻辑不正确的bug。
+- 🐞【修复】导入cURL未能正确处理`--data-raw`数据的bug。
+
+## v2.8.2 <small><small>*2024-03-12*</small></small>
+- 🐞【修复】导入ApiFox集合某些情况下失败的bug。
+- 🐞【修复】原始响应数据内容显示不正确的bug。
+- 🐞【修复】请求参数和Cookie文本模式下高亮显示不正确的bug。
+- 🐞【修复】导出HAR格式`startedDateTime`时间戳格式不正确的bug。
+- 💪【优化】不同请求方法使用不同颜色显示。
+- 💪【优化】部分文案和提示。
+- 🐞【修复】App应用名称显示不正确的bug。
+
 ## v2.8.0 <small><small>*2024-02-29*</small></small>
 - 🚀【新功能】社区版API请求Tab可用数量由2调整到4。
 - 🚀【新功能】新增Cookies、Set-Cookies和备注三个Tab选项卡。

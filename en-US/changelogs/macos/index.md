@@ -4,6 +4,26 @@ sidebar_position: 1
 
 # Macos
 
+## v2.9.0 <small><small>*2024-03-22*</small></small>
+- 🚀 [NEW] Introduce environment variables.
+- 💪 [OPT] Generate Python-Requests code using query parameters instead of long url.
+- 🐞 [FIX] The bug that API can not use Python script to process form data.
+- 🐞 [FIX] The bug that API space will encodes to `%20` rather than `+`.
+- 🐞 [FIX] The bug that it will prompt to save when closing the API test tab.
+- 🐞 [FIX] The bug that correctly to handle `--data-raw` when importing a cURL.
+- 🐞 [FIX] The bug that the python environment cannot take effect.
+- 💪 [OPT] API testing supports pressing the Enter key to send directly.
+- 💪 [OPT] The QR code of the certificate link is changed from click display to mouse pointer hover display.
+
+## v2.8.2 <small><small>*2024-03-06*</small></small>
+- 🐞 [FIX] The bug of importing ApiFox collection failed in some cases.
+- 🐞 [FIX] The bug where the response raw message is incorrect.
+- 🐞 [FIX] Incorrect highlighting of query parameters and cookies.
+- 🐞 [FIX] The bug where `startedDateTime` of the exported HAR format is incorrect.
+- 💪 [OPT] Coloring request methods.
+- 💪 [OPT] File drag and drop will be disabled when a dialog is showing.
+- 🐞 [FIX] The bug that the request path is incorrect in python scripts.
+
 ## v2.8.0 <small><small>*2024-02-29*</small></small>
 - 🚀 [NEW] Available API tabs of community version are increased from 2 to 4.
 - 🚀 [NEW] Adds three new tabs, Cookies, Set-Cookies and Comment.

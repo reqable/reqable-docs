@@ -4,6 +4,22 @@ sidebar_position: 5
 
 # iOS
 
+## v2.9.0 <small><small>*2024-03-22*</small></small>
+- 🚀 [NEW] Introduce environment variables.
+- 💪 [OPT] Generate Python-Requests code using query parameters instead of long url.
+- 🐞 [FIX] The bug that API can not use Python script to process form data.
+- 🐞 [FIX] The bug that API space will encodes to `%20` rather than `+`.
+- 🐞 [FIX] The bug that it will prompt to save when closing the API test tab.
+- 🐞 [FIX] The bug that correctly to handle `--data-raw` when importing a cURL.
+
+## v2.8.2 <small><small>*2024-03-06*</small></small>
+- 🐞 [FIX] The bug of importing ApiFox collection failed in some cases.
+- 🐞 [FIX] The bug where the response raw message is incorrect.
+- 🐞 [FIX] Incorrect highlighting of query parameters and cookies.
+- 🐞 [FIX] The bug where `startedDateTime` of the exported HAR format is incorrect.
+- 💪 [OPT] Coloring request methods.
+- 💪 [OPT] Correct some tips.
+
 ## v2.8.0 <small><small>*2024-02-29*</small></small>
 - 🚀 [NEW] Available API tabs of community version are increased from 2 to 4.
 - 🚀 [NEW] Adds three new tabs, Cookies, Set-Cookies and Comment.
