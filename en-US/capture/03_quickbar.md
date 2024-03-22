@@ -20,7 +20,7 @@ One of the core features of Reqable: Configure mirroring for a specified host. F
 
 ### Rewrite
 
-One of the core features of Reqable: Preset rules to replace or modify specified requests or responses. For details, please read [Rewrite](mirror).
+One of the core features of Reqable: Preset rules to replace or modify specified requests or responses. For details, please read [Rewrite](rewrite).
 
 ### Breakpoint
 
