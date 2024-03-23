@@ -1,7 +1,7 @@
 ---
 title: License
 description: Reqable can unlock all features with a license.
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # License

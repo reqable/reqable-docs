@@ -1,7 +1,7 @@
 ---
 title: 许可证
 description: Reqable可以使用许可证解锁全部功能特性。
-sidebar_position: 5
+sidebar_position: 7
 ---
 
 # 许可证

@@ -1,7 +1,7 @@
 ---
 title: API测试
 description: API测试是Reqable的两大基本功能之一。
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # 接口

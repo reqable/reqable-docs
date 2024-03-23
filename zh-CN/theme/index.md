@@ -1,7 +1,7 @@
 ---
 title: 主题
 description: Reqable支持丰富的主题设置。
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 # 主题

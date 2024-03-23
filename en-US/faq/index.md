@@ -1,7 +1,7 @@
 ---
 title: FAQ
 description: Reqable FAQ solutions.
-sidebar_position: 7
+sidebar_position: 9
 ---
 
 # FAQ

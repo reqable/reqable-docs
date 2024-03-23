@@ -1,7 +1,7 @@
 ---
 title: API Testing
 description: API testing is one of the two basic features of Reqable.
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # API Testing
