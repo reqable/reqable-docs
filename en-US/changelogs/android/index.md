@@ -4,8 +4,22 @@ sidebar_position: 4
 
 # Android
 
+## v2.10.0 <small><small>*2024-03-29*</small></small>
+- 🚀 [NEW] Support opening all APIs in the collection at one time.
+- 🚀 [NEW] Increase the available number of API collections for Community Edition users from 2 to 3.
+- 🚀 [NEW] Increase the available number of Environments for Community Edition users from 2 to 3.
+- 🐞 [FIX] A bug where duplicate encoding of request parameters in code generation.
+- 🐞 [FIX] Corrected the logic for saving form requests in API testing.
+- 🐞 [FIX] A bug where there was an exception in parsing text for API request parameters.
+- 🐞 [FIX] A bug where parameters and headers starting with `_` were not highlighted.
+- 🐞 [FIX] A bug where environment name is empty.
+- 🐞 [FIX] A bug where illegal values in Set-Cookie were not displayed correctly.
+- 🐞 [FIX] The bug of incorrect HEX export data.
+- 🐞 [FIX] A bug where input content was lost in certain scenarios in the text editor.
+
 ## v2.9.0 <small><small>*2024-03-22*</small></small>
 - 🚀 [NEW] Introduce environment variables.
+- 🚀 [NEW] Now can rename the API request.
 - 💪 [OPT] Generate Python-Requests code using query parameters instead of long url.
 - 🐞 [FIX] The bug that API can not use Python script to process form data.
 - 🐞 [FIX] The bug that API space will encodes to `%20` rather than `+`.
