@@ -106,6 +106,14 @@ Displays the application (or executable) that this traffic belongs to, normally 
 This feature is supported in `v1.3.0`.
 :::
 
+### Application ID
+
+The unique identifier of the application. On MacOS, it is displayed as the bundleId of the application; on Android, it is displayed as the package name of the application; on other platforms such as Windows, the application ID cannot be obtained, so it is not displayed.
+
+### Comment
+
+Comment filled in by the user. Through the context menu, the user can write a piece of remark information to the record item.
+
 ### Address - Remote Ip
 
 Indicates the server IP address, which may be IPv4 or IPv6.
@@ -137,6 +145,18 @@ The point in time at which the Reqable proxy server begins receiving a response 
 ### Time - Response End
 
 The point at which the Reqable proxy server finishes sending a response to the client. Indicates when a request session ends.
+
+### Size - Size
+
+Total size of request headers (including request line) + undecoded request body + response headers (including status line) + undecoded response body. Note that if the protocol is HTTP2, the size of the `Trailers` will also be included, and both Headers and Trailers are converted to the HTTP1 protocol standard for calculation, rather than calculating the compression size during transmission.
+
+### Size - Req-Body Size
+
+The undecoded request body size.
+
+### Size - Res-Body Size
+
+The undecoded response body size.
 
 ### Headers
 

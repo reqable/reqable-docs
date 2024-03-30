@@ -27,6 +27,7 @@ Variable names in italics are read-only, and in bold they can be overwritten.
 |*sid*|int|HTTP session ID, read-only.|
 |*stime*|int|HTTP session start timestamp, in milliseconds, read-only.|
 |*uid*|str|The unique identifier of an HTTP session, consisting of `ctime` + `cid` + `sid`.|
+|**env**|dict|A collection of variables for the global environment and currently actived custom environment.|
 |**shared**|-|A special variable used to share data between `onRequest` and `onResponse`, which can be auto-serializable variables such as str, int, list and dict.|
 
 Code example:
@@ -48,6 +49,14 @@ def onRequest(context, request):
   print(context.sid)
   # Print HTTP session start timestamp, for example: 1686711224132
   print(context.stime)
+
+  # Get an environment variable
+  print(context.env['foo'])
+  print(context.env['$timestamp'])
+
+  # Write an environment variable
+  # The currently activated custom environment is written first, and if there is no activated environment, the global environment is written.
+  context.env['foo'] = 'bar'
 
   # Set shared value
   context.shared = 'Hello'

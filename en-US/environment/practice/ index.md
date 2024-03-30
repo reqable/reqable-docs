@@ -22,8 +22,13 @@ Reqable will automatically replace these references with actual variable values 
 
 ## Python Script
 
-In Python scripts, environment variables exist in the `env` field of the `context` attribute. You can use the following code to obtain the environment variables.
+In Python scripts, environment variables exist in the `env` field of the `context` attribute. You can use the following code to operate the environment variables.
 
 ```python
+# Read the variable
 print(context.env['username'])
+# Write a variable
+context.env['username'] = 'reqable'
 ```
+
+When writing a variable through a script, if no user environment is currently activated, the variable will be written to the global environment, otherwise it will be written to the currently activated environment. In addition, if a variable with the same name already exists in the writing environment, its value will be overwritten.

@@ -27,6 +27,7 @@ https://github.com/reqable/python-scripting-api
 |*sid*|int|HTTP会话ID，只读。|
 |*stime*|int|HTTP会话开始时间戳，单位毫秒，只读。|
 |*uid*|str|HTTP会话的唯一标志，由 `ctime` + `cid` + `sid` 组成。|
+|**env**|dict|全局环境和当前已激活的自定义环境的变量合集。|
 |**shared**|-|用于 `onRequest` 和 `onResponse` 之间共享数据的特殊变量，可以是str、int、list和dict等可自动序列化的变量。|
 
 代码示例：
@@ -48,6 +49,13 @@ def onRequest(context, request):
   print(context.sid)
   # 打印HTTP的会话开始时间，例如：1686711224132
   print(context.stime)
+
+  # 获取环境变量
+  print(context.env['foo'])
+  print(context.env['$timestamp'])
+
+  # 写入环境变量（优先写入当前激活的自定义环境，没有激活环境则写入全局环境）
+  context.env['foo'] = 'bar'
 
   # 设置共享参数
   context.shared = 'Hello'

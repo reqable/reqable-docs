@@ -24,6 +24,8 @@ Global variables are divided into two types, one is [Custom Variable](#custom), 
 
 Custom variables are defined by users. You can click the `Global` item in the environment panel to add, modify, delete and activate theme.
 
+Variable name can only contain letter, number and underscore `_`, and must start with letter or an underscore `_`.
+
 :::info
 If you do not want the variable value to be displayed in plain text, you can click the eye icon (which automatically appears when the mouse is hovering at the end of the input box) to hide it.
 :::
