@@ -4,6 +4,19 @@ sidebar_position: 3
 
 # Linux
 
+## v2.11.1 <small><small>*2024-04-09*</small></small>
+- 🚀【新功能】社区版API集合数量不再设限。
+- 💪【优化】移除API集合层级上限最大为4的限制。
+- 💪【优化】自动识别`application/octet-stream`内容是否是文本。
+- 🚀【新功能】API集合支持拖拽移动。
+
+## v2.10.1 <small><small>*2024-04-02*</small></small>
+- 💪【优化】Query参数解析自动识别gbk编码。
+- 🐞【修复】环境变量`<<url>>`不会高亮的bug。
+- 🐞【修复】某些情况下`chunked`解码异常的bug。
+- 🐞【修复】导出HAR格式报错的bug。
+- 💪【优化】抓包详情分离窗口禁用自定义选项卡功能。
+
 ## v2.10.0 <small><small>*2024-03-29*</small></small>
 - 🚀【新功能】支持从Python脚本写入环境变量。
 - 🚀【新功能】选中文本后从右键菜单可以创建环境变量。

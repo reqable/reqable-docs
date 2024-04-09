@@ -4,6 +4,23 @@ sidebar_position: 4
 
 # Android
 
+## v2.11.1 <small><small>*2024-04-09*</small></small>
+- 🚀 [NEW] Remove the restriction of API collections for Community Edition.
+- 💪 [OPT] Remove the restriction that the depth of API collections is up to 4.
+- 💪 [OPT] Display text first if `application/octet-stream` is a text.
+- 💪 [OPT] Adjust the UI margin of the traffic list.
+- 💪 [OPT] Adjust the URL display color in the traffic list.
+- 🐞 [FIX] The bug of incorrect toolbar position of the code editor.
+- 🐞 [FIX] The bug that the selector handles are not displayed after the code editor is long pressed.
+- 🐞 [FIX] The bug that uninstalled apps are not displayed in the target app list.
+
+## v2.10.1 <small><small>*2024-04-02*</small></small>
+- 💪 [OPT] Query parameter parsing automatically identifies gbk encoding.
+- 🐞 [FIX] The bug that the environment variable `<<url>>` is not highlighted.
+- 🐞 [FIX] The bug of abnormal `chunked` decoding in some cases.
+- 🐞 [FIX] The bug that exporting HAR throws the format error.
+- 💪 [OPT] Open a new page instead of a dialog to view url.
+
 ## v2.10.0 <small><small>*2024-03-29*</small></small>
 - 🚀 [NEW] Support opening all APIs in the collection at one time.
 - 🚀 [NEW] Increase the available number of API collections for Community Edition users from 2 to 3.

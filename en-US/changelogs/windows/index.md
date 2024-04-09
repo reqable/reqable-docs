@@ -4,6 +4,24 @@ sidebar_position: 0
 
 # Windows
 
+## v2.11.1 <small><small>*2024-04-09*</small></small>
+- 🚀 [NEW] Remove the restriction of API collections for Community Edition.
+- 💪 [OPT] Remove the restriction that the depth of API collections is up to 4.
+- 💪 [OPT] Display text first if `application/octet-stream` is a text.
+- 🚀 [NEW] Drag and drop for API collections.
+- 🐞 [FIX] The bug that the window size and content rendering area are incorrect under multiple monitors.
+- 🐞 [FIX] The bug that double-clicking the application icon or opening a HAR file will reset the maximized state of the window.
+
+## v2.10.2 <small><small>*2024-04-02*</small></small>
+- 🐞 [FIX] The bug that the editor and text display empty.
+
+## v2.10.1 <small><small>*2024-04-02*</small></small>
+- 💪 [OPT] Query parameter parsing automatically identifies gbk encoding.
+- 🐞 [FIX] The bug that the environment variable `<<url>>` is not highlighted.
+- 🐞 [FIX] The bug of abnormal `chunked` decoding in some cases.
+- 🐞 [FIX] The bug that exporting HAR throws the format error.
+- 💪 [OPT] Disable the custom tab settings in detected window.
+
 ## v2.10.0 <small><small>*2024-03-29*</small></small>
 - 🚀 [NEW] Support writing environment variables from Python scripts.
 - 🚀 [NEW] Environment variables can be created from the context menu after selecting text.
