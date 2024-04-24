@@ -4,6 +4,29 @@ sidebar_position: 5
 
 # iOS
 
+## v2.13.0 <small><small>*2024-04-24*</small></small>
+- 🚀 [NEW] API testing supports setting whether to verify SSL certificate.
+- 🚀 [NEW] API testing response displays redirect URLs.
+- 💪 [OPT] Clear cache in settings will only clear temporary data and not include user data.
+- 🐞 [FIX] The bug that the redirected request will fail due to incorrect `Host` header value.
+- 🐞 [FIX] The bug that `OPTIONS` request status is incorrect.
+- 💪 [OPT] Reduce the size of the toolbar menu that pops up after selection in the editor.
+- 💪 [OPT] UI details of license pricing page.
+- 🐞 [FIX] The bug of clearing cache and resetting app in settings does not take effect.
+
+## v2.12.1 <small><small>*2024-04-19*</small></small>
+- 🐞 [FIX] The bug of API request global setting not taking effect in some cases.
+- 🐞 [FIX] The bug that the API request domain name cannot be associated with cookies when using environment variables.
+- 🐞 [FIX] The bug that `=` and `&` in API request query entry are not automatically encoded.
+- 🐞 [FIX] A bug that some exceptions caused by automatic decoding of API query when created from the traffic list.
+- 🐞 [FIX] The bug that the table mode input autocomplte list will be display incomplete near the bottom of the application.
+- 🐞 [FIX] A bug that may cause crash when importing p12 certificate.
+
+## v2.12.0 <small><small>*2024-04-13*</small></small>
+- 💪 [OPT] Prompt whether to clear license information when unregistering license.
+- 💪 [OPT] Automatically delete configuration backup files older than 14 days.
+- 🚀 [NEW] Supports purchasing lifetime professional license.
+
 ## v2.11.1 <small><small>*2024-04-09*</small></small>
 - 🚀 [NEW] Remove the restriction of API collections for Community Edition.
 - 💪 [OPT] Remove the restriction that the depth of API collections is up to 4.

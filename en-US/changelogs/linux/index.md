@@ -4,6 +4,49 @@ sidebar_position: 3
 
 # Linux
 
+## v2.13.0 <small><small>*2024-04-24*</small></small>
+- 🚀 [NEW] API testing supports setting whether to verify SSL certificate.
+- 🚀 [NEW] API testing response displays redirect URLs.
+- 💪 [OPT] Clear cache in settings will only clear temporary data and not include user data.
+- 🐞 [FIX] The bug that the redirected request will fail due to incorrect `Host` header value.
+- 🐞 [FIX] The bug that `OPTIONS` request status is incorrect.
+- 🚀 [NEW] You can drag to sort environments.
+- 🚀 [NEW] Add a quick icon to open the log directory.
+- 💪 [OPT] API testing history will save script console outputs.
+- 💪 [OPT] The editor still maintains focus after pressing the save shortcut key.
+- 💪 [OPT] Enlarge the click effective area of the sidebar Tab.
+- 🐞 [FIX] The bug that the secondary proxy can not be copied to create a new one.
+- 🐞 [FIX] Incorrect logic of `Close Other Tabs`.
+- 🐞 [FIX] The bug where the selected text will lost after right-clicking in the script editor.
+- 🐞 [FIX] The bug that the editor cannot automatically get focus when dragging to select content for the first time.
+- 🐞 [FIX] The bug of new prompt words (such as finally) appearing again after selecting a prompt word (such as final) in the scripting editor.
+- 🐞 [FIX] The bug in which the collection folder automatically collapsed or fails to automatically expand after the API is saved to the collection.
+
+## v2.12.1 <small><small>*2024-04-19*</small></small>
+- 🐞 [FIX] The bug of API request global setting not taking effect in some cases.
+- 🐞 [FIX] The bug that the API request domain name cannot be associated with cookies when using environment variables.
+- 🐞 [FIX] The bug that `=` and `&` in API request query entry are not automatically encoded.
+- 🐞 [FIX] A bug that some exceptions caused by automatic decoding of API query when created from the traffic list.
+- 🐞 [FIX] The bug that the table mode input autocomplte list will be display incomplete near the bottom of the application.
+- 🐞 [FIX] A bug that may cause crash when importing p12 certificate.
+- 🐞 [FIX] The bug that dragging selection in the editor cannot automatically request focus.
+- 🐞 [FIX] A bug where directly importing cURL into the API request input box would cause the app to freeze.
+- 💪 [OPT] The focus of the input field is still maintained after selecting auto-complete content in table mode.
+
+## v2.12.0 <small><small>*2024-04-13*</small></small>
+- 💪 [OPT] Prompt whether to clear license information when unregistering license.
+- 💪 [OPT] Automatically delete configuration backup files older than 14 days.
+- 🚀 [NEW] Automatic generate a magisk module to install CA certificate.
+- 💪 [OPT] Refactor the Android certificate installation guide.
+- 🚀 [NEW] API collection supports importing from cURL.
+- 🚀 [NEW] The number of community rewrites limitation is adjusted from 2 to 3.
+- 🚀 [NEW] The number of community breakppints limitation is adjusted from 2 to 3.
+- 🚀 [NEW] The number of community scripts limitation is adjusted from 2 to 3.
+- 🚀 [NEW] The number of community mirrors limitation is adjusted from 2 to 3.
+- 🚀 [NEW] The number of community reverse proxy limitation is adjusted from 2 to 3.
+- 🐞 [FIX] Fix the bug where some limitation of the community do not take effect.
+- 🐞 [FIX] The bug of window size calculation not considering the taskbar size.
+
 ## v2.11.1 <small><small>*2024-04-09*</small></small>
 - 🚀 [NEW] Remove the restriction of API collections for Community Edition.
 - 💪 [OPT] Remove the restriction that the depth of API collections is up to 4.
