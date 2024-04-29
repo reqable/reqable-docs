@@ -28,6 +28,7 @@ https://github.com/reqable/python-scripting-api
 |*stime*|int|HTTP会话开始时间戳，单位毫秒，只读。|
 |*uid*|str|HTTP会话的唯一标志，由 `ctime` + `cid` + `sid` 组成。|
 |**env**|dict|全局环境和当前已激活的自定义环境的变量合集。|
+|*app*|[CaptureApp](#api-app)|应用（进程）信息，未获取到为None。|
 |**shared**|-|用于 `onRequest` 和 `onResponse` 之间共享数据的特殊变量，可以是str、int、list和dict等可自动序列化的变量。|
 
 代码示例：
@@ -372,6 +373,25 @@ def onRequest(context, request):
 如果将非multipart类型修改成multipart类型，必须同时修改headers设置boundary！
 
 :::
+
+## CaptureApp {#api-app}
+
+|   变量  |  类型 |  说明  |
+|  ----  | ----  | ----  |
+|*name*|str|应用（进程）名称。|
+|*id*|str|应用ID，未获取到为None。例如Android上是`packageName`，Mac上是`bundleId`。|
+|*path*|str|应用执行文件路径，未获取到为None。|
+
+代码示例：
+```python
+def onRequest(context, response):
+  # 打印应用信息
+  print(context.app.name)
+  print(context.app.id)
+  print(context.app.path)
+  # Done
+  return request
+```
 
 ## 示例1
 

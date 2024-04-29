@@ -27,6 +27,7 @@ Variable names in italics are read-only, and in bold they can be overwritten.
 |*sid*|int|HTTP session ID, read-only.|
 |*stime*|int|HTTP session start timestamp, in milliseconds, read-only.|
 |*uid*|str|The unique identifier of an HTTP session, consisting of `ctime` + `cid` + `sid`.|
+|*app*|[CaptureApp](#api-app)|App/Process information.|
 |**env**|dict|A collection of variables for the global environment and currently actived custom environment.|
 |**shared**|-|A special variable used to share data between `onRequest` and `onResponse`, which can be auto-serializable variables such as str, int, list and dict.|
 
@@ -373,6 +374,25 @@ def onRequest(context, request):
 If you change the non-form type to form type, you must modify the headers and set boundary at the same time!
 
 :::
+
+## CaptureApp {#api-app}
+
+|   Variable  |  Type |  Description  |
+|  ----  | ----  | ----  |
+|*name*|str|Name of the app/process.|
+|*id*|str|App unique id, such as `bundleId` for mac app, `packageName` for android app. Return None if not detected.|
+|*path*|str|The app installed path.|
+
+Code example:
+```python
+def onRequest(context, response):
+  # Print app information
+  print(context.app.name)
+  print(context.app.id)
+  print(context.app.path)
+  # Done
+  return request
+```
 
 ## Example 1
 
