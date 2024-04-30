@@ -4,6 +4,31 @@ sidebar_position: 0
 
 # Windows
 
+## v2.14.1 <small><small>*2024-04-30*</small></small>
+- 💪 [OPT] Traffic analysis supports abnormal requests with `Content-Length`.
+- 💪 [OPT] The file name of request and response body.
+- 💪 [OPT] API testing no longer verifies the validity of response headers.
+- 🐞 [FIX] The bug that the secondary proxy connection may fail.
+- 🐞 [FIX] The bug of API testing settings being reset after restarting the application.
+- 🐞 [FIX] A bug where some files were not cleaned after deleting the API testing history.
+- 🐞 [FIX] The bug that parsing API testing query input incorrectly.
+- 🚀 [NEW] Add app info APIs in python scripting framework.
+- 💪 [OPT] A new icon will use after the secondary proxy is enabled.
+- 🐞 [FIX] The bug that traffic history search not works.
+- 🐞 [FIX] The bug that REST script will lost when importing Reqable's API collection.
+
+## v2.14.0 <small><small>*2024-04-29*</small></small>
+- 💪 [OPT] Traffic analysis supports abnormal requests with `Content-Length`.
+- 💪 [OPT] The file name of request and response body.
+- 💪 [OPT] API testing no longer verifies the validity of response headers.
+- 🐞 [FIX] The bug that the secondary proxy connection may fail.
+- 🐞 [FIX] The bug of API testing settings being reset after restarting the application.
+- 🐞 [FIX] A bug where some files were not cleaned after deleting the API testing history.
+- 🚀 [NEW] Add app info APIs in python scripting framework.
+- 💪 [OPT] A new icon will use after the secondary proxy is enabled.
+- 🐞 [FIX] The bug that traffic history search not works.
+- 🐞 [FIX] The bug that REST script will lost when importing Reqable's API collection.
+
 ## v2.13.0 <small><small>*2024-04-24*</small></small>
 - 🚀 [NEW] API testing supports setting whether to verify SSL certificate.
 - 🚀 [NEW] API testing response displays redirect URLs.
