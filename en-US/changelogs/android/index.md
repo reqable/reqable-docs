@@ -4,6 +4,54 @@ sidebar_position: 4
 
 # Android
 
+## v2.17.0 <small><small>*2024-06-05*</small></small>
+- 🚀 [NEW] Support `SSL Proxying`.
+- 🚀 [NEW] Add a search icon in `Raw` tab.
+- 💪 [OPT] Remove `SSL Bypass` and merge it into the `SSL Proxying`.
+- 💪 [OPT] Provide more export solutions for capture traffic.
+- 💪 [OPT] Automatically remember word wrap status.
+- 🐞 [FIX] A bug that the API request Cookie path is forcibly converted to lowercase.
+- 🐞 [FIX] A bug that the SOCKS proxy does not display the host if hits SSL bypass.
+- 🚀 [NEW] Remove magic service application.
+- 🚀 [NEW] Support IPv6.
+- 💪 [OPT] Support opening the browser to download the crt format certificate.
+
+## v2.16.1 <small><small>*2024-05-20*</small></small>
+- 💪 [OPT] HTTP2 disables server push by default.
+- 🚀 [NEW] Support starting app from HAR file.
+- 💪 [OPT] Traffic list in host view will receive updates.
+- 🐞 [FIX] The bug of gray screen when opening from host traffic list.
+
+## v2.16.0 <small><small>*2024-05-17*</small></small>
+- 🚀 [NEW] WebSocket supports list display mode.
+- 🚀 [NEW] Request parameter supports whether to omit `=` for empty value.
+- 💪 [OPT] Creating API requests from the traffic list no longer checks non-ASCII characters.
+- 💪 [OPT] The default display of WebSocket is changed from chat mode to list mode.
+- 💪 [OPT] WebSocket chat mode performance.
+- 🐞 [FIX] The bug where WebSocket filtering does not reset type and code filters.
+- 🚀 [NEW] Supports quick selection of target applications from the home page.
+- 💪 [OPT] Hide system applications by default in target app selection.
+- 💪 [OPT] Applications will be sorted by update time in target app selection.
+- 💪 [OPT] Improve the application list loading time.
+
+## v2.15.1 <small><small>*2024-05-13*</small></small>
+- 💪 [OPT] Prompted to turn off SSL certificate verification when a certificate error occurs.
+- 💪 [OPT] The count of sub-files is displayed after the API collection name.
+- 💪 [OPT] API collection supports expanding/collapsing all subfolders.
+- 🐞 [FIX] The bug of HTTP proxy request failure in some cases.
+- 🐞 [FIX] The bug of losing request headers when importing Reqable collection.
+- 🐞 [FIX] Weird text rendering issue after the system installs custom fonts.
+
+## v2.15.0 <small><small>*2024-05-09*</small></small>
+- 🚀 [NEW] Supports configuring custom SSL certificates.
+- 🚀 [NEW] Supports previewing SSL certificate details in capture overview.
+- 🚀 [NEW] Supports creating REST API from redirected URLs.
+- 💪 [OPT] Certificate info will display more details.
+- 💪 [OPT] Adjust the UI details of redirect Tab.
+- 💪 [OPT] The copy button of `Cookie View` will copy the full cookie string instead of the key-value pair.
+- 🐞 [FIX] A bug where `Content-Type` may be lost when copying cURL from traffic list.
+- 🐞 [FIX] The bug that the content of the client certificate in the overview is incorrect.
+
 ## v2.14.1 <small><small>*2024-04-30*</small></small>
 - 💪 [OPT] Traffic analysis supports abnormal requests with `Content-Length`.
 - 💪 [OPT] The file name of request and response body.

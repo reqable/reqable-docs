@@ -4,6 +4,56 @@ sidebar_position: 3
 
 # Linux
 
+## v2.17.0 <small><small>*2024-06-05*</small></small>
+- 🚀 [NEW] Support `SSL Proxying`.
+- 🚀 [NEW] Add a search icon in `Raw` tab.
+- 💪 [OPT] Remove `SSL Bypass` and merge it into the `SSL Proxying`.
+- 💪 [OPT] Provide more export solutions for capture traffic.
+- 💪 [OPT] Automatically remember word wrap status.
+- 🐞 [FIX] A bug that the API request Cookie path is forcibly converted to lowercase.
+- 🐞 [FIX] A bug that the SOCKS proxy does not display the host if hits SSL bypass.
+- 🚀 [NEW] Folder level management for `Gateway`, `Mirror`, `Rewrite`, `Breakpoint`, `Script` and `Reverse Proxy`.
+- 🚀 [NEW] Drag and drop file to import config files.
+- 🚀 [NEW] Search feature for `Gateway`, `Mirror`, `Rewrite`, `Breakpoint`, `Script` and `Reverse Proxy`.
+- 💪 [OPT] A new `Tools` app menu group.
+- 💪 [OPT] A new UI style of the secondary proxy list.
+- 💪 [OPT] The prompt style when dragging and dropping files on the home page.
+- 💪 [OPT] The diff view will display a prompt text when no item is selected.
+- 🐞 [FIX] The bug that the application in the explorer is not displayed on top after being pinned.
+
+## v2.16.1 <small><small>*2024-05-20*</small></small>
+- 💪 [OPT] HTTP2 disables server push by default.
+
+## v2.16.0 <small><small>*2024-05-17*</small></small>
+- 🚀 [NEW] WebSocket supports list display mode.
+- 🚀 [NEW] Request parameter supports whether to omit `=` for empty value.
+- 💪 [OPT] Creating API requests from the traffic list no longer checks non-ASCII characters.
+- 💪 [OPT] The default display of WebSocket is changed from chat mode to list mode.
+- 💪 [OPT] WebSocket chat mode performance.
+- 🐞 [FIX] The bug where WebSocket filtering does not reset type and code filters.
+- 💪 [OPT] Reset md5 result when input was changed.
+- 🐞 [FIX] The bug that tooltip does not disappear automatically.
+- 🐞 [FIX] The bug that some column widths will be automatically restored after some operations.
+
+## v2.15.1 <small><small>*2024-05-13*</small></small>
+- 💪 [OPT] Prompted to turn off SSL certificate verification when a certificate error occurs.
+- 💪 [OPT] The count of sub-files is displayed after the API collection name.
+- 💪 [OPT] API collection supports expanding/collapsing all subfolders.
+- 🐞 [FIX] The bug of HTTP proxy request failure in some cases.
+- 🐞 [FIX] The bug of losing request headers when importing Reqable collection.
+- 🐞 [FIX] Weird text rendering issue after the system installs custom fonts.
+
+## v2.15.0 <small><small>*2024-05-09*</small></small>
+- 🚀 [NEW] Supports configuring custom SSL certificates.
+- 🚀 [NEW] Supports previewing SSL certificate details in capture overview.
+- 🚀 [NEW] Supports creating REST API from redirected URLs.
+- 💪 [OPT] Certificate info will display more details.
+- 💪 [OPT] Adjust the UI details of redirect Tab.
+- 💪 [OPT] The copy button of `Cookie View` will copy the full cookie string instead of the key-value pair.
+- 🐞 [FIX] A bug where `Content-Type` may be lost when copying cURL from traffic list.
+- 🐞 [FIX] The bug that the content of the client certificate in the overview is incorrect.
+- 💪 [OPT] Rework script template context menu options.
+
 ## v2.14.1 <small><small>*2024-04-30*</small></small>
 - 💪 [OPT] Traffic analysis supports abnormal requests with `Content-Length`.
 - 💪 [OPT] The file name of request and response body.
