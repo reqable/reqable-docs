@@ -4,6 +4,23 @@ sidebar_position: 3
 
 # Linux
 
+## v2.18.0 <small><small>*2024-06-11*</small></small>
+- 🚀 [NEW] WebSocket frames support search and filtering.
+- 💪 [OPT] Improve the prompt text for errors of certificate import and export.
+- 💪 [OPT] The `=` in the API request URL is no longer automatically encoded.
+- 🐞 [FIX] The bug that single quotes are not escaped when importing and exporting cURL.
+- 🐞 [FIX] The bug that the SSL certificate enable/disable status cannot be saved.
+- 🐞 [FIX] The bug that the SSL certificate domain name modification cannot be saved.
+- 💪 [OPT] Improve the Android certificate installation guide.
+- 🚀 [NEW] SSL proxy and secondary proxy lists support search and sorting.
+- 🚀 [NEW] Added three options to right-click menu of tab, `Force Close`, `Force Close Others`, and `Force Close All`.
+- 🚀 [NEW] SSL certificates support dragging and dropping files for import.
+- 💪 [OPT] Logic of the `Close Others` option in the right-click menu of the tab.
+- 🐞 [FIX] A bug that mobile HTTP requests are unable to match scripting, rewrite and breakpoint rules.
+- 🐞 [FIX] A bug that the selected item may change after reordering the SSL proxying and secondary proxy lists.
+- 🐞 [FIX] A bug that the `Close` option in the right-click menu of the home page tab is not available.
+- 🐞 [FIX] A bug that the URL request query parameter encoding and decoding behavior changes due to the mounting script.
+
 ## v2.17.0 <small><small>*2024-06-05*</small></small>
 - 🚀 [NEW] Support `SSL Proxying`.
 - 🚀 [NEW] Add a search icon in `Raw` tab.
@@ -223,7 +240,7 @@ sidebar_position: 3
 ## v2.6.1 <small><small>*2024-01-31*</small></small>
 - 🚀 [NEW] Code editor supports code auto-completion.
 - 🐞 [FIX] The bug that text syntax highlighting may be incorrect.
-- 🐞 [FIX] The bug that missing `\` at the end of URL.
+- 🐞 [FIX] The bug that missing `/` at the end of URL.
 - 🐞 [FIX] The bug that `HexViewer` will get focus by default.
 - 🐞 [FIX] The bug that IP was displayed rather than host.
 - 🚀 [NEW] Console tab for traffic details.
