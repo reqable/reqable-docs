@@ -38,23 +38,27 @@ The Linux system is the same as the Mac OSX system, supports the configuration o
 
 ### Secondary Proxy {#secondary}
 
-For accessing some restricted websites, such as accessing Google in mainland China, you need to use some proxy software. However, only one proxy can be configured in the system settings. When Reqable is used as the system proxy, these websites will not be accessible. In this case, Reqable's secondary proxy needs to be used. The principle of Reqable's secondary proxy: When Reqable receives the client's proxy request, it will forward it to the secondary proxy server, and the secondary proxy server will carry out the actual communication. Right-click **Proxy Icon** -> **Secondary Proxy** -> **New Profile** to create a secondary proxy configuration.
+For accessing some restricted websites, such as accessing Google in mainland China, you need to use some proxy software. However, only one proxy can be configured in the system settings. When Reqable is used as the system proxy, these websites will not be accessible. In this case, Reqable's secondary proxy needs to be used. The principle of Reqable's secondary proxy: When Reqable receives the client's proxy request, it will forward it to the secondary proxy server, and the secondary proxy server will carry out the actual communication. You can create a secondary proxy configuration via **Proxy** -> **Secondary Proxy** -> **New Secondary Proxy**.
 
-![](arts/proxy_02.png)
+![](arts/secondary_proxy_02.png)
 
-On the profile editing page, enter the IP address and port number of the secondary proxy server, and save it.
+Enter the name, IP address, and port number of the secondary proxy server and save. The secondary proxy provides two modes: Include Mode and Exclude Mode.
 
-![](arts/proxy_03.png)
+Include Mode: only allow traffic with specified domain name rules to goto the secondary proxy. Exclude Mode: traffic with specified domain name rules bypasses the secondary proxy.
+
+Users can configure multiple domain name rules, support wildcards `*` and `?`, one domain name per line. If only one `*` symbol is configured, it means matching all traffic.
 
 :::info
-
-The secondary proxy currently does not support the SOCKS protocol, nor does it support authentication. It only supports filling in the IP address and port number of the HTTP proxy server.
-
+The secondary proxy currently only supports the HTTP proxy protocol. After enabling the secondary proxy, the top indicator icon will change from a network to an airplane.
 :::
 
-If you have multiple proxy servers, you can create multiple profiles, just switch in the right-click menu. If you need to turn off the secondary proxy, switch to `None` in the right-click menu.
+If you have multiple proxy servers, you can create multiple configurations and manage them in the secondary proxy list.
 
-![](arts/proxy_04.png)
+![](arts/secondary_proxy_01.png)
+
+:::caution
+If the secondary proxy is configured and enabled, but the secondary proxy server is not started, requests to the secondary proxy will fail.
+:::
 
 ### Proxy Rule {#rule}
 
