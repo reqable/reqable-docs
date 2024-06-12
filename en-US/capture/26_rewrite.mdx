@@ -156,12 +156,8 @@ Same as [Modify Request](#modify-req).
 
 :::
 
-### Order of Execution
+### Rules Management
 
-A request or response can be rewritten multiple rules (by creating different rules to match the same url), which will inevitably involve the issue of execution sequence. We can adjust the order in the list of rewriting rules (shortcut key <Shortcut>Control + ↓/↑</Shortcut>) to set the priority, and the first one in the list will be executed first.
-
-### Import and Export
-
-Reqable supports batch import and export of rewrite rules, which is convenient for sharing and collaboration with others.
+Rules are matched from top to bottom. The same request can match multiple rules. The one at the front will be executed first. Rules support folder-level management. You can adjust the position by long pressing and dragging. It also supports import and export, which is convenient for sharing and collaboration with others.
 
 ![](arts/rewrite_11.png)
