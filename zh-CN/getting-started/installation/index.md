@@ -76,7 +76,7 @@ adb push 364618e0.0 /system/etc/security/cacerts/364618e0.0
 
 #### 3. Android项目配置信任路径
 
-如果您是Android开发者并具体项目的修改权限。您可以直接将证书安装到用户目录，然后在项目中配置信任用户目录证书即可。
+如果您是Android开发者并拥有项目的修改权限。您可以直接将证书安装到用户目录，然后在项目中配置信任用户目录证书即可。
 
 第一步：手机上安装证书：设置-> 安全 -> 加密与凭据 -> 安装证书 -> CA证书，选择导出的证书并安装（需要用户授权验证）。
 
@@ -93,7 +93,7 @@ adb push 364618e0.0 /system/etc/security/cacerts/364618e0.0
 </network-security-config>
 ```
 
-配置 AndroidManifest.xml
+第三步：配置 AndroidManifest.xml
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
@@ -107,7 +107,7 @@ adb push 364618e0.0 /system/etc/security/cacerts/364618e0.0
 
 #### 4. Android项目降低`targetSdkVersion`
 
-如果您是Android开发者并具体项目的修改权限。您可以直接将证书安装到用户目录，然后将项目的`targetSdkVersion`降低至23或以下。
+如果您是Android开发者并拥有项目的修改权限。您可以直接将证书安装到用户目录，然后将项目的`targetSdkVersion`降低至23或以下。
 
 第一步：手机上安装证书：设置-> 安全 -> 加密与凭据 -> 安装证书 -> CA证书，选择导出的证书并安装（需要用户授权验证）。
 

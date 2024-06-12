@@ -185,7 +185,7 @@ def onResponse(context, response):
   # More examples refer to `onRequest` above, exactly the same.
 
   # Done
-  return request
+  return response
 ```
 
 ## CaptureHttpQueries {#api-queries}
