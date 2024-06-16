@@ -6,16 +6,16 @@ sidebar_position: 1
 
 ## v2.18.0 <small><small>*2024-06-11*</small></small>
 - 🚀 [NEW] WebSocket frames support search and filtering.
-- 💪 [OPT] Improve the prompt text for errors of certificate import and export.
-- 💪 [OPT] The `=` in the API request URL is no longer automatically encoded.
-- 🐞 [FIX] The bug that single quotes are not escaped when importing and exporting cURL.
-- 🐞 [FIX] The bug that the SSL certificate enable/disable status cannot be saved.
-- 🐞 [FIX] The bug that the SSL certificate domain name modification cannot be saved.
-- 💪 [OPT] Improve the Android certificate installation guide.
 - 🚀 [NEW] SSL proxy and secondary proxy lists support search and sorting.
 - 🚀 [NEW] Added three options to right-click menu of tab, `Force Close`, `Force Close Others`, and `Force Close All`.
 - 🚀 [NEW] SSL certificates support dragging and dropping files for import.
+- 💪 [OPT] Improve the prompt text for errors of certificate import and export.
+- 💪 [OPT] The `=` in the API request URL is no longer automatically encoded.
+- 💪 [OPT] Improve the Android certificate installation guide.
 - 💪 [OPT] Logic of the `Close Others` option in the right-click menu of the tab.
+- 🐞 [FIX] The bug that single quotes are not escaped when importing and exporting cURL.
+- 🐞 [FIX] The bug that the SSL certificate enable/disable status cannot be saved.
+- 🐞 [FIX] The bug that the SSL certificate domain name modification cannot be saved.
 - 🐞 [FIX] A bug that mobile HTTP requests are unable to match scripting, rewrite and breakpoint rules.
 - 🐞 [FIX] A bug that the selected item may change after reordering the SSL proxying and secondary proxy lists.
 - 🐞 [FIX] A bug that the `Close` option in the right-click menu of the home page tab is not available.
@@ -24,18 +24,18 @@ sidebar_position: 1
 ## v2.17.0 <small><small>*2024-06-05*</small></small>
 - 🚀 [NEW] Support `SSL Proxying`.
 - 🚀 [NEW] Add a search icon in `Raw` tab.
-- 💪 [OPT] Remove `SSL Bypass` and merge it into the `SSL Proxying`.
-- 💪 [OPT] Provide more export solutions for capture traffic.
-- 💪 [OPT] Automatically remember word wrap status.
-- 🐞 [FIX] A bug that the API request Cookie path is forcibly converted to lowercase.
-- 🐞 [FIX] A bug that the SOCKS proxy does not display the host if hits SSL bypass.
 - 🚀 [NEW] Folder level management for `Gateway`, `Mirror`, `Rewrite`, `Breakpoint`, `Script` and `Reverse Proxy`.
 - 🚀 [NEW] Drag and drop file to import config files.
 - 🚀 [NEW] Search feature for `Gateway`, `Mirror`, `Rewrite`, `Breakpoint`, `Script` and `Reverse Proxy`.
+- 💪 [OPT] Remove `SSL Bypass` and merge it into the `SSL Proxying`.
+- 💪 [OPT] Provide more export solutions for capture traffic.
+- 💪 [OPT] Automatically remember word wrap status.
 - 💪 [OPT] A new `Tools` app menu group.
 - 💪 [OPT] A new UI style of the secondary proxy list.
 - 💪 [OPT] The prompt style when dragging and dropping files on the home page.
 - 💪 [OPT] The diff view will display a prompt text when no item is selected.
+- 🐞 [FIX] A bug that the API request Cookie path is forcibly converted to lowercase.
+- 🐞 [FIX] A bug that the SOCKS proxy does not display the host if hits SSL bypass.
 - 🐞 [FIX] The bug that the application in the explorer is not displayed on top after being pinned.
 
 ## v2.16.1 <small><small>*2024-05-20*</small></small>
@@ -47,8 +47,8 @@ sidebar_position: 1
 - 💪 [OPT] Creating API requests from the traffic list no longer checks non-ASCII characters.
 - 💪 [OPT] The default display of WebSocket is changed from chat mode to list mode.
 - 💪 [OPT] WebSocket chat mode performance.
-- 🐞 [FIX] The bug where WebSocket filtering does not reset type and code filters.
 - 💪 [OPT] Reset md5 result when input was changed.
+- 🐞 [FIX] The bug where WebSocket filtering does not reset type and code filters.
 - 🐞 [FIX] The bug that tooltip does not disappear automatically.
 - 🐞 [FIX] The bug that some column widths will be automatically restored after some operations.
 
@@ -66,33 +66,33 @@ sidebar_position: 1
 - 💪 [OPT] Certificate info will display more details.
 - 💪 [OPT] Adjust the UI details of redirect Tab.
 - 💪 [OPT] The copy button of `Cookie View` will copy the full cookie string instead of the key-value pair.
+- 💪 [OPT] Rework script template context menu options.
 - 🐞 [FIX] A bug where `Content-Type` may be lost when copying cURL from traffic list.
 - 🐞 [FIX] The bug that the content of the client certificate in the overview is incorrect.
-- 💪 [OPT] Rework script template context menu options.
 
 ## v2.14.1 <small><small>*2024-04-30*</small></small>
+- 🚀 [NEW] Add app info APIs in python scripting framework.
 - 💪 [OPT] Traffic analysis supports abnormal requests with `Content-Length`.
 - 💪 [OPT] The file name of request and response body.
 - 💪 [OPT] API testing no longer verifies the validity of response headers.
+- 💪 [OPT] A new icon will use after the secondary proxy is enabled.
 - 🐞 [FIX] The bug that the secondary proxy connection may fail.
 - 🐞 [FIX] The bug of API testing settings being reset after restarting the application.
 - 🐞 [FIX] A bug where some files were not cleaned after deleting the API testing history.
 - 🐞 [FIX] The bug that parsing API testing query input incorrectly.
-- 🚀 [NEW] Add app info APIs in python scripting framework.
-- 💪 [OPT] A new icon will use after the secondary proxy is enabled.
 - 🐞 [FIX] The bug that traffic history search not works.
 - 🐞 [FIX] The bug that REST script will lost when importing Reqable's API collection.
 - 🐞 [FIX] Capturing HTTP2 traffic may cause the application to crash.
 
 ## v2.14.0 <small><small>*2024-04-29*</small></small>
+- 🚀 [NEW] Add app info APIs in python scripting framework.
 - 💪 [OPT] Traffic analysis supports abnormal requests with `Content-Length`.
 - 💪 [OPT] The file name of request and response body.
 - 💪 [OPT] API testing no longer verifies the validity of response headers.
+- 💪 [OPT] A new icon will use after the secondary proxy is enabled.
 - 🐞 [FIX] The bug that the secondary proxy connection may fail.
 - 🐞 [FIX] The bug of API testing settings being reset after restarting the application.
 - 🐞 [FIX] A bug where some files were not cleaned after deleting the API testing history.
-- 🚀 [NEW] Add app info APIs in python scripting framework.
-- 💪 [OPT] A new icon will use after the secondary proxy is enabled.
 - 🐞 [FIX] The bug that traffic history search not works.
 - 🐞 [FIX] The bug that REST script will lost when importing Reqable's API collection.
 - 🐞 [FIX] Capturing HTTP2 traffic may cause the application to crash.
@@ -100,14 +100,14 @@ sidebar_position: 1
 ## v2.13.0 <small><small>*2024-04-24*</small></small>
 - 🚀 [NEW] API testing supports setting whether to verify SSL certificate.
 - 🚀 [NEW] API testing response displays redirect URLs.
-- 💪 [OPT] Clear cache in settings will only clear temporary data and not include user data.
-- 🐞 [FIX] The bug that the redirected request will fail due to incorrect `Host` header value.
-- 🐞 [FIX] The bug that `OPTIONS` request status is incorrect.
 - 🚀 [NEW] You can drag to sort environments.
 - 🚀 [NEW] Add a quick icon to open the log directory.
+- 💪 [OPT] Clear cache in settings will only clear temporary data and not include user data.
 - 💪 [OPT] API testing history will save script console outputs.
 - 💪 [OPT] The editor still maintains focus after pressing the save shortcut key.
 - 💪 [OPT] Enlarge the click effective area of the sidebar Tab.
+- 🐞 [FIX] The bug that the redirected request will fail due to incorrect `Host` header value.
+- 🐞 [FIX] The bug that `OPTIONS` request status is incorrect.
 - 🐞 [FIX] The bug that the secondary proxy can not be copied to create a new one.
 - 🐞 [FIX] Incorrect logic of `Close Other Tabs`.
 - 🐞 [FIX] The bug where the selected text will lost after right-clicking in the script editor.
@@ -116,6 +116,7 @@ sidebar_position: 1
 - 🐞 [FIX] The bug in which the collection folder automatically collapsed or fails to automatically expand after the API is saved to the collection.
 
 ## v2.12.1 <small><small>*2024-04-19*</small></small>
+- 💪 [OPT] The focus of the input field is still maintained after selecting auto-complete content in table mode.
 - 🐞 [FIX] The bug of API request global setting not taking effect in some cases.
 - 🐞 [FIX] The bug that the API request domain name cannot be associated with cookies when using environment variables.
 - 🐞 [FIX] The bug that `=` and `&` in API request query entry are not automatically encoded.
@@ -124,45 +125,44 @@ sidebar_position: 1
 - 🐞 [FIX] A bug that may cause crash when importing p12 certificate.
 - 🐞 [FIX] The bug that dragging selection in the editor cannot automatically request focus.
 - 🐞 [FIX] A bug where directly importing cURL into the API request input box would cause the app to freeze.
-- 💪 [OPT] The focus of the input field is still maintained after selecting auto-complete content in table mode.
 
 ## v2.12.0 <small><small>*2024-04-13*</small></small>
-- 💪 [OPT] Prompt whether to clear license information when unregistering license.
-- 💪 [OPT] Automatically delete configuration backup files older than 14 days.
 - 🚀 [NEW] Automatic generate a magisk module to install CA certificate.
-- 💪 [OPT] Refactor the Android certificate installation guide.
 - 🚀 [NEW] API collection supports importing from cURL.
 - 🚀 [NEW] The number of community rewrites limitation is adjusted from 2 to 3.
 - 🚀 [NEW] The number of community breakppints limitation is adjusted from 2 to 3.
 - 🚀 [NEW] The number of community scripts limitation is adjusted from 2 to 3.
 - 🚀 [NEW] The number of community mirrors limitation is adjusted from 2 to 3.
 - 🚀 [NEW] The number of community reverse proxy limitation is adjusted from 2 to 3.
+- 💪 [OPT] Prompt whether to clear license information when unregistering license.
+- 💪 [OPT] Automatically delete configuration backup files older than 14 days.
+- 💪 [OPT] Refactor the Android certificate installation guide.
 - 🐞 [FIX] Fix the bug where some limitation of the community do not take effect.
 - 🐞 [FIX] The bug of window size calculation not considering the taskbar size.
 
 ## v2.11.1 <small><small>*2024-04-09*</small></small>
 - 🚀 [NEW] Remove the restriction of API collections for Community Edition.
+- 🚀 [NEW] Drag and drop for API collections.
 - 💪 [OPT] Remove the restriction that the depth of API collections is up to 4.
 - 💪 [OPT] Display text first if `application/octet-stream` is a text.
-- 🚀 [NEW] Drag and drop for API collections.
 
 ## v2.10.1 <small><small>*2024-04-02*</small></small>
 - 💪 [OPT] Query parameter parsing automatically identifies gbk encoding.
+- 💪 [OPT] Disable the custom tab settings in detected window.
 - 🐞 [FIX] The bug that the environment variable `<<url>>` is not highlighted.
 - 🐞 [FIX] The bug of abnormal `chunked` decoding in some cases.
 - 🐞 [FIX] The bug that exporting HAR throws the format error.
-- 💪 [OPT] Disable the custom tab settings in detected window.
 
 ## v2.10.0 <small><small>*2024-03-29*</small></small>
 - 🚀 [NEW] Support writing environment variables from Python scripts.
 - 🚀 [NEW] Environment variables can be created from the context menu after selecting text.
+- 🚀 [NEW] Support opening all APIs in the collection at one time.
+- 🚀 [NEW] Increase the available number of API collections for Community Edition users from 2 to 3.
+- 🚀 [NEW] Increase the available number of Environments for Community Edition users from 2 to 3.
 - 💪 [OPT] Improved page effects for new users when opening the app for the first time.
 - 💪 [OPT] The focus is still maintained after pressing the Enter key to send an API request.
 - 💪 [OPT] Some context menu options will be displayed as unavailable when the selected data is invalid.
 - 💪 [OPT] Some input fields support the Enter key to complete input.
-- 🚀 [NEW] Support opening all APIs in the collection at one time.
-- 🚀 [NEW] Increase the available number of API collections for Community Edition users from 2 to 3.
-- 🚀 [NEW] Increase the available number of Environments for Community Edition users from 2 to 3.
 - 🐞 [FIX] A bug where duplicate encoding of request parameters in code generation.
 - 🐞 [FIX] Corrected the logic for saving form requests in API testing.
 - 🐞 [FIX] A bug where there was an exception in parsing text for API request parameters.
@@ -176,21 +176,21 @@ sidebar_position: 1
 - 🚀 [NEW] Introduce environment variables.
 - 🚀 [NEW] Now can rename the API request.
 - 💪 [OPT] Generate Python-Requests code using query parameters instead of long url.
+- 💪 [OPT] API testing supports pressing the Enter key to send directly.
+- 💪 [OPT] The QR code of the certificate link is changed from click display to mouse pointer hover display.
 - 🐞 [FIX] The bug that API can not use Python script to process form data.
 - 🐞 [FIX] The bug that API space will encodes to `%20` rather than `+`.
 - 🐞 [FIX] The bug that it will prompt to save when closing the API test tab.
 - 🐞 [FIX] The bug that correctly to handle `--data-raw` when importing a cURL.
 - 🐞 [FIX] The bug that the python environment cannot take effect.
-- 💪 [OPT] API testing supports pressing the Enter key to send directly.
-- 💪 [OPT] The QR code of the certificate link is changed from click display to mouse pointer hover display.
 
 ## v2.8.2 <small><small>*2024-03-06*</small></small>
+- 💪 [OPT] Coloring request methods.
+- 💪 [OPT] File drag and drop will be disabled when a dialog is showing.
 - 🐞 [FIX] The bug of importing ApiFox collection failed in some cases.
 - 🐞 [FIX] The bug where the response raw message is incorrect.
 - 🐞 [FIX] Incorrect highlighting of query parameters and cookies.
 - 🐞 [FIX] The bug where `startedDateTime` of the exported HAR format is incorrect.
-- 💪 [OPT] Coloring request methods.
-- 💪 [OPT] File drag and drop will be disabled when a dialog is showing.
 - 🐞 [FIX] The bug that the request path is incorrect in python scripts.
 
 ## v2.8.0 <small><small>*2024-02-29*</small></small>
@@ -204,24 +204,24 @@ sidebar_position: 1
 - 🐞 [FIX] The bug where `wss` in HAR file is recognized as `ws`.
 
 ## v2.7.1 <small><small>*2024-02-22*</small></small>
+- 💪 [OPT] HEX will be displayed first when the image data decoding fails.
 - 🐞 [FIX] The bug of incorrect encoding and decoding of URL query parameters.
 - 🐞 [FIX] The bug in parsing HAR files does not correctly handle the MIME type.
 - 🐞 [FIX] The bug of secondary proxy account authentication not works.
-- 💪 [OPT] HEX will be displayed first when the image data decoding fails.
 - 🐞 [FIX] The bug that data displayed after modifying `Content-Type` through script does not take effect.
 - 🐞 [FIX] The bug that the app will crash when clicking the URL input if the `KeyboardHolder` is running.
 
 ## v2.7.0 <small><small>*2024-02-20*</small></small>
-- 🐞 [FIX] The bug that the unmodified API will prompt to save when closing.
-- 🐞 [FIX] The bug that closing other tabs will close all tabs.
-- 🐞 [FIX] The bug of incorrect encoding of `space` and `=` in request query parameters.
 - 🚀 [NEW] Supports to adjust app display scaling.
 - 🚀 [NEW] Will restore the previous window position and size when restarting.
 - 🚀 [NEW] Supports deleting API request history URLs.
+- 🚀 [NEW] Shortcut key `Control + Command + F` to toggle to full screen mode.
 - 💪 [OPT] No longer automatically checked the rewrite-replace checkbox.
+- 🐞 [FIX] The bug that the unmodified API will prompt to save when closing.
+- 🐞 [FIX] The bug that closing other tabs will close all tabs.
+- 🐞 [FIX] The bug of incorrect encoding of `space` and `=` in request query parameters.
 - 🐞 [FIX] The bug that the original response data may not be brought in when creating a rewrite-replacement response rule.
 - 🐞 [FIX] The bug that URL rules may not match in rewrite, breakpoint and scripting rules.
-- 🚀 [NEW] Shortcut key `Control + Command + F` to toggle to full screen mode.
 
 ## v2.6.3 <small><small>*2024-02-07*</small></small>
 - 💪 [OPT] Runtime error of API testing scripts will output to the console.
@@ -235,12 +235,12 @@ sidebar_position: 1
 
 ## v2.6.1 <small><small>*2024-01-31*</small></small>
 - 🚀 [NEW] Code editor supports code auto-completion.
+- 🚀 [NEW] Console tab for traffic details.
+- 🚀 [NEW] Console tab for API testing response.
 - 🐞 [FIX] The bug that text syntax highlighting may be incorrect.
 - 🐞 [FIX] The bug that missing `/` at the end of URL.
 - 🐞 [FIX] The bug that `HexViewer` will get focus by default.
 - 🐞 [FIX] The bug that IP was displayed rather than host.
-- 🚀 [NEW] Console tab for traffic details.
-- 🚀 [NEW] Console tab for API testing response.
 
 ## v2.5.0 <small><small>*2024-01-25*</small></small>
 - 🚀 [NEW] Introduce scripting for API testing.
@@ -259,27 +259,27 @@ sidebar_position: 1
 
 ## v2.4.1 <small><small>*2024-01-16*</small></small>
 - 💪 [OPT] Use form body when creating API requests from the form request cURL.
+- 💪 [OPT] Remove the application ID option from the default column of the traffic list.
+- 💪 [OPT] Tabs on the home page can be directly dragged and sorted without long pressing.
 - 🐞 [FIX] The bug of duplicate cookie values in the code snippet.
 - 🐞 [FIX] The bug that unable to decode deflate data.
 - 🐞 [FIX] A bug that may trigger content selection when scrolling the editor.
 - 🐞 [FIX] The bug that unable to copy cURL of the WebSocket request.
 - 🐞 [FIX] The bug of failing to handle WebSocket compression extension correctly.
 - 🐞 [FIX] The bug that cannot create form request or copy cURL from traffic list.
-- 💪 [OPT] Remove the application ID option from the default column of the traffic list.
-- 💪 [OPT] Tabs on the home page can be directly dragged and sorted without long pressing.
 - 🐞 [FIX] A bug where the tab title on the home page may be displayed incompletely.
 - 🐞 [FIX] The bug that cannot resize traffic list column width.
 - 🐞 [FIX] The bug that `VS Code` cannot be launched in the script editor.
 
 ## v2.4.0 <small><small>*2024-01-12*</small></small>
 - 🚀 [New] Introduce a new secondary proxy feature.
+- 🚀 [New] Supports drag sorting of working tabs.
+- 🚀 [New] You can select or unselect a search condition for traffic list.
+- 💪 [OPT] The time threshold for triggering drag is reduced from 500ms to 150ms.
 - 🐞 [FIX] The bug that the generated cURL does not merge cookies.
 - 🐞 [FIX] The bug that the `Referer` header cannot be sent in API requests.
 - 🐞 [FIX] The bug of missing `application/x-www-form-urlencoded` header in code snippet.
 - 🐞 [FIX] A bug that may crash when exporting P12 format certificate.
-- 🚀 [New] Supports drag sorting of working tabs.
-- 🚀 [New] You can select or unselect a search condition for traffic list.
-- 💪 [OPT] The time threshold for triggering drag is reduced from 500ms to 150ms.
 - 🐞 [FIX] A bug that may jump abnormally when selecting a debug list.
 
 ## v2.3.2 <small><small>*2024-01-08*</small></small>
@@ -296,6 +296,7 @@ sidebar_position: 1
 - 🚀 [NEW] Context menu for traffic overview URL.
 - 🚀 [NEW] Introduce secondary proxy for SOCKS and VPN modes.
 - 🚀 [NEW] Remote app can control the recording status of the host app.
+- 🚀 [NEW] Allow auto-dismiss the QR code pop-up dialog when the remote device connected.
 - 💪 [OPT] Adjust the proxy port detection logic and automatically change the port number when a conflict is detected.
 - 💪 [OPT] URL syntax highlighting supports universal schemes.
 - 💪 [OPT] Apply URL syntax highlighting for QR code input text.
@@ -303,32 +304,31 @@ sidebar_position: 1
 - 🐞 [FIX] The bug that the urlencode request body may be lost when parsing HAR files.
 - 🐞 [FIX] A failure with non-standard HAR connection fields.
 - 🐞 [FIX] The bug that the uppercase encoding value such as GZIP cannot be recognized.
-- 🚀 [NEW] Allow auto-dismiss the QR code pop-up dialog when the remote device connected.
 
 ## v2.2.0 <small><small>*2023-12-28*</small></small>
 - 🚀 [NEW] API testing supports splitting merged cookies into multiple ones.
 - 🚀 [NEW] API testing supports opening additional editors to edit cookies.
-- 🐞 [FIX] The bug where some items in the traffic list were sorted incorrectly.
-- 🐞 [FIX] The bug that the application cannot start in some cases.
 - 🚀 [NEW] Remember and restore previous system proxy configuration when exiting the app.
 - 🚀 [NEW] Introduce the proxy helper tool, which replaces `networksetup CLI` to configure system proxy.
+- 🐞 [FIX] The bug where some items in the traffic list were sorted incorrectly.
+- 🐞 [FIX] The bug that the application cannot start in some cases.
 
 ## v2.1.1 <small><small>*2023-12-25*</small></small>
 - 🚀 [NEW] Allow root certificate regeneration.
-- 💪 [OPT] API testing `reqableId` supports displaying in two lines.
-- 💪 [OPT] API testing will automatically fill key-value entries when switching from text.
-- 🐞 [FIX] The bug that it is unable to install root certificate.
-- 🐞 [FIX] The bug of abnormal display of collaborative QR code when there is no local IP.
-- 🐞 [FIX] A bug that the mirror icon will display incorrectly in some cases.
 - 🚀 [NEW] You can pin application filter and domain filter now.
 - 🚀 [NEW] You can configure interceptors such as rewriting in auto-highlighting.
 - 🚀 [NEW] A shortcut key `Alt + Ctrl + ↑/↓` for traffic list, switch browsing history before and after.
 - 🚀 [NEW] A shortcut key `Shift + Contrl + I` for all list, invert the current selection.
+- 💪 [OPT] API testing `reqableId` supports displaying in two lines.
+- 💪 [OPT] API testing will automatically fill key-value entries when switching from text.
 - 💪 [OPT] The domain filter list is expanded by default.
 - 💪 [OPT] Slightly increase the size of the diff tool window.
-- 🐞 [FIX] A debug that interceptor icon color is not highlighted.
 - 💪 [OPT] The application cache directory is migrated from `Cache` to `Application Support`.
 - 💪 [OPT] The logic of automatically overwriting system network proxy.
+- 🐞 [FIX] The bug that it is unable to install root certificate.
+- 🐞 [FIX] The bug of abnormal display of collaborative QR code when there is no local IP.
+- 🐞 [FIX] A bug that the mirror icon will display incorrectly in some cases.
+- 🐞 [FIX] A debug that interceptor icon color is not highlighted.
 - 🐞 [FIX] The bug of incorrect coloring of the status bar icon.
 
 ## v2.0.0 <small><small>*2023-12-15*</small></small>
@@ -488,12 +488,12 @@ sidebar_position: 1
 - 🐞 [Fix] Fixed the bug that the name of the opened tab could not be updated synchronously after modifying the name of the capture history.
 
 ## v1.2.3 <small><small>*2023-08-31*</small></small>
-- 💪 [Opt] The way to obtain the system network proxy status is changed from Shell command to API.
 - 🚀 [New] The traffic list read items are grayed out.
 - 🚀 [New] The traffic history supports configuring the cache duration, which is 7 days by default.
 - 🚀 [New] Traffic history supports renaming.
 - 🚀 [New] Traffic history supports adding/removing stars.
 - 🚀 [New] Query parameter list viewing supports text mode.
+- 💪 [Opt] The way to obtain the system network proxy status is changed from Shell command to API.
 - 💪 [Opt] The traffic list removes gray highlighting and adds teal highlighting.
 - 💪 [Opt] Use the resident daemon process to get the CA root certificate installation status.
 

@@ -22,8 +22,8 @@ sidebar_position: 5
 - 🐞 [FIX] A bug that the SOCKS proxy does not display the host if hits SSL bypass.
 
 ## v2.16.1 <small><small>*2024-05-20*</small></small>
-- 💪 [OPT] HTTP2 disables server push by default.
 - 🚀 [NEW] Support starting app from HAR file.
+- 💪 [OPT] HTTP2 disables server push by default.
 - 💪 [OPT] Traffic list in host view will receive updates.
 - 🐞 [FIX] The bug of gray screen when opening from host traffic list.
 
@@ -75,10 +75,10 @@ sidebar_position: 5
 - 🚀 [NEW] API testing supports setting whether to verify SSL certificate.
 - 🚀 [NEW] API testing response displays redirect URLs.
 - 💪 [OPT] Clear cache in settings will only clear temporary data and not include user data.
-- 🐞 [FIX] The bug that the redirected request will fail due to incorrect `Host` header value.
-- 🐞 [FIX] The bug that `OPTIONS` request status is incorrect.
 - 💪 [OPT] Reduce the size of the toolbar menu that pops up after selection in the editor.
 - 💪 [OPT] UI details of license pricing page.
+- 🐞 [FIX] The bug that the redirected request will fail due to incorrect `Host` header value.
+- 🐞 [FIX] The bug that `OPTIONS` request status is incorrect.
 - 🐞 [FIX] The bug of clearing cache and resetting app in settings does not take effect.
 
 ## v2.12.1 <small><small>*2024-04-19*</small></small>
@@ -90,9 +90,9 @@ sidebar_position: 5
 - 🐞 [FIX] A bug that may cause crash when importing p12 certificate.
 
 ## v2.12.0 <small><small>*2024-04-13*</small></small>
+- 🚀 [NEW] Supports purchasing lifetime professional license.
 - 💪 [OPT] Prompt whether to clear license information when unregistering license.
 - 💪 [OPT] Automatically delete configuration backup files older than 14 days.
-- 🚀 [NEW] Supports purchasing lifetime professional license.
 
 ## v2.11.1 <small><small>*2024-04-09*</small></small>
 - 🚀 [NEW] Remove the restriction of API collections for Community Edition.
@@ -105,10 +105,10 @@ sidebar_position: 5
 
 ## v2.10.1 <small><small>*2024-04-02*</small></small>
 - 💪 [OPT] Query parameter parsing automatically identifies gbk encoding.
+- 💪 [OPT] Open a new page instead of a dialog to view url.
 - 🐞 [FIX] The bug that the environment variable `<<url>>` is not highlighted.
 - 🐞 [FIX] The bug of abnormal `chunked` decoding in some cases.
 - 🐞 [FIX] The bug that exporting HAR throws the format error.
-- 💪 [OPT] Open a new page instead of a dialog to view url.
 
 ## v2.10.0 <small><small>*2024-03-29*</small></small>
 - 🚀 [NEW] Support opening all APIs in the collection at one time.
@@ -124,6 +124,7 @@ sidebar_position: 5
 - 🐞 [FIX] A bug where input content was lost in certain scenarios in the text editor.
 
 ## v2.9.0 <small><small>*2024-03-22*</small></small>
+- ❗ [IMP] The minimum supported version is upgraded from 11.0 to 12.0.
 - 🚀 [NEW] Introduce environment variables.
 - 🚀 [NEW] Now can rename the API request.
 - 💪 [OPT] Generate Python-Requests code using query parameters instead of long url.
@@ -131,34 +132,33 @@ sidebar_position: 5
 - 🐞 [FIX] The bug that API space will encodes to `%20` rather than `+`.
 - 🐞 [FIX] The bug that it will prompt to save when closing the API test tab.
 - 🐞 [FIX] The bug that correctly to handle `--data-raw` when importing a cURL.
-- ❗ [IMP] The minimum supported version is upgraded from 11.0 to 12.0.
 
 ## v2.8.2 <small><small>*2024-03-06*</small></small>
+- 💪 [OPT] Coloring request methods.
+- 💪 [OPT] Correct some tips.
 - 🐞 [FIX] The bug of importing ApiFox collection failed in some cases.
 - 🐞 [FIX] The bug where the response raw message is incorrect.
 - 🐞 [FIX] Incorrect highlighting of query parameters and cookies.
 - 🐞 [FIX] The bug where `startedDateTime` of the exported HAR format is incorrect.
-- 💪 [OPT] Coloring request methods.
-- 💪 [OPT] Correct some tips.
 
 ## v2.8.0 <small><small>*2024-02-29*</small></small>
 - 🚀 [NEW] Available API tabs of community version are increased from 2 to 4.
 - 🚀 [NEW] Adds three new tabs, Cookies, Set-Cookies and Comment.
 - 🚀 [NEW] Now you can comment a traffic record.
 - 🚀 [NEW] Custom request and response tabs.
+- 💪 [OPT] Adjust the margins of the dialogs.
 - 🐞 [FIX] The cookie automatic update mechanism causes a bug that requires saving when closing a API Tab.
 - 🐞 [FIX] The bug of incorrect parsing of the '--data-urlencode' parameter when importing a cURL.
 - 🐞 [FIX] The bug in which the content displayed in the Tab title is truncated.
 - 🐞 [FIX] The bug where `wss` in HAR file is recognized as `ws`.
-- 💪 [OPT] Adjust the margins of the dialogs.
 - 🐞 [FIX] The bug where the content at the bottom of some dialogs is incompletely displayed.
 - 🐞 [FIX] The bug that the editor toolbar display and disappear are incorrectly handled.
 
 ## v2.7.1 <small><small>*2024-02-22*</small></small>
+- 💪 [OPT] HEX will be displayed first when the image data decoding fails.
 - 🐞 [FIX] The bug of incorrect encoding and decoding of URL query parameters.
 - 🐞 [FIX] The bug in parsing HAR files does not correctly handle the MIME type.
 - 🐞 [FIX] The bug of secondary proxy account authentication not works.
-- 💪 [OPT] HEX will be displayed first when the image data decoding fails.
 - 🐞 [FIX] The bug that the file selection not works.
 
 ## v2.7.0 <small><small>*2024-02-20*</small></small>
@@ -174,11 +174,11 @@ sidebar_position: 5
 
 ## v2.6.1 <small><small>*2024-01-31*</small></small>
 - 🚀 [NEW] Code editor supports code auto-completion.
+- 🚀 [NEW] Supports manual input the remote device address in collaboration mode initialization.
 - 🐞 [FIX] The bug that text syntax highlighting may be incorrect.
 - 🐞 [FIX] The bug that missing `/` at the end of URL.
 - 🐞 [FIX] The bug that `HexViewer` will get focus by default.
 - 🐞 [FIX] The bug that IP was displayed rather than host.
-- 🚀 [NEW] Supports manual input the remote device address in collaboration mode initialization.
 - 🐞 [FIX] The bug that the rescanned device address displays incorrectly after the remote device address changes.
 - 🐞 [FIX] The bug that the collaboration mode does not work after the app moves to background for a period of time.
 
@@ -189,37 +189,37 @@ sidebar_position: 5
 - 🚀 [NEW] Introduce zen mode.
 - 💪 [OPT] New console for script editor.
 - 💪 [OPT] Remember highlight and application informations when saving HAR files.
+- 💪 [OPT] Try to reconnect after the remote device is disconnected.
 - 🐞 [FIX] The secondary proxy may cause an infinite loop of requests.
 - 🐞 [FIX] The bug that unable to capture HTTP2 plaintext traffic.
 - 🐞 [FIX] The bug that handling HTTP trailer incorrectly.
 - 🐞 [FIX] The bug of failing to handle WebSocket compression extension correctly.
 - 🐞 [FIX] The bug that text selection is incorrect after double-clicking a word.
 - 🐞 [FIX] The bug that the editor composing menu does not follow the input position.
-- 💪 [OPT] Try to reconnect after the remote device is disconnected.
 - 🐞 [FIX] The bug that the remote device connection status displays incorrectly.
 
 ## v2.4.1 <small><small>*2024-01-16*</small></small>
 - 💪 [OPT] Use form body when creating API requests from the form request cURL.
+- 💪 [OPT] Coloring response status line.
 - 🐞 [FIX] The bug of duplicate cookie values in the code snippet.
 - 🐞 [FIX] The bug that unable to decode deflate data.
 - 🐞 [FIX] A bug that may trigger content selection when scrolling the editor.
 - 🐞 [FIX] The bug that unable to copy cURL of the WebSocket request.
 - 🐞 [FIX] The bug of failing to handle WebSocket compression extension correctly.
 - 🐞 [FIX] The bug that cannot create form request or copy cURL from traffic list.
-- 💪 [OPT] Coloring response status line.
 - 🐞 [FIX] The bug that auto-highlighting configuration cannot be saved.
 - 🐞 [FIX] The bug that search does not work.
 
 ## v2.4.0 <small><small>*2024-01-12*</small></small>
 - 🚀 [New] Introduce a new secondary proxy feature.
+- 🚀 [New] Supports double-clicking the title to open the search bar.
+- 🚀 [New] Supports opening the browser to download the CA certificate description file.
 - 🐞 [FIX] The bug that the generated cURL does not merge cookies.
 - 🐞 [FIX] The bug that the `Referer` header cannot be sent in API requests.
 - 🐞 [FIX] The bug of missing `application/x-www-form-urlencoded` header in code snippet.
 - 🐞 [FIX] A bug that may crash when exporting P12 format certificate.
-- 🚀 [New] Supports double-clicking the title to open the search bar.
 - 🐞 [FIX] The bug where the proxy port number display is inconsistent with the actual one.
 - 🐞 [FIX] The bug that the remote device may not be able to coordinate after the address is changed.
-- 🚀 [New] Supports opening the browser to download the CA certificate description file.
 - 🐞 [FIX] The bug that the network will get stuck when entering the background.
 
 ## v2.3.2 <small><small>*2024-01-08*</small></small>
@@ -241,30 +241,30 @@ sidebar_position: 5
 - 💪 [OPT] URL syntax highlighting supports universal schemes.
 - 💪 [OPT] Apply URL syntax highlighting for QR code input text.
 - 💪 [OPT] The traffic record in collaborative mode will display domain name instead of IP address.
+- 💪 [OPT] Enable horizontal scroll gesture to switch tabs.
 - 🐞 [FIX] The bug that the urlencode request body may be lost when parsing HAR files.
 - 🐞 [FIX] A failure with non-standard HAR connection fields.
 - 🐞 [FIX] The bug that the uppercase encoding value such as GZIP cannot be recognized.
-- 💪 [OPT] Enable horizontal scroll gesture to switch tabs.
 - 🐞 [FIX] The bug that the keyboard will pop up when scrolling code editor content.
 
 ## v2.2.0 <small><small>*2023-12-28*</small></small>
 - 🚀 [NEW] API testing supports splitting merged cookies into multiple ones.
 - 🚀 [NEW] API testing supports opening additional editors to edit cookies.
-- 🐞 [FIX] The bug where some items in the traffic list were sorted incorrectly.
-- 🐞 [FIX] The bug that the application cannot start in some cases.
 - 💪 [OPT] Prevent URL from wrapping automatically in traffic list.
 - 💪 [OPT] Remove the custom transition animation effect of entering details from the traffic list.
+- 🐞 [FIX] The bug where some items in the traffic list were sorted incorrectly.
+- 🐞 [FIX] The bug that the application cannot start in some cases.
 
 ## v2.1.1 <small><small>*2023-12-25*</small></small>
 - 🚀 [NEW] Allow root certificate regeneration.
+- 🚀 [NEW] You can share the app from side drawer.
+- 🚀 [NEW] You can add a traffic item to API collections and ssl-bypass rules.
 - 💪 [OPT] API testing `reqableId` supports displaying in two lines.
 - 💪 [OPT] API testing will automatically fill key-value entries when switching from text.
+- 💪 [OPT] Use an external browser to open links instead of within the app.
 - 🐞 [FIX] The bug that it is unable to install root certificate.
 - 🐞 [FIX] The bug of abnormal display of collaborative QR code when there is no local IP.
 - 🐞 [FIX] A bug that the mirror icon will display incorrectly in some cases.
-- 🚀 [NEW] You can share the app from side drawer.
-- 🚀 [NEW] You can add a traffic item to API collections and ssl-bypass rules.
-- 💪 [OPT] Use an external browser to open links instead of within the app.
 - 🐞 [FIX] A bug where the traffic list application name was too long.
 
 ## v2.0.0 <small><small>*2023-12-15*</small></small>
