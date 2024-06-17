@@ -4,6 +4,21 @@ sidebar_position: 5
 
 # iOS
 
+## v2.18.1 <small><small>*2024-06-17*</small></small>
+- 💪 [OPT] Cookie view allows cookies to be displayed in a merged or split.
+- 💪 [OPT] Traffic list allows cURLs for multiple requests to be copied at once.
+- 💪 [OPT] Traffic list allows multiple API requests to be created at once.
+- 💪 [OPT] More options are provided for sharing and exporting traffic item.
+- 💪 [OPT] Long press menu of collaborative device in sidebar supports deleting device.
+- 💪 [OPT] Title action menu of collaborative device supports viewing device info.
+- 💪 [OPT] Click the warning icon in the collaborative device title bar can synchronize the certificate directly instead of jumping to the device detail page.
+- 🐞 [FIX] A bug that ALPN is displayed incorrectly.
+- 🐞 [FIX] A bug that some empty tips are displayed incorrectly.
+- 🐞 [FIX] A bug that using IP by SOCKS proxy are automatically bypassed by SSL proxying.
+- 🐞 [FIX] A bug that restarting MITM proxy server may fail.
+- 🐞 [FIX] The bug that the collaborative device synchronization data will reset the device name.
+- 🐞 [FIX] The bug that the status of the warning icon in the collaborative device title bar is not updated in time.
+
 ## v2.18.0 <small><small>*2024-06-11*</small></small>
 - 🚀 [NEW] WebSocket frames support search and filtering.
 - 💪 [OPT] Improve the prompt text for errors of certificate import and export.

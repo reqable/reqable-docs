@@ -4,6 +4,15 @@ sidebar_position: 1
 
 # Macos
 
+## v2.18.1 <small><small>*2024-06-17*</small></small>
+- 💪 [OPT] Cookie view allows cookies to be displayed in a merged or split.
+- 💪 [OPT] Traffic list allows cURLs for multiple requests to be copied at once.
+- 💪 [OPT] Traffic list allows multiple API requests to be created at once.
+- 🐞 [FIX] A bug that ALPN is displayed incorrectly.
+- 🐞 [FIX] A bug that some empty tips are displayed incorrectly.
+- 🐞 [FIX] A bug that using IP by SOCKS proxy are automatically bypassed by SSL proxying.
+- 🐞 [FIX] A bug that restarting MITM proxy server may fail.
+
 ## v2.18.0 <small><small>*2024-06-11*</small></small>
 - 🚀 [NEW] WebSocket frames support search and filtering.
 - 🚀 [NEW] SSL proxy and secondary proxy lists support search and sorting.
