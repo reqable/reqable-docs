@@ -4,6 +4,16 @@ sidebar_position: 3
 
 # Linux
 
+## v2.19.0 <small><small>*2024-06-26*</small></small>
+- 🚀 [NEW] The home page `+` right click can automatically create API from cURL/URL on pasteboard.
+- 💪 [OPT] The traffic export provides more options.
+- 💪 [OPT] The image preview displays information such as format, size and size.
+- 💪 [OPT] The pasteboard url will display on the top of the url drop-down list.
+- 💪 [OPT] The API collection import dialog displays cURL icon.
+- 💪 [OPT] The request and response tabs will auto-collapsed when the space is not enougth.
+- 💪 [OPT] When only one comparison item is selected in diff tool, its content will also be displayed.
+- 🐞 [FIX] When more than 2 requests are selected to add to diff pool, only 2 are successfully added.
+
 ## v2.18.1 <small><small>*2024-06-17*</small></small>
 - 💪 [OPT] Cookie view allows cookies to be displayed in a merged or split.
 - 💪 [OPT] Traffic list allows cURLs for multiple requests to be copied at once.

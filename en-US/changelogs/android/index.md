@@ -4,6 +4,15 @@ sidebar_position: 4
 
 # Android
 
+## v2.19.0 <small><small>*2024-06-26*</small></small>
+- 🚀 [NEW] Support enhanced mode and non-enhanced capture mode.
+- 💪 [OPT] The traffic export provides more options.
+- 💪 [OPT] The image preview displays information such as format, size and size.
+- 💪 [OPT] If the Download directory does not exist, will automatically create it.
+- 💪 [OPT] In enhanced mode, virtual DNS strategy is used instead of the direct strategy.
+- 💪 [OPT] Apps can be added/deleted when vpn is started.
+- 🐞 [FIX] The bug that the remote device details page do not exit after deleting the device.
+
 ## v2.18.1 <small><small>*2024-06-17*</small></small>
 - 💪 [OPT] Cookie view allows cookies to be displayed in a merged or split.
 - 💪 [OPT] Traffic list allows cURLs for multiple requests to be copied at once.

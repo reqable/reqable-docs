@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # iOS
 
+## v2.19.0 <small><small>*2024-06-26*</small></small>
+- 🚀 [NEW] Support enhanced mode and non-enhanced capture mode.
+- 💪 [OPT] The traffic export provides more options.
+- 💪 [OPT] The image preview displays information such as format, size and size.
+- 🐞 [FIX] The bug that the remote device details page do not exit after deleting the device.
+
 ## v2.18.1 <small><small>*2024-06-17*</small></small>
 - 💪 [OPT] Cookie view allows cookies to be displayed in a merged or split.
 - 💪 [OPT] Traffic list allows cURLs for multiple requests to be copied at once.
