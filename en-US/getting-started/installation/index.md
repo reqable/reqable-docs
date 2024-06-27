@@ -136,6 +136,10 @@ Chrome (and subsequently many other Chromium-based browsers) has recently starte
 
 Even if the certificate has been successfully installed in the system directory, the `NET:ERR_CERTIFICATE_TRANSPARENCY_REQUIRED` will still occur. In this case, please remove the certificate from the system directory and install it in the user directory. The Chrome kernel browser will trust the user certificate by default and will not perform CT log verification.
 
+#### 7. Flutter Apps
+
+App developed with the Flutter only trust system certificates, not user directory certificates. This is hardcoded into the framework. Neither configuring `network_security_config.xml` nor lowering `targetSdkVersion` will take effect.
+
 ### iOS
 
 Installing CA certificate on an iOS device is very easy. Just follow the steps below.
@@ -148,3 +152,13 @@ First, download and install the description file (certificate). The description 
 Step 2: Open Settings -> Downloaded Profile -> Select Reqable CA -> Install the certificate file just downloaded.
 
 Step 3: Trust the certificate, Settings -> General -> About -> Certificate Trust Settings -> Turn on the switch.
+
+### Special cases
+
+In some special cases, HTTPS traffic may not be decrypted properly even if the certificate has been installed. Common cases include the following.
+
+- The network request enables certificate pinning, requiring the server to return a specified certificate.
+
+- The network request enables two-way verification, requiring the client to upload a certificate to the server for verification.
+
+- The application uses the built-in CA certificates for verification instead of the system CA certificates.

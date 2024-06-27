@@ -32,14 +32,35 @@ import Shortcut from '@site/src/components/Shortcut';
 
 ![](arts/mirror_02.png)
 
-原始域名支持简单的Wildcard * 和 ? 匹配。上图映射的规则是将所有foo.com为后缀的域名全部映射为`www.reqable.com`。
+原始域名支持简单的Wildcard * 和 ? 匹配。如果配置`*.reqable.com`，可以匹配全部的子域名，包括`api.reqable.com`、`www.reqable.com`等。
 
-:::note 关于端口号
+如果不指定原始域名端口号，HTTP请求默认为**80**端口，HTTPS请求默认为**443**端口。当然，也可以显示地指定端口号，例如：`*.reqable.com:8080`。
 
-如果不指定端口号，HTTP请求默认为**80**端口，HTTPS请求默认为**443**端口。
-当然，也可以显示地指定端口号，例如：*.foo.com:8080 -> www.bar.com:9000
+如果不指定镜像域名端口号，将沿用原始域名的端口号。
 
-:::
+#### Host头部
+
+每个HTTP请求头中基本都会包含`Host`，例如`Host: reqable.com:80`，镜像功能可以指定此选项的设置策略，三个策略的含义如下：
+
+- 保留。保持原始请求的`Host`数据不变。
+- 使用CONNECT地址。CONNECT地址一般是指原始域名地址，例如`reqable.com:80`。这个值一般情况下和Host头部相同。
+- 使用镜像地址。顾名思义，就是替换成新的域名地址。
+
+#### SNI
+
+SNI全称是Server Name Indication，一般包含在SSL/TLS的握手包里面，此值会影响SSL证书的验证。镜像功能可以指定此选项的设置策略，三个策略的含义如下：
+
+- 保留。保持原始请求的SNI值不变。
+- 使用CONNECT地址。CONNECT地址一般是指原始域名，例如`reqable.com`。这个值一般情况下和原始SNI相同。
+- 使用镜像地址。顾名思义，就是替换成新的域名值。
+
+#### 证书CN
+
+证书Common Name，此值会影响SSL证书的验证。镜像功能可以指定此选项的设置策略，三个策略的含义如下：
+
+- 保留。保持原始请求的证书的CN不变。
+- 使用CONNECT地址。CONNECT地址一般是指原始域名，例如`reqable.com`。这个值一般情况下和原始证书的CN相同。
+- 使用镜像地址。顾名思义，就是替换成新的域名值。
 
 :::caution
 

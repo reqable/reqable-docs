@@ -32,14 +32,39 @@ There are six ways to create a mirror rule:
 
 ![](arts/mirror_02.png)
 
-Origin hosts support wildcard * and ? matching. The mapping rule in the above figure is to map all hosts with the suffix of foo.com to `www.reqable.com`.
+The domain supports wildcard * and ? matching. If `*.reqable.com` is configured, all subdomains can be matched, including `api.reqable.com`, `www.reqable.com`, etc.
 
-:::note About Port
+If the domain port number is not specified, HTTP requests default to **80** port, and HTTPS requests default to **443** port. Of course, the port number can also be specified explicitly, for example: `*.reqable.com:8080`.
 
-If no port number is specified, the HTTP request defaults to **80** port, and the HTTPS request defaults to **443** port.
-Of course, you can also explicitly specify the port number, for example: `*.foo.com:8080 -> www.bar.com:9000`
+If the mirror port number is not specified, the port number of the original domain will be used.
 
-:::
+#### Host Header
+
+Each HTTP request header basically contains `Host`, such as `Host: reqable.com:80`. The mirror function can specify the strategy of this value.
+
+- Preserve, keep the `Host` unchanged.
+- Use  CONNECT address, the CONNECT address generally refers to the url address, such as `reqable.com:80`. This value is generally the same as the Host header.
+- Use mirror address, will change the value of `Host` to the mirror value.
+
+#### SNI
+
+Server Name Indication, which is generally included in the handshake packet of SSL/TLS. This value will affect the verification of SSL certificate.
+
+- Preserve, keep the SNI value unchanged.
+
+- Use CONNECT address, the CONNECT address generally refers tto the url address, such as `reqable.com:80`. This value is generally the same as the SNI.
+
+- Use mirror address. will change SNI to the mirror value.
+
+#### Certificate CN
+
+Common name of Certificate, this value will affect the verification of SSL certificate.
+
+- Preserve, keep the CN value unchanged.
+
+- Use CONNECT address, the CONNECT address generally refers tto the url address, such as `reqable.com:80`. This value is generally the same as the CN.
+
+- Use mirror address. will change CN to the mirror value.
 
 :::caution
 
