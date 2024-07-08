@@ -4,6 +4,26 @@ sidebar_position: 5
 
 # iOS
 
+## v2.20.0 <small><small>*2024-07-08*</small></small>
+- 🚀 [NEW] Introduce report server feature.
+- 🚀 [NEW] Supports `Zstandard` encoding and decoding.
+- 🚀 [NEW] Supports C# HttpClient and RestSharp code snippet.
+- 🚀 [NEW] Supports Java Apache HttpClient code snippet.
+- 🚀 [NEW] Supports raw multipart data from curl.
+- 💪 [OPT] SSL proxy rules support configuring port numbers.
+- 💪 [OPT] Improve API request cURL import and export input box.
+- 💪 [OPT] Improve multipart table mode UI/UX.
+- 💪 [OPT] After initializing with collaborative mode, will automatically switch to the remote device page.
+- 🐞 [FIX] The bug of syntax highlighting rendering.
+- 🐞 [FIX] The bug that request parameters may be lost when reading HAR files.
+- 🐞 [FIX] A bug where the host grouping page displays irrelevant domain name data.
+
+## v2.19.1 <small><small>*2024-07-02*</small></small>
+- 💪 [OPT] API requests give priority to using custom Host as SNI.
+- 💪 [OPT] API request parameters, headers, and form editing automatically convert JSON key-value pairs.
+- 💪 [OPT] curl import and export support `--insecure` option.
+- 🐞 [FIX] The bug of the top safe area height being too large.
+
 ## v2.19.0 <small><small>*2024-06-26*</small></small>
 - 🚀 [NEW] Support enhanced mode and non-enhanced capture mode.
 - 💪 [OPT] The traffic export provides more options.

@@ -4,6 +4,26 @@ sidebar_position: 5
 
 # iOS
 
+## v2.20.0 <small><small>*2024-07-08*</small></small>
+- 🚀【新功能】支持数据发送到指定服务器功能。
+- 🚀【新功能】支持`zstd`编解码。
+- 🚀【新功能】支持C# HttpClient和RestSharp代码生成。
+- 🚀【新功能】支持Java Apache HttpClient代码生成。
+- 💪【优化】SSL代理规则支持配置端口号。
+- 💪【优化】重做API请求cURL导入导出输入框。
+- 💪【优化】cURL导入支持原始Multipart数据。
+- 💪【优化】重做Multipart表格模式UI/UX。
+- 💪【优化】初始化选择协同模式后进入首页自动切换到远程设备页面。
+- 🐞【修复】修复生成代码的语法高亮异常的bug。
+- 🐞【修复】读取HAR文件可能丢失请求参数的bug。
+- 🐞【修复】域名分组页面显示非当前域名数据的bug。
+
+## v2.19.1 <small><small>*2024-07-02*</small></small>
+- 💪【优化】API请求优先使用自定义Host作为SNI。
+- 💪【优化】API请求参数、头部、表单文本模式编辑自动转换JSON键值对。
+- 💪【优化】curl导入和导出支持`--insecure`选项。
+- 🐞【修复】顶部安全区高度过大的bug。
+
 ## v2.19.0 <small><small>*2024-06-26*</small></small>
 - 🚀【新功能】支持增强模式和非增强模式功能。
 - 💪【优化】调试列表导出功能。

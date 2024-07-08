@@ -4,6 +4,29 @@ sidebar_position: 1
 
 # Macos
 
+## v2.20.0 <small><small>*2024-07-08*</small></small>
+- 🚀 [NEW] Introduce report server feature.
+- 🚀 [NEW] Supports `Zstandard` encoding and decoding.
+- 🚀 [NEW] Supports C# HttpClient and RestSharp code snippet.
+- 🚀 [NEW] Supports Java Apache HttpClient code snippet.
+- 🚀 [NEW] Supports raw multipart data from curl.
+- 🚀 [NEW] Right-click to add traffics to a new capture session.
+- 💪 [OPT] SSL proxy rules support configuring port numbers.
+- 💪 [OPT] Improve API request cURL import and export input box.
+- 💪 [OPT] Improve multipart table mode UI/UX.
+- 🐞 [FIX] The bug of syntax highlighting rendering.
+- 🐞 [FIX] The bug that request parameters may be lost when reading HAR files.
+
+## v2.19.1 <small><small>*2024-07-02*</small></small>
+- 💪 [OPT] API requests give priority to using custom Host as SNI.
+- 💪 [OPT] API request parameters, headers, and form editing automatically convert JSON key-value pairs.
+- 💪 [OPT] curl import and export support `--insecure` option.
+- 💪 [OPT] Right-click of traffic item can open url in browser.
+- 💪 [OPT] Limit the number of tabs opened at one time to a maximum of 32.
+- 💪 [OPT] Traffic search supports filtering unhighlighted data.
+- 🐞 [FIX] Fix the bug where reverse proxy access exception.
+- 🐞 [FIX] The bug of Charles not being able to be called to parse chls files.
+
 ## v2.19.0 <small><small>*2024-06-26*</small></small>
 - 🚀 [NEW] The home page `+` right click can automatically create API from cURL/URL on pasteboard.
 - 💪 [OPT] The traffic export provides more options.

@@ -4,6 +4,28 @@ sidebar_position: 4
 
 # Android
 
+## v2.20.0 <small><small>*2024-07-08*</small></small>
+- 🚀 [NEW] Introduce report server feature.
+- 🚀 [NEW] Supports `Zstandard` encoding and decoding.
+- 🚀 [NEW] Supports C# HttpClient and RestSharp code snippet.
+- 🚀 [NEW] Supports Java Apache HttpClient code snippet.
+- 🚀 [NEW] Supports raw multipart data from curl.
+- 💪 [OPT] SSL proxy rules support configuring port numbers.
+- 💪 [OPT] Improve API request cURL import and export input box.
+- 💪 [OPT] Improve multipart table mode UI/UX.
+- 💪 [OPT] After initializing with collaborative mode, will automatically switch to the remote device page.
+- 💪 [OPT] `.0` certificate files can be downloaded from the browser.
+- 🐞 [FIX] The bug of syntax highlighting rendering.
+- 🐞 [FIX] The bug that request parameters may be lost when reading HAR files.
+- 🐞 [FIX] A bug where the host grouping page displays irrelevant domain name data.
+
+## v2.19.1 <small><small>*2024-07-02*</small></small>
+- 💪 [OPT] API requests give priority to using custom Host as SNI.
+- 💪 [OPT] API request parameters, headers, and form editing automatically convert JSON key-value pairs.
+- 💪 [OPT] curl import and export support `--insecure` option.
+- 💪 [OPT] Enhanced mode DNS resolution.
+- 🐞 [FIX] The bug of the top safe area height being too large.
+
 ## v2.19.0 <small><small>*2024-06-26*</small></small>
 - 🚀 [NEW] Support enhanced mode and non-enhanced capture mode.
 - 💪 [OPT] The traffic export provides more options.
@@ -291,7 +313,7 @@ sidebar_position: 4
 - 🐞 [FIX] A failure with non-standard HAR connection fields.
 - 🐞 [FIX] The bug that the uppercase encoding value such as GZIP cannot be recognized.
 - 🐞 [FIX] The bug that the keyboard will pop up when scrolling code editor content.
-- 🐞 [FIX] The bug of being unable to collabrative with remote devices when Magic Service is off.
+- 🐞 [FIX] The bug of being unable to collaborative with remote devices when Magic Service is off.
 
 ## v2.2.0 <small><small>*2023-12-28*</small></small>
 - 🚀 [NEW] API testing supports splitting merged cookies into multiple ones.
