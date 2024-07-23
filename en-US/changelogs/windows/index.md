@@ -4,6 +4,47 @@ sidebar_position: 0
 
 # Windows
 
+## v2.21.0 <small><small>*2024-07-23*</small></small>
+- 🚀 [NEW] Support editing HAR files.
+- 🚀 [NEW] Support access control.
+- 🚀 [NEW] Support text editing mode for form-data.
+- 🚀 [NEW] Copy query parameters, headers, etc. as JSON.
+- 🚀 [NEW] Support importing collection data from HAR files.
+- 🚀 [NEW] Condition matching for traffic list search.
+- 🚀 [NEW] Support filtering applications and domains in explorer.
+- 🚀 [NEW] A new `Select` menu is added to the right-click of the traffic list.
+- 🚀 [NEW] License supports configuring network proxies.
+- 🚀 [NEW] Various useful tips in the bottom bar.
+- 💪 [OPT] Tab title style and indicator style.
+- 💪 [OPT] HAR export request and response body do not use base64 encoding first.
+- 💪 [OPT] Compatible with some non-standard IPv6 proxy requests.
+- 💪 [OPT] Adjust the position of the collection search input field.
+- 💪 [OPT] Adjust the position of the history search input field.
+- 💪 [OPT] The traffic list URL will display mirroring host rather than the proxy host.
+- 💪 [OPT] The shortcut key for adding API to the collection from the traffic list is changed from `Control` + `S` to `Control` + `I`.
+- 💪 [OPT] Drag with `Ctrl` for continuous list item selection.
+- 🐞 [FIX] The bug that that may fail to open HAR file.
+- 🐞 [FIX] Secondary proxy authentication issue.
+- 🐞 [FIX] The bug that SSL proxy cannot hit some HTTPS requests.
+- 🐞 [FIX] A bug that the API request data may not be updated when using shortcut keys to send the request.
+
+## v2.20.2 <small><small>*2024-07-16*</small></small>
+- 💪 [OPT] Key-value pair type data supports copying as JSON.
+- 💪 [OPT] Traffic list search supports `or` logical relationship.
+- 💪 [OPT] Enables loopback proxy by default.
+- 💪 [OPT] Only bypass localhost in non-loopback proxy mode.
+- 🐞 [FIX] The bug that may fail to open HAR file.
+- 🐞 [FIX] The bug that some URL input cannot expand multiple lines.
+
+## v2.20.1 <small><small>*2024-07-12*</small></small>
+- 💪 [OPT] Support HEX viewer for raw message.
+- 💪 [OPT] Delete duplicate java.net.http code snippet.
+- 💪 [OPT] API testing supports sending request with empty request header value.
+- 💪 [OPT] Traffic list supports compose and repeat shortcut keys when there is no focus.
+- 🐞 [FIX] A bug where importing raw multipart curl loses the last Part.
+- 🐞 [FIX] Incorrect implementations for websocket extensions.
+- 🐞 [FIX] Open a HAR file will lost the highlighting.
+
 ## v2.20.0 <small><small>*2024-07-08*</small></small>
 - 🚀 [NEW] Introduce report server feature.
 - 🚀 [NEW] Supports `Zstandard` encoding and decoding.

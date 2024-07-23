@@ -4,6 +4,34 @@ sidebar_position: 5
 
 # iOS
 
+## v2.21.0 <small><small>*2024-07-23*</small></small>
+- 🚀 [NEW] Support editing HAR files.
+- 🚀 [NEW] Support access control.
+- 🚀 [NEW] Support text editing mode for form-data.
+- 🚀 [NEW] Copy query parameters, headers, etc. as JSON.
+- 🚀 [NEW] Add `Settings` in the side menu.
+- 🚀 [NEW] Add `Feedback` in the side menu.
+- 🚀 [NEW] Add `Review App` in the side menu.
+- 💪 [OPT] Tab title style and indicator style.
+- 💪 [OPT] HAR export request and response body do not use base64 encoding first.
+- 💪 [OPT] Compatible with some non-standard IPv6 proxy requests.
+- 🐞 [FIX] The bug that that may fail to open HAR file.
+- 🐞 [FIX] Secondary proxy authentication issue.
+- 🐞 [FIX] The bug that SSL proxy cannot hit some HTTPS requests.
+- 🐞 [FIX] A bug that highlighted information is lost when opening sub-list from the grouped host.
+
+## v2.20.2 <small><small>*2024-07-16*</small></small>
+- 💪 [OPT] Key-value pair type data supports copying as JSON.
+- 🐞 [FIX] The bug that may fail to open HAR file.
+
+## v2.20.1 <small><small>*2024-07-12*</small></small>
+- 💪 [OPT] Support HEX viewer for raw message.
+- 💪 [OPT] Delete duplicate java.net.http code snippet.
+- 💪 [OPT] API testing supports sending request with empty request header value.
+- 🐞 [FIX] A bug where importing raw multipart curl loses the last Part.
+- 🐞 [FIX] Incorrect implementations for websocket extensions.
+- 🐞 [FIX] Open a HAR file will lost the highlighting.
+
 ## v2.20.0 <small><small>*2024-07-08*</small></small>
 - 🚀 [NEW] Introduce report server feature.
 - 🚀 [NEW] Supports `Zstandard` encoding and decoding.
