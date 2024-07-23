@@ -226,9 +226,9 @@ def onRequest(context, request):
   # 打印指定索引位置的query名称和值，例如(foo, bar)
   print(request.queries[0])
   # 打印拼接好的完整Query字符串，例如foo=bar&hello=world
-  print(request.concat())
+  print(request.queries.concat())
   # 打印拼接好的完整Query字符串（urlencode参数值）
-  print(request.concat(encode=True))
+  print(request.queries.concat(encode=True))
 
   # Done
   return request

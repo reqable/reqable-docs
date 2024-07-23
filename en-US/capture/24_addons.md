@@ -227,9 +227,9 @@ def onRequest(context, request):
   # Print the query name and value at the specified index position, for example: (foo, bar)
   print(request.queries[0])
   # Print the concatenated query string, such as: foo=bar&hello=world
-  print(request.concat())
+  print(request.queries.concat())
   # Print the concatenated query string(URL encoded).
-  print(request.concat(encode=True))
+  print(request.queries.concat(encode=True))
 
   # Done
   return request
