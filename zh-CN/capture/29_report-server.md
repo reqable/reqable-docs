@@ -18,6 +18,10 @@ Reqable支持将捕获的HTTP请求和响应自动上传到指定的服务器，
 
 举个例子，如果希望采集`dev.reqable.com`域名下的所有接口，可以配置规则为`https://dev.reqable.com/*`。
 
+:::info
+手机版本可以从`⋮` -> `更多`中打开`上报服务器`功能。
+:::
+
 Reqable除了会向服务器发送请求和响应数据，还会在请求头中携带下面这些数据：
 - x-reqable-platform：Reqable运行的平台名称，例如windows，macos，linux，android，ios等。
 - x-reqable-reporter-host：当前会话的域名，例如`dev.reqable.com`。

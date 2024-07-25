@@ -18,6 +18,10 @@ Open `Tools` -> `Report Server`, specify a configuration name, a URL matching ru
 
 For example, if you want to collect all traffic under the `dev.reqable.com` domain name, you can configure the rule as `https://dev.reqable.com/*`.
 
+:::info
+For mobile app, open `Report Server` from `⋮` -> `More`.
+:::
+
 Reqable also carries the following data in the request header:
 - x-reqable-platform：The platform name that Reqable runs on, such as windows, macos, linux, android, ios, etc.
 - x-reqable-reporter-host：The domain name of the current session, suc as `dev.reqable.com`.
