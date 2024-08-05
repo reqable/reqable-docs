@@ -14,7 +14,7 @@ If the target client is a PC application, the CA Certificate needs to be install
 Reqable automatically generates a CA certificate for each user, and uses a random certificate key, so you don't have to worry about this certificate being exploited by a third party.
 :::
 
-## Desktop
+## Desktop {#desktop}
 
 Different desktop platforms (here mainly Windows/MacOS/Linux) have different certificate installation methods. In order to simplify the installation process, Reqable provides a one-click certificate installation way.
 
@@ -36,7 +36,7 @@ Note that Chrome and Firefox on Linux devices have built-in certificate manageme
 When the CA certificate is not installed or the installation fails, the shield icon is displayed in yellow; after the installation is successful, the shield icon is displayed in green.
 :::
 
-## Mobile
+## Mobile {#mobile}
 
 If you need to analyze mobile applications, you must install the CA certificate on the mobile device. We have built-in guidelines for installing Android and iOS certificates in Reqable. If you use desktop app, please switch to the tabs of `Android` and `iOS` to follow the steps to install. If you use mobile app, please goto `Side Menu` -> `Certificate Management` -> `Install Root Certificate to Local-Machine`, and choose a suitable solution to install.
 
