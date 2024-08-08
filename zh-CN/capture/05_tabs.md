@@ -24,13 +24,13 @@
 
 ![](arts/tabs_04.png)
 
-### 参数列表 {#query}
+### 参数 {#query}
 
 在参数Tab中会显示请求的查询参数。如果请求没有查询参数，此Tab将不会显示。
 
 ![](arts/tabs_05.png)
 
-### 头部列表 {#header}
+### 头部 {#header}
 
 在头部Tab中会显示请求头或者响应头列表。作为HTTP协议的必要组成部分，此Tab将固定显示，无法取消。
 
@@ -44,19 +44,19 @@
 
 Reqable支持多样化的数据展示和预览，例如JSON、XML、二进制、图片、MultiParts等等。
 
-### 尾部列表 {#trailer}
+### 尾部 {#trailer}
 
 在部分HTTP/1.1和HTTP2协议规范中，支持在请求体或者响应体之后发送Trailers，这部分数据将会显示在尾部Tab中。如果一个请求或响应没有相关数据，此Tab将不会显示。
 
 ![](arts/tabs_08.png)
 
-### Cookie列表 {#cookie}
+### Cookie {#cookie}
 
 在Cookie Tab中会显示请求的Cookie数据。如果请求没有Cookie，此Tab将不会显示。
 
 ![](arts/tabs_09.png)
 
-### Set-Cookie列表 {#cookie}
+### Set-Cookie {#cookie}
 
 在Set-Cookie Tab中会显示响应返回的Cookie数据。如果响应没有Set-Cookie，此Tab将不会显示。
 
@@ -85,3 +85,9 @@ Reqable支持多样化的数据展示和预览，例如JSON、XML、二进制、
 在HTTP2协议规范中，服务器在发送数据之前可能会先响应`103 Early Hints`，在此Tab中将会显示早期提示（Early Hints）的数据。如果响应中没有早期提示，此Tab将不会显示。
 
 ![](arts/tabs_14.png)
+
+### 堆栈跟踪 {#stackTrace}
+
+这是一项实验性的功能，需要在具备lsposed的环境下，安装算法助手Pro（请关注公众号`算法助手Plus`下载安装包），并在其设置中启用`Reqable增强`开关。启用后，Reqable将会显示目标应用中网络请求调用的Java堆栈信息。
+
+![](arts/tabs_15.png)

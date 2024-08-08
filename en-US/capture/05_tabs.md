@@ -24,13 +24,13 @@ The protocol message of the request or response is displayed in the raw tab acco
 
 ![](arts/tabs_04.png)
 
-### Query List {#query}
+### Query {#query}
 
 The query tab displays the query parameters of a request. If a request has no query parameters, this tab will not be displayed.
 
 ![](arts/tabs_05.png)
 
-### Header List {#header}
+### Header {#header}
 
 The request header or response header list will be displayed in the header tab. As an essential part of the HTTP protocol, this tab will be fixed and cannot be unchecked.
 
@@ -44,7 +44,7 @@ This tab will display request body and response body. As an essential part of th
 
 Reqable supports a variety of data viewer and preview, such as JSON, XML, binary, images, multi-parts, etc.
 
-### Trailer List {#trailer}
+### Trailer {#trailer}
 
 In some HTTP/1.1 and HTTP2 protocol specifications, it is supported to send trailers after the request body or response body. This data will be displayed in this tab. If a request or response has no trailer, this tab will not be displayed.
 
