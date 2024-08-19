@@ -4,6 +4,36 @@ sidebar_position: 5
 
 # iOS
 
+## v2.22.0 <small><small>*2024-08-19*</small></small>
+- 💪【优化】改善配置文件存储性能。
+- 🐞【修复】Form表单多次解码导致`+`变成空格的bug。
+- 🐞【修复】HexViewer选中区域可能会随着WebSocket数据更新丢失的bug。
+- 🐞【修复】Content-Encoding deflate未正确编解码的bug。
+- 🐞【修复】Basic Auth环境变量未生效的bug。
+
+## v2.21.4 <small><small>*2024-08-08*</small></small>
+- 💪【优化】历史记录时间单位格式化显示。
+- 💪【优化】HexViewer支持查看总字节数。
+- 💪【优化】提升ImageViewer的交互体验。
+- 💪【优化】调整WebSocket视图样式。
+- 💪【优化】API请求测试Bearer Token输入框由单行改为多行。
+- 💪【优化】HTTP请求方法和响应状态码可以跳转到MDN文档。
+- 💪【优化】编辑器搜索不再显示结果数量，显示空间留给输入框。
+- 🐞【修复】HTTP原始报文语法可能无法高亮的bug。
+
+## v2.21.2 <small><small>*2024-08-01*</small></small>
+- 💪【优化】调试列表记录支持显示Early Hints。
+- 💪【优化】调试功能记录支持显示Trailers。
+- 💪【优化】支持`Windows-31J`、`Shift-31J`和`EUC-JP`字符编码。
+- 💪【优化】调整HexViewer视图以更好适应移动设备。
+- 🐞【修复】Early Hints导致响应头和响应体无法正确显示的bug。
+- 🐞【修复】MITM未能正确处理100 Continue请求的bug。
+
+## v2.21.1 <small><small>*2024-07-29*</small></small>
+- 💪【优化】导入cURL自动解码URL参数。
+- 🐞【修复】curl导入form-data请求可能会丢失请求体的bug。
+- 🐞【修复】生成代码Python-requests可能会丢失form-data请求体的bug。
+
 ## v2.21.0 <small><small>*2024-07-23*</small></small>
 - 🚀【新功能】支持编辑HAR文件。
 - 🚀【新功能】代理服务器支持访问控制。

@@ -4,6 +4,37 @@ sidebar_position: 4
 
 # Android
 
+## v2.22.0 <small><small>*2024-08-19*</small></small>
+- 💪 [OPT] Improve configuration file storage performance.
+- 🐞 [FIX] Form form multiple decoding causes `+` to become a space bug.
+- 🐞 [FIX] The bug that HexViewer selection may be lost in WebSocket viewing.
+- 🐞 [FIX] The bug that deflate is not correctly encoded and decoded.
+- 🐞 [FIX] The bug that environment variable in `Basic Auth` is not working.
+
+## v2.21.4 <small><small>*2024-08-08*</small></small>
+- 💪 [OPT] Duration time format of history.
+- 💪 [OPT] HexViewer supports viewing the total count of bytes.
+- 💪 [OPT] Improve the interactive experience of ImageViewer.
+- 💪 [OPT] Improve the WebSocket UI.
+- 💪 [OPT] Bearer Token input box is changed from single line to multiple lines.
+- 💪 [OPT] HTTP request method and response status code can go to MDN documentation.
+- 💪 [OPT] Editor search no longer displays the result count.
+- 🐞 [FIX] A bug that HTTP raw message syntax may not be highlighted.
+
+## v2.21.2 <small><small>*2024-08-02*</small></small>
+- 💪 [OPT] Supports HTTP `103 Early Hints`.
+- 💪 [OPT] Supports HTTP2 `Trailers`.
+- 💪 [OPT] Supports `Windows-31J`, `Shift-31J` and `EUC-JP` character encodings.
+- 💪 [OPT] Adjust the HexViewer space to better adapt to mobile devices.
+- 💪 [OPT] The collaborative device page provides a quick entry for selecting applications.
+- 🐞 [FIX] The bug where `Early Hints` causes the response header and body to not display correctly.
+- 🐞 [FIX] MITM does not handle `100 Continue` requests correctly.
+
+## v2.21.1 <small><small>*2024-07-29*</small></small>
+- 💪 [OPT] Automatically decode URL parameters when importing cURL.
+- 🐞 [FIX] A bug that may lose the request body when importing form-data cRUL requests.
+- 🐞 [FIX] A bug that the generated code Python-requests may lose the form-data request body.
+
 ## v2.21.0 <small><small>*2024-07-23*</small></small>
 - 🚀 [NEW] Support editing HAR files.
 - 🚀 [NEW] Support access control.
@@ -304,8 +335,8 @@ sidebar_position: 4
 - 🐞 [FIX] The bug that search does not work.
 
 ## v2.4.0 <small><small>*2024-01-12*</small></small>
-- 🚀 [New] Introduce a new secondary proxy feature.
-- 🚀 [New] Supports double-clicking the title to open the search bar.
+- 🚀 [NEW] Introduce a new secondary proxy feature.
+- 🚀 [NEW] Supports double-clicking the title to open the search bar.
 - 🐞 [FIX] The bug that the generated cURL does not merge cookies.
 - 🐞 [FIX] The bug that the `Referer` header cannot be sent in API requests.
 - 🐞 [FIX] The bug of missing `application/x-www-form-urlencoded` header in code snippet.
@@ -314,7 +345,7 @@ sidebar_position: 4
 - 🐞 [FIX] The bug that the remote device may not be able to coordinate after the address is changed.
 
 ## v2.3.2 <small><small>*2024-01-08*</small></small>
-- 🚀 [New] Introduce picture-in-picture mode.
+- 🚀 [NEW] Introduce picture-in-picture mode.
 - 💪 [OPT] Adjustment of some UI details.
 - 🐞 [FIX] The bug that the raw message in the traffic details cannot be code highlighted.
 - 🐞 [FIX] The bug that JSON array type throws an error int code snippet.

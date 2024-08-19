@@ -4,6 +4,56 @@ sidebar_position: 0
 
 # Windows
 
+## v2.22.0 <small><small>*2024-08-19*</small></small>
+- 🚀 [NEW] Introduce new rewrite UI and UX.
+- 💪 [OPT] Improve configuration file storage performance.
+- 💪 [OPT] Support holding down the `Alt` key to force close the tab.
+- 💪 [OPT] The console supports text prettify and syntax highlighting.
+- 💪 [OPT] More shortcut keys for HexViewer.
+- 💪 [OPT] HexViewer supports copying selected data as Base64.
+- 💪 [OPT] HexViewer tool displays the total number of bytes.
+- 💪 [OPT] The character limit of the QR code tool is increased from 256 to 512.
+- 💪 [OPT] The editor context menu supports generating QR codes.
+- 🐞 [FIX] Form form multiple decoding causes `+` to become a space bug.
+- 🐞 [FIX] The bug that HexViewer selection may be lost in WebSocket viewing.
+- 🐞 [FIX] The bug that deflate is not correctly encoded and decoded.
+- 🐞 [FIX] The bug that environment variable in `Basic Auth` is not working.
+- 🐞 [FIX] The bug that clicking the scroll bar in HexViewer will cancel the current selection.
+- 🐞 [FIX] The bug that the drag view position is incorrect after zoom the view.
+- 🐞 [FIX] The bug that fork the script template from repository may fail.
+- 🐞 [FIX] The bug that the script template repository fails to delete the newly created script.
+
+## v2.21.4 <small><small>*2024-08-08*</small></small>
+- 💪 [OPT] Duration time format of history.
+- 💪 [OPT] HexViewer supports viewing the total count of bytes.
+- 💪 [OPT] Improve the interactive experience of ImageViewer.
+- 💪 [OPT] Improve the WebSocket UI.
+- 💪 [OPT] Bearer Token input box is changed from single line to multiple lines.
+- 💪 [OPT] HTTP request method and response status code can go to MDN documentation.
+- 💪 [OPT] Add an documentation link for request and response tab management.
+- 💪 [OPT] A batch of `206 Partial Content` records can be selected at once.
+- 💪 [OPT] `206 Partial Content` records can be exported into one file.
+- 🐞 [FIX] A bug that HTTP raw message syntax may not be highlighted.
+- 🐞 [FIX] A bug that the proxy port number may be displayed incorrectly.
+- 🐞 [FIX] A bug that can not move down the bookmark.
+
+## v2.21.2 <small><small>*2024-08-02*</small></small>
+- 💪 [OPT] Supports HTTP `103 Early Hints`.
+- 💪 [OPT] Supports HTTP2 `Trailers`.
+- 💪 [OPT] Supports `Windows-31J`, `Shift-31J` and `EUC-JP` character encodings.
+- 💪 [OPT] Upgrade Flutter to v3.19.6，fix multi-window crash issue.
+- 🐞 [FIX] The bug where `Early Hints` causes the response header and body to not display correctly.
+- 🐞 [FIX] MITM does not handle `100 Continue` requests correctly.
+- 🐞 [FIX] The bug that python scripts lose URL params.
+- 🐞 [FIX] The bug that reverse proxy automatically adds non-original request headers.
+
+## v2.21.1 <small><small>*2024-07-29*</small></small>
+- 💪 [OPT] Automatically decode URL parameters when importing cURL.
+- 💪 [OPT] The traffic list header column management.
+- 🐞 [FIX] A bug that may lose the request body when importing form-data cRUL requests.
+- 🐞 [FIX] A bug that the generated code Python-requests may lose the form-data request body.
+- 🐞 [FIX] A bug that two identical applications may appear in the traffic list sidebar.
+
 ## v2.21.0 <small><small>*2024-07-23*</small></small>
 - 🚀 [NEW] Support editing HAR files.
 - 🚀 [NEW] Support access control.
@@ -368,9 +418,9 @@ sidebar_position: 0
 - 🐞 [FIX] The bug that the application window cannot be restored by tapping the tray icon.
 
 ## v2.4.0 <small><small>*2024-01-12*</small></small>
-- 🚀 [New] Introduce a new secondary proxy feature.
-- 🚀 [New] Supports drag sorting of working tabs.
-- 🚀 [New] You can select or unselect a search condition for traffic list.
+- 🚀 [NEW] Introduce a new secondary proxy feature.
+- 🚀 [NEW] Supports drag sorting of working tabs.
+- 🚀 [NEW] You can select or unselect a search condition for traffic list.
 - 💪 [OPT] The time threshold for triggering drag is reduced from 500ms to 150ms.
 - 💪 [OPT] Supports mouse wheel to control horizontal layout scrolling.
 - 🐞 [FIX] The bug that the generated cURL does not merge cookies.
@@ -430,11 +480,11 @@ sidebar_position: 0
 - 🐞 [FIX] The bug where the system shows that the application is tracking the location.
 
 ## v2.0.0 <small><small>*2023-12-15*</small></small>
-- 🚀 [New] Supports collaboration with Reqable mobile apps.
-- 🚀 [New] Supports importing and exporting pkcs12 root certificate file.
-- 🚀 [New] Supports viewing the currently used root certificate file.
-- 🚀 [New] Diff tool supports header name lowercase comparation.
-- 🚀 [New] Adds a search icon for Code Editor and Hex Viewer.
+- 🚀 [NEW] Supports collaboration with Reqable mobile apps.
+- 🚀 [NEW] Supports importing and exporting pkcs12 root certificate file.
+- 🚀 [NEW] Supports viewing the currently used root certificate file.
+- 🚀 [NEW] Diff tool supports header name lowercase comparation.
+- 🚀 [NEW] Adds a search icon for Code Editor and Hex Viewer.
 - 💪 [Opt] Supports some non-standard proxy protocol messages.
 - 💪 [Opt] Redo traffic overview UI/UX.
 - 💪 [Opt] Redo Websocket UI/UX.
@@ -490,9 +540,9 @@ sidebar_position: 0
 - 🐞 [Fix] A bug where some cache files failed to be automatically cleared in incognito mode.
 
 ## v1.6.0 <small><small>*2023-09-27*</small></small>
-- 🚀 [New] Supports detaching a new window to view traffic data details.
-- 🚀 [New] The middle mouse button can close the Tab.
-- 🚀 [New] The middle mouse button can close the sub-window.
+- 🚀 [NEW] Supports detaching a new window to view traffic data details.
+- 🚀 [NEW] The middle mouse button can close the Tab.
+- 🚀 [NEW] The middle mouse button can close the sub-window.
 - 💪 [Opt] Better performance and memory usage.
 - 🐞 [Fix] The bug that the script editor cannot open `Visual Studio Code`.
 
@@ -518,9 +568,9 @@ sidebar_position: 0
 - 🐞 [Fix] The bug that some devices cannot close the window to enter the background.
 
 ## v1.5.0 <small><small>*2023-09-21*</small></small>
-- 🚀 [New] Add HTTP request and response diff tool.
-- 🚀 [New] Add `JWT` decoder in the toolbox.
-- 🚀 [New] API JSON data editing supports one-click compression.
+- 🚀 [NEW] Add HTTP request and response diff tool.
+- 🚀 [NEW] Add `JWT` decoder in the toolbox.
+- 🚀 [NEW] API JSON data editing supports one-click compression.
 - 💪 [Opt] Supports `Control + W` shortcut key to close sub windows.
 - 💪 [Opt] Use name instead of timestamp when exporting traffic history.
 - 💪 [Opt] Raw packet syntax supports JSON and XML highlighting.
@@ -543,11 +593,11 @@ sidebar_position: 0
 - 🐞 [Fix] There is a bug that some devices cannot obtain the system proxy configuration.
 
 ## v1.4.0 <small><small>*2023-09-14*</small></small>
-- 🚀 [New] `Code Snippet` supports cURL and Guzzle for PHP language.
-- 🚀 [New] Add `Certificate` application menu bar.
-- 🚀 [New] Add `Raw` display for request details.
-- 🚀 [New] Add `Automatic Debugging` switch in app settings.
-- 🚀 [New] Support reviewing Charles Session files.
+- 🚀 [NEW] `Code Snippet` supports cURL and Guzzle for PHP language.
+- 🚀 [NEW] Add `Certificate` application menu bar.
+- 🚀 [NEW] Add `Raw` display for request details.
+- 🚀 [NEW] Add `Automatic Debugging` switch in app settings.
+- 🚀 [NEW] Support reviewing Charles Session files.
 - 💪 [Opt] A prompt pop-up dialog will be displayed when Reqable exits.
 - 💪 [Opt] A prompt will be displayed after dragging unsupported files to the Reqable main window and releasing them.
 - 💪 [Opt] The session content area displays information about file or history opening failure.
@@ -561,9 +611,9 @@ sidebar_position: 0
 - 🐞 [Fix] SOCKS proxy causing MySql database to be unable to connect.
 
 ## v1.3.1 <small><small>*2023-09-11*</small></small>
-- 🚀 [New] Support `Reverse Proxy` now.
-- 🚀 [New] Add `Proxy` application menu group bar.
-- 🚀 [New] When you paste the cURL into the API testing URL input field, the import cURL dialog will automatically pop up.
+- 🚀 [NEW] Support `Reverse Proxy` now.
+- 🚀 [NEW] Add `Proxy` application menu group bar.
+- 🚀 [NEW] When you paste the cURL into the API testing URL input field, the import cURL dialog will automatically pop up.
 - 💪 [Opt] Cancel the certificate status detection polling mechanism.
 - 💪 [Opt] API query parameters created from the traffic list are automatically URL decoded.
 - 💪 [Opt] The URL displayed in the traffic list removes the display of the default root path `/`.
@@ -575,8 +625,8 @@ sidebar_position: 0
 - 🐞 [Fix] The bug of incomplete display of changelogs in the version update window.
 
 ## v1.3.0 <small><small>*2023-09-05*</small></small>
-- 🚀 [New] Display the application where the traffic from.
-- 🚀 [New] Support filtering traffic according to application in the explorer.
+- 🚀 [NEW] Display the application where the traffic from.
+- 🚀 [NEW] Support filtering traffic according to application in the explorer.
 - 💪 [Opt] When the traffic list is at the bottom, it will automatically scroll if new data appears.
 - 💪 [Opt] The read items in the structure tree are grayed out.
 - 💪 [Opt] Added type icon display in the structure tree.
@@ -595,18 +645,18 @@ sidebar_position: 0
 - 🐞 [Fix] Fixed the bug that the name of the opened tab could not be updated synchronously after modifying the name of the capture history.
 
 ## v1.2.3 <small><small>*2023-08-31*</small></small>
-- 🚀 [New] The traffic list read items are grayed out.
-- 🚀 [New] The traffic history supports configuring the cache duration, which is 7 days by default.
-- 🚀 [New] Traffic history supports renaming.
-- 🚀 [New] Traffic history supports adding/removing stars.
-- 🚀 [New] Query parameter list viewing supports text mode.
+- 🚀 [NEW] The traffic list read items are grayed out.
+- 🚀 [NEW] The traffic history supports configuring the cache duration, which is 7 days by default.
+- 🚀 [NEW] Traffic history supports renaming.
+- 🚀 [NEW] Traffic history supports adding/removing stars.
+- 🚀 [NEW] Query parameter list viewing supports text mode.
 - 💪 [Opt] The way to obtain the system network proxy status is changed from Shell command to API.
 - 💪 [Opt] The traffic list removes gray highlighting and adds teal highlighting.
 - 💪 [Opt] Use the resident daemon process to get the CA root certificate installation status.
 
 ## v1.2.1 <small><small>*2023-08-28*</small></small>
-- 🚀 [New] SSL bypass supports switch and silent mode.
-- 🚀 [New] Supports adding SSL bypass from traffic list.
+- 🚀 [NEW] SSL bypass supports switch and silent mode.
+- 🚀 [NEW] Supports adding SSL bypass from traffic list.
 - 💪 [Opt] Automatically changing context menu text color when hovering.
 - 💪 [Opt] The right click of the traffic list supports batch copying of URLs.
 - 🐞 [Fix] An exception occurs when generating python code when the root node of JSON is a list.
@@ -615,11 +665,11 @@ sidebar_position: 0
 - 🐞 [Fix] The bug that the `Proxy-Connection` header was not removed when sending to remote server.
 
 ## v1.2.0 <small><small>*2023-08-24*</small></small>
-- 🚀 [New] Apps are signed with EV certificates.
-- 🚀 [New] Added code snippet for API and traffic.
-- 🚀 [New] Added `Clear Cache` and `Reset App` in settings.
-- 🚀 [New] Urlencode supports text editing mode.
-- 🚀 [New] Urlencode supports importing and copying concatenated strings.
+- 🚀 [NEW] Apps are signed with EV certificates.
+- 🚀 [NEW] Added code snippet for API and traffic.
+- 🚀 [NEW] Added `Clear Cache` and `Reset App` in settings.
+- 🚀 [NEW] Urlencode supports text editing mode.
+- 🚀 [NEW] Urlencode supports importing and copying concatenated strings.
 - 💪 [Opt] Change version upgrade pop-up window.
 - 💪 [Opt] The UX of expanding the app menu bar.
 - 💪 [Opt] Adding quotes to URL values in generated cURL commands.
@@ -629,7 +679,7 @@ sidebar_position: 0
 - 🐞 [Fix] The bug that the text display error in the API query parameter text editing mode.
 
 ## v1.1.8 <small><small>*2023-08-10*</small></small>
-- 🚀 [New] Support API session global settings.
+- 🚀 [NEW] Support API session global settings.
 - 💪 [Opt] Important performance optimization.
 - 💪 [Opt] The storage limit of the database has been increased from 1G to 10G.
 - 💪 [Opt] The traffic history data is stored in compression.
@@ -641,10 +691,10 @@ sidebar_position: 0
 - 🐞 [Fix] The bug that API session shortcut keys are not working.
 
 ## v1.1.7 <small><small>*2023-08-07*</small></small>
-- 🚀 [New] Support export and import Reqable api collections.
-- 🚀 [New] API editor added `Follow Debug` shortcut icon.
-- 🚀 [New] The traffic list supports `client address` search terms.
-- 🚀 [New] Added a button to clear the results in the URL codec tool.
+- 🚀 [NEW] Support export and import Reqable api collections.
+- 🚀 [NEW] API editor added `Follow Debug` shortcut icon.
+- 🚀 [NEW] The traffic list supports `client address` search terms.
+- 🚀 [NEW] Added a button to clear the results in the URL codec tool.
 - 💪 [Opt] Added error message display in the URL codec tool.
 - 💪 [Opt] Cleaning strategy of history cache files.
 - 💪 [Opt] API collection naming and renaming verification.
@@ -656,16 +706,16 @@ sidebar_position: 0
 - 🐞 [Fix] A bug where input auto-completes were lost in traffic search items.
 
 ## v1.1.6 <small><small>*2023-08-03*</small></small>
-- 🚀 [New] Refactor capture multi-session UX.
-- 🚀 [New] Supports importing API collections of Postman, Hoppscotch, ApiPost and Apifox.
-- 🚀 [New] Support for merging capture records into other session tabs.
+- 🚀 [NEW] Refactor capture multi-session UX.
+- 🚀 [NEW] Supports importing API collections of Postman, Hoppscotch, ApiPost and Apifox.
+- 🚀 [NEW] Support for merging capture records into other session tabs.
 - 💪 [Opt] Improve application startup speed.
 - 💪 [Opt] Automatically clean up expired capture cache files.
 - 💪 [Opt] Bookmark filtering and domain name filtering conditions are changed from `and` to `or`.
 - 🐞 [Fix] The bug that the SSL traffic of the remote device is not decrypted when the computer does not have a certificate installed.
 
 ## v1.1.5 <small><small>*2023-07-31*</small></small>
-- 🚀 [New] Support SSL bypass configuration (right-click the shield icon).
+- 🚀 [NEW] Support SSL bypass configuration (right-click the shield icon).
 - 💪 [Opt] MITM proxy is skipped if the certificate is not installed successfully.
 - 💪 [Opt] Remove the limit of 9999 repeats.
 - 💪 [Opt] Server address will also be displayed in the traffic list after the proxy connection fails.

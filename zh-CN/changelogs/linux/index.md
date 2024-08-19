@@ -4,6 +4,55 @@ sidebar_position: 3
 
 # Linux
 
+## v2.22.0 <small><small>*2024-08-19*</small></small>
+- 🚀【新功能】新的重写UI和UX。
+- 💪【优化】改善配置文件存储性能。
+- 💪【优化】支持按住Alt键强行关闭标签页。
+- 💪【优化】控制台支持数据美化和语法高亮。
+- 💪【优化】HexViewer支持快捷键连选。
+- 💪【优化】HexViewer支持将选中数据复制为Base64。
+- 💪【优化】HexViewer工具显示总字节数。
+- 💪【优化】二维码工具字符上限由256提高到512。
+- 💪【优化】编辑器选中文字右键支持生成二维码。
+- 🐞【修复】Form表单多次解码导致`+`变成空格的bug。
+- 🐞【修复】HexViewer选中区域可能会随着WebSocket数据更新丢失的bug。
+- 🐞【修复】Content-Encoding deflate未正确编解码的bug。
+- 🐞【修复】Basic Auth环境变量未生效的bug。
+- 🐞【修复】HexViewer点击滚动条会取消当前选中的bug。
+- 🐞【修复】设置了视图缩放后拖拽控件位置不正确的bug。
+- 🐞【修复】脚本模板仓库Fork脚本可能失败的bug。
+- 🐞【修复】脚本模板仓库删除新创建的脚本失败的bug。
+
+## v2.21.4 <small><small>*2024-08-08*</small></small>
+- 💪【优化】历史记录时间单位格式化显示。
+- 💪【优化】HexViewer支持查看总字节数。
+- 💪【优化】提升ImageViewer的交互体验。
+- 💪【优化】调整WebSocket视图样式。
+- 💪【优化】API请求测试Bearer Token输入框由单行改为多行。
+- 💪【优化】HTTP请求方法和响应状态码可以跳转到MDN文档。
+- 💪【优化】自定义Tab管理支持直接查看文档。
+- 💪【优化】右键`选择`可以批量选中相关联的`206 Partial Content`记录。
+- 💪【优化】右键`导出`可以合并保存`206 Partial Content`数据。
+- 🐞【修复】HTTP原始报文语法可能无法高亮的bug。
+- 🐞【修复】代理端口号可能显示不正确的bug。
+- 🐞【修复】工作台书签下移功能异常的bug。
+
+## v2.21.2 <small><small>*2024-08-01*</small></small>
+- 💪【优化】调试列表记录支持显示Early Hints。
+- 💪【优化】调试功能记录支持显示Trailers。
+- 💪【优化】支持`Windows-31J`、`Shift-31J`和`EUC-JP`字符编码。
+- 🐞【修复】Early Hints导致响应头和响应体无法正确显示的bug。
+- 🐞【修复】MITM未能正确处理100 Continue请求的bug。
+- 🐞【修复】脚本会丢失URL Params的bug。
+- 🐞【修复】反向代理自动添加非原始请求头的bug。
+
+## v2.21.1 <small><small>*2024-07-29*</small></small>
+- 💪【优化】导入cURL自动解码URL参数。
+- 💪【优化】调试列表头部列选项管理界面。
+- 🐞【修复】curl导入form-data请求可能会丢失请求体的bug。
+- 🐞【修复】生成代码Python-requests可能会丢失form-data请求体的bug。
+- 🐞【修复】调试列表侧边栏可能会出现两个相同应用程序的bug。
+
 ## v2.21.0 <small><small>*2024-07-23*</small></small>
 - 🚀【新功能】支持编辑HAR文件。
 - 🚀【新功能】代理服务器支持访问控制。
