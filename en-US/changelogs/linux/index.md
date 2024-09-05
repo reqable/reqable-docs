@@ -4,6 +4,37 @@ sidebar_position: 3
 
 # Linux
 
+## v2.23.0 <small><small>*2024-09-05*</small></small>
+- 🚀 [NEW] Support network condition simulation.
+- 🚀 [NEW] Support viewing of HAR content in clipboard.
+- 🚀 [NEW] Support Internationalized Domain Name (IDN) API.
+- 💪 [OPT] Import and export API collections will include built-in headers.
+- 💪 [OPT] Search condition in traffic list increased from 3 to 5.
+- 💪 [OPT] Now can send and download data directly in API testing.
+- 💪 [OPT] Proxy recovery logic when exiting the application.
+- 💪 [OPT] Use the decoded file name when saving the request and response.
+- 🐞 [FIX] The bug that importing reqable collections will lose unnamed APIs.
+- 🐞 [FIX] The bug that some requests in HAR file cannot be edited and repeated.
+- 🐞 [FIX] The bug that importing some cURLs will lose the body payload.
+
+## v2.22.2 <small><small>*2024-08-28*</small></small>
+- 💪 [OPT] Backup SharedPreferences and some other config files.
+- 💪 [OPT] WebSocket supports clearing message list.
+- 💪 [OPT] WebSocket read messages are displayed in gray.
+- 💪 [OPT] WebSocket message details display frame number.
+- 💪 [OPT] A new overview URL display view.
+- 💪 [OPT] A more reasonable list selection mechanism.
+- 🐞 [FIX] The Bug that the gateway cannot edit behavior options.
+
+## v2.22.1 <small><small>*2024-08-27*</small></small>
+- 💪 [OPT] HAR files support WebSocket message frames.
+- 💪 [OPT] A new URL redirection UI and UX.
+- 💪 [OPT] Reduce editor transparency when API testing script is not enabled.
+- 💪 [OPT] Unify the size of some pop-up windows.
+- 💪 [OPT] More friendly wildcard prompts.
+- 🐞 [FIX] A bug that the API testing environment variables may cause the request to fail.
+- 🐞 [FIX] A bug that the API testing history may lose the response body.
+
 ## v2.22.0 <small><small>*2024-08-19*</small></small>
 - 🚀 [NEW] Introduce new rewrite UI and UX.
 - 💪 [OPT] Improve configuration file storage performance.

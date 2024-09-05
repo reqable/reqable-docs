@@ -4,6 +4,26 @@ sidebar_position: 5
 
 # iOS
 
+## v2.23.0 <small><small>*2024-09-05*</small></small>
+- 🚀 [NEW] Support Internationalized Domain Name (IDN) API.
+- 💪 [OPT] Use the decoded file name when saving the request and response.
+- 🐞 [FIX] The bug that some requests in HAR file cannot be edited and repeated.
+- 🐞 [FIX] The bug that importing some cURLs will lose the body payload.
+
+## v2.22.2 <small><small>*2024-08-28*</small></small>
+- 💪 [OPT] Backup SharedPreferences and some other config files.
+- 💪 [OPT] WebSocket supports clearing message list.
+- 💪 [OPT] WebSocket read messages are displayed in gray.
+- 💪 [OPT] WebSocket message details display frame number.
+- 💪 [OPT] A new overview URL display view.
+
+## v2.22.1 <small><small>*2024-08-27*</small></small>
+- 💪 [OPT] HAR files support WebSocket message frames.
+- 💪 [OPT] A new URL redirection UI and UX.
+- 💪 [OPT] The title bar more menu is no longer folded twice.
+- 🐞 [FIX] A bug that the API testing environment variables may cause the request to fail.
+- 🐞 [FIX] A bug that the API testing history may lose the response body.
+
 ## v2.22.0 <small><small>*2024-08-19*</small></small>
 - 💪 [OPT] Improve configuration file storage performance.
 - 🐞 [FIX] Form form multiple decoding causes `+` to become a space bug.

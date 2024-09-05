@@ -4,6 +4,26 @@ sidebar_position: 4
 
 # Android
 
+## v2.23.0 <small><small>*2024-09-05*</small></small>
+- 🚀【新功能】支持Internationalized Domain Name (IDN)。
+- 💪【优化】保存文件时使用解码后的文件名称。
+- 🐞【修复】打开的HAR文件中某些请求无法编辑和重发的bug。
+- 🐞【修复】导入某些cURL丢失请求体的bug。
+
+## v2.22.2 <small><small>*2024-08-28*</small></small>
+- 💪【优化】配置文件备份逻辑。
+- 💪【优化】WebSocket支持清除消息列表。
+- 💪【优化】WebSocket已阅读消息显示为灰色。
+- 💪【优化】WebSocket消息详情显示帧序号。
+- 💪【优化】调试详情总览URL弹窗显示视图。
+
+## v2.22.1 <small><small>*2024-08-27*</small></small>
+- 💪【优化】HAR文件支持WebSocket消息帧。
+- 💪【优化】API请求脚本重定向UI和交互。
+- 💪【优化】标题栏更多菜单不再进行二次折叠。
+- 🐞【修复】API请求测试端口号环境变量导致请求发送失败的bug。
+- 🐞【修复】API请求测试历史记录可能丢失响应体的bug。
+
 ## v2.22.0 <small><small>*2024-08-19*</small></small>
 - 💪【优化】改善配置文件存储性能。
 - 🐞【修复】Form表单多次解码导致`+`变成空格的bug。

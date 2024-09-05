@@ -6,7 +6,7 @@ Reqable supports automatically uploading captured HTTP requests and responses to
 This feature is available in version v2.20.0+.
 :::
 
-### How it works?
+### How it works
 
 Users need to deploy a server to receive data reported by Reqable. Reqable communicates with the server using the HTTP protocol, request method is `POST`, and the request path can be defined by the user. Whenever Reqable detects that a HTTP session is completed, it sends the data to the server in the HTTP Archive format (JSON). After receiving the data, the server parses the data according to the HTTP Archive format and performs customized operations. The transmission supports compression, and users can choose an algorithm like Gzip, Brotli, and Zstandard.
 
