@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # iOS
 
+## v2.24.0 <small><small>*2024-09-23*</small></small>
+- 💪【优化】支持预览AVI、AVIF和APNG格式的图片。
+- 💪【优化】重发提供复用连接选项，默认情况下不再复用连接。
+- 🐞【修复】动画图片只显示第一帧的bug。
+
+## v2.23.1 <small><small>*2024-09-12*</small></small>
+- 💪【优化】Deflate编码支持有头部和无头部解码。
+- 💪【优化】微调部分多行输入框的UI样式。
+
 ## v2.23.0 <small><small>*2024-09-05*</small></small>
 - 🚀【新功能】支持Internationalized Domain Name (IDN)。
 - 💪【优化】保存文件时使用解码后的文件名称。

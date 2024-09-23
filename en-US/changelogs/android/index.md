@@ -4,6 +4,16 @@ sidebar_position: 4
 
 # Android
 
+## v2.24.0 <small><small>*2024-09-23*</small></small>
+- 💪 [OPT] Support previewing of image in AVI, AVIF and APNG formats.
+- 💪 [OPT] Repeat provides a reuse connection option, and the connection is no longer reused by default.
+- 🐞 [FIX] The bug that animated image only display the first frame.
+
+## v2.23.1 <small><small>*2024-09-12*</small></small>
+- 💪 [OPT] Deflate encoding supports decoding with and without headers.
+- 💪 [OPT] Update the UI style of some multi-line input boxes.
+- 🐞 [FIX] The bug of no traffic when switching between local capture and collaborative capture.
+
 ## v2.23.0 <small><small>*2024-09-05*</small></small>
 - 🚀 [NEW] Support Internationalized Domain Name (IDN) API.
 - 💪 [OPT] Use the decoded file name when saving the request and response.

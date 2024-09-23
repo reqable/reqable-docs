@@ -4,6 +4,24 @@ sidebar_position: 0
 
 # Windows
 
+## v2.24.0 <small><small>*2024-09-23*</small></small>
+- 🚀 [NEW] Introduce image viewer in toolbox.
+- 🚀 [NEW] The Base64 string of image can be previewed through the image viewer.
+- 🚀 [NEW] You can repeat requests in the breakpoint window.
+- 🚀 [NEW] Add social media entrances to the bottom bar.
+- 💪 [OPT] Support previewing of image in AVI, AVIF and APNG formats.
+- 💪 [OPT] Repeat provides a reuse connection option, and the connection is no longer reused by default.
+- 💪 [OPT] Rewrite redirection no longer sends requests to the original server.
+- 💪 [OPT] Breakpoint supports shortcut keys such as `Execute` and `Break`.
+- 💪 [OPT] Adjust tray menu options.
+- 💪 [OPT] The tray tooltip will show the recording status.
+- 🐞 [FIX] The bug that animated image only display the first frame.
+- 🐞 [FIX] The bug that the tray tooltip does not display.
+
+## v2.23.1 <small><small>*2024-09-12*</small></small>
+- 💪 [OPT] Deflate encoding supports decoding with and without headers.
+- 💪 [OPT] Update the UI style of some multi-line input boxes.
+
 ## v2.23.0 <small><small>*2024-09-05*</small></small>
 - 🚀 [NEW] Support network condition simulation.
 - 🚀 [NEW] Support viewing of HAR content in clipboard.
