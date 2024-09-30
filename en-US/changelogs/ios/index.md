@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # iOS
 
+## v2.25.0 <small><small>*2024-09-30*</small></small>
+- 🚀 [NEW] Introduce favorite request list.
+- 🚀 [NEW] Support deleting items in traffic history list.
+- 🚀 [NEW] Add `Social and Community` to the sidebar.
+- 💪 [OPT] Backup the database instead of deleting it when the database is downgraded and cannot be opened.
+- 💪 [OPT] Hide script tab in API testing editor.
+- 🐞 [FIX] The bug that AVIF images cannot be displayed normally on some platforms.
+- 🐞 [FIX] A bug where creating API request from the traffic list could not automatically back to home.
+
 ## v2.24.0 <small><small>*2024-09-23*</small></small>
 - 💪 [OPT] Support previewing of image in AVI, AVIF and APNG formats.
 - 💪 [OPT] Repeat provides a reuse connection option, and the connection is no longer reused by default.

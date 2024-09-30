@@ -4,6 +4,23 @@ sidebar_position: 3
 
 # Linux
 
+## v2.25.0 <small><small>*2024-09-30*</small></small>
+- 🚀 [NEW] Introduce favorite request list.
+- 🚀 [NEW] Support deleting items in traffic history list.
+- 🚀 [NEW] Support opening images in a new window.
+- 🚀 [NEW] Support opening binary in a new window.
+- 🚀 [NEW] Support opening API response in a new window.
+- 🚀 [NEW] Support using the shortcut `Control + Shift + I` to quickly import cURL from the clipboard.
+- 🚀 [NEW] support using the shortcut key `Control + Shift + E` to generate cURL and write it to the clipboard.
+- 💪 [OPT] Backup the database instead of deleting it when the database is downgraded and cannot be opened.
+- 💪 [OPT] The shortcut key for automatically saving history in API testing is changed from `Control + Shift + H` to `Alt + H`.
+- 💪 [OPT] The shortcut key for auto-cookie in API testing is changed from `Control + Shift + C` to `Alt + C`.
+- 💪 [OPT] The shortcut key for Reqable ID in API testing is changed from `Control + Shift + I` to `Alt + I`.
+- 💪 [OPT] Dialog positive button can be triggered by the `Enter` shortcut key.
+- 🐞 [FIX] The bug that AVIF images cannot be displayed normally on some platforms.
+- 🐞 [FIX] The bug that Android certificate hash name may lack prefix 0.
+- 🐞 [FIX] The bug of failing to restore a damaged SharedPreferences file from backups.
+
 ## v2.24.0 <small><small>*2024-09-23*</small></small>
 - 🚀 [NEW] Introduce image viewer in toolbox.
 - 🚀 [NEW] The Base64 string of image can be previewed through the image viewer.
@@ -118,7 +135,7 @@ sidebar_position: 3
 - 💪 [OPT] Adjust the position of the history search input field.
 - 💪 [OPT] The traffic list URL will display mirroring host rather than the proxy host.
 - 💪 [OPT] The shortcut key for adding API to the collection from the traffic list is changed from `Control` + `S` to `Control` + `I`.
-- 💪 [OPT] Drag with `Ctrl` for continuous list item selection.
+- 💪 [OPT] Drag with `Control` for continuous list item selection.
 - 🐞 [FIX] The bug that that may fail to open HAR file.
 - 🐞 [FIX] Secondary proxy authentication issue.
 - 🐞 [FIX] The bug that SSL proxy cannot hit some HTTPS requests.
@@ -495,8 +512,8 @@ sidebar_position: 3
 - 🚀 [NEW] Allow root certificate regeneration.
 - 🚀 [NEW] You can pin application filter and domain filter now.
 - 🚀 [NEW] You can configure interceptors such as rewriting in auto-highlighting.
-- 🚀 [NEW] A shortcut key `Alt + Ctrl + ↑/↓` for traffic list, switch browsing history before and after.
-- 🚀 [NEW] A shortcut key `Shift + Contrl + I` for all list, invert the current selection.
+- 🚀 [NEW] A shortcut key `Alt + Control + ↑/↓` for traffic list, switch browsing history before and after.
+- 🚀 [NEW] A shortcut key `Shift + Control + I` for all list, invert the current selection.
 - 💪 [OPT] API testing `reqableId` supports displaying in two lines.
 - 💪 [OPT] API testing will automatically fill key-value entries when switching from text.
 - 💪 [OPT] The domain filter list is expanded by default.

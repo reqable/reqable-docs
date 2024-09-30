@@ -4,6 +4,22 @@ sidebar_position: 1
 
 # Macos
 
+## v2.25.0 <small><small>*2024-09-30*</small></small>
+- 🚀 [NEW] Introduce favorite request list.
+- 🚀 [NEW] Support deleting items in traffic history list.
+- 🚀 [NEW] Support opening images in a new window.
+- 🚀 [NEW] Support opening binary in a new window.
+- 🚀 [NEW] Support opening API response in a new window.
+- 🚀 [NEW] Support using the shortcut `Command + Shift + I` to quickly import cURL from the clipboard.
+- 🚀 [NEW] support using the shortcut key `Command + Shift + E` to generate cURL and write it to the clipboard.
+- 💪 [OPT] Backup the database instead of deleting it when the database is downgraded and cannot be opened.
+- 💪 [OPT] The shortcut key for automatically saving history in API testing is changed from `Command + Shift + H` to `Alt + H`.
+- 💪 [OPT] The shortcut key for auto-cookie in API testing is changed from `Command + Shift + C` to `Alt + C`.
+- 💪 [OPT] The shortcut key for Reqable ID in API testing is changed from `Command + Shift + I` to `Alt + I`.
+- 💪 [OPT] Dialog positive button can be triggered by the `Enter` shortcut key.
+- 🐞 [FIX] The bug that AVIF images cannot be displayed normally on some platforms.
+- 🐞 [FIX] The bug that Android certificate hash name may lack prefix 0.
+
 ## v2.24.0 <small><small>*2024-09-23*</small></small>
 - 🚀 [NEW] Introduce image viewer in toolbox.
 - 🚀 [NEW] The Base64 string of image can be previewed through the image viewer.
@@ -122,8 +138,8 @@ sidebar_position: 1
 - 💪 [OPT] Adjust the position of the collection search input field.
 - 💪 [OPT] Adjust the position of the history search input field.
 - 💪 [OPT] The traffic list URL will display mirroring host rather than the proxy host.
-- 💪 [OPT] The shortcut key for adding API to the collection from the traffic list is changed from `Control` + `S` to `Control` + `I`.
-- 💪 [OPT] Drag with `Ctrl` for continuous list item selection.
+- 💪 [OPT] The shortcut key for adding API to the collection from the traffic list is changed from `Command` + `S` to `Command` + `I`.
+- 💪 [OPT] Drag with `Command` for continuous list item selection.
 - 🐞 [FIX] The bug that that may fail to open HAR file.
 - 🐞 [FIX] Secondary proxy authentication issue.
 - 🐞 [FIX] The bug that SSL proxy cannot hit some HTTPS requests.
@@ -399,7 +415,7 @@ sidebar_position: 1
 - 🚀 [NEW] Supports to adjust app display scaling.
 - 🚀 [NEW] Will restore the previous window position and size when restarting.
 - 🚀 [NEW] Supports deleting API request history URLs.
-- 🚀 [NEW] Shortcut key `Control + Command + F` to toggle to full screen mode.
+- 🚀 [NEW] Shortcut key `Command + Command + F` to toggle to full screen mode.
 - 💪 [OPT] No longer automatically checked the rewrite-replace checkbox.
 - 🐞 [FIX] The bug that the unmodified API will prompt to save when closing.
 - 🐞 [FIX] The bug that closing other tabs will close all tabs.
@@ -501,8 +517,8 @@ sidebar_position: 1
 - 🚀 [NEW] Allow root certificate regeneration.
 - 🚀 [NEW] You can pin application filter and domain filter now.
 - 🚀 [NEW] You can configure interceptors such as rewriting in auto-highlighting.
-- 🚀 [NEW] A shortcut key `Alt + Ctrl + ↑/↓` for traffic list, switch browsing history before and after.
-- 🚀 [NEW] A shortcut key `Shift + Contrl + I` for all list, invert the current selection.
+- 🚀 [NEW] A shortcut key `Alt + Command + ↑/↓` for traffic list, switch browsing history before and after.
+- 🚀 [NEW] A shortcut key `Shift + Command + I` for all list, invert the current selection.
 - 💪 [OPT] API testing `reqableId` supports displaying in two lines.
 - 💪 [OPT] API testing will automatically fill key-value entries when switching from text.
 - 💪 [OPT] The domain filter list is expanded by default.
@@ -542,7 +558,7 @@ sidebar_position: 1
 - 💪 [Opt] Try using SSL SNI as the host of the URL instead of the IP.
 - 💪 [Opt] Adds some prompts in SSL bypass editor.
 - 💪 [Opt] Double-clicking outside the traffic list will automatically close the details panel.
-- 💪 [Opt] Supports `Control + L` shortcut key to quickly locate the currently selected traffic item.
+- 💪 [Opt] Supports `Command + L` shortcut key to quickly locate the currently selected traffic item.
 - 🐞 [Fix] A bug that unverified license will cause the page to remain in the loading state forever.
 - 🐞 [Fix] A bug that code syntax highlighting may cause content display to be lost.
 - 🐞 [Fix] A bug where URL port number displayed in the traffic list was incorrectly in some cases.
@@ -606,7 +622,7 @@ sidebar_position: 1
 - 🚀 [NEW] Add HTTP request and response diff tool.
 - 🚀 [NEW] Add `JWT` decoder in the toolbox.
 - 🚀 [NEW] API JSON data editing supports one-click compression.
-- 💪 [Opt] Supports `Control + W` shortcut key to close sub windows.
+- 💪 [Opt] Supports `Command + W` shortcut key to close sub windows.
 - 💪 [Opt] Use name instead of timestamp when exporting traffic history.
 - 💪 [Opt] Raw packet syntax supports JSON and XML highlighting.
 - 🐞 [Fix] In the API testing, the cURL import dialog will not automatically pop up if the command containing `WIDTH NO-BREAK SPACE`.
