@@ -32,6 +32,6 @@ It may be caused by port conflict, just change the proxy port of Reqable.
 If the computer is working normally, the mobile phone cannot get any traffic, please check the CheckList below.
 
 - [x] Both mobile phone and PC are connected to the same LAN.
-- [x] The mobile Wifi proxy has set the IP address and port number of Reqable (see the top of the Reqable window), or use SocksDroid for forwarding.
+- [x] The mobile Wi-Fi proxy has set the IP address and port number of Reqable (see the top of the Reqable window), or use SocksDroid for forwarding.
 - [x] The CA certificate has been correctly installed on the phone (Only has `CONNECT` traffic).
 - [x] The PC network firewall has opened the port address of Reqable.
