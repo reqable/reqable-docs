@@ -38,7 +38,9 @@ CA根证书未安装或安装失败时，盾牌图标显示为黄色；安装成
 
 ## 移动端安装 {#mobile}
 
-如果您有分析移动端应用流量的需求，必须在移动端安装CA根证书，我们已经在Reqable中内置了Android和iOS证书安装的指引。如果您使用电脑端App，请切换到`Android`和`iOS`的Tab按照步骤进行安装；如果您使用移动端App，请进入`侧边栏` -> `证书管理` -> `安装根证书到本机`，然后选择合适的方案进行安装。
+如果您有分析移动端应用流量的需求，必须在移动端安装CA根证书，我们已经在Reqable中内置了Android和iOS证书安装的指引。
+
+![](arts/installation_04.png)
 
 :::warning 重要须知
 如果您使用电脑端App进行流量分析，请安装电脑端的CA根证书到移动端设备；如果您使用移动端App直接进行流量分析，请安装移动端的CA根证书到移动端设备。
@@ -53,10 +55,6 @@ Reqable给每台设备生成的CA根证书均不相同。如果您希望所有�
 ### Android
 
 Android证书分为两种：用户证书和系统证书。用户目录不需要权限即可添加和删除CA证书，系统目录需要Root权限才可以添加和删除CA证书。
-
-Reqable的证书安装界面提供了Android证书的安装引导入口，如下图所示点击即可以进入。
-
-![](arts/installation_04.png)
 
 Reqable要求用户事先已经在电脑上安装了ADB工具，Reqable会使用ADB工具检查连接到电脑的Android设备的证书安装状态，包括系统证书安装状态和用户证书安装状态。
 
@@ -84,13 +82,13 @@ Android Debug Bridge（简称ADB）是Google提供的Android设备连接工具�
 
 在Android 7.0及以上版本的设备上，安装完用户证书后还需要开发者在项目中进行额外配置来信任用户证书。
 
-::: caution
+:::caution
 这种方式只对Android Native应用有效，基于Flutter的应用无效。
 :::
 
 方式一：build.gradle中配置依赖（推荐）
 
-```gradle
+```groovy
 dependencies {
   debugImplementation("com.reqable.android:user-certificate-trust:1.0.0")
 }

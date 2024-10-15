@@ -38,7 +38,9 @@ When the CA certificate is not installed or the installation fails, the shield i
 
 ## Mobile {#mobile}
 
-If you need to analyze mobile applications, you must install the CA certificate on the mobile device. We have built-in guidelines for installing Android and iOS certificates in Reqable. If you use desktop app, please switch to the tabs of `Android` and `iOS` to follow the steps to install. If you use mobile app, please goto `Side Menu` -> `Certificate Management` -> `Install Root Certificate to Local-Machine`, and choose a suitable solution to install.
+If you need to analyze mobile applications, you must install the CA certificate on the mobile device. We have built-in guidelines for installing Android and iOS certificates in Reqable.
+
+![](arts/installation_04.png)
 
 :::warning
 If you use the desktop app to analyze traffic, please install the CA root certificate on the computer to the mobile device; if you use the mobile app to analyze traffic directly, please install the CA root certificate on the mobile device.
@@ -52,35 +54,52 @@ After the mobile App is initialized and selects the collaborative mode and scans
 
 ### Android
 
-There are two types of Android certificates: user certificates and system certificates. User certificates are located in the `/data/misc/user/0/cacerts` directory, and system certificates are located in the `/system/etc/security/cacerts` directory. The user directory does not require additional permissions to be modified, while the system directory requires permissions to unlock the `system` partition to be modified. You can choose any appropriate certificate installation solution according to the following scenarios.
+There are two types of Android certificates: user certificate and system certificate. User certificates does not require additional permissions to install, while the system requires root permission to install.
 
-#### 1. Devices below Android 7.0
+Reqable requires that the user has installed the ADB tool on PC in advance. Reqable will use the ADB tool to check the certificate installation status of the Android device connected, including the system certificate status and the user certificate status.
 
-Devices below Android 7.0 trust user certificates by default. You can directly install the certificate to the user directory: Settings -> Security -> Encryption and Credentials -> Install Certificate -> CA Certificate, select the exported certificate and install it (authorization verification is required).
+![](arts/installation_05.png)
 
-#### 2. Rooted device and unlocked `system` partition
-
-Use the `adb` command to push the certificate to the system certificate directory. This certificate is in the `hash.0` format.
-
-```shell
-adb root
-# restarting adbd as root
-adb shell avbctl disable-verification
-adb remount
-adb push 364618e0.0 /system/etc/security/cacerts/364618e0.0
-```
-
-:::caution
-Since the Android 14 certificate is migrated to the `apex` module, this solution is only suitable for Android 13 and below.
+:::info About ADB
+Android Debug Bridge (ADB) is an Android device toolkit provided by Google and can be downloaded from the Android Developers [website](https://developer.android.google.cn/tools/adb), After downloading and installing, configure the `ANDROID_HOME` and `PATH` environment variables and restart Reqable.
 :::
 
-#### 3. Android project adds `trust-anchors`
+#### System Certificate
 
-If you are an Android developer and have the project write permission, you can directly install the certificate to the user directory, and then configure the project to trust the user directory certificate.
+Regardless of whether the device is rooted or not, Reqable can detect the installation status of the system certificate. However, only rooted devices can install the certificate with one click (supporting Android 5.0 - 15 systems).
 
-Step 1: Install the certificate on your phone: Settings -> Security -> Encryption and Credentials -> Install Certificate -> CA Certificate, select the exported certificate and install it (authorization verification is required).
+![](arts/installation_06.png)
 
-Step 2: Create res/xml/network_security_config.xml
+If the system certificate has been installed, you can skip the next step of installing the user certificate.
+
+#### User Certificate
+
+The user certificate needs to be installed manually by the user. Open the settings on the mobile and follow the steps below:
+
+Open Settings -> Security -> Encryption & Credentials -> Install a Certificate -> CA Certificate.
+
+Note that Reqable cannot detect the user certificate installation status of non-root devices and will always display "Unknown Certificate Installation Status".
+
+On devices with Android 7.0 and above, after installing the user certificate, the developer needs to perform additional configuration in the project to trust the user certificate.
+
+:::caution
+This installation is only valid for Android native apps, not for Flutter-based apps.
+:::
+
+Method 1: Add dependency in build.gradle (Recommended)
+
+```groovy
+dependencies {
+  debugImplementation("com.reqable.android:user-certificate-trust:1.0.0")
+}
+```
+
+According to the above configuration, the debug package will automatically integrate the network security configuration file. If you cannot connect to the maven central repository, please follow the instructions in method 2 to manually create and configure the network security file.
+
+Method2: Create network security config file
+
+Create file res/xml/network_security_config.xml
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
@@ -93,7 +112,8 @@ Step 2: Create res/xml/network_security_config.xml
 </network-security-config>
 ```
 
-Step 3: Config AndroidManifest.xml
+Config AndroidManifest.xml
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
@@ -105,40 +125,27 @@ Step 3: Config AndroidManifest.xml
 
 Please remove this configuration in the release version. For more information about the network security configuration file, please refer to: [Android Docs](https://developer.android.google.cn/training/articles/security-config).
 
-#### 4. Android project reduces `targetSdkVersion`
+#### Browser
 
-If you are an Android developer and have the project write permission. You can directly install the certificate to the user directory, and then reduce the project's `targetSdkVersion` to 23 or below.
+Successfully installing CA certificate does not mean it can be trusted by the browser, even if it is installed in the system certificate directory.
 
-Step 1: Install the certificate on the phone: Settings -> Security -> Encryption and Credentials -> Install Certificate -> CA Certificate, select the exported certificate and install it (authorization verification is required).
+##### Chrome Browser
 
-Step 2: Reduce `targetSdkVersion`.
-```gradle
-android {
-  defaultConfig {
-    ...
-    targetSdkVersion 23
-    ...
-  }
-}
-```
+Chrome's trust policy for certificates is constantly changing. For example, the latest version of Chrome will ignore the self-signed CA certificate installed in the Android system certificate directory. If you need to capture the Chrome traffic, please note:
 
-#### 5. Use magisk module to install certificate
+- If you using a higher version of Chrome, you need to install the CA certificate in the user certificate directory.
+- If you using a lower version of Chrome, you need to install the CA certificate in the system certificate directory.
 
-Reqable app provides a Magisk module package, which can install the certificate to the system directory. It supports Magisk and KernelSU, and supports Android 5+.
+If you are not sure which method to choose, you can try them two.
 
-:::caution
-After KernelSU is flashed into the device, you may need to grant Reqable root permissions, otherwise the certificate will not take effect.
-:::
+##### Firefox Browser
 
-#### 6. Chrome-based Browsers
+Firefox uses a built-in CA store. Regardless of whether the Reqable CA certificate is installed in the system directory or the user directory, it will not be trusted, and the user needs to perform additional actions.
 
-Chrome (and subsequently many other Chromium-based browsers) has recently started requiring Certificate Transparency logs for CA certs found in the system certificate store.
+- Firefox settings -> About Firefox -> Click on the top logo 5 times to enable the debug menu.
+- Firefox settings -> Secret Settings -> Enable Use third party CA certificates.
 
-Even if the certificate has been successfully installed in the system directory, the `NET:ERR_CERTIFICATE_TRANSPARENCY_REQUIRED` will still occur. In this case, please remove the certificate from the system directory and install it in the user directory. The Chrome kernel browser will trust the user certificate by default and will not perform CT log verification.
-
-#### 7. Flutter Apps
-
-App developed with the Flutter only trust system certificates, not user directory certificates. This is hardcoded into the framework. Neither configuring `network_security_config.xml` nor lowering `targetSdkVersion` will take effect.
+After completing the above steps, install the CA certificate in the user directory to take effect.
 
 ### iOS
 

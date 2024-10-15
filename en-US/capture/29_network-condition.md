@@ -1,7 +1,5 @@
 # Network Condition
 
-import Shortcut from '@site/src/components/Shortcut';
-
 Reqable supports setting network conditions for specified domain names and simulating different network environments, such as offline, weak network, 2G, etc.
 
 :::info
@@ -11,7 +9,7 @@ This feature is available in version v2.23.0+.
 
 ### How to use
 
-Select `Network Condition` from the `Tools` menu or use the shortcut <Shortcut>Alt + J</Shortcut> to open the configuration page.
+Select `Network Condition` from the `Tools` menu or use the shortcut `Alt` + `J` to open the configuration page.
 
 ![](arts/network_condition_01.png)
 

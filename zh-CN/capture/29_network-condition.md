@@ -1,7 +1,5 @@
 # 网络环境
 
-import Shortcut from '@site/src/components/Shortcut';
-
 Reqable支持设置对指定域名进行网络限制，模拟不同的网络环境，例如离线、弱网、2G等状况。
 
 :::info
@@ -10,7 +8,7 @@ Reqable支持设置对指定域名进行网络限制，模拟不同的网络环�
 
 ### 使用方式
 
-从`工具`菜单中选择`网络限制`或者使用快捷键 <Shortcut>Alt + J</Shortcut> 来打开网络环境配置页面。
+从`工具`菜单中选择`网络限制`或者使用快捷键 `Alt` + `J` 来打开网络环境配置页面。
 
 ![](arts/network_condition_01.png)
 
