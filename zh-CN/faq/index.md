@@ -32,7 +32,7 @@ C:\Users\xxx\AppData\Roaming\Reqable
 电脑端正常使用，但是手机端无法获取到任何流量。遇到这种情况请检查下面的CheckList。
 
 - [x] 手机与电脑都连接到同一个局域网。
-- [x] 手机Wifi代理已设置Reqable的IP地址和端口号（见Reqable窗口顶部），或者使用SocksDroid进行转发。
+- [x] 手机Wi-Fi代理已设置Reqable的IP地址和端口号（见Reqable窗口顶部），或者使用SocksDroid进行转发。
 - [x] 手机上已正确安装CA证书（针对只有`CONNECT`请求的情况）。
 - [x] 电脑网络防火墙已开放Reqable的端口地址。
 

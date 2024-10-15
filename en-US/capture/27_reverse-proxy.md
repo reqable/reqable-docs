@@ -18,7 +18,7 @@ If the application network framework you are using supports proxy configuration,
 
 Using a reverse proxy also has the following advantages:
 - The original HTTPS request becomes a clear text request to communicate with the local web server, so the client no longer needs to install the CA root certificate.
-- The remote device only needs to ensure that it is in the same LAN as the PC device, and there is no need to set up a Wifi proxy.
+- The remote device only needs to ensure that it is in the same LAN as the PC device, and there is no need to set up a Wi-Fi proxy.
 
 Using a reverse proxy has the following disadvantages:
 - Network request efficiency using reverse proxy will be reduced.
