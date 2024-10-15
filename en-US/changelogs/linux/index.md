@@ -4,6 +4,21 @@ sidebar_position: 3
 
 # Linux
 
+## v2.26.1 <small><small>*2024-10-14*</small></small>
+- 🚀 [NEW] Introduce `Proxy Terminal` feature.
+- 🚀 [NEW] A new CA certificate setup guide.
+- 🚀 [NEW] Android root devices support one-click installation of CA certificate via ADB.
+- 🚀 [NEW] A Deep search option for traffic list searching.
+- 💪 [OPT] Uri tool supports three input modes.
+- 💪 [OPT] Middle ellipsis for long context menu text.
+- 🐞 [FIX] A bug that WebSocket will broken due to incorrect frame codec.
+- 🐞 [FIX] A Bug that environment variable writing may not take effect in scripts.
+
+## v2.25.1 <small><small>*2024-10-07*</small></small>
+- 💪 [OPT] WebSocket message timestamp is accurate to milliseconds.
+- 💪 [OPT] Android certificate installation guide.
+- 💪 [OPT] Adjust the size of the image view window.
+
 ## v2.25.0 <small><small>*2024-09-30*</small></small>
 - 🚀 [NEW] Introduce favorite request list.
 - 🚀 [NEW] Support deleting items in traffic history list.

@@ -4,6 +4,18 @@ sidebar_position: 4
 
 # Android
 
+## v2.26.1 <small><small>*2024-10-14*</small></small>
+- 🐞 [FIX] A bug that WebSocket will broken due to incorrect frame codec.
+
+## v2.25.1 <small><small>*2024-10-07*</small></small>
+- 🚀 [NEW] Applications support bypass mode.
+- 💪 [OPT] WebSocket message timestamp is accurate to milliseconds.
+- 💪 [OPT] Android certificate installation guide.
+- 💪 [OPT] When selecting the target application, it will remember whether the system application is displayed.
+- 💪 [OPT] Now can automatically install user certificate on Android Q and before.
+- 🐞 [FIX] A bug that data will be lost after canceling a favorite and then adding it again.
+- 🐞 [FIX] A bug that may cause network error in enhanced mode.
+
 ## v2.25.0 <small><small>*2024-09-30*</small></small>
 - 🚀 [NEW] Introduce favorite request list.
 - 🚀 [NEW] Support deleting items in traffic history list.

@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # iOS
 
+## v2.26.1 <small><small>*2024-10-14*</small></small>
+- 🐞【修复】WebSocket压缩的长消息帧解码不正确的bug。
+
+## v2.25.1 <small><small>*2024-10-07*</small></small>
+- 💪【优化】WebSocket时间戳显示到毫秒。
+- 🐞【修复】取消收藏后再收藏会丢失数据的bug。
+- 🐞【修复】增强模式下可能出现网络异常的bug。
+
 ## v2.25.0 <small><small>*2024-09-30*</small></small>
 - 🚀【新功能】从调试列表收藏请求记录。
 - 🚀【新功能】支持删除调试历史记录。
