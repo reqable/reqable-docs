@@ -1,12 +1,12 @@
 ---
 title: 安装证书
-description: 如何安装Reqable的CA根证书。
+description: 如何安装证书？
 sidebar_position: 0
 ---
 
 ## 为什么要安装证书？
 
-Reqable使用经典的中间人（MITM）技术分析HTTPS流量，当客户端与Reqable的代理服务器（下文简称`中间人`）进行通信时，中间人需要重签远程服务器的SSL证书。为了保证客户端与中间人成功进行SSL握手通信，需要将中间人的根证书（下文简称`CA根证书`）安装到客户端本地的证书管理中心。
+Reqable使用经典的中间人（MITM）技术分析HTTPS流量，当客户端与Reqable的代理服务器（下文简称`中间人`）进行通信时，中间人需要重签远程服务器的SSL证书。为了保证客户端与中间人成功进行SSL握手通信，需要将中间人的根证书（下文简称`CA根证书`）安装到客户端本地的证书管理中心。如果没有安装CA根证书，可能会出现`SSL握手失败`的错误。
 
 如果目标客户端是电脑端应用程序，CA根证书需要安装到电脑的证书管理中心；如果目标客户端是移动端App，CA根证书则需要安装到手机的证书管理中心。如果您没有流量分析的需求，可以忽略这一步。
 
@@ -46,41 +46,62 @@ CA根证书未安装或安装失败时，盾牌图标显示为黄色；安装成
 
 Reqable给每台设备生成的CA根证书均不相同。如果您希望所有设备共用同一个CA根证书，可以导出.p12格式证书后再在其他设备上导入。
 
-:::note
+:::info
 小技巧：移动端App初始化选择协同模式并扫码连接电脑后，会自动同步电脑端的CA根证书到当前移动端设备，此时两台设备的CA根证书为同一个。
 :::
 
 ### Android
 
-Android证书分为两种：用户证书和系统证书。用户证书位于`/data/misc/user/0/cacerts`目录，系统证书位于`/system/etc/security/cacerts`。其中，用户目录不需要额外权限即可更改，系统目录需要权限解锁`system`分区才可修改。您可以按照下面的场景选择任意一个合适的证书安装方案。
+Android证书分为两种：用户证书和系统证书。用户目录不需要权限即可添加和删除CA证书，系统目录需要Root权限才可以添加和删除CA证书。
 
-#### 1. Android 7.0以下设备
+Reqable的证书安装界面提供了Android证书的安装引导入口，如下图所示点击即可以进入。
 
-Android 7.0以下设备默认信任用户证书，直接将证书安装到用户目录即可：设置-> 安全 -> 加密与凭据 -> 安装证书 -> CA证书，选择导出的证书并安装（需要用户授权验证）。
+![](arts/installation_04.png)
 
-#### 2. Root设备并已解锁`system`分区
+Reqable要求用户事先已经在电脑上安装了ADB工具，Reqable会使用ADB工具检查连接到电脑的Android设备的证书安装状态，包括系统证书安装状态和用户证书安装状态。
 
-直接使用`adb`命令推送证书到系统证书目录。此证书为`hash.0`格式，具体hash值请参考App内的说明。
+![](arts/installation_05.png)
 
-```shell
-adb root
-# restarting adbd as root
-adb shell avbctl disable-verification
-adb remount
-adb push 364618e0.0 /system/etc/security/cacerts/364618e0.0
-```
-
-:::caution
-由于Android 14证书迁移到`apex`模块，故此方案仅适合Android 13及以下版本。
+:::info 关于ADB工具
+Android Debug Bridge（简称ADB）是Google提供的Android设备连接工具，可以从Android开发者官网[下载](https://developer.android.com/tools/adb)，下载并安装完成后，配置好`ANDROID_HOME`和`PATH`环境变量，重启Reqable即可。
 :::
 
-#### 3. Android项目配置信任路径
+#### 系统证书
 
-如果您是Android开发者并拥有项目的修改权限。您可以直接将证书安装到用户目录，然后在项目中配置信任用户目录证书即可。
+无论设备是否Root，Reqable都可以检测系统证书的安装状态。但是，只有Root的设备Reqable才可以一键安装证书（支持Android 5.0 - 15系统）。
 
-第一步：手机上安装证书：设置-> 安全 -> 加密与凭据 -> 安装证书 -> CA证书，选择导出的证书并安装（需要用户授权验证）。
+![](arts/installation_06.png)
 
-第二步：创建 res/xml/network_security_config.xml
+如果已经安装了系统证书，可以跳过下一步用户证书的安装。
+
+#### 用户证书
+
+用户证书需要用户手动进行安装，在手机端打开设置进行如下步骤的操作：
+
+设置-> 安全 -> 加密与凭据 -> 安装证书 -> CA证书，选择导出的证书并安装（需要用户授权验证）。
+
+注意，Reqable无法检测到非Root设备的用户证书安装状态，会一直显示`未知证书安装状态`。
+
+在Android 7.0及以上版本的设备上，安装完用户证书后还需要开发者在项目中进行额外配置来信任用户证书。
+
+::: caution
+这种方式只对Android Native应用有效，基于Flutter的应用无效。
+:::
+
+方式一：build.gradle中配置依赖（推荐）
+
+```gradle
+dependencies {
+  debugImplementation("com.reqable.android:user-certificate-trust:1.0.0")
+}
+```
+
+按照以上配置，Debug包将自动集成网络安全配置文件，如果无法连接到Maven中央仓库，请按照方式二的指引手动创建并配置网络安全文件。
+
+方式二：手动创建网络安全文件
+
+新建文件 res/xml/network_security_config.xml
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
@@ -93,7 +114,8 @@ adb push 364618e0.0 /system/etc/security/cacerts/364618e0.0
 </network-security-config>
 ```
 
-第三步：配置 AndroidManifest.xml
+配置到 AndroidManifest.xml
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
@@ -103,40 +125,29 @@ adb push 364618e0.0 /system/etc/security/cacerts/364618e0.0
 </manifest>
 ```
 
-请在发行版本中移除此配置，更多有关网络安全配置文件资料，请参考：[Android开发文档](https://developer.android.google.cn/training/articles/security-config)。
+注意⚠️：请在发行版本中移除此配置，更多有关网络安全配置文件资料，请参考：[Android开发文档](https://developer.android.google.cn/training/articles/security-config)。
 
-#### 4. Android项目降低`targetSdkVersion`
+#### 浏览器
 
-如果您是Android开发者并拥有项目的修改权限。您可以直接将证书安装到用户目录，然后将项目的`targetSdkVersion`降低至23或以下。
+在Android设备上，安装完证书并不意味着可以被浏览器信任，即使是安装到系统证书目录。
 
-第一步：手机上安装证书：设置-> 安全 -> 加密与凭据 -> 安装证书 -> CA证书，选择导出的证书并安装（需要用户授权验证）。
+##### Chrome浏览器
 
-第二步：降低`targetSdkVersion`。
-```gradle
-android {
-  defaultConfig {
-    ...
-    targetSdkVersion 23
-    ...
-  }
-}
-```
+Chrome浏览器对证书的信任策略一直在变化，比如最新版本的Chrome浏览器会忽略安装到Android系统证书目录的自签CA证书，如果需要对Chrome浏览器进行抓包，请按照下面的方式进行处理：
 
-#### 5. Magisk模块安装到系统目录
+- 如果是高版本Chrome浏览器，需要将CA证书安装到用户证书目录；
+- 如果是低版本的Chrome浏览器，需要将CA证书安装到系统证书目录。
 
-Reqable应用内提供了Magisk模块安装包，可以一键安装证书到系统目录。支持Magisk和KernelSU，支持Android 5以上任何版本。
+如果不确定选用那种方式，可以分别尝试下。
 
-:::caution
-KernelSU刷入模块后，可能需要需要授予Reqable Root权限，否则证书无法生效。
-:::
+##### Firefox浏览器
 
-#### 6. Chrome内核浏览器
+Firefox浏览器使用内置的CA证书验证机制，无论Reqable的CA证书是安装到系统目录还是用户目录都不会被信任，需要用户进行额外的操作。
 
-最新版本Chrome内核浏览器对系统目录证书启用了CT日志验证，即使证书已经成功安装到系统目录，仍然会出现`NET:ERR_CERTIFICATE_TRANSPARENCY_REQUIRED`到问题。遇到这种问题，请将证书从系统目录中移除并安装到用户目录。Chrome内核浏览器默认会信任用户证书并不会进行CT日志验证。
+- Firefox设置 -> 关于Firefox -> 点击顶部Logo 5下启用调试菜单。
+- Firefox设置 -> Secret Settings -> 启用 Use third party CA certificates。
 
-#### 7. Flutter应用
-
-Flutter框架开发的Android应用程序只信任系统目录证书，不会信任用户目录证书，这个是写死在框架里面的。无论是配置`network_security_config.xml`还是降低`targetSdkVersion`均不会生效。
+按照上面步骤操作完成后，将CA证书安装到用户目录即可生效。
 
 ### iOS
 
@@ -150,12 +161,14 @@ Flutter框架开发的Android应用程序只信任系统目录证书，不会信
 
 第三步：信任证书，设置 -> 通用 -> 关于 -> 证书信任设置 -> 打开开关。
 
-### 特殊情况
+## 特殊问题
 
 在一些特殊情况下，即使已经安装了证书可能也无法正常解析HTTPS流量，常见的有下面这些情况。
 
 - 网络请求启用了固定证书，要求服务器返回指定签发的证书。
-
 - 网络请求启用了双向验证，要求客户端也要上传证书给服务器进行验证。
-
 - 应用使用了内置的CA证书验证，而不是使用系统的CA证书。
+
+
+
+
