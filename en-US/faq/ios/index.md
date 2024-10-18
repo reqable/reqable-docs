@@ -12,8 +12,8 @@ Please update Reqable to the latest version before troubleshooting.
 
 ### 1. Certificate Issue
 
-- [Installation](../../getting-started/installation)
-- [Troubleshoot](ssl)
+- Check in settings whether the CA certificate (description file) has been installed.
+- Check in settings whether the CA certificate (description file) has been trusted.
 
 ### 2. Reqable log files
 
