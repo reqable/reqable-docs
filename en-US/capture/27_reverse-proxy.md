@@ -36,7 +36,7 @@ Enter the `Name`, `Local Port` and `Remote Address` as shown below. By default, 
 
 :::caution
 - `Preserve Host in Header` allows you to preserve the original Host value. You should use it with caution because your remote server can reject the request due to a mismatched Host value.
-- For the remote device (such as a mobile phone or tablet), please make sure that the computer network firewall has opened the set `Local Port`.
+- For the remote device (such as a mobile phone or tablet), please make sure that PC network firewall has opened the set `Local Port`.
 :::
 
 After the reverse proxy is created, it can be managed in the list below. In the list, the status of each reverse proxy local server will be displayed in real time. If you find that the status fails (most likely because of a local port conflict), you can click to enter the edit page to modify it.
