@@ -71,3 +71,21 @@ On the Windows system, the web proxy supports the following formats.
 ③ `http={ip}:{http_port};https={ip}:{http_port}`
 
 The first of these is a common format and is the default format chosen by Reqable. But some clients can't recognize this format (see this [issue](https://github.com/MatsuriDayo/nekoray/issues/104)), so Reqable provides an option to switch the format. When the web proxy type is selected, the proxy rules can be switched.
+
+### Record Mode
+
+:::caution Attention
+
+If you are not familiar with this function, please keep the **VPN** mode.
+
+:::
+
+On the Android side of Reqable, we provide two`record modes`to capture network traffic:  **Proxy Mode** and **VPN Mode**。
+
+![](arts/proxy_05.png)
+
+- **Proxy Mode**
+ Configure the IP and port of Reqable's MITM server into the system's network proxy settings. If the application supports it, it will read the system's network proxy settings for network requests, allowing Reqable to capture the traffic. On the PC side, Reqable only supports this mode and can automatically configure the system proxy settings with one click. On the mobile side, you need to manually configure the system proxy, and if the application does not support proxy settings, it may not be able to capture the traffic.
+
+- **VPN Mode**
+ Also known as TUN mode, it forces the application's network traffic into the VPN virtual network card, which is undetectable by the application itself. The virtual network card automatically forwards the traffic to Reqable's MITM server for traffic analysis. Mechanically speaking, the VPN mode can automatically intercept traffic, similar to a transparent proxy, with the application itself being unaware, offering stronger operability. Currently, only the mobile side of Reqable supports VPN mode.
