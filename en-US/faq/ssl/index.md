@@ -20,11 +20,11 @@ Some applications have built-in CA Stores instead of using the system CA Store f
 
 ### 3. Certificate Pinning
 
-SSL Pinning refers to the SSL certificate of the server specified by the application client. The SSL certificate issued by the Reqable MITM cannot be verified. If you have the server's SSL certificate (certificate + private key), you can configure it to Reqable's SSL certificate (server). For details, please refer to [SSL Certificate](../../capture/ssl-certificates).
+SSL Pinning refers to the SSL certificate of the server specified by the application client. The SSL certificate issued by the Reqable MITM cannot be verified. If you have the server's SSL certificate (certificate + private key), you can configure it to Reqable's SSL certificate (server). For details, please refer to [SSL Certificate](../../capture/ssl#ssl-certificates).
 
 ### 4. Two-way authentication
 
-Two-way authentication means that the application client needs to upload the SSL certificate to the server. By default, the Reqable MITM will not upload the SSL certificate to the server, so the server will reject the client's connection. If you have the client's SSL certificate (private key is optional), you can configure it in Reqable's SSL certificate (client). For details, please refer to [SSL Certificate](../../capture/ssl-certificates).
+Two-way authentication means that the application client needs to upload the SSL certificate to the server. By default, the Reqable MITM will not upload the SSL certificate to the server, so the server will reject the client's connection. If you have the client's SSL certificate (private key is optional), you can configure it in Reqable's SSL certificate (client). For details, please refer to [SSL Certificate](../../capture/ssl#ssl-certificates).
 
 ### 5. Python
 

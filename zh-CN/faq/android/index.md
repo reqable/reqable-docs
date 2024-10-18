@@ -13,7 +13,7 @@ sidebar_position: 4
 ### 1. 证书问题
 
 - [证书安装](../../getting-started/installation)
-- [问题排错](ssl)
+- [问题排错](../ssl)
 
 ### 2. 查看日志
 

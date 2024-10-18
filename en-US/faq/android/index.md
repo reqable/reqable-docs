@@ -13,7 +13,7 @@ Please update Reqable to the latest version before troubleshooting.
 ### 1. Certificate Issue
 
 - [Installation](../../getting-started/installation)
-- [Troubleshoot](../../getting-started/installation)
+- [Troubleshoot](../ssl)
 
 ### 2. Reqable log files
 

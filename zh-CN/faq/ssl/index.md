@@ -20,11 +20,11 @@ SSL问题大多都是证书信任问题，不同的系统、应用程序都有�
 
 ### 3. 固定证书
 
-固定证书（SSL Pinning）是指应用程序客户端指定服务器的SSL证书，Reqable中间人签发的SSL证书无法通过验证。如果您拥有服务器的SSL证书（公钥证书 + 私钥），可以配置到Reqable的SSL证书（服务端）中，细节请参考[SSL证书](../../capture/ssl-certificates)。
+固定证书（SSL Pinning）是指应用程序客户端指定服务器的SSL证书，Reqable中间人签发的SSL证书无法通过验证。如果您拥有服务器的SSL证书（公钥证书 + 私钥），可以配置到Reqable的SSL证书（服务端）中，细节请参考[SSL证书](../../capture/ssl#ssl-certificates)。
 
 ### 4. 双向验证
 
-双向验证是指应用程序客户端需要上传SSL证书给服务器，默认情况下Reqable中间人不会上传SSL证书给服务器，因此服务器会拒绝客户端的连接。如果您拥有客户端的SSL证书（私钥可选），可以配置到Reqable的SSL证书（客户端）中，细节请参考[SSL证书](../../capture/ssl-certificates)。
+双向验证是指应用程序客户端需要上传SSL证书给服务器，默认情况下Reqable中间人不会上传SSL证书给服务器，因此服务器会拒绝客户端的连接。如果您拥有客户端的SSL证书（私钥可选），可以配置到Reqable的SSL证书（客户端）中，细节请参考[SSL证书](../../capture/ssl#ssl-certificates)。
 
 ### 5. Python
 
