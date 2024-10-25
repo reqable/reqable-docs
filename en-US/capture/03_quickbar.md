@@ -1,4 +1,4 @@
-# QuickBar
+# Quick Bar
 
 Almost all the debugg actions are placed on the top QuickBar. The meaning of each component is as follows:
 

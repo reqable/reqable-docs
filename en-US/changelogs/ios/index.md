@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # iOS
 
+## v2.27.1 <small><small>*2024-10-22*</small></small>
+- 🚀 [NEW] Support more accent colors and user-defined accent colors.
+- 🚀 [NEW] Show application information in request overview.
+- 🚀 [NEW] Support creating API from HTTP raw request message.
+- 💪 [OPT] Request overview will remember the expanded and closed states of each group.
+- 💪 [OPT] History will remember the last selected type.
+- 💪 [OPT] Generated cURL command will include protocol version.
+- 💪 [OPT] Enhance cURL command import.
+- 🐞 [FIX] The bug that no traffic will be captured in enhanced mode.
+
 ## v2.26.1 <small><small>*2024-10-14*</small></small>
 - 🐞 [FIX] A bug that WebSocket will broken due to incorrect frame codec.
 
