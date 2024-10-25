@@ -63,12 +63,16 @@ Reqable can compose API for testing and also supports features such as API colle
 
 Reqable provides some commonly used tools.
 
-- [x] Base64 decoder and encoder.
-- [x] URL decoder and encoder.
-- [x] Md5 calculator.
-- [x] Timestamp conversion.
-- [x] JSON/XML viewer.
-- [x] qrcode generator.
+- [x] Base64 Codec.
+- [x] URL Codec
+- [x] Md5 Calculator.
+- [x] Timestamp Tool.
+- [x] JSON Viewer.
+- [x] XML Viewer.
+- [x] HEX Viewer.
+- [x] Image Viewer.
+- [x] Color Picker.
+- [x] Qrcode Generator.
 
 ## History
 
