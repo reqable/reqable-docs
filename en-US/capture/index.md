@@ -17,7 +17,7 @@ Debugging proxy is a powerful way used by developers and network engineers to in
 - [Explorer](./explorer)
 - [Tabs](./tabs)
 - [Search View](./search)
-- [Highlight](./hightlight)
+- [Highlight](./highlight)
 
 ### Guides
 - [Proxy](./proxy)

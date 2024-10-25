@@ -18,7 +18,7 @@ API调试是Reqable的两大基本功能之一，Reqable提供了非常便捷和
 - [工作台](./explorer)
 - [标签页](./tabs)
 - [搜索](./search)
-- [高亮](./hightlight)
+- [高亮](./highlight)
 
 ### 指南
 - [代理](./proxy)
