@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # iOS
 
+## v2.27.2 <small><small>*2024-10-29*</small></small>
+- 💪 [OPT] Adjust UI of some dialogs.
+- 💪 [OPT] Keep the selected display type of body when switching.
+- 💪 [OPT] Remember the `Group by Host` option.
+- 🐞 [FIX] The bug that adding or modifying the comment of favorites will not be saved.
+- 🐞 [FIX] The bug that non-ASCII file names cause multipart data to not display properly.
+- 🐞 [FIX] The bug that some settings do not take effect when importing cURL or HTTP raw for API.
+
 ## v2.27.1 <small><small>*2024-10-22*</small></small>
 - 🚀 [NEW] Support more accent colors and user-defined accent colors.
 - 🚀 [NEW] Show application information in request overview.
