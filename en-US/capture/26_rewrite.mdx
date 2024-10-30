@@ -28,6 +28,18 @@ There are six ways to create a rewrite rule:
 
 Enter the rule name and matching URL, the URL supports wildcard * and ? matching. Finally set an rewriting behavior. Reqable supports the following five rewriting behaviors.
 
+- [Redirection](#redirect)
+- [Replace Request](#replace-req)
+- [Replace Response](#replace-res)
+- [Modify Request](#modify-req)
+- [Modify Response](#modify-res)
+
+The priority of rewriting behavior is redirection > replacement > modification. If a request is matched by all three at the same time, it will be executed in this priority order.
+- A request can trigger at most one redirection rule.
+- A request can trigger multiple replacement rules, which are executed in the order of the rule list.
+- A request can trigger multiple modification rules, which are executed in the order of the rule list.
+- Replacement and modification rules will match the new URL after redirection instead of the original request URL.
+
 ### Redirection{#redirect}
 
 Compared with [Mirror](mirror), rewrite redirection provides more fine-grained operation, for example, the request A: `https://hello.com/foo`, can be redirected to request B: `https://hello.com/bar`.
@@ -53,7 +65,8 @@ https://world.com/new/foo/bar/ok?abc=123
 ```
 :::warning
 
-Under the implementation of the current version, if the server address of the original request cannot accessed, the request will directly fail (that is, no redirection request will be initiated).
+1. Under the implementation of the current version, if the server address of the original request cannot accessed, the request will directly fail (that is, no redirection request will be initiated).
+2. A request can trigger at most one redirection rule.
 
 :::
 
@@ -157,6 +170,6 @@ Same as [Modify Request](#modify-req).
 
 ### Rules Management
 
-Rules are matched from top to bottom. The same request can match multiple rules. The one at the front will be executed first. Rules support folder-level management. You can adjust the position by long pressing and dragging. It also supports import and export, which is convenient for sharing and collaboration with others.
+Rewrite rules support folder-level management, you can adjust the position by long pressing and dragging. It also supports import and export, which is convenient for sharing and collaboration with others.
 
 ![](arts/rewrite_11.png)
