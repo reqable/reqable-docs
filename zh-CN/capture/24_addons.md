@@ -491,7 +491,3 @@ def onResponse(context, response):
   # Done
   return response
 ```
-
-## 实战教程
-
-[Reqable脚本功能实战案例](https://reqable.com/blog/2023/06/12/post)
