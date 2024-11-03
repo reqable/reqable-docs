@@ -24,6 +24,20 @@ The protocol message of the request or response is displayed in the raw tab acco
 
 ![](arts/tabs_04.png)
 
+:::caution
+If the request or response body is encoded (e.g. gzip), it will be automatically decoded and displayed here. If you need to view the original encoded data, please use the `Raw2` tab.
+:::
+
+### Raw2 {#raw2}
+
+The protocol message of the request or response is displayed in the raw tab according to the HTTP/1.1 protocol specification. The protocol message of a request includes the request line, request header and request body, and the protocol message of a response includes the status line, response header and response body.
+
+The difference from `Raw` tab is that the request body and response body show the undecoded data.
+
+:::info
+This feature is available in version v2.28.0+.
+:::
+
 ### Query {#query}
 
 The query tab displays the query parameters of a request. If a request has no query parameters, this tab will not be displayed.
@@ -79,6 +93,16 @@ The comment of request will be displayed in this tab. Users can modify and submi
 If a request is websocket, the body tab will automatically upgrade to websocket, displays the websocket frames.
 
 ![](arts/tabs_13.png)
+
+### Interceptor {#interceptor}
+
+Displays the order and details of mirroring, gateways, rewriting, breakpoints, and script execution, making it easier for users to check whether the rules are effective.
+
+![](arts/tabs_16.png)
+
+:::info
+This feature is available in version v2.28.0+.
+:::
 
 ### Early Hints {#earlyHint}
 
