@@ -4,6 +4,9 @@ sidebar_position: 4
 
 # Android
 
+## v2.28.0 <small><small>*2024-11-04*</small></small>
+- 🚀 [NEW] The `Raw` tab will display the decoded body by default.
+
 ## v2.27.2 <small><small>*2024-10-29*</small></small>
 - 💪 [OPT] Adjust UI of some dialogs.
 - 💪 [OPT] Keep the selected display type of body when switching.

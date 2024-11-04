@@ -4,6 +4,23 @@ sidebar_position: 3
 
 # Linux
 
+## v2.28.0 <small><small>*2024-11-04*</small></small>
+- 🚀 [NEW] Community edition no longer limits the number of API tabs.
+- 🚀 [NEW] Introduce interceptor tab to track running processes.
+- 🚀 [NEW] Support saving traffic list search options.
+- 🚀 [NEW] Support setting highlights from Python scripts.
+- 🚀 [NEW] Interceptor filtering and highlighting support gateway rules.
+- 🚀 [NEW] The `Raw` tab will display the decoded body by default.
+- 💪 [OPT] Remove the `Capture` prefix from the Python script class name.
+- 💪 [OPT] Automatically prompt historical keywords for traffic list search.
+- 💪 [OPT] Requests blocked and suspended by the gateway will display their content in the traffic list.
+- 💪 [OPT] Add zen mode switch in the app settings.
+- 💪 [OPT] Now can move rules to specified folders in right-click context menus.
+- 💪 [OPT] Opening the rewrite replacement rule will automatically switch to the enabled tab.
+- 🐞 [FIX] The bug that the move up and move down states of the rule item in right-click menu are not correct.
+- 🐞 [FIX] The bug that the search box state is not closed after clicking the clear icon in the rule list.
+- 🐞 [FIX]Some bugs in rewriting redirection.
+
 ## v2.27.2 <small><small>*2024-10-29*</small></small>
 - 💪 [OPT] Adjust UI of some dialogs.
 - 💪 [OPT] Keep the selected display type of body when switching.

@@ -42,7 +42,7 @@ The priority of rewriting behavior is redirection > replacement > modification. 
 
 ### Redirection{#redirect}
 
-Compared with [Mirror](mirror), rewrite redirection provides more fine-grained operation, for example, the request A: `https://hello.com/foo`, can be redirected to request B: `https://hello.com/bar`.
+Compared with [Mirror](mirror), rewrite redirection provides more fine-grained operation, for example, the request A: `https://hello.com/foo`, can be redirected to request B: `https://hello.com/bar`. Rewrite redirection is request forwarding, which can be understood as `Map Remote`, and is different from the redirection of HTTP protocol 3xx status code.
 
 ![](arts/rewrite_12.png)
 

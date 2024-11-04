@@ -36,7 +36,8 @@ After the breakpoint takes effect, the operation interface as shown in the figur
 
 :::caution
 
-Each breakpoint request (response) has **180s** time to operate. After the timeout, the breakpoint will automatically fail, and the suspended request and response will continue.
+- When the client or server is disconnected, the breakpoint will automatically become invalid and the data cannot be submitted.
+- Each breakpoint request is in a separate thread. If there are too many requests and it exceeds the thread pool limit, it will not enter the breakpoint list and will need to wait until the existing breakpoint requests are completed.
 
 :::
 

@@ -46,7 +46,7 @@ import Shortcut from '@site/src/components/Shortcut';
 
 ### 重定向{#redirect}
 
-相比于[镜像](mirror)功能，重写重定向提供了更加细粒度的重定向操作，例如一个客户端请求A：`https://hello.com/foo`，可以重定向为返回请求B：`https://world.com/bar` 的结果。
+相比于[镜像](mirror)功能，重写重定向提供了更加细粒度的重定向操作，例如一个客户端请求A：`https://hello.com/foo`，可以重定向为返回请求B：`https://world.com/bar` 的结果。重写重定向属于请求转发，可以理解为`Map Remote`，和HTTP协议3xx状态码的重定向不同。
 
 ![](arts/rewrite_12.png)
 

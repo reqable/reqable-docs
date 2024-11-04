@@ -38,7 +38,7 @@ After the script is modified, it will be saved automatically, or you can manuall
 
 This function is called before the request is sent to the server, and the developer can modify the request within the scope of this function.
 
-The function receives two parameters [CaptureContext](addons#api-context) and [CaptureHttpRequest](addons#api-request) and returns [CaptureHttpRequest](addons#api-request).
+The function receives two parameters [CaptureContext](addons#api-context) and [HttpRequest](addons#api-request) and returns [HttpRequest](addons#api-request).
 
 :::info Request Interrupt
 
@@ -50,7 +50,7 @@ If you need to interrupt a request, the result of the onRequest function returns
 
 This function is called before the response is sent to the client. Developers can modify the response within the scope of this function.
 
-The function receives two parameters [CaptureContext](addons#api-context) and [CaptureHttpResponse](addons#api-response) and returns [CaptureHttpResponse](addons#api-response).
+The function receives two parameters [CaptureContext](addons#api-context) and [HttpResponse](addons#api-response) and returns [HttpResponse](addons#api-response).
 
 :::info Response Interrupt
 

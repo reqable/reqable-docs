@@ -10,11 +10,12 @@ https://github.com/reqable/python-scripting-api
 
 :::tip
 
-变量名斜体表示只读，粗体表示可覆写。
+- 从v2.28.0版本开始，所有类名移除了`Capture`前缀。
+- 变量名斜体表示只读，粗体表示可覆写。
 
 :::
 
-## CaptureContext {#api-context}
+## Context {#api-context}
 
 |   变量  |  类型 |  说明  |
 |  ----  | ----  | ----  |
@@ -28,7 +29,8 @@ https://github.com/reqable/python-scripting-api
 |*stime*|int|HTTP会话开始时间戳，单位毫秒，只读。|
 |*uid*|str|HTTP会话的唯一标志，由 `ctime` + `cid` + `sid` 组成。|
 |**env**|dict|全局环境和当前已激活的自定义环境的变量合集。|
-|*app*|[CaptureApp](#api-app)|应用（进程）信息，未获取到为None。|
+|*app*|[App](#api-app)|应用（进程）信息，未获取到为None。|
+|highlight|[Highlight](#api-highlight)|设置调试列表高亮属性，v2.28.0版本新增。|
 |**shared**|-|用于 `onRequest` 和 `onResponse` 之间共享数据的特殊变量，可以是str、int、list和dict等可自动序列化的变量。|
 
 代码示例：
@@ -58,6 +60,9 @@ def onRequest(context, request):
   # 写入环境变量（优先写入当前激活的自定义环境，没有激活环境则写入全局环境）
   context.env['foo'] = 'bar'
 
+  # 设置请求红色高亮
+  context.highlight = Highlight.red
+
   # 设置共享参数
   context.shared = 'Hello'
 
@@ -70,17 +75,17 @@ def onResponse(context, response):
   return response
 ```
 
-## CaptureHttpRequest {#api-request}
+## HttpRequest {#api-request}
 
 |   变量  |  类型 |  说明  |
 |  ----  | ----  | ----  |
 |**method**|str|请求方法。|
 |**path**|str|请求路径，注意不包含query部分。|
 |*protocol*|str|请求的HTTP协议版本，只读。|
-|**queries**|[CaptureHttpQueries](#api-queries)|请求参数列表。|
-|**headers**|[CaptureHttpHeaders](#api-headers)|请求头列表。|
-|**body**|[CaptureHttpBody](#api-body)|请求体。|
-|**trailers**|[CaptureHttpHeaders](#api-headers)|请求尾部列表，参见HTTP1的chunked trailers或者HTTP2的trailers。注意此功能待验证，暂时请勿使用。|
+|**queries**|[HttpQueries](#api-queries)|请求参数列表。|
+|**headers**|[HttpHeaders](#api-headers)|请求头列表。|
+|**body**|[HttpBody](#api-body)|请求体。|
+|**trailers**|[HttpHeaders](#api-headers)|请求尾部列表，参见HTTP1的chunked trailers或者HTTP2的trailers。注意此功能待验证，暂时请勿使用。|
 |*contentType*|str或None|请求类型（即headers中的Content-Type的值），只读。|
 |*mime*|str或None|请求MIME类型，例如application/json，只读。|
 
@@ -103,7 +108,7 @@ def onRequest(context, request):
   # 修改请求路径
   request.path = '/bar'
 
-  # 修改请求参数，更多API请参考下文`CaptureHttpQueries`
+  # 修改请求参数，更多API请参考下文`HttpQueries`
   request.queries['foo'] = 'bar'
   # 直接赋值请求参数
   request.queries = 'foo=bar&hello=world&abc=123'
@@ -115,7 +120,7 @@ def onRequest(context, request):
   # 删除指定请求参数
   request.queries.remove('foo')
 
-  # 修改请求头，更多API请参考下文`CaptureHttpHeaders`
+  # 修改请求头，更多API请参考下文`HttpHeaders`
   request.headers['content-type'] = 'application/json'
   # 直接赋值请求头
   request.headers = [
@@ -150,24 +155,24 @@ def onRequest(context, request):
   return request
 ```
 
-## CaptureHttpResponse {#api-response}
+## HttpResponse {#api-response}
 
 |   变量  |  类型 |  说明  |
 |  ----  | ----  | ----  |
-|*request*|[CaptureHttpRequest](#api-request)|响应的请求信息，只读。|
+|*request*|[HttpRequest](#api-request)|响应的请求信息，只读。|
 |**code**|int|响应状态码。|
 |*message*|str|响应状态信息，只读。注意：HTTP2协议中，值为空；此值在状态码修改后会自动更新。|
 |*protocol*|str|响应的HTTP协议版本，只读。|
-|**headers**|[CaptureHttpHeaders](#api-headers)|响应头列表。|
-|**body**|[CaptureHttpBody](#api-body)|响应体。|
-|**trailers**|[CaptureHttpHeaders](#api-headers)|响应尾部列表，参见HTTP1的chunked trailers或者HTTP2的trailers。注意此功能待验证，暂时请勿使用。|
+|**headers**|[HttpHeaders](#api-headers)|响应头列表。|
+|**body**|[HttpBody](#api-body)|响应体。|
+|**trailers**|[HttpHeaders](#api-headers)|响应尾部列表，参见HTTP1的chunked trailers或者HTTP2的trailers。注意此功能待验证，暂时请勿使用。|
 |*contentType*|str或None|响应类型（即headers中的Content-Type的值），只读。|
 |*mime*|str或None|响应MIME类型，例如application/json，只读。|
 
 代码示例：
 ```python
 def onResponse(context, response):
-  # 打印请求信息，更多API请参考上文`CaptureHttpRequest`
+  # 打印请求信息，更多API请参考上文`HttpRequest`
   print(response.request)
   # 打印响应状态码，例如：200
   print(response.code)
@@ -187,7 +192,7 @@ def onResponse(context, response):
   return response
 ```
 
-## CaptureHttpQueries {#api-queries}
+## HttpQueries {#api-queries}
 
 |   函数  |  参数 |  返回 |  说明  |
 |  ----  | ---- | ----  | ----  |
@@ -234,7 +239,7 @@ def onRequest(context, request):
   return request
 ```
 
-## CaptureHttpHeaders {#api-headers}
+## HttpHeaders {#api-headers}
 
 |   函数  |  参数 |  返回 |  说明  |
 |  ----  | ---- | ----  | ----  |
@@ -273,14 +278,14 @@ def onRequest(context, request):
   return request
 ```
 
-## CaptureHttpBody {#api-body}
+## HttpBody {#api-body}
 
 |   变量  |  类型 |  说明  |
 |  ----  | ----  | ----  |
 |*isNone*|bool|判断是否是空Body。此类型时，payload为None。|
 |*isText*|bool|判断是否是字符串Body。此类型时，payload为str。|
 |*isBinary*|bool|判断是否是二进制Body。此类型时，payload为bytes。|
-|*isMultipart*|bool|判断是否是Form Body。此类型时，payload为[CaptureHttpMultipartBody](#api-multipart-body)的列表。|
+|*isMultipart*|bool|判断是否是Form Body。此类型时，payload为[HttpMultipartBody](#api-multipart-body)的列表。|
 |*type*|int|返回Body的类型。0表示空，1表示字符串，2表示二进制，3表示Form。|
 |*payload*|多态类型，参照上方说明。|Body的数据。|
 
@@ -310,7 +315,7 @@ def onRequest(context, request):
 |textFromFile|str||设置为字符串Body，并从指定文件路径中读取字符串数据。|
 |binary|str或bytes||设置为字节Body，参数为str时表示从指定文件路径中读取数据。|
 |file|str||设置为字节Body，表示从指定文件路径中读取数据，功能同上面的binary函数。|
-|multiparts|list||设置为Multipart Body，参数为[CaptureHttpMultipartBody](#api-multipart-body)的列表。|
+|multiparts|list||设置为Multipart Body，参数为[HttpMultipartBody](#api-multipart-body)的列表。|
 |writeFile|str||将Body数据写入文件。注意：不支持Multipart类型Body。|
 
 代码示例：
@@ -328,8 +333,8 @@ def onRequest(context, request):
   request.body.binary('~/Desktop/body.json')
   # 修改body为multipart类型
   request.body.multiparts([
-    CaptureHttpMultipartBody.text('Hi World'),
-    CaptureHttpMultipartBody.file('data/body_binary.bin')
+    HttpMultipartBody.text('Hi World'),
+    HttpMultipartBody.file('data/body_binary.bin')
   ])
 
   # 将body数据写入文件
@@ -339,13 +344,13 @@ def onRequest(context, request):
   return request
 ```
 
-#### CaptureHttpMultipartBody {#api-multipart-body}
+#### HttpMultipartBody {#api-multipart-body}
 
-CaptureHttpMultipartBody继承于[CaptureHttpBody](#api-body)，额外多出一个headers属性。
+HttpMultipartBody继承于[HttpBody](#api-body)，额外多出一个headers属性。
 
 |   变量  |  类型 |  说明  |
 |  ----  | ----  | ----  |
-|**headers**|[CaptureHttpHeaders](#api-headers)|分部头部。|
+|**headers**|[HttpHeaders](#api-headers)|分部头部。|
 |**name**|str|分部名称。|
 |**filename**|str|分部文件名。|
 
@@ -359,10 +364,10 @@ def onRequest(context, request):
     print(f'value {part}')
 
   # 修改parts
-  request.body[0] = CaptureHttpMultipartBody.text('Hi World')
-  request.body[0] = CaptureHttpMultipartBody.text('Hi World', name='reqable')
-  request.body[0] = CaptureHttpMultipartBody.file('data/body_binary.bin')
-  request.body[0] = CaptureHttpMultipartBody.file('data/body_binary.bin', name='reqable', filename='test.png')
+  request.body[0] = HttpMultipartBody.text('Hi World')
+  request.body[0] = HttpMultipartBody.text('Hi World', name='reqable')
+  request.body[0] = HttpMultipartBody.file('data/body_binary.bin')
+  request.body[0] = HttpMultipartBody.file('data/body_binary.bin', name='reqable', filename='test.png')
 
   # Done
   return request
@@ -374,7 +379,7 @@ def onRequest(context, request):
 
 :::
 
-## CaptureApp {#api-app}
+## App {#api-app}
 
 |   变量  |  类型 |  说明  |
 |  ----  | ----  | ----  |
@@ -389,6 +394,27 @@ def onRequest(context, response):
   print(context.app.name)
   print(context.app.id)
   print(context.app.path)
+  # Done
+  return request
+```
+
+## Highlight {#api-highlight}
+
+|   枚举  |  说明  |
+|  ----  | ----  |
+|*none*| 不高亮。|
+|*red*| 红色高亮。|
+|*yellow*| 黄色高亮。|
+|*green*| 绿色高亮。|
+|*blue*| 蓝色高亮。|
+|*teal*| 靛青色高亮。|
+|*strikethrough*| 中划线。|
+
+代码示例：
+```python
+def onRequest(context, response):
+  # 设置请求红色高亮
+  context.highlight = Highlight.red
   # Done
   return request
 ```

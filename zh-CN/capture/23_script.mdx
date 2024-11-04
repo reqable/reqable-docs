@@ -43,7 +43,7 @@ import Shortcut from '@site/src/components/Shortcut';
 #### onRequest
 
 此函数在客户端请求发送给服务器前被调用，开发者可以在此函数作用域内对请求进行修改。
-函数接收两个参数[CaptureContext](addons#api-context)和[CaptureHttpRequest](addons#api-request)并返回[CaptureHttpRequest](addons#api-request)。
+函数接收两个参数[CaptureContext](addons#api-context)和[HttpRequest](addons#api-request)并返回[HttpRequest](addons#api-request)。
 
 :::info 请求中断
 
@@ -54,7 +54,7 @@ import Shortcut from '@site/src/components/Shortcut';
 #### onResponse
 
 此函数在服务端响应发送给客户端前被调用，开发者可以在此函数作用域内对响应进行修改。
-函数接收两个参数[CaptureContext](addons#api-context)和[CaptureHttpResponse](addons#api-response)并返回[CaptureHttpResponse](addons#api-response)。
+函数接收两个参数[CaptureContext](addons#api-context)和[HttpResponse](addons#api-response)并返回[HttpResponse](addons#api-response)。
 
 :::info 响应中断
 

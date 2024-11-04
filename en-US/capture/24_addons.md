@@ -10,11 +10,12 @@ API documentation for the Reqable scripting.
 
 :::tip
 
-Variable names in italics are read-only, and in bold they can be overwritten.
+- Starting from v2.28.0, the `Capture` prefix is ​​removed from all class names.
+- Variable names in italics are read-only, and in bold they can be overwritten.
 
 :::
 
-## CaptureContext {#api-context}
+## Context {#api-context}
 
 |   Variable  |  Type |  Description  |
 |  ----  | ----  | ----  |
@@ -27,7 +28,8 @@ Variable names in italics are read-only, and in bold they can be overwritten.
 |*sid*|int|HTTP session ID, read-only.|
 |*stime*|int|HTTP session start timestamp, in milliseconds, read-only.|
 |*uid*|str|The unique identifier of an HTTP session, consisting of `ctime` + `cid` + `sid`.|
-|*app*|[CaptureApp](#api-app)|App/Process information.|
+|*app*|[App](#api-app)|App/Process information.|
+|highlight|[Highlight](#api-highlight)|Set request highlighting in traffic list, added on v2.28.0.|
 |**env**|dict|A collection of variables for the global environment and currently actived custom environment.|
 |**shared**|-|A special variable used to share data between `onRequest` and `onResponse`, which can be auto-serializable variables such as str, int, list and dict.|
 
@@ -71,17 +73,17 @@ def onResponse(context, response):
   return response
 ```
 
-## CaptureHttpRequest {#api-request}
+## HttpRequest {#api-request}
 
 |   Variable  |  Type |  Description  |
 |  ----  | ----  | ----  |
 |**method**|str|HTTP request method.|
 |**path**|str|HTTP request path. Note that the query part is not included.|
 |*protocol*|str|HTTP protocol version of the request, read-only.|
-|**queries**|[CaptureHttpQueries](#api-queries)|List of request query parameters.|
-|**headers**|[CaptureHttpHeaders](#api-headers)|List of request headers.|
-|**body**|[CaptureHttpBody](#api-body)|Request body.|
-|**trailers**|[CaptureHttpHeaders](#api-headers)|List of request trailers, see chunked trailers of HTTP1 or trailers of HTTP2.|
+|**queries**|[HttpQueries](#api-queries)|List of request query parameters.|
+|**headers**|[HttpHeaders](#api-headers)|List of request headers.|
+|**body**|[HttpBody](#api-body)|Request body.|
+|**trailers**|[HttpHeaders](#api-headers)|List of request trailers, see chunked trailers of HTTP1 or trailers of HTTP2.|
 |*contentType*|str or None|Request type (that is, the value of Content-Type in headers), read-only.|
 |*mime*|str or None|Request MIME type, such as application/json, read-only.|
 
@@ -104,7 +106,7 @@ def onRequest(context, request):
   # Update request path
   request.path = '/bar'
 
-  # Update request parameters, more APIs please refer to `CaptureHttpQueries` below.
+  # Update request parameters, more APIs please refer to `HttpQueries` below.
   request.queries['foo'] = 'bar'
   # Assign request parameters
   request.queries = 'foo=bar&hello=world&abc=123'
@@ -116,7 +118,7 @@ def onRequest(context, request):
   # Delete specified request parameters
   request.queries.remove('foo')
 
-  # Update request headers, more APIs please refer to `CaptureHttpHeaders` below.
+  # Update request headers, more APIs please refer to `HttpHeaders` below.
   request.headers['content-type'] = 'application/json'
   # Assign request headers
   request.headers = [
@@ -151,24 +153,24 @@ def onRequest(context, request):
   return request
 ```
 
-## CaptureHttpResponse {#api-response}
+## HttpResponse {#api-response}
 
 |   Variable  |  Type |  Description  |
 |  ----  | ----  | ----  |
-|*request*|[CaptureHttpRequest](#api-request)|The request of response, read-only.|
+|*request*|[HttpRequest](#api-request)|The request of response, read-only.|
 |**code**|int|Response status code.|
 |*message*|str|Response status message, read-only. Note: In the HTTP2 protocol, the value is empty; this value will be automatically updated after the status code is changed.|
 |*protocol*|str|The HTTP protocol version of the response, read-only.|
-|**headers**|[CaptureHttpHeaders](#api-headers)|List of response headers.|
-|**body**|[CaptureHttpBody](#api-body)|Response body.|
-|**trailers**|[CaptureHttpHeaders](#api-headers)|List of response trailers, see chunked trailers for HTTP1 or trailers for HTTP2.|
+|**headers**|[HttpHeaders](#api-headers)|List of response headers.|
+|**body**|[HttpBody](#api-body)|Response body.|
+|**trailers**|[HttpHeaders](#api-headers)|List of response trailers, see chunked trailers for HTTP1 or trailers for HTTP2.|
 |*contentType*|str or None|Response type (that is, the value of Content-Type in headers), read-only.|
 |*mime*|str or None|Response MIME type, such as application/json, read-only.|
 
 Code example:
 ```python
 def onResponse(context, response):
-  # Print request information, for more APIs, please refer to `CaptureHttpRequest` above
+  # Print request information, for more APIs, please refer to `HttpRequest` above
   print(response.request)
   # Print response status code, for example: 200
   print(response.code)
@@ -188,7 +190,7 @@ def onResponse(context, response):
   return response
 ```
 
-## CaptureHttpQueries {#api-queries}
+## HttpQueries {#api-queries}
 
 |   Function  |  Parameters |  Return |  Description  |
 |  ----  | ---- | ----  | ----  |
@@ -235,7 +237,7 @@ def onRequest(context, request):
   return request
 ```
 
-## CaptureHttpHeaders {#api-headers}
+## HttpHeaders {#api-headers}
 
 |   Function  |  Parameters |  Return |  Description  |
 |  ----  | ---- | ----  | ----  |
@@ -274,14 +276,14 @@ def onRequest(context, request):
   return request
 ```
 
-## CaptureHttpBody {#api-body}
+## HttpBody {#api-body}
 
 |   Variable  |  Type |  Description  |
 |  ----  | ----  | ----  |
 |*isNone*|bool|Determine whether it is an empty Body. For this type, payload is `None`.|
 |*isText*|bool|Determine whether it is a string Body. For this type, the payload is `str`.|
 |*isBinary*|bool|Determine whether it is a binary Body. For this type, the payload is `bytes`.|
-|*isMultipart*|bool|Determine whether it is a form Body. For this type, the payload is a list of [CaptureHttpMultipartBody](#api-multipart-body).|
+|*isMultipart*|bool|Determine whether it is a form Body. For this type, the payload is a list of [HttpMultipartBody](#api-multipart-body).|
 |*type*|int|Returns the type of Body. 0 means none, 1 means text, 2 means binary, 3 means form.|
 |*payload*|Polymorphic types, refer to the description above.|Body payload.|
 
@@ -311,7 +313,7 @@ def onRequest(context, request):
 |textFromFile|str||Set a file content(text) to body.|
 |binary|str or bytes||Set binary data to body.|
 |file|str||Set the file content(binary) to body.|
-|multiparts|list||Set to forms, the parameter is a list of [CaptureHttpMultipartBody](#api-multipart-body).|
+|multiparts|list||Set to forms, the parameter is a list of [HttpMultipartBody](#api-multipart-body).|
 |writeFile|str||Write body payload to a file. Note: form body is not supported.|
 
 Code example:
@@ -329,8 +331,8 @@ def onRequest(context, request):
   request.body.binary('~/Desktop/body.json')
   # Set the forms to body.
   request.body.multiparts([
-    CaptureHttpMultipartBody.text('Hi World'),
-    CaptureHttpMultipartBody.file('data/body_binary.bin')
+    HttpMultipartBody.text('Hi World'),
+    HttpMultipartBody.file('data/body_binary.bin')
   ])
 
   # Write body payload to the file.
@@ -340,13 +342,13 @@ def onRequest(context, request):
   return request
 ```
 
-#### CaptureHttpMultipartBody {#api-multipart-body}
+#### HttpMultipartBody {#api-multipart-body}
 
-CaptureHttpMultipartBody inherits from [CaptureHttpBody](#api-body), with an additional headers field.
+HttpMultipartBody inherits from [HttpBody](#api-body), with an additional headers field.
 
 |   Variable  |  Type |  Description  |
 |  ----  | ----  | ----  |
-|**headers**|[CaptureHttpHeaders](#api-headers)|List of headers in the part.|
+|**headers**|[HttpHeaders](#api-headers)|List of headers in the part.|
 |**name**|str|Part name.|
 |**filename**|str|Part file name.|
 
@@ -360,10 +362,10 @@ def onRequest(context, request):
     print(f'value {part}')
 
   # Update parts
-  request.body[0] = CaptureHttpMultipartBody.text('Hi World')
-  request.body[0] = CaptureHttpMultipartBody.text('Hi World', name='reqable')
-  request.body[0] = CaptureHttpMultipartBody.file('data/body_binary.bin')
-  request.body[0] = CaptureHttpMultipartBody.file('data/body_binary.bin', name='reqable', filename='test.png')
+  request.body[0] = HttpMultipartBody.text('Hi World')
+  request.body[0] = HttpMultipartBody.text('Hi World', name='reqable')
+  request.body[0] = HttpMultipartBody.file('data/body_binary.bin')
+  request.body[0] = HttpMultipartBody.file('data/body_binary.bin', name='reqable', filename='test.png')
 
   # Done
   return request
@@ -375,7 +377,7 @@ If you change the non-form type to form type, you must modify the headers and se
 
 :::
 
-## CaptureApp {#api-app}
+## App {#api-app}
 
 |   Variable  |  Type |  Description  |
 |  ----  | ----  | ----  |
@@ -390,6 +392,27 @@ def onRequest(context, response):
   print(context.app.name)
   print(context.app.id)
   print(context.app.path)
+  # Done
+  return request
+```
+
+## Highlight {#api-highlight}
+
+|   Enum  |  Description  |
+|  ----  | ----  |
+|*none*| No highlight |
+|*red*| Red highlight |
+|*yellow*| Yellow highlight |
+|*green*| Green highlight |
+|*blue*| Blue highlight |
+|*teal*| Teal highlight |
+|*strikethrough*| Strike-through highlight |
+
+Code example:
+```python
+def onRequest(context, response):
+  # Set request read highlight
+  context.highlight = Highlight.red
   # Done
   return request
 ```
