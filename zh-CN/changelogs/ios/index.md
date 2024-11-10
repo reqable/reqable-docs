@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # iOS
 
+## v2.29.0 <small><small>*2024-11-10*</small></small>
+- 🚀【新功能】部分列表提供排序选项。
+- 💪【优化】API请求参数`空值省略等于号`选项迁移到请求设置中。
+- 💪【优化】Python-Requests代码生成模板。
+- 🐞【修复】API测试上传文件名不再进行URL编码。
+- 🐞【修复】解析Multipart头部自动转成小写问题。
+
 ## v2.28.0 <small><small>*2024-11-04*</small></small>
 - 🚀【新功能】原始数据默认显示解码的请求体或响应体。
 

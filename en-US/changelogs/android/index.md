@@ -4,6 +4,13 @@ sidebar_position: 4
 
 # Android
 
+## v2.29.0 <small><small>*2024-11-10*</small></small>
+- 🚀 [NEW] Some lists provide sorting options.
+- 💪 [OPT] The API `Omit Equal Sign` option is moved to the request settings.
+- 💪 [OPT] Python-Requests code generation template.
+- 🐞 [FIX] The file name for uploading is no longer URL-encoded.
+- 🐞 [FIX] The bug that multipart header names are converted to lowercase when parsing.
+
 ## v2.28.0 <small><small>*2024-11-04*</small></small>
 - 🚀 [NEW] The `Raw` tab will display the decoded body by default.
 
