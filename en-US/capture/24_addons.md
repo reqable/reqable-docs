@@ -202,9 +202,9 @@ def onResponse(context, response):
 |concat|bool|str|Returns the concatenated complete query string.|
 |index|str|int|Query the index of the query parameter of the specified name in the list, and only return the first index that matches the name.|
 |indexes|str|list|Query the index of the query parameter of the specified name in the list, and return a list of all indexes matching the name.|
-|getitem|str|str|Get the query value of the specified name. Note: If there are more than one with the same name, it will return the first one; if it does not exist, it will return `None`.|
-|getitem|int|tuple|Get query by index.|
-|setitem|str, str||Update or add a query. If there is a query with the specified name, update its value, otherwise add a new query parameter.|
+|__getitem__|str|str|Get the query value of the specified name. Note: If there are more than one with the same name, it will return the first one; if it does not exist, it will return `None`.|
+|__getitem__|int|tuple|Get query by index.|
+|__setitem__|str, str||Update or add a query. If there is a query with the specified name, update its value, otherwise add a new query parameter.|
 
 Code example:
 ```python
@@ -248,9 +248,9 @@ def onRequest(context, request):
 |clear|||Delete all headers.|
 |index|str|int|Query the index of the header of the specified name in the list, and only return the first index that matches the name.|
 |indexes|str|list|Query the index of the header of the specified name in the list, and return a list of all indexes matching the name.|
-|getitem|str|str|Get the header value of the specified name. Note: If there are more than one with the same name, it will return the first one; if it does not exist, it will return `None`.|
-|getitem|int|str|Get header by index.|
-|setitem|str, str||Update or add a header. If there is a header with the specified name, update its value, otherwise add a new header.|
+|__getitem__|str|str|Get the header value of the specified name. Note: If there are more than one with the same name, it will return the first one; if it does not exist, it will return `None`.|
+|__getitem__|int|str|Get header by index.|
+|__setitem__|str, str||Update or add a header. If there is a header with the specified name, update its value, otherwise add a new header.|
 
 Code example:
 ```python

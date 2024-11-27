@@ -204,9 +204,9 @@ def onResponse(context, response):
 |concat|bool|str|返回拼接好的完整query字符串。|
 |index|str|int|查询指定name的query参数在列表中的索引，只返回第一个匹配name的索引。|
 |indexes|str|list|查询指定name的query参数在列表中的索引，返回全部匹配name的索引列表。|
-|getitem|str|str|获取指定name的query值。注意：如果有多个同名的，会返回第一个；如果不存在，则返回None。|
-|getitem|int|tuple|按照索引获取query的名称和值。|
-|setitem|str, str||更新或新增query。如果存在指定name的query，则更新它的值，否则添加一个新的query参数。|
+|__getitem__|str|str|获取指定name的query值。注意：如果有多个同名的，会返回第一个；如果不存在，则返回None。|
+|__getitem__|int|tuple|按照索引获取query的名称和值。|
+|__setitem__|str, str||更新或新增query。如果存在指定name的query，则更新它的值，否则添加一个新的query参数。|
 
 代码示例：
 ```python
@@ -250,9 +250,9 @@ def onRequest(context, request):
 |clear|||清空所有header。|
 |index|str|int|查询指定name的header参数在列表中的索引，只返回第一个匹配name的索引。|
 |indexes|str|list|查询指定name的header参数在列表中的索引，返回全部匹配name的索引列表。|
-|getitem|str|str|获取指定name的header值。注意：如果有多个同名的，会返回第一个；如果不存在，则返回None。|
-|getitem|int|str|按照索引获取header的名称和值。|
-|setitem|str, str||更新或新增header。如果存在指定name的header，则更新它的值，否则添加一个新的header。|
+|__getitem__|str|str|获取指定name的header值。注意：如果有多个同名的，会返回第一个；如果不存在，则返回None。|
+|__getitem__|int|str|按照索引获取header的名称和值。|
+|__setitem__|str, str||更新或新增header。如果存在指定name的header，则更新它的值，否则添加一个新的header。|
 
 代码示例：
 ```python
