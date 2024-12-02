@@ -30,6 +30,7 @@ The unique integer ID number is automatically generated according to the order i
 |![](icons/ic_editor_binary.svg)|Indicates that the response body is a binary.|
 |![](icons/ic_editor_certificate.svg)|Indicates that this is a certificate-related request.|
 |![](icons/ic_editor_chat.svg)|Indicates that this is a Websocket request.|
+|![](icons/ic_editor_event.svg)|Indicates that this is a SSE(Server Sent Events) request.|
 |![](icons/ic_editor_zero.svg)|Indicates that this is an empty response.|
 |![](icons/ic_editor_unknown.svg)|Indicates that this is an unknown type request.|
 

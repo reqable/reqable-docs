@@ -30,6 +30,7 @@ Reqable支持丰富的列选项，用以更好地展示流量数据信息。通�
 |![](icons/ic_editor_binary.svg)|表示响应体是OctetStream类型。|
 |![](icons/ic_editor_certificate.svg)|表示这是一个证书相关的请求。|
 |![](icons/ic_editor_chat.svg)|表示这是一个Websocket请求。|
+|![](icons/ic_editor_event.svg)|表示这是一个SSE(Server Sent Events)请求。|
 |![](icons/ic_editor_zero.svg)|表示这是一个未识别出类型的空响应请求。|
 |![](icons/ic_editor_unknown.svg)|表示这是一个未识别出类型的非空响应请求。|
 
