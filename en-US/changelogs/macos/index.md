@@ -4,6 +4,28 @@ sidebar_position: 1
 
 # Macos
 
+## v2.30.2 <small><small>*2024-11-29*</small></small>
+- 💪 [OPT] Some large texts cause the application to freeze.
+- 💪 [OPT] SSE supports displaying non-standard formatted messages.
+- 💪 [OPT] SSE search is not case-sensitive now.
+- 💪 [OPT] SSE message list supports the shortcut key `Command + F` to open the search input.
+- 💪 [OPT] SSE message list displays raw data instead of prettified data.
+- 💪 [OPT] WebSocket frame list supports the shortcut key `Command + F` to open the search input.
+- 💪 [OPT] WebSocket frame list displays raw data instead of prettified data.
+- 💪 [OPT] JSON Tree supports copying the path of a node.
+- 💪 [OPT] JSON Tree supports expanding and collapsing all child nodes.
+- 💪 [OPT] JSON type detection is more accurate.
+- 💪 [OPT] JSONP is automatically parsed as JSON format.
+- 💪 [OPT] Improve the API collection and environment variable import guidelines.
+- 💪 [OPT] SSE message list supports right-click context menu.
+- 💪 [OPT] WebSocket frame list supports right-click context menu.
+- 💪 [OPT] Rewrite rules explicitly prompt whether regular expressions are enabled.
+- 💪 [OPT] The traffic list will display rewrite redirected URL instead of the original URL.
+- 🐞 [FIX] A bug that caused the application to crash when inputting an non-ascii domain name.
+- 🐞 [FIX] A bug that failed to import the API through cURL in some cases.
+- 🐞 [FIX] A bug that `basePath` is lost when importing Swagger 2.0 API.
+- 🐞 [FIX] A bug that the Postman environment variables cannot be imported.
+
 ## v2.30.1 <small><small>*2024-11-26*</small></small>
 - 🚀 [NEW] Fully support SSE real-time streaming.
 - 🚀 [NEW] API testing supports digest-auth authorization.

@@ -4,6 +4,23 @@ sidebar_position: 5
 
 # iOS
 
+## v2.30.2 <small><small>*2024-11-29*</small></small>
+- 💪 [OPT] Some large texts cause the application to freeze.
+- 💪 [OPT] SSE supports displaying non-standard formatted messages.
+- 💪 [OPT] SSE search is not case-sensitive now.
+- 💪 [OPT] SSE message list supports the shortcut key `Control + F` to open the search input.
+- 💪 [OPT] SSE message list displays raw data instead of prettified data.
+- 💪 [OPT] WebSocket frame list supports the shortcut key `Control + F` to open the search input.
+- 💪 [OPT] WebSocket frame list displays raw data instead of prettified data.
+- 💪 [OPT] JSON Tree supports copying the path of a node.
+- 💪 [OPT] JSON Tree supports expanding and collapsing all child nodes.
+- 💪 [OPT] JSON type detection is more accurate.
+- 💪 [OPT] JSONP is automatically parsed as JSON format.
+- 💪 [OPT] SSE message list supports long-press context menu.
+- 💪 [OPT] WebSocket frame list supports long-press context menu.
+- 🐞 [FIX] A bug that caused the application to crash when inputting an non-ascii domain name.
+- 🐞 [FIX] A bug that failed to import the API through cURL in some cases.
+
 ## v2.30.1 <small><small>*2024-11-26*</small></small>
 - 🚀 [NEW] Fully support SSE real-time streaming.
 - 🚀 [NEW] API testing supports digest-auth authorization.
