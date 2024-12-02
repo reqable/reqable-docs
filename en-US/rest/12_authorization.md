@@ -37,3 +37,13 @@ Passed in request headers:
 passed in rquery parameters:
 
 ![](arts/authorization_08.png)
+
+### Digest Auth {#digest-auth}
+
+For details and specifications about Digest Auth, please refer to the [RFC document](https://datatracker.ietf.org/doc/html/rfc7616). Digest Auth has many parameters, but the most basic ones only require the username and password.
+
+![](arts/authorization_09.png)
+
+Reqable will automatically generate other parameters based on the authentication requirements. Of course, users can also expand the options to customize these parameters.
+
+![](arts/authorization_10.png)

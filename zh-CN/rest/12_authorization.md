@@ -37,3 +37,13 @@ Api Key支持在请求头和请求参数中传递：
 选择在请求参数中传递：
 
 ![](arts/authorization_08.png)
+
+### Digest Auth {#digest-auth}
+
+关于Digest Auth的细节和规范请查看[RFC文档](https://datatracker.ietf.org/doc/html/rfc7616)。Digest Auth的参数比较多，但最基本的只需要填入用户名称和密码。
+
+![](arts/authorization_09.png)
+
+Reqable会自动根据响应的认证要求自动生成其他的参数，当然用户也可以展开选项自定义这些参数。
+
+![](arts/authorization_10.png)
