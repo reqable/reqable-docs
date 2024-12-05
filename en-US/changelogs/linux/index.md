@@ -4,6 +4,13 @@ sidebar_position: 3
 
 # Linux
 
+## v2.30.3 <small><small>*2024-12-05*</small></small>
+- 💪 [OPT] Import collection and environment files are more robust.
+- 🐞 [FIX] The bug that failed to import cURL in cmd format.
+- 🐞 [FIX] The bug that text search has results but cannot be automatically located.
+- 🐞 [FIX] The bug that text rendering issue in search mode.
+- 🐞 [FIX] The bug that failed to import some Postman collection files.
+
 ## v2.30.2 <small><small>*2024-11-29*</small></small>
 - 💪 [OPT] Some large texts cause the application to freeze.
 - 💪 [OPT] SSE supports displaying non-standard formatted messages.

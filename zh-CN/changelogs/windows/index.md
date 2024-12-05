@@ -4,6 +4,13 @@ sidebar_position: 0
 
 # Windows
 
+## v2.30.3 <small><small>*2024-12-05*</small></small>
+- 💪【优化】API集合导入环境变量问题。
+- 🐞【修复】无法导入cmd格式的cURL的bug。
+- 🐞【修复】文本搜索有结果但是无法自动定位的bug。
+- 🐞【修复】文本搜索内容跳动的bug。
+- 🐞【修复】无法导入部分Postman集合的bug。
+
 ## v2.30.2 <small><small>*2024-11-26*</small></small>
 - 💪【优化】部分大文本导致应用卡顿的问题。
 - 💪【优化】SSE支持显示非标准格式消息。

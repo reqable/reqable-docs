@@ -4,6 +4,11 @@ sidebar_position: 4
 
 # Android
 
+## v2.30.3 <small><small>*2024-12-05*</small></small>
+- 🐞 [FIX] The bug that failed to import cURL in cmd format.
+- 🐞 [FIX] The bug that text search has results but cannot be automatically located.
+- 🐞 [FIX] The bug that text rendering issue in search mode.
+
 ## v2.30.2 <small><small>*2024-11-29*</small></small>
 - 💪 [OPT] Some large texts cause the application to freeze.
 - 💪 [OPT] SSE supports displaying non-standard formatted messages.
