@@ -4,6 +4,38 @@ sidebar_position: 3
 
 # Linux
 
+## v2.31.1 <small><small>*2025-01-14*</small></small>
+- ❗[IMP] Data structure upgrade, please do not downgrade to the old version after upgrading.
+- 🚀 [NEW] API collection supports exporting Postman v2.1 collection files.
+- 🚀 [NEW] Home page tab UI/UX adjustment, supports temporary reading mode (title italicized).
+- 💪 [OPT] API testing supports JSON single-line comments.
+- 💪 [OPT] User-Agent is no longer filled in by default, but the request sent will still use the Reqable flag.
+- 💪 [OPT] After disabling Reqable Id in the API settings, this item will no longer be displayed in the header list.
+- 💪 [OPT] Form-data body supports entering JSON key-value pairs in text mode.
+- 💪 [OPT] In API testing, comments in text editing mode will be highlighted.
+- 💪 [OPT] The duplicated API will be inserted after the original API instead of being added to the end of the list.
+- 💪 [OPT] The collection path is displayed in the API collection search result list.
+- 💪 [OPT] The activated environment will be displayed with the first letter instead of the icon.
+- 💪 [OPT] Automatically expand and mark the position of the API of the current tab in the collection.
+- 💪 [OPT] Automatically mark the position of the current tab in the traffic history list.
+- 🐞 [FIX] The bug that the data of unchecked parameters in API testing is wrong after reloading.
+- 🐞 [FIX] The bug that digest authorization may fail.
+- 🐞 [FIX] The bug that the cURL imported with cmd format did not correctly handle some `^` escape characters.
+- 🐞 [FIX] The bug that some JSONP could not be automatically parsed into JSON.
+- 🐞 [FIX] The bug that the environment variables were not displayed properly in ellipsis mode in the table view.
+- 🐞 [FIX] The bug that may report an error when starting after upgrading the version.
+- 🐞 [FIX] The bug that the pop-up window cannot be opened correctly when exporting cURL for illegal URLs.
+- 🐞 [FIX] The bug that the rewrite, breakpoint and scripting may cause some HTTP2 requests to fail.
+- 🐞 [FIX] The conflict shortcut keys between editor line break and sending API request.
+- 🐞 [FIX] The bug of not supporting non-ASCII headers in some scenarios.
+- 🐞 [FIX] The bug that JSON Tree in the new window may display abnormally.
+- 🐞 [FIX] The bug that collaborative QR code may display abnormally.
+- 🐞 [FIX] The bug that the right-click script creation from the traffic list does not take effect.
+- 🐞 [FIX] A bug where app configuration may lost and can not be restored.
+
+## v2.30.4 <small><small>*2025-01-10*</small></small>
+- ❗[BETA] v2.31.0 beta testing.
+
 ## v2.30.3 <small><small>*2024-12-05*</small></small>
 - 💪 [OPT] Import collection and environment files are more robust.
 - 🐞 [FIX] The bug that failed to import cURL in cmd format.
