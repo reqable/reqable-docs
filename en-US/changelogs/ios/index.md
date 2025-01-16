@@ -4,8 +4,12 @@ sidebar_position: 5
 
 # iOS
 
+## v2.31.2 <small><small>*2025-01-15*</small></small>
+- 🐞 [FIX] The bug that API testing Bearer Token authorization cannot be used.
+- 🐞 [FIX] The bug that some text is overflow or clipped.
+
 ## v2.31.1 <small><small>*2025-01-14*</small></small>
-- ❗[IMP] Data structure upgrade, please do not downgrade to the old version after upgrading.
+- ❗ [IMP] Data structure upgrade, please do not downgrade to the old version after upgrading.
 - 💪 [OPT] API testing supports JSON single-line comments.
 - 💪 [OPT] User-Agent is no longer filled in by default, but the request sent will still use the Reqable flag.
 - 💪 [OPT] After disabling Reqable Id in the API settings, this item will no longer be displayed in the header list.
@@ -21,7 +25,7 @@ sidebar_position: 5
 - 🐞 [FIX] The bug that the rewrite, breakpoint and scripting may cause some HTTP2 requests to fail.
 
 ## v2.30.4 <small><small>*2025-01-10*</small></small>
-- ❗[BETA] v2.31.0 beta testing.
+- ❗ [BETA] v2.31.0 beta testing.
 
 ## v2.30.3 <small><small>*2024-12-05*</small></small>
 - 🐞 [FIX] The bug that failed to import cURL in cmd format.

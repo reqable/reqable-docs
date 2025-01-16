@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # iOS
 
+## v2.31.2 <small><small>*2025-01-15*</small></small>
+- 🐞【修复】API测试Bearer Token授权无法使用的bug。
+- 🐞【修复】部分文字显示不完整的bug。
+
 ## v2.31.1 <small><small>*2025-01-14*</small></small>
 - ❗【重要】API测试相关的数据结构变更，注意升级后请勿降级到旧版本。
 - 💪【优化】API测试支持JSON单行注释。

@@ -4,8 +4,15 @@ sidebar_position: 0
 
 # Windows
 
+## v2.31.2 <small><small>*2025-01-15*</small></small>
+- 💪 [OPT] Double-clicking an API in collection and history list will enter the edit mode instead of the reading mode.
+- 🐞 [FIX] The bug that API testing Bearer Token authorization cannot be used.
+- 🐞 [FIX] The bug that some text is overflow or clipped.
+- 🐞 [FIX] The bug that the text displayed in the API tab title is truncated prematurely.
+- 🐞 [FIX] The bug that SSE content contains non-ASCII data will cause a parsing error.
+
 ## v2.31.1 <small><small>*2025-01-14*</small></small>
-- ❗[IMP] Data structure upgrade, please do not downgrade to the old version after upgrading.
+- ❗ [IMP] Data structure upgrade, please do not downgrade to the old version after upgrading.
 - 🚀 [NEW] API collection supports exporting Postman v2.1 collection files.
 - 🚀 [NEW] Home page tab UI/UX adjustment, supports temporary reading mode (title italicized).
 - 💪 [OPT] API testing supports JSON single-line comments.
@@ -34,7 +41,7 @@ sidebar_position: 0
 - 🐞 [FIX] A bug where app configuration may lost and can not be restored.
 
 ## v2.30.4 <small><small>*2025-01-10*</small></small>
-- ❗[BETA] v2.31.0 beta testing.
+- ❗ [BETA] v2.31.0 beta testing.
 
 ## v2.30.3 <small><small>*2024-12-05*</small></small>
 - 💪 [OPT] Import collection and environment files are more robust.

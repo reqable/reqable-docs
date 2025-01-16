@@ -4,6 +4,13 @@ sidebar_position: 0
 
 # Windows
 
+## v2.31.2 <small><small>*2025-01-15*</small></small>
+- 💪【优化】API集合和历史记录列表中双击API直接进入编辑模式而不是阅读模式。
+- 🐞【修复】API测试Bearer Token授权无法使用的bug。
+- 🐞【修复】部分文字显示不完整的bug。
+- 🐞【修复】API标签页标题显示文字提前截断的bug。
+- 🐞【修复】SSE内容包含中文等非ASCII数据解析异常的bug。
+
 ## v2.31.1 <small><small>*2025-01-14*</small></small>
 - ❗【重要】API测试相关的数据结构变更，注意升级后请勿降级到旧版本。
 - 🚀【新功能】API集合支持导出Postman v2.1集合文件。
