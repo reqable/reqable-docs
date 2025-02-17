@@ -4,6 +4,42 @@ sidebar_position: 3
 
 # Linux
 
+## v2.32.0 <small><small>*2025-02-17*</small></small>
+- ❗ [IMP] Data structure upgrade, please do not downgrade to the old version after upgrading.
+- 🚀 [NEW] API collection supports folder-level configuration like authorization and scripting.
+- 🚀 [NEW] The traffic list supports exporting data according to the file structure.
+- 🚀 [NEW] `Gateway`, `Rewrite`, `Breakpoint` and `Script` matching rules support specifying the HTTP method.
+- 🚀 [NEW] Applications and domain names in explorer support copying.
+- 💪 [OPT] Redesign the UI/UX of HTTP custom method management.
+- 💪 [OPT] JSON tree view supports node single-click.
+- 💪 [OPT] File naming rules for traffic list data export.
+- 💪 [OPT] The API collection distinguishes between root directories and subdirectories, and cannot be changed by dragging and dropping.
+- 💪 [OPT] The variable value can be copied in the environment variable mouse hover prompt view.
+- 💪 [OPT] The environment variable name supports the `-` symbol.
+- 💪 [OPT] Fully support user custom HTTP methods.
+- 💪 [OPT] Adjust the display order of `Mirror` and `Gateway`.
+- 💪 [OPT] The `Breakpoint` executor window can directly open the hit breakpoint rule window.
+- 🐞 [FIX] A bug that the API tab fails to be automatically closed when deleting an API from the collection.
+- 🐞 [FIX] A bug that the API header name uses environment variables to prompt an illegal name.
+- 🐞 [FIX] A bug that the Android network stack information is not saved in the history.
+- 🐞 [FIX] The API collection data may be imported with an error.
+- 🐞 [FIX] The bug that the global environment variable data is written to the user environment after the script is executed.
+- 🐞 [FIX] A bug that the tab does not have a modification mark when editing an API script.
+- 🐞 [FIX] A bug that the environment variables are not parsed when copying URLs and cURL in the collection list.
+- 🐞 [FIX] A bug that ADB may not be able to discover Android devices.
+
+## v2.31.3 <small><small>*2025-01-21*</small></small>
+- 💪 [OPT] Automatically remember the sidebar status and restore it after restarting the app.
+- 💪 [OPT] Traffic records related to applications and hosts can be deleted with one click in the traffic list explorer.
+- 💪 [OPT] JSON/XML/HEX tools support file dragging and file selector.
+- 💪 [OPT] JSON escape tool supports JSON formatting and compression.
+- 💪 [OPT] JSON escape tool no longer escapes line breaks.
+- 🐞 [FIX] The bug that the exported raw data has no separator between request and response.
+- 🐞 [FIX] in API testing, the sent request body is not updated after replacing the content.
+- 🐞 [FIX] The bug that ADB cannot discover Android devices in some cases.
+- 🐞 [FIX] A bug that the display position of the environment variable drop-down menu may be seriously offset.
+- 🐞 [FIX] The conflict between the search and replace `Enter` shortcut key and the IME input `Enter` key.
+
 ## v2.31.2 <small><small>*2025-01-15*</small></small>
 - 💪 [OPT] Double-clicking an API in collection and history list will enter the edit mode instead of the reading mode.
 - 🐞 [FIX] The bug that API testing Bearer Token authorization cannot be used.

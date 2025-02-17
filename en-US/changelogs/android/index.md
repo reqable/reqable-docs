@@ -4,6 +4,25 @@ sidebar_position: 4
 
 # Android
 
+## v2.32.0 <small><small>*2025-02-17*</small></small>
+- ❗ [IMP] Data structure upgrade, please do not downgrade to the old version after upgrading.
+- 🚀 [NEW] API collection supports folder-level configuration like authorization and scripting.
+- 💪 [OPT] Redesign the UI/UX of HTTP custom method management.
+- 💪 [OPT] JSON tree view supports node single-click.
+- 💪 [OPT] File naming rules for traffic list data export.
+- 💪 [OPT] The description of the user certificate installation guide is more accurate.
+- 🐞 [FIX] A bug that the API tab fails to be automatically closed when deleting an API from the collection.
+- 🐞 [FIX] A bug that the API header name uses environment variables to prompt an illegal name.
+- 🐞 [FIX] A bug that the Android network stack information is not saved in the history.
+- 🐞 [FIX] A bug that the collaborative QR code displays no valid IP address.
+- 🐞 [FIX] A bug that the Android official document link is misspelled in English.
+- 🐞 [FIX] A bug that a crash may occur when opening the application list.
+- 🐞 [FIX] A bug that the API collection page does not return to the parent directory but returns to the homepage after pressing the back key.
+
+## v2.31.3 <small><small>*2025-01-21*</small></small>
+- 🐞 [FIX] The bug that the exported raw data has no separator between request and response.
+- 🐞 [FIX] in API testing, the sent request body is not updated after replacing the content.
+
 ## v2.31.2 <small><small>*2025-01-15*</small></small>
 - 🐞 [FIX] The bug that API testing Bearer Token authorization cannot be used.
 - 🐞 [FIX] The bug that some text is overflow or clipped.
