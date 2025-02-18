@@ -60,6 +60,10 @@ If you have multiple proxy servers, you can create multiple configurations and m
 If the secondary proxy is configured and enabled, but the secondary proxy server is not started, requests to the secondary proxy will fail.
 :::
 
+There are two solutions for mobile apps that need to access restricted traffic.
+- Collaborative mode: The mobile Reqable uses collaborative mode to connect to PC, and the secondary proxy can be configured as above on PC.
+- Standalone mode: Whether it is Android or iOS, the system can only enable one VPN service at a time. If Reqable enables VPN mode, the secondary proxy app must run in non-VPN mode. **Note that for Android system, you also need to exclude the secondary proxy app from the application list, otherwise there will be a traffic loop. **
+
 ### Proxy Rule {#rule}
 
 On the Windows system, the web proxy supports the following formats.
