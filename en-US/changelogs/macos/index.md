@@ -4,6 +4,73 @@ sidebar_position: 1
 
 # Macos
 
+## v2.33.1 <small><small>*2025-03-04*</small></small>
+- 🐞 [FIX] The bug that an error throws when creating the form-data body.
+
+## v2.33.0 <small><small>*2025-03-04*</small></small>
+- 🚀 [NEW] Request traces feature in REST explorer panel.
+- 🚀 [NEW] Add a diff tool for REST.
+- 💪 [OPT] Automatically restore the response data of API testing after the application is restarted.
+- 💪 [OPT] Turn off automatic query parameter decoding when inputting URL in API testing.
+- 💪 [OPT] API testing provides query parameter decoding option.
+- 💪 [OPT] The default setting of REST proxy option is changed to `No Proxy`.
+- 💪 [OPT] API collection will check and fix duplicate IDs.
+- 💪 [OPT] Unify the size and color value of borders and dividers.
+- 💪 [OPT] Automatically refresh cookies when redirecting.
+- 💪 [OPT] Fixed traffic tab to the left when scrolling.
+- 💪 [OPT] Base64 tool supports loop decoding mode.
+- 💪 [OPT] Base64 tool supports fast transfer of output to input.
+- 💪 [OPT] Traffic bookmark filters support right-clicking folders to select all or unselect all.
+- 💪 [OPT] Traffic list provides more copy options.
+- 💪 [OPT] Traffic list provides the `Connection Reuse` selection option.
+- 💪 [OPT] The default name of API from HAR will use the host rather than untitled.
+- 🐞 [FIX] The bug that redirect data is displayed in disorder.
+- 🐞 [FIX] The bug that the prompt in traffic details is incorrect when the root certificate is not installed.
+- 🐞 [FIX] The bug that the duplicate folder items were not saved to database.
+- 🐞 [FIX] The bug that the help doc urls of rewriting are not correct.
+- 🐞 [FIX] The bug that an error throws when creating the form-data body.
+
+## v2.32.6 <small><small>*2025-02-27*</small></small>
+- 🐞 [FIX] The bug that scripting is not working.
+
+## v2.32.5 <small><small>*2025-02-26*</small></small>
+- 💪 [OPT] Disable charset detection for JSON data, and use utf-8 by default.
+
+## v2.32.4 <small><small>*2025-02-26*</small></small>
+- 💪 [OPT] Improve charset detection mechanism.
+- 🐞 [FIX] A bug in which garbled characters may be displayed after modifying data using rewrite, breakpoints, and scripts.
+
+## v2.32.3 <small><small>*2025-02-25*</small></small>
+- 💪 [OPT] Automatic inference will be attempted when charset is not specified in the `Content-Type` header.
+- 💪 [OPT] The export curl window will no longer be automatically closed after copying.
+- 💪 [OPT] The limit of database capacity is increased from 10G to 64G.
+- 💪 [OPT] API collection supports duplicating folders.
+- 💪 [OPT] Adjust the position and style of the icon button at the bottom of the script log console.
+- 💪 [OPT] The traffic list ID is displayed in the prefix of the script log in script editor console.
+- 💪 [OPT] A close button will be displayed in the upper right corner of the blank traffic details.
+- 💪 [OPT] The UUID tool supports setting without hyphens.
+- 🐞 [FIX] A bug that REST API may fail to merge cookies.
+- 🐞 [FIX] A bug that may show a gray screen when opening the favorited WebSocket.
+- 🐞 [FIX] A bug that causes the redirect title display to overlap.
+- 🐞 [FIX] A bug that causes incorrect response body processing when the response header does not contain `Content-Length` and `Transfer-Encoding`.
+- 🐞 [FIX] The bug that the websocket based on aiohttp cannot be connected in the proxy terminal.
+- 🐞 [FIX] The bug that python scripts in the proxy terminal environment may report an error.
+- 🐞 [FIX] The bug that OpenAPI(Swagger) file importing throws an error.
+
+## v2.32.2 <small><small>*2025-02-21*</small></small>
+- 💪 [OPT] Report server supports uploading a user defined tag.
+- 💪 [OPT] Android network request stacktrace supports syntax highlighting.
+- 💪 [OPT] Adjust the home page tab interaction logic.
+- 💪 [OPT] Adjust the right-click menu options of the API collection.
+- 💪 [OPT] Add some shortcuts for API collection.
+- 🐞 [FIX] The bug that a gray screen will shown when exporting curl of basic auth API.
+- 🐞 [FIX] The bug that basic authorized curl becomes digest authorized after import.
+- 🐞 [FIX] The bug that the network proxy configuration does not take effect when the machine is connected with the network cable.
+
+## v2.32.1 <small><small>*2025-02-19*</small></small>
+- 💪 [OPT] JSON Tree context menu adds node search item.
+- 🐞 [FIX] The bug where the API collection subfolder name may become untitled after upgraded from an old version.
+
 ## v2.32.0 <small><small>*2025-02-17*</small></small>
 - ❗ [IMP] Data structure upgrade, please do not downgrade to the old version after upgrading.
 - 🚀 [NEW] API collection supports folder-level configuration like authorization and scripting.

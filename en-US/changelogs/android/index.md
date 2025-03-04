@@ -4,6 +4,46 @@ sidebar_position: 4
 
 # Android
 
+## v2.33.0 <small><small>*2025-03-04*</small></small>
+- 💪 [OPT] Automatically restore the response data of API testing after the application is restarted.
+- 💪 [OPT] Turn off automatic query parameter decoding when inputting URL in API testing.
+- 💪 [OPT] API testing provides query parameter decoding option.
+- 💪 [OPT] The default setting of REST proxy option is changed to `No Proxy`.
+- 💪 [OPT] API collection will check and fix duplicate IDs.
+- 💪 [OPT] Unify the size and color value of borders and dividers.
+- 💪 [OPT] Automatically refresh cookies when redirecting.
+- 🐞 [FIX] The bug that redirect data is displayed in disorder.
+- 🐞 [FIX] The bug that the prompt in traffic details is incorrect when the root certificate is not installed.
+
+## v2.32.5 <small><small>*2025-02-26*</small></small>
+- 💪 [OPT] Disable charset detection for JSON data, and use utf-8 by default.
+
+## v2.32.4 <small><small>*2025-02-26*</small></small>
+- 💪 [OPT] Improve charset detection mechanism.
+- 🐞 [FIX] A bug in which garbled characters may be displayed after modifying data using rewrite, breakpoints, and scripts.
+
+## v2.32.3 <small><small>*2025-02-25*</small></small>
+- 💪 [OPT] Automatic inference will be attempted when charset is not specified in the `Content-Type` header.
+- 💪 [OPT] The export curl window will no longer be automatically closed after copying.
+- 💪 [OPT] The limit of database capacity is increased from 10G to 64G.
+- 💪 [OPT] The API collection setting page supports left and right sliding tabs.
+- 🐞 [FIX] A bug that REST API may fail to merge cookies.
+- 🐞 [FIX] A bug that may show a gray screen when opening the favorited WebSocket.
+- 🐞 [FIX] A bug that causes the redirect title display to overlap.
+- 🐞 [FIX] A bug that causes incorrect response body processing when the response header does not contain `Content-Length` and `Transfer-Encoding`.
+- 🐞 [FIX] The bug that the API collection list is not updated after the API is updated.
+- 🐞 [FIX] The bug that the environment variable displays the data import entry.
+
+## v2.32.2 <small><small>*2025-02-21*</small></small>
+- 💪 [OPT] Report server supports uploading a user defined tag.
+- 💪 [OPT] Android network request stacktrace supports syntax highlighting.
+- 💪 [OPT] JSON tree key-value width adjustment is more sensitive.
+- 🐞 [FIX] The bug that a gray screen will shown when exporting curl of basic auth API.
+- 🐞 [FIX] The bug that basic authorized curl becomes digest authorized after import.
+
+## v2.32.1 <small><small>*2025-02-19*</small></small>
+- 🐞 [FIX] The bug where the API collection subfolder name may become untitled after upgraded from an old version.
+
 ## v2.32.0 <small><small>*2025-02-17*</small></small>
 - ❗ [IMP] Data structure upgrade, please do not downgrade to the old version after upgrading.
 - 🚀 [NEW] API collection supports folder-level configuration like authorization and scripting.

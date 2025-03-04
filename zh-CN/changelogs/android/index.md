@@ -4,6 +4,47 @@ sidebar_position: 4
 
 # Android
 
+## v2.33.0 <small><small>*2025-03-04*</small></small>
+- 💪【优化】应用重启后自动恢复API测试的响应数据。
+- 💪【优化】API测试关闭URL输入时参数自动解码。
+- 💪【优化】API测试提供请求参数解码选项。
+- 💪【优化】API测试代理选项默认改为`不使用代理`。
+- 💪【优化】API集合自动检测并修复重复ID数据。
+- 💪【优化】统一边框和风格线的尺寸和色值。
+- 💪【优化】重定向时自动刷新Cookie。
+- 🐞【修复】重定向数据显示错乱的bug。
+- 🐞【修复】根证书未安装时请求详情中提示信息不正确的bug。
+
+## v2.32.5 <small><small>*2025-02-26*</small></small>
+- 💪【优化】JSON数据禁用charset检测，默认使用utf-8。
+
+## v2.32.4 <small><small>*2025-02-26*</small></small>
+- 💪【优化】完善charset检测机制。
+- 🐞【修复】重写、断点和脚本修改数据后可能出现乱码的bug。
+
+## v2.32.3 <small><small>*2025-02-25*</small></small>
+- 💪【优化】未在`Content-Type`头部中指明charset时将尝试自动推理。
+- 💪【优化】导出curl窗口点击复制不再自动关闭弹窗或页面。
+- 💪【优化】数据库容量上限从10G上调到64G。
+- 💪【优化】API集合设置页面支持左右滑动Tab。
+- 🐞【修复】API请求合并Cookie可能失败的bug。
+- 🐞【修复】收藏的WebSocket数据打开可能出现灰屏的bug。
+- 🐞【修复】重定向信息展示UI重叠的bug。
+- 🐞【修复】响应头部不包含`Content-Length`和`Transfer-Encoding`时响应体处理不正确的bug。
+- 🐞【修复】API更新后API集合数据未更新的bug。
+- 🐞【修复】环境变量显示了数据导入入口的bug。
+
+## v2.32.2 <small><small>*2025-02-21*</small></small>
+- 💪【优化】报告服务器支持上传自定义标签。
+- 💪【优化】Android网络请求堆栈内容支持语法高亮。
+- 💪【优化】JSON Tree键值显示宽度调节更加灵敏。
+- 🐞【修复】Basic授权的API导出curl灰屏的bug。
+- 🐞【修复】Basic授权的curl命令导入后变成Digest授权的bug。
+- 🐞【修复】API集合中使用Basic授权的API无法复制curl的bug。
+
+## v2.32.1 <small><small>*2025-02-19*</small></small>
+- 🐞【修复】API集合从旧版本升级后子文件夹名称可能变成未命名的bug。
+
 ## v2.32.0 <small><small>*2025-02-17*</small></small>
 - ❗【重要】API测试相关的数据结构变更，注意升级后请勿降级到旧版本。
 - 🚀【新功能】API集合支持文件夹级别授权和脚本配置。
