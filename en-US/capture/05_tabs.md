@@ -96,7 +96,7 @@ If a request is websocket, the body tab will automatically upgrade to websocket,
 
 ### SSE {#sse}
 
-If a request is SSE(Serve Sent Events), the body tab will automatically upgrade to SSE, displays the SSE messages.
+If a request is SSE(Server Sent Events), the body tab will automatically upgrade to SSE, displays the SSE messages.
 
 ![](arts/tabs_sse.png)
 

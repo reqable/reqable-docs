@@ -96,7 +96,7 @@ Reqable支持多样化的数据展示和预览，例如JSON、XML、二进制、
 
 ### SSE {#sse}
 
-如果一个请求是SSE(Serve Sent Events)，原来的数据Tab将会自动变为SSE，展示SSE的消息数据。
+如果一个请求是SSE(Server Sent Events)，原来的数据Tab将会自动变为SSE，展示SSE的消息数据。
 
 ![](arts/tabs_sse.png)
 
