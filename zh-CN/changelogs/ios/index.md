@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # iOS
 
+## v2.33.3 <small><small>*2025-03-12*</small></small>
+- 💪【优化】大幅提升JSON语法高亮的性能。
+- 💪【优化】完善HTTP2协议栈相关实现。
+- 🐞【修复】HTTP头部存在数字开头的名称时语法高亮异常的bug。
+- 🐞【修复】HTTP头部包含点符号时语法高亮异常的bug。
+
+## v2.33.2 <small><small>*2025-03-07*</small></small>
+- 💪【优化】API请求设置中支持禁用URL输入下拉提示。
+- 🐞【修复】SSE响应头部包含charset情况下未能显示SSE视图的bug。
+
 ## v2.33.0 <small><small>*2025-03-04*</small></small>
 - 💪【优化】应用重启后自动恢复API测试的响应数据。
 - 💪【优化】API测试关闭URL输入时参数自动解码。

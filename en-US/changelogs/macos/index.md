@@ -4,6 +4,24 @@ sidebar_position: 1
 
 # Macos
 
+## v2.33.3 <small><small>*2025-03-12*</small></small>
+- 💪 [OPT] Greatly improve the performance of JSON syntax highlighting.
+- 💪 [OPT] Improve the implementation of HTTP2 protocol.
+- 💪 [OPT] Proxy terminal supports opening iTerm2.
+- 🐞 [FIX] The bug of abnormal syntax highlighting when the HTTP header contains a name starting with a number.
+- 🐞 [FIX] The bug of abnormal syntax highlighting when the HTTP header contains a dot symbol.
+
+## v2.33.2 <small><small>*2025-03-07*</small></small>
+- 💪 [OPT] Support disabling URL input autocomplate in API request settings.
+- 💪 [OPT] Now can open a new API tab from request traces.
+- 💪 [OPT] Capture interceptor view will display the original URL of the rewrite-redirect.
+- 🐞 [FIX] SSE cannot be displayed when response header Content-Type contains charset.
+- 🐞 [FIX] Traffic list search condition save icon can still be interactive when it is not displayed.
+- 🐞 [FIX] Traffic tab icon displays abnormally when switching Zen mode.
+- 🐞 [FIX] The bug that malformed request or response execution breakpoint, rewrite, script will cause a failure.
+- 🐞 [FIX] The bug that malformed request or response body cannot be displayed in diff view.
+- 🐞 [FIX] The bug that the system proxy indicator is not updated in time when automatic capture is enabled.
+
 ## v2.33.1 <small><small>*2025-03-04*</small></small>
 - 🐞 [FIX] The bug that an error throws when creating the form-data body.
 

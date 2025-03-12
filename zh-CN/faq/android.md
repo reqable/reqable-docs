@@ -12,8 +12,8 @@ sidebar_position: 4
 
 ### 1. 证书问题
 
-- [证书安装](../../getting-started/installation)
-- [问题排错](../ssl)
+- [证书安装](../getting-started/installation)
+- [问题排错](./ssl)
 
 ### 2. 查看日志
 
@@ -87,5 +87,5 @@ Firefox浏览器使用内置的CA Store，系统安装的CA证书无法生效，
 Reqable本身不具备访问受限网站的能力，您可以在取得境外访问许可的前提下按照下面的步骤操作。
 
 - 电脑端安装并启动科学上网工具。
-- 电脑端Reqable配置[二级代理](../../capture/proxy#secondary)到上一步的工具。
+- 电脑端Reqable配置[二级代理](../capture/proxy#secondary)到上一步的工具。
 - 手机端Reqable扫码连接电脑（协同模式）。

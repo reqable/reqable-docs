@@ -20,9 +20,13 @@ Reqable提供了代理终端功能，可以一键启动终端并且自动配置�
 
 ![](arts/proxy_terminal_02.png)
 
-- 在Mac系统上，支持Apple官方的Terminal终端。
-- 在Windows系统上，支持CMD（默认）终端和PowerShell（图标右键菜单中可以切换默认启动终端）。
+- 在Mac系统上，支持Apple官方的Terminal终端（默认）和iTerm2。
+- 在Windows系统上，支持CMD终端（默认）、PowerShell和Pwsh。
 - 在Linux系统上，支持Ubuntu的gnome console和KDE的konsole。
+
+:::info
+代理终端图标的右键菜单中可以切换默认终端。
+:::
 
 代理终端目前支持下列网络框架：
 

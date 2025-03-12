@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # iOS
 
+## v2.33.3 <small><small>*2025-03-12*</small></small>
+- 💪 [OPT] Greatly improve the performance of JSON syntax highlighting.
+- 💪 [OPT] Improve the implementation of HTTP2 protocol.
+- 🐞 [FIX] The bug of abnormal syntax highlighting when the HTTP header contains a name starting with a number.
+- 🐞 [FIX] The bug of abnormal syntax highlighting when the HTTP header contains a dot symbol.
+
+## v2.33.2 <small><small>*2025-03-07*</small></small>
+- 💪 [OPT] Support disabling URL input autocomplate in API request settings.
+- 🐞 [FIX] SSE cannot be displayed when response header Content-Type contains charset.
+
 ## v2.33.0 <small><small>*2025-03-04*</small></small>
 - 💪 [OPT] Automatically restore the response data of API testing after the application is restarted.
 - 💪 [OPT] Turn off automatic query parameter decoding when inputting URL in API testing.

@@ -20,9 +20,13 @@ HTTP(s) requests in the terminal can be intercepted by Reqable and displayed in 
 
 ![](arts/proxy_terminal_02.png)
 
-- On Mac, Apple Terminal is supported.
-- On Windows, CMD (default) and PowerShell are supported (Switch in the context menu of the icon).
-- On Linux, Ubuntu's gnome console and KDE's konsole are supported.
+- For Mac, Apple Terminal (default) and iTerm2 are supported.
+- For Windows, CMD (default), PowerShell and Pwsh are supported.
+- For Linux, Ubuntu's gnome console and KDE's konsole are supported.
+
+:::info
+The default terminal app can be switched in the context menu of the icon.
+:::
 
 The proxy terminal currently supports the following network libs:
 
