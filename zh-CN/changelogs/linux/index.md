@@ -4,6 +4,17 @@ sidebar_position: 3
 
 # Linux
 
+## v2.33.4 <small><small>*2025-03-17*</small></small>
+- 💪【优化】API请求支持使用快捷键`Control + N`打开新窗口查看响应数据。
+- 💪【优化】API请求支持使用快捷键`Shift + Control + Y`添加会话到对比池。
+- 💪【优化】`工具`菜单中新增脚本环境配置入口。
+- 💪【优化】`帮助`菜单中新增更新日志查看入口。
+- 💪【优化】在新窗口打开请求或响应时将保持当前选择的标签页。
+- 💪【优化】图片查看器支持使用`Control + V`直接载入粘贴板的base64图片数据。
+- 🐞【修复】API请求将`%20`转化成`+`号的bug。
+- 🐞【修复】重复`Transfer-Encoding`和`Content-Encoding`导致重复解码的bug。
+- 🐞【修复】Python Embeddable Package报错找不到模块的bug。
+
 ## v2.33.3 <small><small>*2025-03-12*</small></small>
 - 💪【优化】大幅提升JSON语法高亮的性能。
 - 💪【优化】完善HTTP2协议栈相关实现。

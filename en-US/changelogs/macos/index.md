@@ -4,6 +4,17 @@ sidebar_position: 1
 
 # Macos
 
+## v2.33.4 <small><small>*2025-03-17*</small></small>
+- 💪 [OPT] API testing supports using shortcut `Command + N` to open a new window to view the response data.
+- 💪 [OPT] API testing supports using shortcut `Shift + Command + Y` to add the session to the diff pool list.
+- 💪 [OPT] Script environment setup has been added to the `Tools` menu.
+- 💪 [OPT] Changelogs has been added to the `Help` menu.
+- 💪 [OPT] The currently selected tab will be maintained when opening the request or response in a new window.
+- 💪 [OPT] The image viewer supports using `Command + V` to directly load base64 image data from the clipboard.
+- 🐞 [FIX] A bug that API converts `%20` to `+`.
+- 🐞 [FIX] A bug that duplicate `Transfer-Encoding` and `Content-Encoding` will cause repeated decoding.
+- 🐞 [FIX] The error `no module named 'reqable'` will throw when using Python Embeddable Package.
+
 ## v2.33.3 <small><small>*2025-03-12*</small></small>
 - 💪 [OPT] Greatly improve the performance of JSON syntax highlighting.
 - 💪 [OPT] Improve the implementation of HTTP2 protocol.

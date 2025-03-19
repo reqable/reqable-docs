@@ -4,6 +4,10 @@ sidebar_position: 4
 
 # Android
 
+## v2.33.4 <small><small>*2025-03-17*</small></small>
+- 🐞 [FIX] A bug that API converts `%20` to `+`.
+- 🐞 [FIX] A bug that duplicate `Transfer-Encoding` and `Content-Encoding` will cause repeated decoding.
+
 ## v2.33.3 <small><small>*2025-03-12*</small></small>
 - 💪 [OPT] Greatly improve the performance of JSON syntax highlighting.
 - 💪 [OPT] Improve the implementation of HTTP2 protocol.

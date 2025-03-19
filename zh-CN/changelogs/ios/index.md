@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # iOS
 
+## v2.33.4 <small><small>*2025-03-17*</small></small>
+- 🐞【修复】API请求将`%20`转化成`+`号的bug。
+- 🐞【修复】重复`Transfer-Encoding`和`Content-Encoding`导致重复解码的bug。
+
 ## v2.33.3 <small><small>*2025-03-12*</small></small>
 - 💪【优化】大幅提升JSON语法高亮的性能。
 - 💪【优化】完善HTTP2协议栈相关实现。
