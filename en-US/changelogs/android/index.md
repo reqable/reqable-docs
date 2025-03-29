@@ -4,6 +4,19 @@ sidebar_position: 4
 
 # Android
 
+## v2.33.8 <small><small>*2025-03-27*</small></small>
+- 🐞 [FIX] The bug that SSL certificate caches were not clean after importing a new CA certificate.
+
+## v2.33.7 <small><small>*2025-03-27*</small></small>
+- 🐞 [FIX] The bug that the boundary in `Content-Type` was missing in form-data requests.
+
+## v2.33.5 <small><small>*2025-03-20*</small></small>
+- 💪 [OPT] JSON syntax highlighting uses loop mode.
+- 💪 [OPT] JSON Streaming data is automatically combined into an array when displayed.
+- 💪 [OPT] Set-Cookie parsing no longer verifies data.
+- 🐞 [FIX] The bug that `+` in URL parameters is automatically encoded as `%2B`.
+- 🐞 [FIX] The bug that the new location URL has an encoding error in redirection.
+
 ## v2.33.4 <small><small>*2025-03-17*</small></small>
 - 🐞 [FIX] A bug that API converts `%20` to `+`.
 - 🐞 [FIX] A bug that duplicate `Transfer-Encoding` and `Content-Encoding` will cause repeated decoding.

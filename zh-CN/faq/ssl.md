@@ -28,8 +28,8 @@ SSL问题大多都是证书信任问题，不同的系统、应用程序都有�
 
 ### 5. Python
 
-使用Python requests等网络库发送请求，可能会出现无法验证证书的情况，请使用可以尝试在[代理终端](../capture/proxy-terminal)中执行Python脚本。
+使用Python requests等网络库发送请求，可能会出现无法验证证书的情况，可以尝试在[代理终端](../capture/proxy-terminal)中执行Python脚本。
 
 ### 6. NodeJS
 
-使用NodeJS下的网络库发送请求，可能会出现无法验证证书的情况，请使用可以尝试在[代理终端](../capture/proxy-terminal)中运行Node程序。
+使用NodeJS下的网络库发送请求，可能会出现无法验证证书的情况，可以尝试在[代理终端](../capture/proxy-terminal)中运行Node程序。

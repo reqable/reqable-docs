@@ -4,6 +4,32 @@ sidebar_position: 1
 
 # Macos
 
+## v2.33.7 <small><small>*2025-03-27*</small></small>
+- 🐞【修复】API请求form-data头部`Content-Type`缺失boundary的bug。
+
+## v2.33.6 <small><small>*2025-03-27*</small></small>
+- 💪【优化】API请求内置头部`Content-Type`和`Content-Length`设置为不可取消勾选。
+- 💪【优化】API请求文本输入框在无内容时相关功能图标不再显示为可用状态。
+- 💪【优化】cURL导入urlencode时将会自动解码。
+- 💪【优化】cURL导出urlencode时如果值为空将会省略等于号。
+- 💪【优化】调试列表搜索支持备注和控制台内容。
+- 💪【优化】重写和断点支持更多的HTTP状态码。
+- 🐞【修复】API请求内置头部`Content-Length`可能不显示的bug。
+- 🐞【修复】对比工具排序头部名称相同时未按照值排序的bug。
+- 🐞【修复】对比工具文本折叠时内容显示不正确的bug。
+- 🐞【修复】对比工具只选择一条时行号显示不正确的bug。
+
+## v2.33.5 <small><small>*2025-03-20*</small></small>
+- 💪【优化】JSON语法高亮采用循环模式。
+- 💪【优化】JSON Streaming数据显示时自动组合成数组。
+- 💪【优化】Set-Cookie解析不再校验数据合法性。
+- 💪【优化】API集合文件夹右键菜单添加`折叠全部`和`展开全部`选项。
+- 💪【优化】调整部分工具视图的边距。
+- 🐞【修复】URL参数中`+`自动编码成`%2B`的bug。
+- 🐞【修复】请求重定向新的URL编码错误的bug。
+- 🐞【修复】子窗口中出现`entry-viewer`页面找不到的bug。
+- 🐞【修复】子窗口中右键分享功能无反应的bug。
+
 ## v2.33.4 <small><small>*2025-03-17*</small></small>
 - 💪【优化】API请求支持使用快捷键`Command + N`打开新窗口查看响应数据。
 - 💪【优化】API请求支持使用快捷键`Shift + Command + Y`添加会话到对比池。

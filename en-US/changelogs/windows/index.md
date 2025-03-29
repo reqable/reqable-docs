@@ -4,6 +4,22 @@ sidebar_position: 0
 
 # Windows
 
+## v2.33.8 <small><small>*2025-03-27*</small></small>
+- 🐞 [FIX] The bug that SSL certificate caches were not clean after importing a new CA certificate.
+
+## v2.33.7 <small><small>*2025-03-27*</small></small>
+- 🐞 [FIX] The bug that the boundary in `Content-Type` was missing in form-data requests.
+
+## v2.33.5 <small><small>*2025-03-20*</small></small>
+- 💪 [OPT] JSON syntax highlighting uses loop mode.
+- 💪 [OPT] JSON Streaming data is automatically combined into an array when displayed.
+- 💪 [OPT] Set-Cookie parsing no longer verifies data.
+- 💪 [OPT] Add `Collapse All` and `Expand All` options to the context menu of the API collection folder.
+- 💪 [OPT] Adjust the margins of some tool windows.
+- 🐞 [FIX] The bug that `+` in URL parameters is automatically encoded as `%2B`.
+- 🐞 [FIX] The bug that the new location URL has an encoding error in redirection.
+- 🐞 [FIX] The bug that the `entry-viewer` page cannot be found in the subwindow.
+
 ## v2.33.4 <small><small>*2025-03-17*</small></small>
 - 💪 [OPT] API testing supports using shortcut `Control + N` to open a new window to view the response data.
 - 💪 [OPT] API testing supports using shortcut `Shift + Control + Y` to add the session to the diff pool list.

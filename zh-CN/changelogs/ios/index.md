@@ -4,6 +4,23 @@ sidebar_position: 5
 
 # iOS
 
+## v2.33.7 <small><small>*2025-03-27*</small></small>
+- 🐞【修复】API请求form-data头部`Content-Type`缺失boundary的bug。
+
+## v2.33.6 <small><small>*2025-03-27*</small></small>
+- 💪【优化】API请求内置头部`Content-Type`和`Content-Length`设置为不可取消勾选。
+- 💪【优化】API请求文本输入框在无内容时相关功能图标不再显示为可用状态。
+- 💪【优化】cURL导入urlencode时将会自动解码。
+- 💪【优化】cURL导出urlencode时如果值为空将会省略等于号。
+- 🐞【修复】API请求内置头部`Content-Length`可能不显示的bug。
+
+## v2.33.5 <small><small>*2025-03-20*</small></small>
+- 💪【优化】JSON语法高亮采用循环模式。
+- 💪【优化】JSON Streaming数据显示时自动组合成数组。
+- 💪【优化】Set-Cookie解析不再校验数据合法性。
+- 🐞【修复】URL参数中`+`自动编码成`%2B`的bug。
+- 🐞【修复】请求重定向新的URL编码错误的bug。
+
 ## v2.33.4 <small><small>*2025-03-17*</small></small>
 - 🐞【修复】API请求将`%20`转化成`+`号的bug。
 - 🐞【修复】重复`Transfer-Encoding`和`Content-Encoding`导致重复解码的bug。
