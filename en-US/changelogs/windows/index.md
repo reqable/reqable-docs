@@ -4,11 +4,106 @@ sidebar_position: 0
 
 # Windows
 
-## v2.33.8 <small><small>*2025-03-27*</small></small>
-- 🐞 [FIX] The bug that SSL certificate caches were not clean after importing a new CA certificate.
+## v3.0.20 <small><small>*2025-11-04*</small></small>
+- 🚀 [NEW] Changed premium authorization from license to account.
+- 🚀 [NEW] Support for cloud data storage.
+- 🚀 [NEW] Support for multi-device synchronization and collaboration.
+- 🚀 [NEW] A new tab for environment variable editing.
+- 🚀 [NEW] Now can preview SVG images.
+- 💪 [OPT] Support for closing tabs to the right.
+- 💪 [OPT] Rewrite redirect URLs will now omit the root path `/` when displayed.
+- 💪 [OPT] Viewing request history no longer prompts you to "restore" data.
+- 💪 [OPT] Support for importing OpenAPI yaml collections.
+- 💪 [OPT] Request and response panels now display close and collapse icon buttons.
+- 💪 [OPT] Changed the URL auto-completion scheme from https to http.
+- 💪 [OPT] cURL import will automatically handle JSON escape characters.
+- 💪 [OPT] Improved error message for environment variable name.
+- 💪 [OPT] In code snippet, using dynamic import for Node fetch in code snippet.
+- 💪 [OPT] In code snippet, axios outputs the response body instead of the entire response object.
+- 🐞 [FIX] Rewriting redirects could cause other interceptors to fail.
+- 🐞 [FIX] `{{` and `}}` in JSON would be incorrectly replaced with `<<` and `>>` when importing collection data.
+- 🐞 [FIX] HAR format was not correctly processing HTTP2 headers when importing collection data.
+- 🐞 [FIX] Components section was incorrectly imported when importing OpenAPI collections.
+- 🐞 [FIX] Searching for rules might display the previous search results.
+- 🐞 [FIX] Value in the environment variable hover tooltip might not be updated.
+- 🐞 [FIX] Response rewrite interceptor did not show in history and sub windows.
+- 🐞 [FIX] A window with disabled resizing could be maximized.
+- 🐞 [FIX] The window position and size could not be restored to the previous state after the application was restarted.
+- 🐞 [FIX] Proxy terminal could not intercept requests sent by Nodejs fetch.
+- 🐞 [FIX] HTTPS request sent by axios in proxy terminal has no response.
+- 🐞 [FIX] Rewrite help document path redirected incorrectly.
+- 🐞 [FIX] Closing a newly created, unedited API would prompt a save request.
+- 🐞 [FIX] Urlencode encoding was incorrect.
+- 🐞 [FIX] Custom proxy settings for API testing were not saved correctly.
+- 🐞 [FIX] The tab modification status was not updated in time when the API request body was modified.
+- 🐞 [FIX] API redirection failed to handle the location starting with `//`.
+- 🐞 [FIX] API request global settings did not take effect in certain scenarios.
+- 🐞 [FIX] API request inherited basic auth environment variables were not resolved.
+- 🐞 [FIX] API request basic auth environment variables were not effective after switching the current environment.
+- 🐞 [FIX] Hoppscotch environment variables were lost after import.
+- 🐞 [FIX] Malformed cookies could cause the app to freeze.
+- 🐞 [FIX] Cookie creation and editing did not take effect.
+- 🐞 [FIX] Some HAR files could not be parsed correctly.
+- 🐞 [FIX] Search results in the text editor could be obscured.
+- 🐞 [FIX] HTTP2 requests could fail in certain situations.
+- 🐞 [FIX] Selecting items in the traffic list and adding it to a new session would clear the list.
+- 🐞 [FIX] Input an invalid regex in HexViewer search would cause always no result.
+
+## v2.33.12 <small><small>*2025-04-23*</small></small>
+- 💪 [OPT] Reduce memory usage and lag in some scenarios.
+- 💪 [OPT] Large data is displayed as `<...>` in the raw tab to avoid performance issues.
+- 💪 [OPT] Python-Requests code snippet will use full url instead of param dict.
+- 💪 [OPT] The `=` in the parameter value of URL is no longer automatically transcoded to `%3D`.
+- 🐞 [FIX] The bug that the parameter name and parameter value of the URL will be lost when both are empty.
+
+## v2.33.11 <small><small>*2025-04-22*</small></small>
+- 💪 [OPT] SSE list supports switching between positive and reverse order.
+- 💪 [OPT] WebSocket list supports switching between forward and reverse order.
+- 💪 [OPT] A tooltip will display when the mouse hovers over the home page tab.
+- 🐞 [FIX] The bug that the WebSocket frame read status is incorrect after search and filtering.
+- 🐞 [FIX] The bug that the HTTP method of the new location is not changed to GET during 301, 302 and 303 redirection.
+- 🐞 [FIX] The bug that the icon button may not trigger the click event when clicked continuously.
+- 🐞 [FIX] The bug that the rewrite redirect path `*` replacement may fail.
+- 🐞 [FIX] The bug that the log file location cannot be opened in the debug tool window.
+
+## v2.33.10 <small><small>*2025-04-21*</small></small>
+- 💪 [OPT] When MIME is non-text type, the data will not be detected for character encoding.
+- 💪 [OPT] API testing turns off `Follow Debug` will switch to `Unset` instead of `Follow System`.
+- 💪 [OPT] Python scripts support using `[]` to operate binary and multipart type data.
+- 💪 [OPT] Delete the shortcut key prompt of the `Export` menu.
+- 💪 [OPT] The URL scheme for importing Swagger API uses http instead of https.
+- 🐞 [FIX] The bug that data saved under the `Hex` may not be the displayed data.
+
+## v2.33.9 <small><small>*2025-04-15*</small></small>
+- 💪 [OPT] Copy as JSON will automatically remove the built-in empty value header.
+- 🐞 [FIX] The bug that the exported Postman file does not indicate scheme.
+- 🐞 [FIX] The bug that the top-level API collection directory can be dragged and moved to other subfolders.
+- 🐞 [FIX] The bug that copy content of the script editor console is incorrect.
+
+## v2.33.8 <small><small>*2025-04-02*</small></small>
+- 💪 [OPT] WebSocket and SSE JSON payload will prettified automatically.
+- 💪 [OPT] Table view supports using `Tab` key to move focus to the next cell.
+- 💪 [OPT] Code snippet copy no longer automatically closes the pop-up dialog.
+- 🐞 [FIX] The bug that the `Content-Type` header is not automatically deleted when creating form-data API from traffic list.
+- 🐞 [FIX] The bug that generated MITM certificates are not cleared after importing CA certificate.
+- 🐞 [FIX] The bug that some requests have been completed but the status is displayed as processing or abort.
+- 🐞 [FIX] The bug that cURL export does not correctly handle JSON comments.
+- 🐞 [FIX] The bug that closing the main window in multi-window state may cause the program to crash.
 
 ## v2.33.7 <small><small>*2025-03-27*</small></small>
 - 🐞 [FIX] The bug that the boundary in `Content-Type` was missing in form-data requests.
+
+## v2.33.6 <small><small>*2025-03-27*</small></small>
+- 💪 [OPT] Set the built-in headers `Content-Type` and `Content-Length` of API to be unchecked.
+- 💪 [OPT] Some icons of the API text input box are no longer displayed as available when there is no content.
+- 💪 [OPT] When cURL imports urlencode, it will automatically decode the key-value.
+- 💪 [OPT] When cURL exports urlencode, if the value is empty, the equal sign will be omitted.
+- 💪 [OPT] The traffic list search supports comments and console content.
+- 💪 [OPT] Rewrite and breakpoint support more HTTP status codes.
+- 🐞 [FIX] The bug that the built-in header `Content-Length` of API may lost.
+- 🐞 [FIX] The bug that the diff tool does not sort by value when the header names are the same.
+- 🐞 [FIX] The bug that the content of the diff tool is displayed incorrectly when the chunk is folded.
+- 🐞 [FIX] The bug that the line number is displayed incorrectly when only one is selected in the diff tool.
 
 ## v2.33.5 <small><small>*2025-03-20*</small></small>
 - 💪 [OPT] JSON syntax highlighting uses loop mode.
