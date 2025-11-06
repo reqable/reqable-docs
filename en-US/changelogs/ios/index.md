@@ -4,7 +4,13 @@ sidebar_position: 5
 
 # iOS
 
-## v3.0.20 <small><small>*2025-11-04*</small></small>
+## v3.0.22 <small><small>*2025-11-05*</small></small>
+- 💪 [OPT] Improve login and registration process.
+- 💪 [OPT] Add compatibility check for `curl_close` in generated PHP code.
+- 🐞 [FIX] `{{` and `}}` in JSON would be incorrectly replaced with `<<` and `>>` when importing collection data.
+- 🐞 [FIX] WebSocket requests created from the sidebar `+` menu were incorrectly created as HTTP requests.
+
+## v3.0.21 <small><small>*2025-11-05*</small></small>
 - ❗ [IMP] The minimum supported version is upgraded from 12.0 to 13.0.
 - 🚀 [NEW] Changed premium authorization from license to account.
 - 🚀 [NEW] Support for cloud data storage.

@@ -4,7 +4,12 @@ sidebar_position: 5
 
 # iOS
 
-## v3.0.20 <small><small>*2025-11-04*</small></small>
+## v3.0.22 <small><small>*2025-11-06*</small></small>
+- 💪【优化】便捷化登录注册操作步骤。
+- 💪【优化】生成代码PHP添加对curl_close的兼容判断。
+- 🐞【修复】侧边栏`+`菜单中WebSocket请求被创建成HTTP请求的bug。
+
+## v3.0.21 <small><small>*2025-11-05*</small></small>
 - ❗【重要】最低支持版本从12.0升级到13.0。
 - 🚀【新功能】付费功能由许可证授权改为账号授权。
 - 🚀【新功能】支持数据云端存储。

@@ -4,7 +4,15 @@ sidebar_position: 0
 
 # Windows
 
-## v3.0.20 <small><small>*2025-11-04*</small></small>
+## v3.0.22 <small><small>*2025-11-05*</small></small>
+- 💪 [OPT] Improve login and registration process.
+- 💪 [OPT] Add compatibility check for `curl_close` in generated PHP code.
+- 💪 [OPT] A built-in license migration notification will now automatically pop up.
+- 💪 [OPT] Use `Shift + Tab` to switch to the previous input box in table mode editing.
+- 🐞 [FIX] `{{` and `}}` in JSON would be incorrectly replaced with `<<` and `>>` when importing collection data.
+- 🐞 [FIX] Opening the log window after the log file is deleted would result in a gray window.
+
+## v3.0.21 <small><small>*2025-11-05*</small></small>
 - 🚀 [NEW] Changed premium authorization from license to account.
 - 🚀 [NEW] Support for cloud data storage.
 - 🚀 [NEW] Support for multi-device synchronization and collaboration.
