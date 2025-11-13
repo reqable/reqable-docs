@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # iOS
 
+## v3.0.25 <small><small>*2025-11-12*</small></small>
+- 💪 [OPT] Improve the logic for creating APIs from raw HTTP messages.
+- 💪 [OPT] cURL import input box automatically gains focus.
+- 💪 [OPT] cURL import automatically filters leading and trailing spaces and line breaks.
+- 💪 [OPT] API request form supports selecting multiple files at once.
+- 💪 [OPT] API request body formdata will show more action icon by default.
+- 💪 [OPT] API request body formdata switches to file type automatically open file selector.
+- 💪 [OPT] API request body formdata switches to multiline text type automatically open text editor and focus.
+- 🐞 [FIX] Data is not displayed initially in non-table mode.
+- 🐞 [FIX] Email addresses containing `+` were not passing validation.
+
 ## v3.0.24 <small><small>*2025-11-12*</small></small>
 - 🐞 [FIX] Data loss of secondary folders when upgrading from versions before v2.32.0 to the new version.
 
