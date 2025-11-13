@@ -4,6 +4,19 @@ sidebar_position: 4
 
 # Android
 
+## v3.0.24 <small><small>*2025-11-12*</small></small>
+- 🐞 [FIX] Data loss of secondary folders when upgrading from versions before v2.32.0 to the new version.
+
+## v3.0.23 <small><small>*2025-11-11*</small></small>
+- 💪 [OPT] Check if the current version is a downgrade and display a warning.
+- 🐞 [FIX] API authorization referencing environment variables not taking effect.
+- 🐞 [FIX] API authorization type switching not taking effect.
+- 🐞 [FIX] WebSocket request header case sensitivity issue.
+- 🐞 [FIX] Custom theme color settings are not working.
+- 🐞 [FIX] Rewrite query parameters are double encoded.
+- 🐞 [FIX] Unable to open HAR files.
+- 🐞 [FIX] Opening history and favorites did not correctly display loading and error messages.
+
 ## v3.0.22 <small><small>*2025-11-05*</small></small>
 - 💪 [OPT] Improve login and registration process.
 - 💪 [OPT] Add compatibility check for `curl_close` in generated PHP code.
