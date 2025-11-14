@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Android
 
-## v3.0.25 <small><small>*2025-11-12*</small></small>
+## v3.0.26 <small><small>*2025-11-14*</small></small>
 - 💪【优化】完善从HTTP原始报文创建API的逻辑。
 - 💪【优化】cURL导入内容输入框自动获取焦点。
 - 💪【优化】cURL导入自动过滤首尾的空格和换行符。
@@ -13,6 +13,7 @@ sidebar_position: 4
 - 💪【优化】API调试表单请求体切换到文件类型时自动打开文件选择器。
 - 💪【优化】API调试表单请求体切换到多行文本类型时自动打开文本编辑器并获取焦点。
 - 🐞【修复】非表格模式下数据初始不显示的bug。
+- 🐞【修复】API请求apikey授权值使用不正确的bug。
 - 🐞【修复】邮箱名称中包含`+`导致验证不通过的bug。
 
 ## v3.0.24 <small><small>*2025-11-12*</small></small>

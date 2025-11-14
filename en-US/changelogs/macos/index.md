@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Macos
 
-## v3.0.25 <small><small>*2025-11-12*</small></small>
+## v3.0.26 <small><small>*2025-11-14*</small></small>
 - 💪 [OPT] Improve the logic for creating APIs from raw HTTP messages.
 - 💪 [OPT] cURL import input box automatically gains focus.
 - 💪 [OPT] cURL import automatically filters leading and trailing spaces and line breaks.
@@ -13,6 +13,7 @@ sidebar_position: 1
 - 💪 [OPT] API request body formdata switches to file type automatically open file selector.
 - 💪 [OPT] API request body formdata switches to multiline text type automatically open text editor and focus.
 - 🐞 [FIX] Data is not displayed initially in non-table mode.
+- 🐞 [FIX] API request apikey authorization value was used incorrectly.
 - 🐞 [FIX] Email addresses containing `+` were not passing validation.
 
 ## v3.0.24 <small><small>*2025-11-12*</small></small>
