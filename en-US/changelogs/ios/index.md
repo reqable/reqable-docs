@@ -4,6 +4,25 @@ sidebar_position: 5
 
 # iOS
 
+## v3.0.28 <small><small>*2025-11-18*</small></small>
+- 💪 [OPT] Replace cURL command parser.
+- 💪 [OPT] Importing curl no longer blocks if a file is not found.
+- 💪 [OPT] form-data adds a warning for missing files.
+- 💪 [OPT] Compatible with some non-standard `content-type` types.
+- 🐞 [FIX] HEX view in WebSocket and SSE could not gain focus, causing shortcut keys to be not working.
+- 🐞 [FIX] SSE view in traffic list did not display data due to encodings.
+- 🐞 [FIX] XML prettify did not correctly handle nested `>` and `<` characters.
+- 🐞 [FIX] Importing cURL did not handle single and double quotes correctly.
+
+## v3.0.27 <small><small>*2025-11-18*</small></small>
+- 💪 [OPT] Display all new version logs during version updates.
+- 💪 [OPT] Display VPN addresses in the IP list.
+- 💪 [OPT] Automatically clean up outdated log files.
+- 🐞 [FIX] Remove trailing `;` when importing cURL headers with empty values.
+- 🐞 [FIX] Application does not automatically open files when launched from file association.
+- 🐞 [FIX] API request tab save prompt status not displaying correctly in some cases.
+- 🐞 [FIX] Tabs did not restore the previously selected remote device after app restart.
+
 ## v3.0.26 <small><small>*2025-11-14*</small></small>
 - 💪 [OPT] Improve the logic for creating APIs from raw HTTP messages.
 - 💪 [OPT] cURL import input box automatically gains focus.

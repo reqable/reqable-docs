@@ -4,6 +4,39 @@ sidebar_position: 3
 
 # Linux
 
+## v3.0.28 <small><small>*2025-11-18*</small></small>
+- 💪 [OPT] Replace cURL command parser.
+- 💪 [OPT] Importing curl no longer blocks if a file is not found.
+- 💪 [OPT] form-data adds a warning for missing files.
+- 💪 [OPT] Compatible with some non-standard `content-type` types.
+- 💪 [OPT] Display the activated environment variable name instead of icon in the home page.
+- 💪 [OPT] Right-clicking the `+` on the home tab bar can directly create an HTTP request.
+- 💪 [OPT] Script support for assigning `request.contentType` and `response.contentType`.
+- 💪 [OPT] Traffic list supports status code conditional search.
+- 💪 [OPT] When a script interrupts a request, the console displays relevant information instead of an error.
+- 🐞 [FIX] HEX view in WebSocket and SSE could not gain focus, causing shortcut keys to be not working.
+- 🐞 [FIX] SSE view in traffic list did not display data due to encodings.
+- 🐞 [FIX] XML prettify did not correctly handle nested `>` and `<` characters.
+- 🐞 [FIX] Importing cURL did not handle single and double quotes correctly.
+- 🐞 [FIX] Script editor may freeze.
+- 🐞 [FIX] Script editor `Editing` and `Saved` status may display incorrectly.
+- 🐞 [FIX] API script did not clean up files after execution.
+- 🐞 [FIX] The dialog title of environment variable creation was incorrect.
+- 🐞 [FIX] Running node or commands dependent on node in the proxy terminal caused errors.
+- 🐞 [FIX] Taskbar application icon may not display.
+
+## v3.0.27 <small><small>*2025-11-18*</small></small>
+- 💪 [OPT] Display all new version logs during version updates.
+- 💪 [OPT] Display VPN addresses in the IP list.
+- 💪 [OPT] Automatically clean up outdated log files.
+- 💪 [OPT] Support opening the new Charles .chlz format files.
+- 💪 [OPT] Move the Zen mode option forward in the settings.
+- 💪 [OPT] Add a quick create HTTP option in settings to control whether the `+` button on the tab bar directly creates an HTTP request.
+- 🐞 [FIX] Remove trailing `;` when importing cURL headers with empty values.
+- 🐞 [FIX] Application does not automatically open files when launched from file association.
+- 🐞 [FIX] API request tab save prompt status not displaying correctly in some cases.
+- 🐞 [FIX] Failed to correctly identify request body type when importing Postman collections.
+
 ## v3.0.26 <small><small>*2025-11-14*</small></small>
 - 💪 [OPT] Improve the logic for creating APIs from raw HTTP messages.
 - 💪 [OPT] cURL import input box automatically gains focus.
