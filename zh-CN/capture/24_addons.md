@@ -23,14 +23,13 @@ https://github.com/reqable/python-scripting-api
 |*scheme*|str|请求标志符，值为http或https，只读。|
 |*host*|str|域名，只读。|
 |*port*|int|端口号，只读。|
-|*cid*|int|TCP连接ID，只读。|
-|*ctime*|int|TCP连接开始时间戳，单位毫秒，只读。|
-|*sid*|int|HTTP会话ID，只读。|
-|*stime*|int|HTTP会话开始时间戳，单位毫秒，只读。|
-|*uid*|str|HTTP会话的唯一标志，由 `ctime` + `cid` + `sid` 组成。|
-|**env**|dict|全局环境和当前已激活的自定义环境的变量合集。|
-|*app*|[App](#api-app)|应用（进程）信息，未获取到为None。|
+|*id*|int|HTTP会话ID，只读。|
+|*timestamp*|int|HTTP会话开始时间戳，单位毫秒，只读。|
+|*uid*|str|HTTP会话的唯一标志，只读。|
+|*connection*|[Connection](#api-connection)|TCP连接信息，只读。此变量仅在抓包模式下生效。|
+|*app*|[App](#api-app)|应用（进程）信息，只读，未获取到为None。|
 |highlight|[Highlight](#api-highlight)|设置调试列表高亮属性，v2.28.0版本新增。|
+|**env**|dict|全局环境和当前已激活的自定义环境的变量合集。|
 |**shared**|-|用于 `onRequest` 和 `onResponse` 之间共享数据的特殊变量，可以是str、int、list和dict等可自动序列化的变量。|
 
 代码示例：
@@ -378,6 +377,38 @@ def onRequest(context, request):
 如果将非multipart类型修改成multipart类型，必须同时修改headers设置boundary！
 
 :::
+
+## Connection {#api-connection}
+
+|   变量  |  类型 |  说明  |
+|  ----  | ----  | ----  |
+|*id*|int|连接ID，从0开始。|
+|*timestamp*|int|TCP连接建立时间，单位毫秒。|
+|*locale*|[Address](#api-address)|客户端地址。|
+|*remote*|[Address](#api-address)|服务器地址。|
+
+Code example:
+```python
+def onRequest(context, response):
+  # 打印连接信息
+  print(context.connection.id)
+  print(context.connection.timestamp)
+  # 打印客户端地址
+  print(context.connection.local.ip)
+  print(context.connection.local.port)
+  # 打印服务器地址
+  print(context.connection.remote.ip)
+  print(context.connection.remote.port)
+  # Done
+  return request
+```
+
+## Address {#api-address}
+
+|   变量  |  类型 |  说明  |
+|  ----  | ----  | ----  |
+|*ip*|str|IPv4或IPv6地址。|
+|*port*|int|端口号。|
 
 ## App {#api-app}
 

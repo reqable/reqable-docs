@@ -23,12 +23,11 @@ API documentation for the Reqable scripting.
 |*scheme*|str|URL scheme, http or https, read-only.|
 |*host*|str|Host, read-only.|
 |*port*|int|Port number, read-only.|
-|*cid*|int|Connection ID, read-only.|
-|*ctime*|int|TCP connection establishment timestamp, in milliseconds, read-only.|
-|*sid*|int|HTTP session ID, read-only.|
-|*stime*|int|HTTP session start timestamp, in milliseconds, read-only.|
-|*uid*|str|The unique identifier of an HTTP session, consisting of `ctime` + `cid` + `sid`.|
-|*app*|[App](#api-app)|App/Process information.|
+|*id*|int|HTTP session ID, read-only.|
+|*timestamp*|int|HTTP session start timestamp, in milliseconds, read-only.|
+|*uid*|str|The unique identifier of an HTTP session, read-only.|
+|*connection*|[Connection](#api-connection)|TCP connection information, read-only. This field is only available in traffic capture mode.|
+|*app*|[App](#api-app)|App/Process information, read-only. This field is only available in traffic capture mode.|
 |highlight|[Highlight](#api-highlight)|Set request highlighting in traffic list, added on v2.28.0.|
 |**env**|dict|A collection of variables for the global environment and currently actived custom environment.|
 |**shared**|-|A special variable used to share data between `onRequest` and `onResponse`, which can be auto-serializable variables such as str, int, list and dict.|
@@ -376,6 +375,38 @@ def onRequest(context, request):
 If you change the non-form type to form type, you must modify the headers and set boundary at the same time!
 
 :::
+
+## Connection {#api-connection}
+
+|   Variable  |  Type |  Description  |
+|  ----  | ----  | ----  |
+|*id*|int|Connection id, starts from 0.|
+|*timestamp*|int|TCP connection established timestamp, in milliseconds.|
+|*locale*|[Address](#api-address)|The client address.|
+|*remote*|[Address](#api-address)|The server address.|
+
+Code example:
+```python
+def onRequest(context, response):
+  # Print connection information
+  print(context.connection.id)
+  print(context.connection.timestamp)
+  # Print client address
+  print(context.connection.local.ip)
+  print(context.connection.local.port)
+  # Print server address
+  print(context.connection.remote.ip)
+  print(context.connection.remote.port)
+  # Done
+  return request
+```
+
+## Address {#api-address}
+
+|   Variable  |  Type |  Description  |
+|  ----  | ----  | ----  |
+|*ip*|str|IPv4 or IPv6 address|
+|*port*|int|TCP/IP port number|
 
 ## App {#api-app}
 
