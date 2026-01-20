@@ -4,6 +4,52 @@ sidebar_position: 4
 
 # Android
 
+## v3.0.36 <small><small>*2025-01-20*</small></small>
+- 💪 [OPT] Update CA certificate download link.
+- 🐞 [FIX] The bug where fonts displayed abnormally on high-resolution monitors.
+
+## v3.0.35 <small><small>*2025-01-19*</small></small>
+- 💪 [OPT] Support input and parsing of `foo=bar&abc=123` format in urlencode request text mode.
+
+## v3.0.34 <small><small>*2025-01-16*</small></small>
+- 💪 [OPT] Code snippet supports Dart-Dio.
+- 💪 [OPT] JSON Tree view will remember the last search type.
+
+## v3.0.33 <small><small>*2025-01-07*</small></small>
+- 💪 [OPT] Automatically format node content in JSON tree view.
+- 💪 [OPT] WebSocket testing will cache the last sent message.
+- 🐞 [FIX] The bug where HTTP redirects did not correctly handle current path redirects.
+
+## v3.0.32 <small><small>*2025-01-05*</small></small>
+- 💪 [OPT] In the Cookie view, copying icon now copies the concatenated cookie string instead of key-value entries.
+- 💪 [OPT] JSON tree view node context menu adds copy dictionary path option.
+- 💪 [OPT] Protocol version is no longer specified when copying cURL from the traffic list.
+- 💪 [OPT] Code snippet for Java-HttpClient adds main method and prints body text to console.
+- 🐞 [FIX] The bug where code snippet for Java-HttpClient did not correctly handle query and form encoding.
+- 🐞 [FIX] The bug where code snippet for Python-http.client did not correctly handle query and form encoding.
+- 🐞 [FIX] The bug where WebSocket details changed with data updates.
+- 🐞 [FIX] The bug where SSE details changed with data updates.
+
+## v3.0.31 <small><small>*2025-12-25*</small></small>
+- 🚀 [New] Code snippet supports setting indentation.
+- 🚀 [New] Code snippet for Python-Requests supports whether to use dictionary parameters.
+- 💪 [OPT] Added background color to third-party login icon buttons.
+- 💪 [OPT] API testing can inherit common headers defined in the folder when the current is not selected.
+- 💪 [OPT] API testing can inherit common parameters defined in the folder when the current is not selected.
+- 💪 [OPT] Automatically fill in the `Content-Length` header when generating cURL if a request body is expected but not present.
+- 🐞 [FIX] The bug where exporting cURL did not correctly handle duplicate headers.
+- 🐞 [FIX] The bug where code snippet did not correctly handle duplicate headers.
+
+## v3.0.30 <small><small>*2025-12-08*</small></small>
+- 💪 [OPT] form-data parts no longer send Content-Length headers.
+- 🐞 [FIX] The bug where cURL import failed due to CRLF line-break.
+- 🐞 [FIX] The bug where cURL import of form-data requests lost custom part headers.
+- 🐞 [FIX] The bug where the text editor did not correctly locate the next match after replacing content.
+
+## v3.0.29 <small><small>*2025-12-04*</small></small>
+- 💪 [OPT] Add refresh option to HAR tab context menu.
+- 🐞 [FIX] Digest authorization did not correctly handle environment variables.
+
 ## v3.0.28 <small><small>*2025-11-18*</small></small>
 - 💪 [OPT] Replace cURL command parser.
 - 💪 [OPT] Importing curl no longer blocks if a file is not found.

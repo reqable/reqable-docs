@@ -4,6 +4,52 @@ sidebar_position: 4
 
 # Android
 
+## v3.0.36 <small><small>*2025-01-20*</small></small>
+- 💪【优化】更新CA证书下载链接。
+- 🐞【修复】高分辨率显示器上字体显示异常问题。
+
+## v3.0.35 <small><small>*2025-01-19*</small></small>
+- 💪【优化】urlencode请求文本模式下支持输入并解析`foo=bar&abc=123`格式。
+
+## v3.0.34 <small><small>*2025-01-16*</small></small>
+- 💪【优化】生成代码支持Dart-Dio。
+- 💪【优化】JSON Tree视图会自动记住上一次的搜索类型。
+
+## v3.0.33 <small><small>*2025-01-07*</small></small>
+- 💪【优化】自动格式化JSON树视图中的节点内容。
+- 💪【优化】WebSocket测试自动缓存上一次发送的数据。
+- 🐞【修复】HTTP重定向未正确处理当前目录路径重定向的bug。
+
+## v3.0.32 <small><small>*2025-01-05*</small></small>
+- 💪【优化】Cookie视图中复制内容为拼接好的Cookie而不是键值对。
+- 💪【优化】JSON树视图节点功能菜单新增复制字典路径选项。
+- 💪【优化】从调试列表中复制cURL时不再指定协议版本。
+- 💪【优化】生成Java-HttpClient代码时自动生成main函数和输出响应结果。
+- 🐞【修复】生成Java-HttpClient代码未正确处理Query和Form编码的问题。
+- 🐞【修复】生成Python-http.client代码未正确处理Query和Form编码的问题。
+- 🐞【修复】修复WebSocket详情会随着数据更新变化的bug。
+- 🐞【修复】修复SSE详情会随着数据更新变化的bug。
+
+## v3.0.31 <small><small>*2025-12-25*</small></small>
+- 🚀【新功能】生成代码支持设置缩进。
+- 🚀【新功能】生成Python-Requests代码支持是否使用字典参数。
+- 💪【优化】第三方登录图标按钮添加背景色。
+- 💪【优化】API测试请求头部不选中时可以继承文件夹中定义的公共头部。
+- 💪【优化】API测试请求参数不选中时可以继承文件夹中定义的公共参数。
+- 💪【优化】生成cURL时应当带有请求体但实际未带的时候自动填充`Content-Length`头部。
+- 🐞【修复】API测试导出cURL未正确处理重复头部的bug。
+- 🐞【修复】API测试生成代码未正确处理重复头部的bug。
+
+## v3.0.30 <small><small>*2025-12-08*</small></small>
+- 💪【优化】form-data请求分部不再发送Content-Length头部。
+- 🐞【修复】cURL导入由于CRLF换行符问题导致异常的bug。
+- 🐞【修复】cURL导入form-data请求丢失自定义分部头部的bug。
+- 🐞【修复】文本编辑器替换内容后未能正确定位到下一个匹配项的bug。
+
+## v3.0.29 <small><small>*2025-12-04*</small></small>
+- 💪【优化】HAR标签页上下文菜单添加刷新选项。
+- 🐞【修复】Digest授权未正确处理环境变量的bug。
+
 ## v3.0.28 <small><small>*2025-11-28*</small></small>
 - 💪【优化】更换cURL命令解析器。
 - 💪【优化】导入cURL时发现文件不存不再阻止导入。

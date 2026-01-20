@@ -4,6 +4,93 @@ sidebar_position: 3
 
 # Linux
 
+## v3.0.36 <small><small>*2025-01-20*</small></small>
+- 💪 [OPT] Update CA certificate download link.
+- 💪 [OPT] Support importing Insomnia Yaml collection data.
+- 💪 [OPT] Automatically switch to the newly imported environment after importing collections or environments.
+- 💪 [OPT] AES tool icon no longer displays the premium badge if the current account is premium.
+- 🐞 [FIX] The bug where importing Reqable collections would lose WebSocket requests.
+- 🐞 [FIX] The bug where fonts displayed abnormally on high-resolution monitors.
+
+## v3.0.35 <small><small>*2025-01-19*</small></small>
+- 💪 [OPT] Support input and parsing of `foo=bar&abc=123` format in urlencode request text mode.
+- 💪 [OPT] Use label color for environment icon in the top right corner of the home page.
+- 🐞 [FIX] The bug where script content did not load correctly when using offline data mode while logged in.
+
+## v3.0.34 <small><small>*2025-01-16*</small></small>
+- 💪 [OPT] Code snippet supports Dart-Dio.
+- 💪 [OPT] JSON Tree view will remember the last search type.
+- 💪 [OPT] Prefer using user-set ADB path over environment variables.
+- 💪 [OPT] Compatible with ADB 36.0.0 and 36.0.1 versions where the last character of pushed files is truncated, causing Reqable one-click certificate installation to fail.
+- 💪 [OPT] Display application process ID in the capture overview tab.
+- 💪 [OPT] Added TCP connection information to script context.
+- 💪 [OPT] JSON viewer adds open file and save as buttons.
+- 🐞 [FIX] The bug where the state of the previous and next scroll buttons on the home tabs might be incorrect.
+- 🐞 [FIX] The bug where the ADB path could not be unset after being set.
+- 🐞 [FIX] The bug where switching environment variables during script execution caused variables to update to the wrong environment.
+
+## v3.0.33 <small><small>*2025-01-07*</small></small>
+- 💪 [OPT] Automatically format node content in JSON tree view.
+- 💪 [OPT] WebSocket testing will cache the last sent message.
+- 🐞 [FIX] The bug where HTTP redirects did not correctly handle current path redirects.
+
+## v3.0.32 <small><small>*2025-01-05*</small></small>
+- 💪 [OPT] In the Cookie view, copying icon now copies the concatenated cookie string instead of key-value entries.
+- 💪 [OPT] JSON tree view node context menu adds copy dictionary path option.
+- 💪 [OPT] Protocol version is no longer specified when copying cURL from the traffic list.
+- 💪 [OPT] Code snippet for Java-HttpClient adds main method and prints body text to console.
+- 💪 [OPT] Hash tool automatically loads the last configuration.
+- 💪 [OPT] HMAC tool automatically loads the last configuration.
+- 💪 [OPT] HMAC tool adjusts the position of the key and input payload.
+- 💪 [OPT] Added HMAC tool option in the Tools menu and selection context menu.
+- 💪 [OPT] Timestamp tool automatically loads the last configuration.
+- 💪 [OPT] AES tool automatically removes line breaks from ciphertext during decryption.
+- 💪 [OPT] AES tool automatically loads the last configuration and executes automatically.
+- 💪 [OPT] Always showing ADB path setting entry.
+- 🐞 [FIX] The bug where code snippet for Java-HttpClient did not correctly handle query and form encoding.
+- 🐞 [FIX] The bug where code snippet for Python-http.client did not correctly handle query and form encoding.
+- 🐞 [FIX] The bug where WebSocket details changed with data updates.
+- 🐞 [FIX] The bug where SSE details changed with data updates.
+- 🐞 [FIX] The bug where running python-requests requests in the proxy terminal caused SSL verification errors.
+
+## v3.0.31 <small><small>*2025-12-25*</small></small>
+- 🚀 [New] Code snippet supports setting indentation.
+- 🚀 [New] Code snippet for Python-Requests supports whether to use dictionary parameters.
+- 💪 [OPT] Added background color to third-party login icon buttons.
+- 💪 [OPT] API testing can inherit common headers defined in the folder when the current is not selected.
+- 💪 [OPT] API testing can inherit common parameters defined in the folder when the current is not selected.
+- 💪 [OPT] Automatically fill in the `Content-Length` header when generating cURL if a request body is expected but not present.
+- 🐞 [FIX] The bug where exporting cURL did not correctly handle duplicate headers.
+- 🐞 [FIX] The bug where code snippet did not correctly handle duplicate headers.
+- 🐞 [FIX] The bug where requests missing `Content-Length` could not execute rewrite, breakpoint, and script rules.
+- 🐞 [FIX] The bug where API testing history search results were sorted incorrectly.
+- 🐞 [FIX] The bug where corrupted backup files could cause the application to fail to start.
+
+## v3.0.30 <small><small>*2025-12-08*</small></small>
+- 🚀 [New] Introduce Java VM root certificate automatic installation.
+- 💪 [OPT] form-data parts no longer send Content-Length headers.
+- 🐞 [FIX] The bug where built-in environment variables could not be used in Python scripts.
+- 🐞 [FIX] The bug where APIs created by the `+` button on the home page did not apply global settings.
+- 🐞 [FIX] The bug where cURL import failed due to CRLF line-break.
+- 🐞 [FIX] The bug where cURL import of form-data requests lost custom part headers.
+- 🐞 [FIX] The bug where the text editor did not correctly locate the next match after replacing content.
+
+## v3.0.29 <small><small>*2025-12-04*</small></small>
+- 💪 [OPT] Support batch exporting API collections.
+- 💪 [OPT] Support batch exporting environment variables.
+- 💪 [OPT] Support dragging files into the collection view to import data.
+- 💪 [OPT] Support importing multiple collection files at once.
+- 💪 [OPT] Support dragging files into the environment view to import data.
+- 💪 [OPT] Support importing multiple environment variable files at once.
+- 💪 [OPT] Support dragging multiple files to open on the home page.
+- 💪 [OPT] Set a maximum width for home page tabs.
+- 💪 [OPT] When an API script execution error occurs, the console displays output from other executed scripts.
+- 💪 [OPT] Loading history may cause the application to start slowly.
+- 💪 [OPT] Unified the order and wording of some popup buttons.
+- 💪 [OPT] Add refresh option to HAR tab context menu.
+- 🐞 [FIX] Error when using newly constructed query in Python scripts.
+- 🐞 [FIX] Digest authorization did not correctly handle environment variables.
+
 ## v3.0.28 <small><small>*2025-11-18*</small></small>
 - 💪 [OPT] Replace cURL command parser.
 - 💪 [OPT] Importing curl no longer blocks if a file is not found.
