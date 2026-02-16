@@ -4,22 +4,33 @@ sidebar_position: 5
 
 # iOS
 
-## v3.0.36 <small><small>*2025-01-20*</small></small>
+## v3.0.38 <small><small>*2026-02-02*</small></small>
+- 🐞 [FIX] The bug where SOCKS proxy URLs were not syntax highlighted.
+- 🐞 [FIX] The bug where URL syntax highlighting for IPv6 addresses was abnormal.
+- 🐞 [FIX] The bug where IPv6 address requests were interrupted under SOCKS proxy.
+- 🐞 [FIX] The bug where URL was incorrect when creating IPv6 requests from the traffic list.
+- 🐞 [FIX] The bug where enabling follow debug caused the application to crash with IPv6 requests.
+- 🐞 [FIX] The bug where the new version changelog did not refresh after switching languages in app settings.
+
+## v3.0.37 <small><small>*2026-01-22*</small></small>
+- 🐞 [FIX] The bug where the port number for HTTP access to the local server may be incorrect.
+
+## v3.0.36 <small><small>*2026-01-20*</small></small>
 - 💪 [OPT] Update CA certificate download link.
 
-## v3.0.35 <small><small>*2025-01-19*</small></small>
+## v3.0.35 <small><small>*2026-01-19*</small></small>
 - 💪 [OPT] Support input and parsing of `foo=bar&abc=123` format in urlencode request text mode.
 
-## v3.0.34 <small><small>*2025-01-16*</small></small>
+## v3.0.34 <small><small>*2026-01-16*</small></small>
 - 💪 [OPT] Code snippet supports Dart-Dio.
 - 💪 [OPT] JSON Tree view will remember the last search type.
 
-## v3.0.33 <small><small>*2025-01-07*</small></small>
+## v3.0.33 <small><small>*2026-01-07*</small></small>
 - 💪 [OPT] Automatically format node content in JSON tree view.
 - 💪 [OPT] WebSocket testing will cache the last sent message.
 - 🐞 [FIX] The bug where HTTP redirects did not correctly handle current path redirects.
 
-## v3.0.32 <small><small>*2025-01-05*</small></small>
+## v3.0.32 <small><small>*2026-01-05*</small></small>
 - 💪 [OPT] In the Cookie view, copying icon now copies the concatenated cookie string instead of key-value entries.
 - 💪 [OPT] JSON tree view node context menu adds copy dictionary path option.
 - 💪 [OPT] Protocol version is no longer specified when copying cURL from the traffic list.

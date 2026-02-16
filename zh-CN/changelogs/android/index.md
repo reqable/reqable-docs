@@ -4,23 +4,34 @@ sidebar_position: 4
 
 # Android
 
-## v3.0.36 <small><small>*2025-01-20*</small></small>
+## v3.0.38 <small><small>*2026-02-02*</small></small>
+- 🐞【修复】SOCKS代理URL未语法高亮的bug。
+- 🐞【修复】IPv6地址的URL语法高亮异常的bug。
+- 🐞【修复】SOCKS代理下IPv6地址请求异常的bug。
+- 🐞【修复】从调试列表创建IPv6请求时URL不正确的bug。
+- 🐞【修复】启用跟随调试时IPv6请求会导致应用闪退的bug。
+- 🐞【修复】设置中切换语言后新版本更新日志未刷新的bug。
+
+## v3.0.37 <small><small>*2026-01-22*</small></small>
+- 🐞【修复】HTTP访问本地服务器的端口号解析可能不正确的bug。
+
+## v3.0.36 <small><small>*2026-01-20*</small></small>
 - 💪【优化】更新CA证书下载链接。
 - 🐞【修复】高分辨率显示器上字体显示异常问题。
 
-## v3.0.35 <small><small>*2025-01-19*</small></small>
+## v3.0.35 <small><small>*2026-01-19*</small></small>
 - 💪【优化】urlencode请求文本模式下支持输入并解析`foo=bar&abc=123`格式。
 
-## v3.0.34 <small><small>*2025-01-16*</small></small>
+## v3.0.34 <small><small>*2026-01-16*</small></small>
 - 💪【优化】生成代码支持Dart-Dio。
 - 💪【优化】JSON Tree视图会自动记住上一次的搜索类型。
 
-## v3.0.33 <small><small>*2025-01-07*</small></small>
+## v3.0.33 <small><small>*2026-01-07*</small></small>
 - 💪【优化】自动格式化JSON树视图中的节点内容。
 - 💪【优化】WebSocket测试自动缓存上一次发送的数据。
 - 🐞【修复】HTTP重定向未正确处理当前目录路径重定向的bug。
 
-## v3.0.32 <small><small>*2025-01-05*</small></small>
+## v3.0.32 <small><small>*2026-01-05*</small></small>
 - 💪【优化】Cookie视图中复制内容为拼接好的Cookie而不是键值对。
 - 💪【优化】JSON树视图节点功能菜单新增复制字典路径选项。
 - 💪【优化】从调试列表中复制cURL时不再指定协议版本。

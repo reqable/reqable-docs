@@ -4,19 +4,37 @@ sidebar_position: 1
 
 # Macos
 
-## v3.0.36 <small><small>*2025-01-20*</small></small>
+## v3.0.38 <small><small>*2026-02-02*</small></small>
+- 💪 [OPT] Add a locate icon button to the API collection title bar.
+- 💪 [OPT] Optimize API collection paste functionality.
+- 🐞 [FIX] The bug where SOCKS proxy URLs were not syntax highlighted.
+- 🐞 [FIX] The bug where URL syntax highlighting for IPv6 addresses was abnormal.
+- 🐞 [FIX] The bug where IPv6 address requests were interrupted under SOCKS proxy.
+- 🐞 [FIX] The bug where URL was incorrect when creating IPv6 requests from the traffic list.
+- 🐞 [FIX] The bug where enabling follow debug caused the application to crash with IPv6 requests.
+- 🐞 [FIX] The bug where the new version changelog did not refresh after switching languages in app settings.
+- 🐞 [FIX] The bug where API collections would not automatically locate the currently opened API in some cases.
+- 🐞 [FIX] The bug where the `Delete` shortcut key for API collections did not work.
+- 🐞 [FIX] The bug where right-click context menu would close when clicking on an invalid item.
+
+## v3.0.37 <small><small>*2026-01-22*</small></small>
+- 💪 [OPT] Show notification in the bottom when there are too many history records, prompting to clean up.
+- 🐞 [FIX] The bug where the port number for HTTP access to the local server may be incorrect.
+- 🐞 [FIX] The bug where the port number automatically increased after restarting the application.
+
+## v3.0.36 <small><small>*2026-01-20*</small></small>
 - 💪 [OPT] Update CA certificate download link.
 - 💪 [OPT] Support importing Insomnia Yaml collection data.
 - 💪 [OPT] Automatically switch to the newly imported environment after importing collections or environments.
 - 💪 [OPT] AES tool icon no longer displays the premium badge if the current account is premium.
 - 🐞 [FIX] The bug where importing Reqable collections would lose WebSocket requests.
 
-## v3.0.35 <small><small>*2025-01-19*</small></small>
+## v3.0.35 <small><small>*2026-01-19*</small></small>
 - 💪 [OPT] Support input and parsing of `foo=bar&abc=123` format in urlencode request text mode.
 - 💪 [OPT] Use label color for environment icon in the top right corner of the home page.
 - 🐞 [FIX] The bug where script content did not load correctly when using offline data mode while logged in.
 
-## v3.0.34 <small><small>*2025-01-16*</small></small>
+## v3.0.34 <small><small>*2026-01-16*</small></small>
 - 💪 [OPT] Code snippet supports Dart-Dio.
 - 💪 [OPT] JSON Tree view will remember the last search type.
 - 💪 [OPT] Prefer using user-set ADB path over environment variables.
@@ -28,12 +46,12 @@ sidebar_position: 1
 - 🐞 [FIX] The bug where the ADB path could not be unset after being set.
 - 🐞 [FIX] The bug where switching environment variables during script execution caused variables to update to the wrong environment.
 
-## v3.0.33 <small><small>*2025-01-07*</small></small>
+## v3.0.33 <small><small>*2026-01-07*</small></small>
 - 💪 [OPT] Automatically format node content in JSON tree view.
 - 💪 [OPT] WebSocket testing will cache the last sent message.
 - 🐞 [FIX] The bug where HTTP redirects did not correctly handle current path redirects.
 
-## v3.0.32 <small><small>*2025-01-05*</small></small>
+## v3.0.32 <small><small>*2026-01-05*</small></small>
 - 💪 [OPT] In the Cookie view, copying icon now copies the concatenated cookie string instead of key-value entries.
 - 💪 [OPT] JSON tree view node context menu adds copy dictionary path option.
 - 💪 [OPT] Protocol version is no longer specified when copying cURL from the traffic list.
