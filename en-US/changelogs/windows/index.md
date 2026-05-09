@@ -4,6 +4,48 @@ sidebar_position: 0
 
 # Windows
 
+## v3.1.0 <small><small>*2026-05-09*</small></small>
+- 🚀 [New] Introduce API documentation feature.
+- 🚀 [New] Redesign capture gateway, supporting network Layer4 and Layer7 configurations and other new features.
+- 🚀 [New] Redesign SSE view, supporting raw view and Markdown preview.
+- 🚀 [New] Support managing remote devices.
+- 🚀 [New] Add `Traffic` menu bar.
+- 💪 [OPT] Upgrade OpenSSL version to 3.6.1.
+- 💪 [OPT] Align API names in the API collection list.
+- 💪 [OPT] SSE chat view now limits each text message to 4k characters.
+- 💪 [OPT] SSE list may experience lag due to long text.
+- 💪 [OPT] WebSocket chat view now limits each text message to 4k characters.
+- 💪 [OPT] WebSocket list may experience lag due to long text.
+- 💪 [OPT] Update Magisk module template.
+- 💪 [OPT] Now can directly open environment editor in the selection menu.
+- 🐞 [FIX] The bug where capturing failed when the server used new algorithms like X25519MLKEM768.
+- 🐞 [FIX] The bug where the application crashed when the API carried a non-standard `Referer` header.
+- 🐞 [FIX] The bug where `Content-Type` was displayed incorrectly in the capture overview.
+- 🐞 [FIX] The bug where API collection and folder settings did not sync correctly with the cloud.
+- 🐞 [FIX] The bug where API request Cookie headers were not automatically updated.
+- 🐞 [FIX] The bug where the order of cURL request headers was incorrect when copying from traffic list.
+- 🐞 [FIX] The bug where the reverse proxy might fail to run after restarting the application.
+- 🐞 [FIX] The bug where reverse proxy requests might not respond.
+
+## v3.0.40 <small><small>*2026-03-27*</small></small>
+- 💪 [OPT] Add SSE option to the traffic quick filter bar.
+- 💪 [OPT] Rename protocol names in the traffic quick filter bar.
+- 🐞 [FIX] The bug where the response data in the raw tab did not automatically update.
+- 🐞 [FIX] A bug in the curl command where the `-no-buffer` option causes import failures.
+- 🐞 [FIX] The bug where JSONP data with a trailing semicolon was not formatted correctly.
+- 🐞 [FIX] The bug where unknown applications might flicker in the filter sidebar.
+- 🐞 [FIX] The bug where the preview data for deleted request query parameters in rewrite rules was incorrect.
+
+## v3.0.39 <small><small>*2026-03-06*</small></small>
+- 💪 [OPT] Support adding multiple records from the traffic list to API collection at once.
+- 💪 [OPT] Go code snippet now fully supports form requests.
+- 💪 [OPT] Optimize error message when opening HAR files.
+- 🐞 [FIX] The bug where SSL exceptions with Missing Authority Key Identifier might occur during capture.
+- 🐞 [FIX] The bug where data in the capture overview did not update with request status.
+- 🐞 [FIX] The bug where binary data in non-ASCII headers in the raw tab of the capture details was incorrect.
+- 🐞 [FIX] The bug where custom encoding without specifying the encoding type in `Content-Disposition` caused file names to appear garbled when saving response content.
+- 🐞 [FIX] A bug in the curl command where the `-g` option causes import failures.
+
 ## v3.0.38 <small><small>*2026-02-02*</small></small>
 - 💪 [OPT] Add a locate icon button to the API collection title bar.
 - 💪 [OPT] Optimize API collection paste functionality.
