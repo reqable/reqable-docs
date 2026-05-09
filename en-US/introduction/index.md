@@ -1,79 +1,67 @@
 ---
 title: Introduction
-description: An overview introduction about Reqable.
+description: An overview of Reqable.
 sidebar_position: 0
 ---
 
 # Introduction
 
-Reqable is a modern cross-platform project, designed for API development, testing, and debugging. Reqable fully supports HTTP1 and HTTP2 and partially supports HTTP3(QUIC).
+Reqable is a professional cross-platform HTTP development and debugging tool. It supports HTTP/1, HTTP/2, and HTTP/3 (QUIC) across all major platforms. It is easy to use, feature-rich, and high-performance, helping developers and testers improve productivity. This product requires a certain level of networking knowledge and is intended for professionals in development, testing, networking, security, web scraping, and related engineering fields, or for use under the guidance of qualified professionals.
 
 ![](arts/home.png)
 
-## Features
+# Features
 
-The features of Reqable are simple, beautiful, free, no login is required, and it can be used immediately after installation.
+Reqable provides two core capabilities: [API Debugging](#api-debugging) and [API Testing](#api-testing). It also bridges the gap between debugging and testing. For example, you can create APIs for testing directly from captured traffic, or capture and inspect traffic while testing APIs.
 
-- The volume of the installation package is about 20M.
-- Cross-platform, based on Flutter and C++ development.
-- Both light and dark theme modes are supported.
-- 11 different accent colors are supported.
-- Support Atom One code highlighting.
+## 1. API Debugging {#api-debugging}
 
-#### 1. API Debugging {#capture}
+Reqable uses the classic MITM (man-in-the-middle) approach to capture HTTP requests. On desktop platforms, it intercepts traffic through the system proxy; on mobile platforms, it intercepts traffic through a VPN tunnel. Reqable also supports debugging operations on captured traffic, including breakpoints, request rewriting, and response modification.
 
-Reqable uses the classic MITM proxy method for debugging and supports such as rewriting, scripting (Python), breakpoints, and replay.
-
-- [x] Support HTTP/1.x and HTTP2 protocol, HTTP3 (QUIC) is not supported yet.
-- [x] Support HTTP/HTTPS/Socks4/Socks4a/Socks5 proxy mode.
-- [x] Support HTTPS, TLSv1.1, TLSv1.2 and TLSv1.3 protocols.
-- [x] Support WebSocket upgraded based on HTTP1.
-- [x] Support HTTP/HTTPS secondary proxy.
-- [x] Search and filter: Different filtering methods, such as bookmarks, domains, quick filter, and searchs with multiple conditions.
-- [x] Gateway: Perform operations such as shielding and suspending for requests or responses.
-- [x] Rewriting: Perform redirection, map local, map remote, modification for requests or responses.
-- [x] Breakpoint: Perform real-time breakpoint operations on requests or responses.
-- [x] Scripting: Support for writing Python scripts to process requests or responses.
-- [x] Mirroring: Configure mirror mapping for the specified domain name and port.
-- [x] API testing: Compose APIs from the recording list.
-- [x] History: Automatically save the recording list for easy retrospective viewing.
-- [x] Replay: Support single or multiple requests for playback testing.
-- [x] Auto-Highlighting: Support preset rules to highlight requests.
-- [x] HAR: Automatically associate HAR files, and support HAR export and open.
+:::caution Mobile Limitations
+To prevent abuse, the Reqable mobile app does not provide debugging-related features such as rewrite, breakpoint, and script. If you need debugging capabilities, use the Reqable desktop app.
+:::
 
 ![](arts/capture.png)
 
-#### 2. API Testing {#rest}
+### 1.1 Protocol Support
 
-Reqable can compose API for testing and also supports features such as API collection and history.
+- Supports `HTTP/1.x` and `HTTP/2`. `HTTP/3 (QUIC)` is not yet supported.
+- Supports `TLSv1.1`, `TLSv1.2`, and `TLSv1.3`.
+- Supports `HTTP`, `HTTPS`, `Socks4`, `Socks4a`, and `Socks5` proxy protocols.
+- Supports `WebSocket` (upgraded from `HTTP/1.1`).
+- Supports `Server-Sent Events (SSE)`.
+- Supports `IPv4` and `IPv6` addresses.
 
-- [x] Supports HTTP/1.1, HTTP2 and HTTP3 (QUIC) protocols.
-- [x] Multiple sessions: Support creating multiple Tabs for API testing.
-- [x] Batch editing: Support batch editing of query parameters, request headers, forms, etc.
-- [x] Authorization settings: Support authorization methods such as API KEY, Basic Auth, and Bearer Token.
-- [x] Proxy settings: Support custom proxy, system proxy and debugging proxy, etc.
-- [x] Performance: You can view the time-consuming data of requests at different stages.
-- [x] Cookie management: Automatically save cookies or add cookies.
-- [x] History: Automatically save the request and response for easy retrospective viewing.
-- [x] cURL support: cURL can be imported and exported.
+### 1.2 Certificate Installation
+
+The API debugging feature requires a CA certificate to be installed. See [Install Certificate](../getting-started/installation) for setup instructions.
+
+### 1.3 Features
+
+For the full set of API debugging capabilities, see [API Debugging](../capture).
+
+## 2. API Testing {#api-testing}
+
+Reqable can edit, send, and manage REST API requests. It also supports features such as API collections, environment variables, and cloud sync.
 
 ![](arts/rest.png)
 
-#### 3. Toolbox {#toolbox}
+### 2.1 Protocol Support
 
-Reqable provides some commonly used tools.
+- Supports `HTTP/1.1`, `HTTP/2`, and `HTTP/3 (QUIC)`.
+- Supports `WebSocket` (upgraded from `HTTP/1.1`).
+- Supports `Server-Sent Events (SSE)`.
+- Supports `IPv4` and `IPv6` addresses.
 
-- [x] Base64 Codec.
-- [x] URL Codec
-- [x] Md5 Calculator.
-- [x] Timestamp Tool.
-- [x] JSON Viewer.
-- [x] XML Viewer.
-- [x] HEX Viewer.
-- [x] Image Viewer.
-- [x] Color Picker.
-- [x] Qrcode Generator.
+### 2.2 API Collections
 
-## History
+Reqable supports importing files in `Postman`, `Swagger`, `Insomnia`, `Hoppscotch`, `ApiFox`, `ApiPost`, `RapidAPI (Paw)`, `cURL`, and `HAR` formats.
 
-The predecessor of Reqable was HttpCanary (an Android platform application), but we overturned all the technology stacks and rewritten it with C++ and Flutter, only keeping the logo and theme color, so the two are not much related. Of course, one of Reqable's missions is to completely replace HttpCanary. It is expected that by the end of 2023, Reqable will launch a desktop + mobile multi-platform independent application.
+If you are not signed in to a Reqable account, API collections are stored locally offline and can only be accessed on the current device. If you want to store collection data in the cloud and sync it across multiple devices, you need to sign up for and sign in to a Reqable account.
+
+For more about using API collections, see [Collection](../rest/15_collection).
+
+### 2.3 Features
+
+For the full set of API testing capabilities, see [API Testing](../rest).
