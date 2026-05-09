@@ -15,13 +15,13 @@ But this is not an efficient way. Looking back at the entire step, we will find 
 
 Using Reqable's collaborative mode, you can effectively solve those issues.
 
-## Preparation
+## 1. Add Collaborative Device
 
 Start Reqable desktop application, and click the phone icon to open the QR code page, as follows:
 
 ![](arts/collaborative_01.png)
 
-Next, let’s configure the mobile app. Select Collaboration Mode and scan the QR code on the desktop in the previous step.
+Next, let’s configure the mobile app. Select Collaboration Mode and scan the QR code on the desktop in the previous step. If the mobile device and the desktop device are on the same local area network (LAN), compatible devices can be automatically detected and added directly with a single click.
 
 ![](arts/collaborative_02.png)
 
@@ -43,9 +43,9 @@ The Reqable mobile app will automatically check the installation status of the c
 
 If you have completed this step, congratulations, the entire preparation process is over. 🍺🍺🍺
 
-## Forward Traffic
+## 2. Forward Traffic
 
-Before capturing traffic, we first select the remote device (named with IP:Port) in the mobile side drawer. And then tab the floating action button to start recording.
+Before capturing traffic, we first select the remote device in the mobile side drawer. And then tab the floating action button to start recording.
 
 The Reqable mobile app will start the VPN service and forward the mobile traffic to the Reqable desktop. This is why it can capture traffic without Wi-Fi proxy. On Android, you can also capture traffic for specific apps and ignore others.
 
@@ -64,3 +64,16 @@ Reqable can detect application information on Android, but iOS does not support 
 :::
 
 
+## 3. Manage Collaborative Devices
+
+In the Reqable desktop application, open the `Devices` panel to view currently connected collaborative devices and automatically discovered mobile devices available for collaboration. Clicking the `+` button allows you to directly add the current device as a collaborative device from the mobile side.
+
+![](arts/collaborative_06.png)
+
+For the current desktop device, clicking the `...` button allows you to perform actions such as editing the device name, editing the device token (only devices sharing the same token can be automatically discovered), toggling collaborative control, and toggling device discovery.
+
+![](arts/collaborative_07.png)
+
+For the mobile device, open the drawer and tap `Device Management` to delete devices, add new devices, or edit and configure the current device. Tapping on a saved device also allows you to view detailed device information.
+
+![](arts/collaborative_08.png)
