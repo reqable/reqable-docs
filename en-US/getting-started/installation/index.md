@@ -11,7 +11,7 @@ Reqable uses the classic man-in-the-middle (MITM) technique to analyze HTTPS tra
 If the target client is a PC application, the CA Certificate needs to be installed in the certificate management center of the PC; if the target client is a mobile application, the CA certificate needs to be installed in the certificate management center of the mobile phone. If you do not need traffic analysis, you can ignore this step.
 
 :::info Tips
-Reqable automatically generates a CA certificate for each user, and uses a random certificate key, so you don't have to worry about this certificate being exploited by a third party.
+Reqable automatically generates a CA certificate for each user, and uses a random certificate key, so you don't have to worry about this certificate being exploited by a third party. If you already have a custom CA root certificate, you can import it by navigating to the `Certificate` menu -> `Root Certificate Management` -> `Import Root Certificate (.p12)`.
 :::
 
 ## Desktop {#desktop}
