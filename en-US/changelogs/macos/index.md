@@ -4,6 +4,13 @@ sidebar_position: 1
 
 # Macos
 
+## v3.1.1 <small><small>*2026-05-10*</small></small>
+- 💪 [OPT] Merge proxy terminal and device QR code icons into the toolbar.
+- 💪 [OPT] Add custom toolbar guide icon in toobar.
+- 🐞 [FIX] The bug where WebSocket send and receive icons were reversed.
+- 🐞 [FIX] The bug where the message sent while WebSocket was not connected did not show in the message list.
+- 🐞 [FIX] The bug where reopening HAR files caused unresponsive operations.
+
 ## v3.1.0 <small><small>*2026-05-09*</small></small>
 - ❗ [IMP] Minimum supported version upgraded from 10.15 to 11.0.
 - 🚀 [New] Introduce API documentation feature.

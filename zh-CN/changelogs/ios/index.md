@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # iOS
 
+## v3.1.1 <small><small>*2026-05-10*</small></small>
+- 🐞【修复】WebSocket发送和接收图标颠倒的bug。
+- 🐞【修复】WebSocket未连接状态点击发送的消息不会出现在消息列表的bug。
+- 🐞【修复】重复打开HAR文件后出现操作无反应的bug。
+
 ## v3.1.0 <small><small>*2026-05-09*</small></small>
 - 🚀【新功能】新增API文档相关功能。
 - 🚀【新功能】重做网关功能，支持网络层级Layer4和Layer7配置等新特性。

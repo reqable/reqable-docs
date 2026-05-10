@@ -4,6 +4,11 @@ sidebar_position: 4
 
 # Android
 
+## v3.1.1 <small><small>*2026-05-10*</small></small>
+- 🐞 [FIX] The bug where WebSocket send and receive icons were reversed.
+- 🐞 [FIX] The bug where the message sent while WebSocket was not connected did not show in the message list.
+- 🐞 [FIX] The bug where reopening HAR files caused unresponsive operations.
+
 ## v3.1.0 <small><small>*2026-05-09*</small></small>
 - 🚀 [New] Introduce API documentation feature.
 - 🚀 [New] Redesign capture gateway, supporting network Layer4 and Layer7 configurations and other new features.
