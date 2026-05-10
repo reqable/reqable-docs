@@ -60,7 +60,7 @@ Reqable supports importing files in `Postman`, `Swagger`, `Insomnia`, `Hoppscotc
 
 If you are not signed in to a Reqable account, API collections are stored locally offline and can only be accessed on the current device. If you want to store collection data in the cloud and sync it across multiple devices, you need to sign up for and sign in to a Reqable account.
 
-For more about using API collections, see [Collection](../rest/15_collection).
+For more about using API collections, see [API Collection](../rest/collection).
 
 ### 2.3 Features
 

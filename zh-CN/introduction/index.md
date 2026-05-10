@@ -64,7 +64,7 @@ Reqable支持导入 `Postman` 、`Swagger` 、`Insomnia` 、`Hoppscotch` 、`Api
 
 未登录Reqable账号的情况下，API集合使用本地离线存储，仅在当前设备可以访问。如果需要将集合数据存储到云端和在多设备间同步，需要注册登录Reqable账号。
 
-更多关于API集合的使用，请阅读文档[API调试](../rest/collection)。
+更多关于API集合的使用，请阅读文档[API集合](../rest/collection)。
 
 #### 2.3 功能特性
 
