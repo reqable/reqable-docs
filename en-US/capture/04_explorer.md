@@ -25,9 +25,9 @@ That is, as long as the request is under the `en-US` directory in the domain nam
 
 ![](arts/explorer_03.png)
 
-### Application {#application}
+### Device {#device}
 
-Application is used to quickly filter records, and has a logical relationship of ** or ** with [Bookmark](#bookmark). All applications in the list will be displayed (traffic without detected application source will be displayed by IP source address). You can select one or more applications for filtering. If no selection is made, the list will display all applications.
+This feature is used to quickly filter records and operates according to an **OR** logical relationship with [Bookmark](#bookmark). The explorer displays the names of all devices in the list (if connected locally in non-[Collaboration](../getting-started/collaboration), the source IP address will be displayed instead), users can select one or more devices to filter the results based on their specific needs. If no devices are selected, the list will display all devices.
 
 ![](arts/explorer_04.png)
 
@@ -37,22 +37,28 @@ Application is used to quickly filter records, and has a logical relationship of
 - Right click to pin the app to the top and keep it there.
 :::
 
+### Application {#application}
+
+Application is used to quickly filter records, and has a logical relationship of ** or ** with [Bookmark](#bookmark). All applications in the list will be displayed (traffic without detected application source will be displayed by `Unknown App`). You can select one or more applications for filtering. If no selection is made, the list will display all applications.
+
+![](arts/explorer_05.png)
+
 ### Domain {#domain}
 
 The domains are also used to quickly filter traffic, and can be used at the same time as bookmarks (or logically). All domains in the list will be displayed in the explorer. You can select one or more domains for filtering. If not selected, the list will display all domains.
 
-![](arts/explorer_05.png)
+![](arts/explorer_06.png)
 
 ### Structure {#structure}
 
 The structure tree is another display form of the traffic. It displays in the form of a file directory, which is more intuitive than the list in some cases. Click a request in the structure tree to expand the details panel as well.
 
-![](arts/explorer_06.png)
+![](arts/explorer_07.png)
 
 In addition, right-clicking on a file directory can also perform batch actions on all requests under this directory.
 
 ### Search
 
-In the search input box at the bottom, you can quickly filter [Domain](#domain) and [Application](#application).
+In the search input box at the bottom, you can quickly filter [Device](#device), [Domain](#domain) and [Application](#application).
 
-![](arts/explorer_07.png)
+![](arts/explorer_08.png)
