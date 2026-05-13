@@ -1,6 +1,6 @@
 # Reverse Proxy
 
-Reqable creates a local web server and transparently proxies traffic to the remote server. At the same time, Reqable will capture the traffic and support debugging features such as rewriting, scripting, and breakpoints.
+Reqable creates a local web server and transparently proxies traffic to the remote server. At the same time, Reqable will capture the traffic and support debugging features such as [Rewrite](./rewrite), [Breakpoint](./breakpoint) and [Script](./script).
 
 ### How it works?
 
@@ -26,7 +26,7 @@ Using a reverse proxy has the following disadvantages:
 
 ### How to use
 
-Reqable supports configuring and managing multiple reverse proxies. We can create a reverse proxy from the right-click menu of the proxy icon or from the `Proxy` menu at the top of the application.
+Reqable supports configuring and managing multiple reverse proxies. We can create and manage reverse proxy from `Traffic` menu.
 
 ![](arts/reverse_proxy_01.png)
 

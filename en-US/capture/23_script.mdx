@@ -4,29 +4,34 @@ import Shortcut from '@site/src/components/Shortcut';
 
 Script is one of the core debugging feature of Reqable, which supports writing Python scripts to process HTTP requests and responses. Reqable provides a set of Python-based APIs. In scripts, we can modify, replace or delete the request and response packets, and even interrupt the request and response. In addition to using Reqable's built-in API, users can also use various Python site-packages, such as `requests` and so on.
 
-Script can be enabled or disabled in four ways:
-- Click directly on the script icon
-- Right click on the script icon -> Enable/Disable
-- Tray -> Script -> Enable/Disable
-- Shortcut key <Shortcut>Shift + Control + P</Shortcut>
-
-When the script is enabled, the script icon on the `QuickBar` will turn green and active.
+You can enable the script via the menu path `Traffic` -> `Script` -> `Enable` (Shortcut key <Shortcut>Shift + Control + P</Shortcut>). Once the script is enabled, an activation icon will appear on the toolbar.
 
 ![](arts/script_01.png)
 
+Click the icon above to disable the script, once disabled, the icon will disappear from the toolbar. If you wish to keep the script icon permanently visible on the toolbar, you can right-click the toolbar to edit and select to pin it.
+
+![](arts/script_02.png)
+
+:::info
+
+To prevent abuse, Reqable does not provide this feature on mobile app.
+
+:::
+
 ### Create Script
 
-There are six ways to create a script rule:
-- Right click on the script icon -> Add Script
-- Tray -> Script ->Add Script
-- Script List -> Click the `+` icon in the upper right corner
+There are some ways to create a script rule:
+- Traffic menu -> Script -> Add Rule
+- Script icon right-click menu -> Add Rule
+- Tray -> Script -> Add Rule
+- Script List -> New
 - Script List -> Right-Click Menu -> New
 - Traffic list -> Select a item -> Right-click menu -> Script
 - Shortcut key <Shortcut>Shift + Alt + P</Shortcut>
 
 Enter the rule name and matching URL, the URL supports wildcard * and ? matching, then write Python scripts to handle HTTP request and response.
 
-![](arts/script_02.png)
+![](arts/script_03.png)
 
 ### Edit Script
 
@@ -80,7 +85,7 @@ Migrated to [Addons API](addons)!
 
 Reqable provides a debug console, which is convenient for developers to view the log output of scripts and the backtrace information of script errors. Keep the script editor window open during script execution, and all information will be output to the console in real time.
 
-![](arts/script_03.png)
+![](arts/script_04.png)
 
 In the example above, we wrote a division by zero error, and the corresponding error message was also displayed in the console.
 
@@ -96,10 +101,10 @@ The script function depends on the local Python3 environment, please make sure t
 
 If there are multiple Python3 environments on your machine, you can manually specify the Python3 Home path: **Right-click the script icon -> Setup Environment**
 
-![](arts/script_04.png)
+![](arts/script_05.png)
 
 ### Rules Management
 
 Rules are matched from top to bottom. The same request can match multiple rules. The one at the front will be executed first. Rules support folder-level management. You can adjust the position by long pressing and dragging. It also supports import and export, which is convenient for sharing and collaboration with others.
 
-![](arts/script_05.png)
+![](arts/script_06.png)

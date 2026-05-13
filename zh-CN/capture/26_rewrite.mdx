@@ -4,13 +4,13 @@ import Shortcut from '@site/src/components/Shortcut';
 
 重写是Reqable的核心调试功能之一，通过预设规则自动修改请求或者响应。Reqable的重写支持5种模式，分别是[重定向](#redirect)、[替换请求](#replace-req)、[替换响应](#replace-res)、[修改请求](#modify-req)和[修改响应](#modify-res)。
 
-重写功能可以通过四种方式启用或关闭：
-- 直接点击重写图标
-- 右键重写图标 -> 启用/禁用
-- 托盘 -> 重写 -> 启用/禁用
-- 快捷键 <Shortcut>Shift + Control + K</Shortcut>
+重写可以通过菜单`调试` -> `重写` -> `启用`开启重写功能（快捷键<Shortcut>Shift + Control + K</Shortcut>），在重写开启后，快捷操作栏上的将会显示重写激活的图标。
 
 ![](arts/rewrite_01.png)
+
+点击以上图标，可以关闭重写功能，重写关闭后，图标将从快捷操作栏上消失。如果希望重写功能图标常驻在快捷操作栏，可以使用右键快捷操作栏自定义进行固定。
+
+![](arts/rewrite_02.png)
 
 :::info
 
@@ -20,15 +20,16 @@ import Shortcut from '@site/src/components/Shortcut';
 
 ### 创建规则
 
-创建一个重写规则有下面六种方式：
-- 右键重写图标 -> 新建规则
-- 托盘 -> 重写 -> 新建规则
-- 重写列表 -> 点击右上角 `+` 号图标
+创建一个重写规则有下面几种方式：
+- 调试菜单 -> 重写 -> 添加规则
+- 右键重写图标 -> 添加规则
+- 托盘 -> 重写 -> 添加规则
+- 重写列表 -> 新建按钮
 - 重写列表 -> 右键菜单 -> 新建
 - 调试列表 -> 选中一个列表项 -> 右键菜单 -> 重写
 - 快捷键 <Shortcut>Shift + Alt + K</Shortcut>
 
-![](arts/rewrite_02.png)
+![](arts/rewrite_03.png)
 
 输入规则名称和匹配的URL，URL支持简单的Wildcard * 和 ? 匹配，最后设置一个重写行为，Reqable支持以下五种重写行为。
 
@@ -48,7 +49,7 @@ import Shortcut from '@site/src/components/Shortcut';
 
 相比于[镜像](mirror)功能，重写重定向提供了更加细粒度的重定向操作，例如一个客户端请求A：`https://hello.com/foo`，可以重定向为返回请求B：`https://world.com/bar` 的结果。重写重定向属于请求转发，可以理解为`Map Remote`，和HTTP协议3xx状态码的重定向不同。
 
-![](arts/rewrite_12.png)
+![](arts/rewrite_04.png)
 
 上图是重定向编辑页面，有几点需要注意：
 - **保留头部Host** 请求新URL地址时，请求头部的Host值是否为原地址的Host。此选项一般不建议开启，不同服务端框架对Host的处理逻辑不同，可能导致请求失败。
@@ -88,13 +89,13 @@ https://world.com/new/foo/bar/ok?abc=123
 
 无论原始请求方法和路径是什么，都会被替换成预设的请求方法和路径：
 
-![](arts/rewrite_03.png)
+![](arts/rewrite_05.png)
 
 #### 替换请求头 {#repleace-req-headers}
 
 无论原始请求头是什么，都会被替换成预设的请求头：
 
-![](arts/rewrite_04.png)
+![](arts/rewrite_06.png)
 
 :::caution 关于Content-Length
 
@@ -106,7 +107,7 @@ https://world.com/new/foo/bar/ok?abc=123
 
 无论原始请求体是什么，都会被替换成预设的请求体：
 
-![](arts/rewrite_05.png)
+![](arts/rewrite_07.png)
 
 Reqable支持预设三种替换请求体类型：空、文本和本地文件。
 
@@ -118,7 +119,7 @@ Reqable支持预设三种替换请求体类型：空、文本和本地文件。
 
 无论原始响应状态是什么，都会被替换成预设的响应状态：
 
-![](arts/rewrite_06.png)
+![](arts/rewrite_08.png)
 
 #### 替换响应头
 
@@ -140,19 +141,19 @@ https://reqable.com?key=12345&foo=bar&hello=world
 
 现在只需要创建一个key的匹配替换规则即可：
 
-![](arts/rewrite_07.png)
+![](arts/rewrite_09.png)
 
 如果复杂一点，我们不知道key的具体值，但是仍然希望替换为54321，可以使用正则表达式：
 
-![](arts/rewrite_08.png)
+![](arts/rewrite_10.png)
 
 再复杂一些，如果我们希望在原始key值的基础上加一个前缀 `api-` , 可以使用正则表达式和 `$` 分组替换：
 
-![](arts/rewrite_09.png)
+![](arts/rewrite_11.png)
 
 一个请求可以创建并应用多个修改规则，我们可以在列表中进行管理。
 
-![](arts/rewrite_10.png)
+![](arts/rewrite_12.png)
 
 :::caution 注意事项
 
@@ -176,4 +177,4 @@ https://reqable.com?key=12345&foo=bar&hello=world
 
 规则支持文件夹级别的管理，长按后拖动可以调整位置。同时支持导入和导出，方便与他人进行分享和协同。
 
-![](arts/rewrite_11.png)
+![](arts/rewrite_13.png)

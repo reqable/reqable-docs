@@ -4,27 +4,32 @@ import Shortcut from '@site/src/components/Shortcut';
 
 Breakpoint is one of the core debugging feature of Reqable. By setting matching rules, the request and response can be controlled and modified in real time after the breakpoint is triggered.
 
-Breakpoint can be enabled or disabled in four ways:
-- Click directly on the breakpoint icon
-- Right click on the breakpoint icon -> Enable/Disable
-- Tray -> Breakpoint -> Enable/Disable
-- Shortcut key <Shortcut>Shift + Control + B</Shortcut>
-
-When the breakpoint is enabled, the breakpoint icon on the `QuickBar` will turn green and active.
+You can enable the breakpoint via the menu path `Traffic` -> `Breakpoint` -> `Enable` (Shortcut key <Shortcut>Shift + Control + B</Shortcut>). Once the breakpoint is enabled, an activation icon will appear on the toolbar.
 
 ![](arts/breakpoint_01.png)
 
+Click the icon above to disable the breakpoint, once disabled, the icon will disappear from the toolbar. If you wish to keep the breakpoint icon permanently visible on the toolbar, you can right-click the toolbar to edit and select to pin it.
+
+![](arts/breakpoint_02.png)
+
+:::info
+
+To prevent abuse, Reqable does not provide this feature on mobile app.
+
+:::
+
 ### Create Breakpoint
 
-There are six ways to create a breakpoint rule:
-- Right click on the breakpoint icon -> Add Breakpoint
-- Tray -> Breakpoint ->Add Breakpoint
-- Breakpoint List -> Click the `+` icon in the upper right corner
+There are some ways to create a breakpoint rule:
+- Traffic menu -> Breakpoint -> Add Rule
+- Breakpoint icon right-click menu -> Add Rule
+- Tray -> Breakpoint -> Add Rule
+- Breakpoint List -> New
 - Breakpoint List -> Right-Click Menu -> New
 - Traffic list -> Select a item -> Right-click menu -> Breakpoint
 - Shortcut key <Shortcut>Shift + Alt + B</Shortcut>
 
-![](arts/breakpoint_02.png)
+![](arts/breakpoint_03.png)
 
 Enter the rule name and matching URL, the URL supports wildcard * and ? matching. When the request or response matches, it will automatically enter the breakpoint operation interface.
 
@@ -32,7 +37,7 @@ Enter the rule name and matching URL, the URL supports wildcard * and ? matching
 
 After the breakpoint takes effect, the operation interface as shown in the figure below will pop up automatically. On this page, we can modify the data and submit.
 
-![](arts/breakpoint_03.png)
+![](arts/breakpoint_04.png)
 
 :::caution
 
@@ -45,4 +50,4 @@ After the breakpoint takes effect, the operation interface as shown in the figur
 
 Rules are matched from top to bottom. The same request can match multiple rules. The one at the front will be executed first. Rules support folder-level management. You can adjust the position by long pressing and dragging. It also supports import and export, which is convenient for sharing and collaboration with others.
 
-![](arts/breakpoint_04.png)
+![](arts/breakpoint_05.png)

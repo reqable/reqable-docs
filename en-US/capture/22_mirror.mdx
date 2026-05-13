@@ -10,29 +10,34 @@ Mirror is similar to modifying the system's `hosts.txt`, like modifying DNS, so 
 
 :::
 
-Mirror can be enabled or disabled in four ways:
-- Click directly on the mirror icon
-- Right click on the mirror icon -> Enable/Disable
-- Tray -> Mirror -> Enable/Disable
-- Shortcut key <Shortcut>Shift + Control + M</Shortcut>
-
-When the mirror is enabled, the mirror icon on the `QuickBar` will turn green and active.
+You can enable the mirror via the menu path `Traffic` -> `Mirror` -> `Enable` (Shortcut key <Shortcut>Shift + Control + M</Shortcut>). Once the mirror is enabled, an activation icon will appear on the toolbar.
 
 ![](arts/mirror_01.png)
 
+Click the icon above to disable the mirror, once disabled, the icon will disappear from the toolbar. If you wish to keep the mirror icon permanently visible on the toolbar, you can right-click the toolbar to edit and select to pin it.
+
+![](arts/mirror_02.png)
+
+:::info
+
+To prevent abuse, Reqable does not provide this feature on mobile app.
+
+:::
+
 ### Create Mirror
 
-There are six ways to create a mirror rule:
-- Right click on the mirror icon -> Add Mirror
-- Tray -> Mirror ->Add Mirror
-- Mirror List -> Click the `+` icon in the upper right corner
+There are some ways to create a mirror rule:
+- Traffic menu -> Mirror -> Add Rule
+- Mirror icon right-click menu -> Add Rule
+- Tray -> Mirror -> Add Rule
+- Mirror List -> New
 - Mirror List -> Right-Click Menu -> New
 - Traffic list -> Select a item -> Right-click menu -> Mirror
 - Shortcut key <Shortcut>Shift + Alt + M</Shortcut>
 
-![](arts/mirror_02.png)
+![](arts/mirror_03.png)
 
-The domain supports wildcard * and ? matching. If *`*.reqable.com` is configured, all subdomains can be matched, including `api.reqable.com`, `www.reqable.com`, etc.
+The domain supports wildcard * and ? matching. If `*.reqable.com` is configured, all subdomains can be matched, including `api.reqable.com`, `www.reqable.com`, etc.
 
 If the domain port number is not specified, HTTP requests default to **80** port, and HTTPS requests default to **443** port. Of course, the port number can also be specified explicitly, for example: `*.reqable.com:8080`.
 
@@ -76,4 +81,4 @@ Since the HTTP request of the browser or application may use `KeepAlive`, the mi
 
 Rules are matched from top to bottom. The same request can match multiple rules. The one at the front will be executed first. Rules support folder-level management. You can adjust the position by long pressing and dragging. It also supports import and export, which is convenient for sharing and collaboration with others.
 
-![](arts/mirror_03.png)
+![](arts/mirror_04.png)

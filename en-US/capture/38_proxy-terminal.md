@@ -12,7 +12,7 @@ This feature is available in version v2.26.0+.
 
 ### How to use
 
-Click the icon in the quick bar at the top of the application to start the terminal window (shortcut keys `Alt` + `T`), or start it from the **Tools** menu. The started terminal window will display the `Reqable` art text and a prompt that the configuration is done.
+You can open the terminal window (shortcut keys `Alt` + `T`) from the `Tools` menu, the started terminal window will display the `Reqable` art text and a prompt that the configuration is done. You can also pin it to the [Toolbar](../getting-started/layout#toolbar) to launch it directly from there.
 
 ![](arts/proxy_terminal_01.png)
 

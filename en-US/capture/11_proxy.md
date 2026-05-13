@@ -38,7 +38,7 @@ The Linux system is the same as the Mac OSX system, supports the configuration o
 
 ### Secondary Proxy {#secondary}
 
-For accessing some restricted websites, such as accessing Google in mainland China, you need to use some proxy software. However, only one proxy can be configured in the system settings. When Reqable is used as the system proxy, these websites will not be accessible. In this case, Reqable's secondary proxy needs to be used. The principle of Reqable's secondary proxy: When Reqable receives the client's proxy request, it will forward it to the secondary proxy server, and the secondary proxy server will carry out the actual communication. You can create a secondary proxy configuration via **Proxy** -> **Secondary Proxy** -> **New Secondary Proxy**.
+For accessing some restricted websites, such as accessing Google in mainland China, you need to use some proxy software. However, only one proxy can be configured in the system settings. When Reqable is used as the system proxy, these websites will not be accessible. In this case, Reqable's secondary proxy needs to be used. The principle of Reqable's secondary proxy: When Reqable receives the client's proxy request, it will forward it to the secondary proxy server, and the secondary proxy server will carry out the actual communication. You can create a secondary proxy configuration via menu `Proxy` -> `Secondary Proxy` -> `New Secondary Proxy`.
 
 ![](arts/secondary_proxy_02.png)
 

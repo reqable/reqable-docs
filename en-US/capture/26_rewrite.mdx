@@ -2,29 +2,34 @@
 
 import Shortcut from '@site/src/components/Shortcut';
 
-Rewriting is one of Reqable's core debugging features, which automatically modifies requests or responses through preset rules. Reqable's rewriting supports 5 modes: [Redirection](#redirect), [Replace Request](#replace-req), [Replace Response](#replace-res), [Modify Request](#modify- req) and [Modify Response] (#modify-res).
+Rewrite is one of Reqable's core debugging features, which automatically modifies requests or responses through preset rules. Reqable's rewriting supports 5 modes: [Redirection](#redirect), [Replace Request](#replace-req), [Replace Response](#replace-res), [Modify Request](#modify- req) and [Modify Response] (#modify-res).
 
-Rewrite can be enabled or disabled in four ways:
-- Click directly on the rewrite icon
-- Right click on the rewrite icon -> Enable/Disable
-- Tray -> Rewrite -> Enable/Disable
-- Shortcut key <Shortcut>Shift + Control + K</Shortcut>
-
-When the rewrite is enabled, the rewrite icon on the `QuickBar` will turn green and active.
+You can enable the rewrite via the menu path `Traffic` -> `Rewrite` -> `Enable` (Shortcut key <Shortcut>Shift + Control + K</Shortcut>). Once the rewrite is enabled, an activation icon will appear on the toolbar.
 
 ![](arts/rewrite_01.png)
 
-### Create Rewrite
-
-There are six ways to create a rewrite rule:
-- Right click on the rewrite icon -> Add Rewrite
-- Tray -> Rewrite ->Add Rewrite
-- Rewrite List -> Click the `+` icon in the upper right corner
-- Rewrite List -> Right-Click Menu -> New
-- Traffic list -> Select a item -> Right-click menu -> Rewrite
-- Shortcut key <Shortcut>Shift + Alt + G</Shortcut>
+Click the icon above to disable the rewrite, once disabled, the icon will disappear from the toolbar. If you wish to keep the rewrite icon permanently visible on the toolbar, you can right-click the toolbar to edit and select to pin it.
 
 ![](arts/rewrite_02.png)
+
+:::info
+
+To prevent abuse, Reqable does not provide this feature on mobile app.
+
+:::
+
+### Create Rewrite
+
+There are some ways to create a rewrite rule:
+- Traffic menu -> Rewrite -> Add Rule
+- Rewrite icon right-click menu -> Add Rule
+- Tray -> Rewrite -> Add Rule
+- Rewrite List -> New
+- Rewrite List -> Right-Click Menu -> New
+- Traffic list -> Select a item -> Right-click menu -> Rewrite
+- Shortcut key <Shortcut>Shift + Alt + K</Shortcut>
+
+![](arts/rewrite_03.png)
 
 Enter the rule name and matching URL, the URL supports wildcard * and ? matching. Finally set an rewriting behavior. Reqable supports the following five rewriting behaviors.
 
@@ -44,7 +49,7 @@ The priority of rewriting behavior is redirection > replacement > modification. 
 
 Compared with [Mirror](mirror), rewrite redirection provides more fine-grained operation, for example, the request A: `https://hello.com/foo`, can be redirected to request B: `https://hello.com/bar`. Rewrite redirection is request forwarding, which can be understood as `Map Remote`, and is different from the redirection of HTTP protocol 3xx status code.
 
-![](arts/rewrite_12.png)
+![](arts/rewrite_04.png)
 
 The picture above is the redirection edit page, there are a few points to note:
 - **Reserve host in headers** When requesting a new URL address, whether to keep the Host value of the request header as the original address. It is generally not recommended to enable this option. Different server frameworks have different processing logic for Host, which may cause request failure.
@@ -84,13 +89,13 @@ When creating a rewrite rule from the right-click menu of the traffic list, the 
 
 No matter what the original request method and path are, it will be replaced with the preset request method and path.
 
-![](arts/rewrite_03.png)
+![](arts/rewrite_05.png)
 
 #### Replace Request Headers {#repleace-req-headers}
 
 Whatever the original request headers are, it will be replaced with the preset request headers.
 
-![](arts/rewrite_04.png)
+![](arts/rewrite_06.png)
 
 :::caution About Content-Length
 
@@ -102,7 +107,7 @@ Regardless of whether there is a preset Content-Length, the final Content-Length
 
 Whatever the original request body is, it will be replaced with the preset request body.
 
-![](arts/rewrite_05.png)
+![](arts/rewrite_07.png)
 
 Reqable supports preset three body types: empty, text and local file.
 
@@ -114,7 +119,7 @@ This rewriting behavior means to directly replace the response data, supports st
 
 Whatever the original response status is, it will be replaced with the preset response status.
 
-![](arts/rewrite_06.png)
+![](arts/rewrite_08.png)
 
 #### Replace Response Headers
 
@@ -136,19 +141,19 @@ https://reqable.com?key=12345&foo=bar&hello=world
 
 Now you only need to create a key matching replacement rule.
 
-![](arts/rewrite_07.png)
+![](arts/rewrite_09.png)
 
 If it is more complicated, we don't know the specific value of the key, but we still want to replace it with 54321, we can use regular expressions.
 
-![](arts/rewrite_08.png)
+![](arts/rewrite_10.png)
 
 To make it more complicated, if we want to add a prefix `api-` to the original key value, we can use regular expressions and `$` group replacement.
 
-![](arts/rewrite_09.png)
+![](arts/rewrite_11.png)
 
 A request can create and apply multiple modification rules, which we can manage in the list.
 
-![](arts/rewrite_10.png)
+![](arts/rewrite_12.png)
 
 :::caution
 
@@ -172,4 +177,4 @@ Same as [Modify Request](#modify-req).
 
 Rewrite rules support folder-level management, you can adjust the position by long pressing and dragging. It also supports import and export, which is convenient for sharing and collaboration with others.
 
-![](arts/rewrite_11.png)
+![](arts/rewrite_13.png)

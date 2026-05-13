@@ -99,6 +99,14 @@ Displays which interceptors have processed this request, and each interceptor wi
 This feature is supported in `v1.1.4`.
 :::
 
+### Device
+
+Displays the device associated with this traffic. The device is identified based on the source IP address of the traffic. In `Collaborative Mode`, the name of the connected device is displayed. in `Non-Collaborative Mode`, the source IP address is shown. You can set an alias for a device via the right-click context menu of the device in the [Explorer](./explorer) sidebar.
+
+:::info
+This feature is supported in `v3.0.21`.
+:::
+
 ### Application
 
 Displays the application (or executable) that this traffic belongs to, normally show the name and icon of the application (or executable). Note, since some applications (or executable) may not have icons, a default icon will be used here instead. Also, some application (or executable) may not be located due to certain non-deterministic conditions.
