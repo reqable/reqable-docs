@@ -60,9 +60,9 @@ import Shortcut from '@site/src/components/Shortcut';
 
 ![](arts/gateway_04.png)
 
-::: info
+:::info
 
-如果需要屏蔽而不是绕行非匹配流量，请再新建一个屏蔽策略。
+如果需要屏蔽而不是绕行非匹配流量，请再新建一个`屏蔽`策略。
 
 :::
 
@@ -102,7 +102,7 @@ import Shortcut from '@site/src/components/Shortcut';
 
 相对于`屏蔽入（L7）`，挂起不会中断连接，而是模拟超时效果。
 
-::: caution 优先级
+:::caution 优先级
 
 同一个请求命中多个模式的处理优先级：`仅允许` > `绕行` > `屏蔽` > `挂起`。
 

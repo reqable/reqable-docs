@@ -4,7 +4,7 @@ Reqable uses the MITM proxy server to intercept traffic. How to use and configur
 
 ![](arts/proxy_01.png)
 
-The status of the system proxy will be displayed on the [QuickBar](quickbar). If the system  proxy is properly configured, the icon will show a green active state; otherwise, it will show a yellow warning state. Clicking the icon in the green state will disable the system network proxy; clicking the icon in the yellow state will enable the system network proxy.
+The status of the system proxy will be displayed on the toolbar. If the system  proxy is properly configured, the icon will show a green active state; otherwise, it will show a yellow warning state. Clicking the icon in the green state will disable the system network proxy; clicking the icon in the yellow state will enable the system network proxy.
 
 :::caution
 

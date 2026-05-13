@@ -14,7 +14,6 @@ API调试是Reqable的两大基本功能之一，Reqable提供了非常便捷和
 
 - [调试列表](./list)
 - [列表项](./column)
-- [快捷操作栏](./quickbar)
 - [工作台](./explorer)
 - [标签页](./tabs)
 - [搜索](./search)

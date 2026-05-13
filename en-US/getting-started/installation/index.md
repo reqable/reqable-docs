@@ -18,7 +18,7 @@ Reqable automatically generates a CA certificate for each user, and uses a rando
 
 Different desktop platforms (here mainly Windows/MacOS/Linux) have different certificate installation methods. In order to simplify the installation process, Reqable provides a one-click certificate installation way.
 
-The certificate installation page is located on the top QuickBar, click the shield icon to open the pop-up window.
+The certificate installation page is located on the toolbar, click the shield icon to open the pop-up window.
 
 ![](arts/installation_01.png)
 
