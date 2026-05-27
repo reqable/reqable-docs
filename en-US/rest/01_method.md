@@ -1,6 +1,8 @@
 # Method
 
-Reqable supports the use of built-in methods and custom methods. The 9 built-in methods are as follows:
+Reqable supports the use of built-in methods and custom methods. 
+
+The built-in methods are as follows:
 
 - [GET](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/GET)
 - [POST](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/POST)
@@ -16,7 +18,7 @@ In addition, custom method is supported.
 
 ![](arts/method_01.png)
 
-After expanding the drop-down menu, tap **Manage Method** to open the editing page:
+After expanding the drop-down menu, tap **Custom** to open the editing page:
 
 ![](arts/method_02.png)
 

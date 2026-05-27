@@ -4,6 +4,14 @@ sidebar_position: 0
 
 # Windows
 
+## v3.1.2 <small><small>*2026-05-26*</small></small>
+- 🐞 [FIX] The bug where URL parameters `+` were automatically decoded as spaces.
+- 🐞 [FIX] The bug where single quotes were not handled correctly when generating cURL commands.
+- 🐞 [FIX] The bug where empty response bodies in capture details were always shown as loading.
+- 🐞 [FIX] The bug where the Android Magisk plugin archive structure was incorrect, causing installation failures.
+- 🐞 [FIX] The bug where some configuration was lost when switching proxy terminal type.
+- 🐞 [FIX] The bug where `NOT match wildcard` in traffic search was not show completely.
+
 ## v3.1.1 <small><small>*2026-05-10*</small></small>
 - 💪 [OPT] Merge proxy terminal and device QR code icons into the toolbar.
 - 💪 [OPT] Add custom toolbar guide icon in toobar.

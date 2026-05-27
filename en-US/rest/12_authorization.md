@@ -1,49 +1,55 @@
 # Authorization
 
-Reqable provides a simple authorization and supports 3 modes: [Basic Auth](#basic-auth), [Bearer Token](#bearer-token) and [Api Key](#api-key).
+Reqable provides multiple authorizations:
+
+- [Inherit](#inherit)
+- [Basic Auth](#basic-auth)
+- [Bearer Token](#bearer-token)
+- [Api Key](#api-key)
+- [Digest Auth](#digest-auth)
+
+:::info
+Authorization supports the use of [Environment Variables](../environment).
+:::
+
+### Inherit {#inherit}
+
+If the API has already been saved to a collection, it automatically inherits the authorization defined for the collection. If it has not been saved to a collection, no authorization is applied.
 
 ![](arts/authorization_01.png)
 
 ### Basic Auth {#basic-auth}
 
-For details and specifications of Basic Auth, please refer to the [RFC document](https://datatracker.ietf.org/doc/html/rfc7617), without much explanation. The usage is very simple, just select **Basic Auth** in the authorization and fill in the username and password.
+For details and specifications of Basic Auth, see the [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617). Select **Basic Auth** in the authorization layout and fill in the username and password.
 
 ![](arts/authorization_02.png)
 
-Reqable will automatically generate Authorization in the built-in request header.
+### Bearer Token {#bearer-token}
+
+For details and specifications of Bearer Token, see the [RFC 6750](https://datatracker.ietf.org/doc/html/rfc6750). Select **Bearer Token** in the authorization layout and fill in the token.
 
 ![](arts/authorization_03.png)
 
-### Bearer Token {#bearer-token}
+### Api Key {#api-key}
 
-For details and specifications of Bearer Token, please refer to the [RFC document](https://datatracker.ietf.org/doc/html/rfc6750), without much explanation. The usage is very simple, just select **Bearer Token** in the authorization and fill in the token.
+Api key supports being passed either in request headers or request parameters.
 
 ![](arts/authorization_04.png)
 
-Reqable will automatically generate Authorization in the built-in request header.
+Choose to pass it in the request header:
 
 ![](arts/authorization_05.png)
 
-### Api Key {#api-key}
-
-Api Key supports passing in request headers and query parameters.
+Choose to pass it in request parameters:
 
 ![](arts/authorization_06.png)
 
-Passed in request headers:
+### Digest Auth {#digest-auth}
+
+For details and specifications of Digest Auth, see the [RFC 7616](https://datatracker.ietf.org/doc/html/rfc7616). Digest Auth has many parameters, but for basic usage you only need to fill in the username and password.
 
 ![](arts/authorization_07.png)
 
-passed in rquery parameters:
+Reqable automatically generates the other parameters according to the authentication requirements in the response. Of course, you can also expand the options and customize these parameters manually.
 
 ![](arts/authorization_08.png)
-
-### Digest Auth {#digest-auth}
-
-For details and specifications about Digest Auth, please refer to the [RFC document](https://datatracker.ietf.org/doc/html/rfc7616). Digest Auth has many parameters, but the most basic ones only require the username and password.
-
-![](arts/authorization_09.png)
-
-Reqable will automatically generate other parameters based on the authentication requirements. Of course, users can also expand the options to customize these parameters.
-
-![](arts/authorization_10.png)

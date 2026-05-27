@@ -1,6 +1,8 @@
 # 请求方法
 
-Reqable支持使用内置请求方法和自定义请求方法，其中内置的9个请求方法如下：
+Reqable支持使用内置请求方法和自定义请求方法。
+
+内置请求方法如下：
 
 - [GET](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/GET)
 - [POST](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/POST)
@@ -12,7 +14,7 @@ Reqable支持使用内置请求方法和自定义请求方法，其中内置的9
 - [CONNECT](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/CONNECT)
 - [TRACE](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/TRACE)
 
-除此之外，支持使用自定义请求方法：
+自定义请求方法：
 
 ![](arts/method_01.png)
 

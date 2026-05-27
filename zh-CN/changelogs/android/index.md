@@ -4,6 +4,14 @@ sidebar_position: 4
 
 # Android
 
+## v3.1.2 <small><small>*2026-05-26*</small></small>
+- 🐞【修复】URL参数`+`被自动解码为空格的bug。
+- 🐞【修复】生成cURL命令时单引号处理不正确的bug。
+- 🐞【修复】抓包详情中空响应体一直显示加载中的bug。
+- 🐞【修复】Android Magisk插件压缩包结构错误导致无法安装的bug。
+- 🐞【修复】协同设备添加后信息一直不更新的bug。
+- 🐞【修复】协同模式下画中画清空抓包数据不生效的bug。
+
 ## v3.1.1 <small><small>*2026-05-10*</small></small>
 - 🐞【修复】WebSocket发送和接收图标颠倒的bug。
 - 🐞【修复】WebSocket未连接状态点击发送的消息不会出现在消息列表的bug。

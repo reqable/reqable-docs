@@ -4,6 +4,14 @@ sidebar_position: 4
 
 # Android
 
+## v3.1.2 <small><small>*2026-05-26*</small></small>
+- 🐞 [FIX] The bug where URL parameters `+` were automatically decoded as spaces.
+- 🐞 [FIX] The bug where single quotes were not handled correctly when generating cURL commands.
+- 🐞 [FIX] The bug where empty response bodies in capture details were always shown as loading.
+- 🐞 [FIX] The bug where the Android Magisk plugin archive structure was incorrect, causing installation failures.
+- 🐞 [FIX] The bug where collaborative device information did not update after being added.
+- 🐞 [FIX] The bug where the picture-in-picture mode did not clear collaborative capture records.
+
 ## v3.1.1 <small><small>*2026-05-10*</small></small>
 - 🐞 [FIX] The bug where WebSocket send and receive icons were reversed.
 - 🐞 [FIX] The bug where the message sent while WebSocket was not connected did not show in the message list.

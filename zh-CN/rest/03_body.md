@@ -1,97 +1,119 @@
 # 请求体
 
-Reqable支持编辑多种类型的请求体，包括[JSON](#json)、[文本](#text)、[XML](#xml)、[表单](#urlencode)、[Multipart](#multipart)和[文件](#binary)。使用不同类型的请求体，会自动在[内置请求头](header#builtin)中自动追加相应的 `Content-Type` 请求头。
+Reqable支持多种类型的请求体，包括：
 
-点击**数据类型**下拉菜单切换类型：
+- [JSON](#json)
+- [Text](#text)
+- [XML](#xml)
+- [Raw](#raw)
+- [Form-data](#multipart)
+- [Urlencode](#urlencode)
+- [文件](#binary)
+
+点击`数据类型`下拉菜单可以切换请求体类型：
 
 ![](arts/body_01.png)
 
+:::info
+请求体支持使用[环境变量](../environment)。
+:::
+
 ### JSON {#json}
 
-JSON类型请求体自带语法高亮和格式化功能：
+JSON是最常见的请求类型，Reqable提供了一个支持语法高亮的编辑器。
 
 ![](arts/body_02.png)
 
-JSON类型会在[内置请求头](header#builtin)中自动追加 `Content-Type: application/json` :
+JSON类型会在[内置请求头](header#builtin)中自动追加 `Content-Type: application/json`和`Content-Length`（发送请求时自动计算其值）。
 
 ![](arts/body_03.png)
 
-:::info 自定义Content-Type
-
-内置请求头Content-Type无法修改值，但是可以取消勾选和新建一个Content-Type实现自定义效果。
-
-:::
-
-### 文本 {#text}
-
-最简单的请求体类型：
+JSON数据支持使用注释，被注释的内容在请求时将不会被发送。
 
 ![](arts/body_04.png)
 
-文本类型会在[内置请求头](header#builtin)中自动追加 `Content-Type: text/plain`。
-
-:::info Raw类型
-
-Reqable还提供了一个和文本相似的类型**Raw**，区别是Raw类型不会在[内置请求头](header#builtin)中自动追加任何Content-Type。
-
+:::caution
+包含注释的JSON内容暂不支持格式化、压缩和展开等操作。
 :::
 
-### XML {#xml}
+### Text {#text}
 
-XML类型请求体自带语法高亮和格式化功能：
+最简单的请求体类型：
 
 ![](arts/body_05.png)
 
-XML类型会在[内置请求头](header#builtin)中自动追加 `Content-Type: application/xml` 。
+Text类型会在[内置请求头](header#builtin)中自动追加 `Content-Type: text/plain`和`Content-Length`（发送请求时自动计算其值）。
 
-### 表单 {#urlencode}
+![](arts/body_06.png)
 
-表单类型（urlencode）是一组键值对拼接成如下格式：
+### XML {#xml}
+
+XML类型请求体支持语法高亮：
+
+![](arts/body_07.png)
+
+XML类型会在[内置请求头](header#builtin)中自动追加 `Content-Type: application/xml`和`Content-Length`（发送请求时自动计算其值）。
+
+![](arts/body_08.png)
+
+### Raw {#raw}
+
+Raw类型和[Text](#text)类似，区别在于不会在[内置请求头](header#builtin)中自动追加`Content-Type`，适合用户自定义的类型。
+
+### Form-data {#multipart}
+
+Form-data支持三种分部类型：`单行文本`、`多行文本`和`文件`：
+
+![](arts/body_09.png)
+
+点击右侧的更多按钮可以打开分部操作菜单，包括改变类型、移动位置、编辑头部和删除等等。
+
+![](arts/body_10.png)
+
+多行文本需要点击展开编辑弹窗进行修改：
+
+![](arts/body_11.png)
+
+Reqable还支持编辑每个分部的头部信息：
+
+![](arts/body_12.png)
+
+Multipart类型会在[内置请求头](header#builtin)中自动追加 `Content-Type: multipart/form-data`和`Content-Length`（发送请求时自动计算其值）。
+
+![](arts/body_13.png)
+
+:::info 关于Boundary
+
+无需手动添加Boundary，Reqable会在请求发送时自动生成Boundary。
+
+:::
+
+### Urlencode {#urlencode}
+
+表单类型（Urlencode）是一组键值对拼接成如下格式：
 
 ```
 foo=bar&hello=reqable
 ```
 
-所以Reqable提供了类似请求参数的编辑方式：
+默认情况下，表单模式可以用表格模式进行编辑。
 
-![](arts/body_06.png)
+![](arts/body_14.png)
 
-表单类型会在[内置请求头](header#builtin)中自动追加 `Content-Type: application/x-www-form-urlencoded` 。
+另外，也可以切换到文本模式进行编辑。文本模式下， 支持使用`//`注释来取消勾选。
 
-### Multipart {#multipart}
+![](arts/body_15.png)
 
-Multipart支持三种分部类型：**单行文本**、**多行文本**和**文件**：
+表单类型会在[内置请求头](header#builtin)中自动追加 `Content-Type: application/x-www-form-urlencoded`和`Content-Length`（发送请求时自动计算其值）。
 
-![](arts/body_07.png)
-
-点击右侧的更多按钮可以打开分部操作菜单，包括改变类型、移动位置、编辑头部和删除等等。
-
-![](arts/body_08.png)
-
-多行文本需要点击展开编辑弹窗进行修改：
-
-![](arts/body_09.png)
-
-Reqable还支持编辑每个分部的头部信息：
-
-![](arts/body_10.png)
-
-Multipart类型会在[内置请求头](header#builtin)中自动追加 `Content-Type: multipart/form-data` 。
-
-:::info Boundary
-
-无需手动添加Boundary，Reqable会在请求发送时自动创建并设置Boundary。
-
-:::
+![](arts/body_16.png)
 
 ### 文件 {#binary}
 
-文件类型支持选择一个文件作为请求体，为了简化操作，Reqable提供了文件拖拽的功能，直接将文件拖入虚线框内即可。
+文件类型支持选择一个文件作为请求体。可以通过系统文件管理器选择文件，页可以直接将文件拖入虚线框内。
 
-![](arts/body_11.png)
+![](arts/body_17.png)
 
-:::info Content-Type推导
+文件类型会在[内置请求头](header#builtin)中自动追加相应`Content-Type`（自动推导）和`Content-Length`（发送请求时自动计算其值）。
 
-Reqable会根据选择的文件类型在[内置请求头](header#builtin)中自动追加相应Content-Type。
-
-:::
+![](arts/body_18.png)

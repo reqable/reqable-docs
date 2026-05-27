@@ -1,97 +1,119 @@
 # Body
 
-Reqable supports editing multiple types of request bodies, including [JSON](#json), [text](#text), [XML](#xml), [form](#urlencode), [Multipart](#multipart) and [file](#binary). If you use a body, `Content-Type` will be automatically appended to [Built-in Request Header](header#builtin).
+Reqable supports multiple types of request bodies, including:
 
-Tap the **Content Type** drop-down menu to switch the type:
+- [JSON](#json)
+- [Text](#text)
+- [XML](#xml)
+- [Raw](#raw)
+- [Form-data](#multipart)
+- [Urlencode](#urlencode)
+- [File](#binary)
+
+Tap the `Content Type` drop-down menu to switch the request body type:
 
 ![](arts/body_01.png)
 
+:::info
+Request bodies support the use of [Environment Variables](../environment).
+:::
+
 ### JSON {#json}
 
-JSON type request body supports automatic syntax highlighting and formatting.
+JSON is the most common request body type. Reqable provides an editor with syntax highlighting support.
 
 ![](arts/body_02.png)
 
-JSON type will automatically append `Content-Type: application/json` to [Built-in Request Header](header#builtin).
+The JSON type automatically appends `Content-Type: application/json` and `Content-Length` to [Built-in Headers](header#builtin). The `Content-Length` value is calculated automatically when the request is sent.
 
 ![](arts/body_03.png)
 
-:::info Custom Content-Type
+JSON data supports comments. Commented content will not be sent with the request.
 
-The value of the built-in request header Content-Type cannot be modified, but you can uncheck it and add a new Content-Type to headers.
+![](arts/body_04.png)
 
+:::caution
+Formatting, minifying, and expand operations are not currently supported for JSON content that contains comments.
 :::
 
 ### Text {#text}
 
-Text is the simplest request body type.
-
-![](arts/body_04.png)
-
-Text type will automatically append `Content-Type: text/plain` to [Built-in Request Header](header#builtin).
-
-:::info Raw Type
-
-Reqable also provides a type **Raw** similar to text, the difference is that the Raw type will not automatically append any Content-Type in [Built-in Request Header](header#builtin).
-
-:::
-
-### XML {#xml}
-
-XML type request body supports automatic syntax highlighting and formatting.
+The simplest request body type:
 
 ![](arts/body_05.png)
 
-XML type will automatically append `Content-Type: application/xml` to [Built-in Request Header](header#builtin).
+The Text type automatically appends `Content-Type: text/plain` and `Content-Length` to [Built-in Headers](header#builtin). The `Content-Length` value is calculated automatically when the request is sent.
+
+![](arts/body_06.png)
+
+### XML {#xml}
+
+The XML request body type supports syntax highlighting.
+
+![](arts/body_07.png)
+
+The XML type automatically appends `Content-Type: application/xml` and `Content-Length` to [Built-in Headers](header#builtin). The `Content-Length` value is calculated automatically when the request is sent.
+
+![](arts/body_08.png)
+
+### Raw {#raw}
+
+The Raw type is similar to [Text](#text), except that it does not automatically append `Content-Type` to [Built-in Headers](header#builtin), making it suitable for custom types defined by the user.
+
+### Form-data {#multipart}
+
+Form-data supports three part types: `Single-line Text`, `Multi-line Text`, and `File`.
+
+![](arts/body_09.png)
+
+Tap the more button on the right to open the part action menu, including changing type, moving position, editing headers, deleting, and more.
+
+![](arts/body_10.png)
+
+For multi-line text, tap to open the edit dialog for modification.
+
+![](arts/body_11.png)
+
+Reqable also supports editing the header information of each part.
+
+![](arts/body_12.png)
+
+The Multipart type automatically appends `Content-Type: multipart/form-data` and `Content-Length` to [Built-in Headers](header#builtin). The `Content-Length` value is calculated automatically when the request is sent.
+
+![](arts/body_13.png)
+
+:::info About Boundary
+
+There is no need to add `Boundary` manually. Reqable automatically generates it when the request is sent.
+
+:::
 
 ### Urlencode {#urlencode}
 
-Urlencode is composed of a set of key-value pairs.
+The Urlencode form type is a set of key-value pairs combined in the following format:
 
 ```
 foo=bar&hello=reqable
 ```
 
-Reqable provides editing modes similar to query parameters:
+By default, form data can be edited in table mode.
 
-![](arts/body_06.png)
+![](arts/body_14.png)
 
-Urlencode type will automatically append `Content-Type: application/x-www-form-urlencoded` to [Built-in Request Header](header#builtin).
+It can also be switched to text mode for editing. In text mode, `//` comments are supported for unchecking items.
 
-### Multipart {#multipart}
+![](arts/body_15.png)
 
-Multipart supports three types: **Single-line Text**, **Multi-line Text** and **File**.
+The Urlencode type automatically appends `Content-Type: application/x-www-form-urlencoded` and `Content-Length` to [Built-in Headers](header#builtin). The `Content-Length` value is calculated automatically when the request is sent.
 
-![](arts/body_07.png)
+![](arts/body_16.png)
 
-Tap the more button on the right to open the context menu, including changing type, moving position, editing headers and deleting, etc.
+### File {#binary}
 
-![](arts/body_08.png)
+The File type supports selecting a file as the request body. You can choose a file through the system file manager, or drag it directly into the dotted area.
 
-Multi-line text needs to be clicked to expand the edit pop-up window for modification.
+![](arts/body_17.png)
 
-![](arts/body_09.png)
+The File type automatically appends the corresponding `Content-Type` (guessed automatically) and `Content-Length` (calculated automatically when the request is sent) to [Built-in Headers](header#builtin).
 
-Reqable also supports editing the headers of each part.
-
-![](arts/body_10.png)
-
-Multipart type will automatically append `Content-Type: multipart/form-data` to [Built-in Request Header](header#builtin).
-
-:::info Boundary
-
-No need to add `Boundary` header manually, Reqable will automatically generate and set Boundary when the request is sent.
-
-:::
-
-### Binary {#binary}
-
-The file type supports selecting a file as the request body. In order to simplify the operation, Reqable provides the function of dragging and dropping the file, just drag the file directly into the dotted layout.
-
-![](arts/body_11.png)
-
-:::info Content-Type Guess
-
-Binary type will automatically append `Content-Type` to [Built-in Request Header](header#builtin).
-
-:::
+![](arts/body_18.png)
