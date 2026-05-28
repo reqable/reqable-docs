@@ -8,6 +8,10 @@ Import cURL:
 
 ![](arts/curl_02.png)
 
+:::info Tips
+You can quickly import by directly pasting the cURL command into the URL input field.
+:::
+
 Export cURL:
 
 ![](arts/curl_03.png)
