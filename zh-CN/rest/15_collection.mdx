@@ -2,46 +2,77 @@
 
 import Shortcut from '@site/src/components/Shortcut';
 
-Reqable支持将API请求收藏到集合中，并可以随时打开编辑。同时，Reqable还支持导入Postman等格式的API集合，并且可以将调试列表中的API保存到集合。
-
-### 保存API会话
-
-点击右上角打开更多操作菜单，选择保存（快捷键 <Shortcut>Control + S</Shortcut> ）：
+Reqable支持将API请求保存到集合中进行统一管理。打开侧边栏`集合`(快捷键`F2`)，即可管理集合数据。
 
 ![](arts/collection_01.png)
 
-在弹出的对话框中输入名称并选择存放的集合：
+集合中可以存放HTTP接口、WebSocket接口以及文件夹，以树形结构（树深度限制为4）进行管理。
+
+:::info 数据存储和同步
+- 未登录账号的情况下，集合数据离线保存在设备本地。
+- 登录账号后可以选择使用云端存储，集合数据支持在多设备间实时同步。
+:::
+
+### 保存API到集合
+
+点击右上角`保存`图标按钮，即可保存当前API（快捷键 <Shortcut>Control + S</Shortcut> ）：
 
 ![](arts/collection_02.png)
 
-点击保存后，便可以在侧边栏的集合面板中看到保存的API了，同时还能看到选项卡的标题也变成了API的名称：
+在弹出的对话框中输入API名称，选择存放的集合。保存成功后，便可以在侧边栏的集合面板中看到保存的API了。
+
+### 保存调试到集合
+
+Reqable可以将调试列表中的API保存到集合，在右键菜单中选择 `添加到` -> `API集合`（快捷键 <Shortcut>Control + I</Shortcut> ）。
 
 ![](arts/collection_03.png)
 
-### 导入API集合
+### 导入集合文件
 
-Reqable目前支持导入Postman、Hoppscotch、ApiPost和Apifox这四种格式的API集合文件，当然Reqable自身导出的格式肯定也是支持的。
+Reqable支持导入其他软件的集合文件，点击导入图标可以打开集合导入界面。
 
 ![](arts/collection_04.png)
 
-### 保存调试流量
+Reqable支持如下类型的集合文件。
 
-Reqable可以将调试列表中的API保存到集合，在右键菜单中选择 **添加到** -> **API集合**。
+- Postman (JSON)
+- Swagger (JSON和Yaml)
+- Insomnia (JSON)
+- Hoppscotch (JSON)
+- ApiPost (JSON)
+- ApiFox (JSON)
+- RapidAPI (JSON)
+- cURL
+- HAR
+
+:::info 环境变量
+如果集合文件中包含环境变量，环境变量也会一同导入，更多请阅读[环境变量](../environment)。
+:::
+
+### 导出集合文件
+
+Reqable支持两种类型格式的集合文件导出。
+
+- Reqable格式 (JSON)
+- Postman格式 (JSON)
+
+点击导出图标可以打开集合导出界面。
 
 ![](arts/collection_05.png)
 
 ### 集合管理
 
-需要回溯的时候，在侧边栏集合中直接点击打开，或者右键选择打开、复制新建、重命名或者删除。
+双击集合可以打开集合管理页面。
 
 ![](arts/collection_06.png)
 
-当然，集合中还可以创建子文件夹，或者对集合进行导出、重命名，删除等操作：
+集合管理页面可以进行如下操作：
 
-![](arts/collection_07.png)
+- 定义公共参数、请求头、脚本、授权等，可以被集合中的API自动继承。
+- 编写集合文档。
+- 整体导出集合中所有API的文档。
+- 导出集合文件。
 
-:::caution 注意
-
-为了更加直观地展示，Reqable限制集合中子文件夹的层级不超过4。
-
+:::info PDF文档
+由于技术限制，导出PDF文档仅在Mac系统上可用。
 :::

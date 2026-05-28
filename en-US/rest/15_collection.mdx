@@ -2,46 +2,77 @@
 
 import Shortcut from '@site/src/components/Shortcut';
 
-Reqable supports saving API requests into collections and opening them for editing at any time. At the same time, Reqable also supports importing API collections in formats such as Postman, and can save the APIs in the traffic list to the collection.
-
-### Save API
-
-Expand drop-down menu, and tap `Save` (shortcut key <Shortcut>Control + S</Shortcut> ).
+Reqable supports saving API requests into collections for centralized management. Open `Collection` in the sidebar (shortcut key `F2`) to manage collection data.
 
 ![](arts/collection_01.png)
 
-Enter a name in the pop-up dialog and select the stored folder.
+Collections can contain HTTP APIs, WebSocket APIs, and folders, organized in a tree structure with a maximum depth of 4.
+
+:::info Data Storage and Sync
+- When you are not signed in, collection data is stored offline on the local device.
+- After signing in, you can choose cloud storage, and collection data supports real-time sync across multiple devices.
+:::
+
+### Save API to Collection
+
+Click the `Save` icon button to save the current API (shortcut key <Shortcut>Control + S</Shortcut>):
 
 ![](arts/collection_02.png)
 
-After save, you can see the saved API in the collection panel, and you can also see that the title of the tab has also changed to the name of the API:
+Enter the API name in the popup dialog and choose the target collection. After saving successfully, you can see the saved API in the collection panel in the sidebar.
+
+### Save traffic to Collection
+
+Reqable can save APIs from the traffic list into a collection. In the context menu, select `Add to` -> `API Collection` (shortcut key <Shortcut>Control + I</Shortcut>).
 
 ![](arts/collection_03.png)
 
-### Import Collections
+### Import Collection Files
 
-Reqable currently supports the import of API collection files in 4 formats: Postman, Hoppscotch, ApiPost, and Apifox. Of course, the format exported by Reqable itself must also be supported.
+Reqable supports importing collection files from other tools. Click the import icon to open the collection import page.
 
 ![](arts/collection_04.png)
 
-### Save traffic API
+Reqable supports the following collection file types:
 
-Reqable can save the API in the traffic list to a collection, and select **Add to** -> **API Collection** in the right-click menu.
+- Postman (JSON)
+- Swagger (JSON and YAML)
+- Insomnia (JSON)
+- Hoppscotch (JSON)
+- ApiPost (JSON)
+- ApiFox (JSON)
+- RapidAPI (JSON)
+- cURL
+- HAR
+
+:::info Environment Variables
+If the collection file contains environment variables, they are imported together as well. For more details, see [Environment Variables](../environment).
+:::
+
+### Export Collection Files
+
+Reqable supports exporting collection files in two formats:
+
+- Reqable file (JSON)
+- Postman file (JSON)
+
+Click the export icon to open the collection export page.
 
 ![](arts/collection_05.png)
 
 ### Collection Management
 
-When you need to review, right-click to Open, Copy, New, Rename or Delete.
+Double-click a collection to open the collection management page.
 
 ![](arts/collection_06.png)
 
-You can also create subfolders in the collection, or perform operations such as exporting, renaming, and deleting the collection:
+On the collection management page, you can perform the following operations:
 
-![](arts/collection_07.png)
+- Define common parameters, headers, scripts and authorization, which can be inherited automatically by APIs in the collection.
+- Write collection documentation.
+- Export documentation for all APIs in the collection.
+- Export the collection file.
 
-:::caution
-
-For a more intuitive display, Reqable limits the level of subfolders in the collection to no more than 4.
-
+:::info PDF Documents
+Due to technical limitations, exporting PDF documents is only available on macOS.
 :::
