@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # iOS
 
+## v3.1.3 <small><small>*2026-05-29*</small></small>
+- 🐞【修复】SSL不兼容旧版重协商机制的bug。
+- 🐞【修复】部分语言生成代码中URL未正确编码的bug。
+- 🐞【修复】数字域名无法解析的bug。
+
 ## v3.1.2 <small><small>*2026-05-26*</small></small>
 - 💪【优化】CA证书安装指引。
 - 🐞【修复】URL参数`+`被自动解码为空格的bug。

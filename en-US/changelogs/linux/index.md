@@ -4,6 +4,18 @@ sidebar_position: 3
 
 # Linux
 
+## v3.1.3 <small><small>*2026-05-29*</small></small>
+- 💪 [OPT] Update Android certificate installation Magisk module.
+- 💪 [OPT] In the Base64 tool, decoded binary results can now be directly opened in the image viewer.
+- 💪 [OPT] Disable file drag-and-drop when a popup dialog is covering.
+- 🐞 [FIX] The bug where SSL was not compatible with unsafe legacy renegotiation.
+- 🐞 [FIX] The bug where URL was not correctly encoded in some language code snippet.
+- 🐞 [FIX] The bug where numeric domain names could not be resolved.
+- 🐞 [FIX] The bug where clearing cache in settings did not completely delete all cache files.
+- 🐞 [FIX] The bug where clearing cache in settings would delete user scripts.
+- 🐞 [FIX] The bug where API authorization did not correctly navigate to the inherited authorization page.
+- 🐞 [FIX] The bug where importing some ApiPost collection files did not correctly retrieve the URL.
+
 ## v3.1.2 <small><small>*2026-05-26*</small></small>
 - 🐞 [FIX] The bug where URL parameters `+` were automatically decoded as spaces.
 - 🐞 [FIX] The bug where single quotes were not handled correctly when generating cURL commands.

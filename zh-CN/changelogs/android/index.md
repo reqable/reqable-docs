@@ -4,6 +4,12 @@ sidebar_position: 4
 
 # Android
 
+## v3.1.3 <small><small>*2026-05-29*</small></small>
+- 💪【优化】更新Android证书安装Magisk模块。
+- 🐞【修复】SSL不兼容旧版重协商机制的bug。
+- 🐞【修复】部分语言生成代码中URL未正确编码的bug。
+- 🐞【修复】数字域名无法解析的bug。
+
 ## v3.1.2 <small><small>*2026-05-26*</small></small>
 - 🐞【修复】URL参数`+`被自动解码为空格的bug。
 - 🐞【修复】生成cURL命令时单引号处理不正确的bug。

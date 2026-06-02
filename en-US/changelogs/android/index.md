@@ -4,6 +4,12 @@ sidebar_position: 4
 
 # Android
 
+## v3.1.3 <small><small>*2026-05-29*</small></small>
+- 💪 [OPT] Update Android certificate installation Magisk module.
+- 🐞 [FIX] The bug where SSL was not compatible with unsafe legacy renegotiation.
+- 🐞 [FIX] The bug where URL was not correctly encoded in some language code snippet.
+- 🐞 [FIX] The bug where numeric domain names could not be resolved.
+
 ## v3.1.2 <small><small>*2026-05-26*</small></small>
 - 🐞 [FIX] The bug where URL parameters `+` were automatically decoded as spaces.
 - 🐞 [FIX] The bug where single quotes were not handled correctly when generating cURL commands.
