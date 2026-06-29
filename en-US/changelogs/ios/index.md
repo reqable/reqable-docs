@@ -4,6 +4,23 @@ sidebar_position: 5
 
 # iOS
 
+## v3.2.2 <small><small>*2026-06-30*</small></small>
+- 💪 [OPT] In the Text view, the saved request and response bodies will now be written as binary data directly instead of being re-encoded using UTF-8.
+
+## v3.2.1 <small><small>*2026-06-29*</small></small>
+- 🐞 [FIX] The bug where the proxy port would automatically increment even when it was not in use.
+- 🐞 [FIX] The bug where the title was not displayed correctly.
+
+## v3.2.0 <small><small>*2026-06-29*</small></small>
+- 🚀 [NEW] Open APIs for controlling various Reqable features.
+- 💪 [OPT] After re-login, all data will be fully synchronized from the cloud to avoid inconsistencies between cloud and local data.
+- 💪 [OPT] The maximum length of rule names has been increased from 32 to 64.
+- 💪 [OPT] Added `reqablePort` built-in variable to environment, representing the current proxy port.
+- 🐞 [FIX] The bug where WebSocket testing could not be created from the traffic list.
+- 🐞 [FIX] The bug where WebSocket testing could not be added to the collection from the traffic list.
+- 🐞 [FIX] The bug where 307 and 308 redirects changed the request method to GET and discarded the request body.
+- 🐞 [FIX] The bug where SOCKS proxy options caused cURL import to fail.
+
 ## v3.1.3 <small><small>*2026-05-29*</small></small>
 - 🐞 [FIX] The bug where SSL was not compatible with unsafe legacy renegotiation.
 - 🐞 [FIX] The bug where URL was not correctly encoded in some language code snippet.

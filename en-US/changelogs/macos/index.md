@@ -4,6 +4,32 @@ sidebar_position: 1
 
 # Macos
 
+## v3.2.2 <small><small>*2026-06-30*</small></small>
+- 💪 [OPT] In the Text view, the saved request and response bodies will now be written as binary data directly instead of being re-encoded using UTF-8.
+- 💪 [OPT] The MCP guide for Antigravity has been changed to a common guide.
+- 🐞 [FIX] The bug where the JSON file path in some MCP configuration guides was incorrect.
+
+## v3.2.1 <small><small>*2026-06-29*</small></small>
+- 🐞 [FIX] The bug where the proxy port would automatically increment even when it was not in use.
+
+## v3.2.0 <small><small>*2026-06-29*</small></small>
+- 🚀 [NEW] Open APIs for controlling various Reqable features.
+- 🚀 [NEW] MCP support.
+- 💪 [OPT] After re-login, all data will be fully synchronized from the cloud to avoid inconsistencies between cloud and local data.
+- 💪 [OPT] The maximum length of rule names has been increased from 32 to 64.
+- 💪 [OPT] Added `reqablePort` built-in variable to environment, representing the current proxy port.
+- 💪 [OPT] Added name field to mirror rule.
+- 💪 [OPT] Creating new rules will no longer automatically enable the feature.
+- 💪 [OPT] URL search in the traffic list now defaults to matching decoded data without manual activation.
+- 🐞 [FIX] The bug where WebSocket testing could not be created from the traffic list.
+- 🐞 [FIX] The bug where WebSocket testing could not be added to the collection from the traffic list.
+- 🐞 [FIX] The bug where 307 and 308 redirects changed the request method to GET and discarded the request body.
+- 🐞 [FIX] The bug where SOCKS proxy options caused cURL import to fail.
+- 🐞 [FIX] The bug where WebSocket request code snippet would open HTTP request code snippet.
+- 🐞 [FIX] The bug where copying content in the script editor console might be incorrect when timestamps are displayed.
+- 🐞 [FIX] The bug where double-clicking on a traffic history record did not fix the tab.
+- 🐞 [FIX] The bug where the shortcut key prompts for F1 - F12 were truncated in system menu bar.
+
 ## v3.1.3 <small><small>*2026-05-29*</small></small>
 - 💪 [OPT] Update Android certificate installation Magisk module.
 - 💪 [OPT] In the Base64 tool, decoded binary results can now be directly opened in the image viewer.
