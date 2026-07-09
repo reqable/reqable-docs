@@ -4,6 +4,29 @@ sidebar_position: 4
 
 # Android
 
+## v3.2.5 <small><small>*2026-07-09*</small></small>
+- ❗ [IMP] When using collaborative mode, the desktop app version must be updated simultaneously.
+- 💪 [OPT] cURL supports multi-line mode and defaults to multi-line mode.
+- 💪 [OPT] cURL supports using single quote or double quote and defaults to single quote.
+- 💪 [OPT] socks5 proxy supports UDP.
+- 💪 [OPT] The traffic list URL scheme no longer uses the proxy protocol name when the request is not completed.
+- 💪 [OPT] Report server URL now supports syntax highlighting and auto-completion.
+- 💪 [OPT] In enhanced mode, the proxy protocol uses `socks5` instead of `http`.
+- 🐞 [FIX] The bug where the proxy server could not connect in some cases.
+- 🐞 [FIX] The bug where the request body in API testing caused a memory leak.
+- 🐞 [FIX] The bug where adding a remote device failed after the proxy port conflicted and automatically incremented.
+- 🐞 [FIX] The bug where report server rules could not be disabled.
+- 🐞 [FIX] In enhanced mode, connection failures due to DNS resolution issues.
+
+## v3.2.4 <small><small>*2026-07-02*</small></small>
+- 💪 [OPT] API testing history now supports setting a retention period.
+- 💪 [OPT] API testing history now remembers whether the display mode is by timeline or by URL.
+- 💪 [OPT] API testing history now supports deleting by group.
+- 💪 [OPT] A friendly toast message will appear when a feature requires a premium membership.
+- 💪 [OPT] Redesign the API testing history cache settings page.
+- 🐞 [FIX] The bug where images in the desktop app introduction failed to load.
+- 🐞 [FIX] The bug where the options in the long-press menu of domain group requests were not working.
+
 ## v3.2.2 <small><small>*2026-06-30*</small></small>
 - 💪 [OPT] In the Text view, the saved request and response bodies will now be written as binary data directly instead of being re-encoded using UTF-8.
 - 🐞 [FIX] The bug where font files were not packaged correctly, causing fonts to display incorrectly.

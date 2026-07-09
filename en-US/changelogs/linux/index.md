@@ -4,6 +4,39 @@ sidebar_position: 3
 
 # Linux
 
+## v3.2.5 <small><small>*2026-07-09*</small></small>
+- 💪 [OPT] cURL supports multi-line mode and defaults to multi-line mode.
+- 💪 [OPT] cURL supports using single quote or double quote and defaults to single quote.
+- 💪 [OPT] socks5 proxy supports UDP.
+- 💪 [OPT] The traffic list URL scheme no longer uses the proxy protocol name when the request is not completed.
+- 💪 [OPT] Report server URL now supports syntax highlighting and auto-completion.
+- 🐞 [FIX] The bug where the proxy server could not connect in some cases.
+- 🐞 [FIX] The bug where the request body in API testing caused a memory leak.
+- 🐞 [FIX] The bug where adding a remote device failed after the proxy port conflicted and automatically incremented.
+- 🐞 [FIX] The bug where report server rules could not be disabled.
+- 🐞 [FIX] The bug where Android certificate installation keeps loading when ADB cannot detect devices.
+- 🐞 [FIX] The bug where copying the URL and cURL from the API testing sidebar history did not parse environment variables.
+
+## v3.2.4 <small><small>*2026-07-02*</small></small>
+- 💪 [OPT] API testing history now supports setting a retention period.
+- 💪 [OPT] API testing history now remembers whether the display mode is by timeline or by URL.
+- 💪 [OPT] API testing history now supports deleting by group.
+- 💪 [OPT] A friendly toast message will appear when a feature requires a premium membership.
+- 💪 [OPT] [MCP] Update the login requirement prompts for some tools.
+- 💪 [OPT] Add an entry in the `Proxy` menu to modify the port number.
+- 🐞 [FIX] The bug where the mouse wheel could not scroll horizontal tabs.
+- 🐞 [FIX] The bug where deleted history records still appeared in the list after restarting the application.
+- 🐞 [FIX] The bug where the collection export UI could not scroll to the bottom.
+- 🐞 [FIX] The bug where the environment export UI could not scroll to the bottom.
+- 🐞 [FIX] The bug where double-clicking on an API testing history record did not fix the tab.
+- 🐞 [FIX] The bug where creating a new favorite folder did not validate the available quantity.
+
+## v3.2.3 <small><small>*2026-06-30*</small></small>
+- 💪 [OPT] [MCP] The cURL generated from the traffic list request now returns directly instead of through structured output.
+- 💪 [OPT] [MCP] Configuration guide text.
+- 💪 [OPT] [MCP] Add a tool to create the cURL command from API collections.
+- 💪 [OPT] [MCP] The traffic list data will provide script logs to AI.
+
 ## v3.2.2 <small><small>*2026-06-30*</small></small>
 - 💪 [OPT] In the Text view, the saved request and response bodies will now be written as binary data directly instead of being re-encoded using UTF-8.
 - 💪 [OPT] The MCP guide for Antigravity has been changed to a common guide.
