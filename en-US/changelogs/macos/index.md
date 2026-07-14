@@ -4,6 +4,23 @@ sidebar_position: 1
 
 # Macos
 
+## v3.2.8 <small><small>*2026-07-14*</small></small>
+- 💪 [OPT] When proxying SSL requests, certificate security is no longer checked.
+- 💪 [OPT] SSE supports configuring custom extractors.
+- 💪 [OPT] [MCP] Add complete connection information in the packet capture data details.
+- 💪 [OPT] [MCP] Add application information in the packet capture data details.
+- 💪 [OPT] JWT tool parsing results support right-click formatting for timestamps.
+- 🐞 [FIX] The bug where SSE list and preview did not automatically scroll to the bottom.
+- 🐞 [FIX] The bug where responses missing `Content-Length` were not handled correctly.
+- 🐞 [FIX] The bug where DNS resolution cache was not handled correctly when using a socks5 proxy.
+- 🐞 [FIX] The bug where packet capture could cause crashes.
+
+## v3.2.7 <small><small>*2026-07-10*</small></small>
+- 💪 [OPT] [MCP] Only common tools are registered now, to register all tools, use the `--scope all` argument.
+- 💪 [OPT] [MCP] Improve the MCP server configuration guide.
+- 💪 [OPT] [MCP] Provide a tool to control whether to override the system proxy.
+- 🐞 [FIX] [MCP] The bug where starting and stopping packet capture could not be controlled.
+
 ## v3.2.5 <small><small>*2026-07-09*</small></small>
 - 💪 [OPT] cURL supports multi-line mode and defaults to multi-line mode.
 - 💪 [OPT] cURL supports using single quote or double quote and defaults to single quote.

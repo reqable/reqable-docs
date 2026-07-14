@@ -4,6 +4,18 @@ sidebar_position: 5
 
 # iOS
 
+## v3.2.8 <small><small>*2026-07-14*</small></small>
+- 💪 [OPT] When proxying SSL requests, certificate security is no longer checked.
+- 💪 [OPT] SSE supports configuring custom extractors.
+- 💪 [OPT] JSON tree supports viewing details by single clicking on nodes.
+- 🐞 [FIX] The bug where SSE list and preview did not automatically scroll to the bottom.
+- 🐞 [FIX] The bug where responses missing `Content-Length` were not handled correctly.
+- 🐞 [FIX] The bug where DNS resolution cache was not handled correctly when using a socks5 proxy.
+- 🐞 [FIX] The bug where packet capture could cause crashes.
+
+## v3.2.7 <small><small>*2026-07-10*</small></small>
+- 🐞 [FIX] The bug where global environment variables could not be saved.
+
 ## v3.2.5 <small><small>*2026-07-09*</small></small>
 - ❗ [IMP] When using collaborative mode, the desktop app version must be updated simultaneously.
 - 💪 [OPT] cURL supports multi-line mode and defaults to multi-line mode.

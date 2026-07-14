@@ -4,6 +4,18 @@ sidebar_position: 4
 
 # Android
 
+## v3.2.8 <small><small>*2026-07-14*</small></small>
+- 💪【优化】代理SSL请求时不再检查证书安全性。
+- 💪【优化】SSE支持配置自定义提取器。
+- 💪【优化】JSON Tree视图单击节点可以查看详情。
+- 🐞【修复】SSE列表和预览自动滚动到底部功能异常的bug。
+- 🐞【修复】缺失`Content-Length`的响应处理不正确的bug。
+- 🐞【修复】使用socks5代理时DNS解析缓存处理不正确的bug。
+- 🐞【修复】抓包功能可能导致的闪退bug。
+
+## v3.2.7 <small><small>*2026-07-10*</small></small>
+- 🐞【修复】全局环境变量无法保存的bug。
+
 ## v3.2.5 <small><small>*2026-07-09*</small></small>
 - ❗【IMP】使用协同模式需同步更新桌面端版本.
 - 💪【优化】cURL支持设置多行模式并默认采用多行模式。
