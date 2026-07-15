@@ -4,6 +4,9 @@ sidebar_position: 5
 
 # iOS
 
+## v3.2.9 <small><small>*2026-07-15*</small></small>
+- 🐞 [FIX] The bug where not checking certificate security when proxying SSL requests could cause other issues.
+
 ## v3.2.8 <small><small>*2026-07-14*</small></small>
 - 💪 [OPT] When proxying SSL requests, certificate security is no longer checked.
 - 💪 [OPT] SSE supports configuring custom extractors.

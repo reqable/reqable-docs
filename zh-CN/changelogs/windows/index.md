@@ -4,6 +4,9 @@ sidebar_position: 0
 
 # Windows
 
+## v3.2.9 <small><small>*2026-07-15*</small></small>
+- 🐞【修复】代理SSL请求时不再检查证书安全性可能导致的其他问题。
+
 ## v3.2.8 <small><small>*2026-07-14*</small></small>
 - 💪【优化】代理SSL请求时不再检查证书安全性。
 - 💪【优化】SSE支持配置自定义提取器。
