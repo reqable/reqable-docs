@@ -4,6 +4,51 @@ sidebar_position: 3
 
 # Linux
 
+## v3.2.14 <small><small>*2026-07-24*</small></small>
+- 💪 [OPT] Automatically detect the actual data type of `binary/octet-stream`.
+- 💪 [OPT] SOCKS5 proxy DNS resolution uses local resolution instead of forcing the use of the `8.8.8.8` resolution server.
+- 💪 [OPT] Added a toast when pasting long-text.
+- 💪 [OPT] Added a regular expression tool to the toolbox.
+- 💪 [OPT] Added a Unicode codec tool to the toolbox.
+- 🐞 [Fix] The bug where WebSocket traffic capture `Sec-WebSocket-Extensions` response handling was incorrect.
+- 🐞 [Fix] The bug where compressing certain JSON strings would cause the app to freeze.
+- 🐞 [Fix] The bug where WebSocket closing would display status Aborted instead of Completed.
+- 🐞 [Fix] The bug where the traffic list could not open the details when there was only one item.
+- 🐞 [Fix] The bug where exiting the application could potentially cause a crash.
+- 🐞 [Fix] The bug where the automatic-close not working after successfully scanning the device QR code.
+
+## v3.2.13 <small><small>*2026-07-21*</small></small>
+- 💪 [OPT] [MCP] Set the timeout for each request to 30 seconds.
+- 🐞 [Fix] [MCP] The bug preventing the updating of collections and API documentation.
+
+## v3.2.11 <small><small>*2026-07-20*</small></small>
+- 💪 [OPT] Limit the maximum length of content in input fields such as URL, request parameters, and request headers to 8k.
+- 💪 [OPT] Prohibit pasting text lines longer than 64k to prevent application freezing.
+- 💪 [OPT] Prohibit compressing JSON payload larger than 64k to prevent application freezing.
+- 💪 [Opt] Automatically restore the previous system proxy configuration when disabling the system proxy in Reqable.
+- 💪 [Opt] Improved accuracy in retrieving captured app information.
+- 💪 [Opt] Enhanced performance of the traffic list.
+- 💪 [Opt] Added `Save` and `Save As` options to the context menu of the API tab.
+- 💪 [Opt] Exporting partial content now uses the correct default file name.
+- 💪 [OPT] [MCP] Data exceeding 256k will return a temporary file path instead of directly returning the content.
+- 🐞 [FIX] The bug where copying the request header as JSON did not merge cookies.
+- 🐞 [FIX] Fixed a bug where the MCP getting traffic ID list was incorrect.
+- 🐞 [Fix] Fixed a bug where the traffic list would auto-scroll when selecting items upwards while holding the Ctrl key.
+
+## v3.2.10 <small><small>*2026-07-17*</small></small>
+- 💪 [OPT] Support formatting JSON with comments and syntax errors.
+- 💪 [OPT] API testing header adds key-value pair copy icon button.
+- 💪 [OPT] In the JSON request body, extra commas after comment fields will be automatically removed.
+- 💪 [OPT] Close auto-cookie when creating API testing from the traffic list.
+- 💪 [OPT] Close auto-cookie when creating API testing from cURL.
+- 💪 [OPT] The cURL copied from the traffic list will automatically merge multiple Cookie headers.
+- 💪 [OPT] Automatically infer the type when Content-Type is missing or binary.
+- 💪 [OPT] [MCP] Content will using json rather than the tip message.
+- 🐞 [FIX] The bug where SOCKS5 proxy did not correctly handle the priority of domain lookups for the same IP.
+- 🐞 [FIX] The bug where copying the API testing header as JSON did not merge cookies.
+- 🐞 [FIX] The bug where JSON formatting could cause loss of precision in floating-point data.
+- 🐞 [FIX] The bug where newly created scripts could not display the saved status correctly.
+
 ## v3.2.9 <small><small>*2026-07-15*</small></small>
 - 🐞 [FIX] The bug where not checking certificate security when proxying SSL requests could cause other issues.
 

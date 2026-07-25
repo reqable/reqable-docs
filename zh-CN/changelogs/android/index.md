@@ -4,6 +4,32 @@ sidebar_position: 4
 
 # Android
 
+## v3.2.14 <small><small>*2026-07-24*</small></small>
+- 💪【优化】自动检测`binary/octet-stream`的实际数据类型。
+- 💪【优化】SOCKS5代理DNS解析使用本地解析而不是强制使用`8.8.8.8`解析服务器。
+- 💪【优化】粘贴长文本时添加禁止提示。
+- 🐞【修复】WebSocket抓包`Sec-WebSocket-Extensions`响应处理不正确的bug。
+- 🐞【修复】WebSocket关闭后状态显示Aborted而不是Completed的bug。
+- 🐞【修复】压缩某些JSON字符串会卡死的bug。
+
+## v3.2.11 <small><small>*2026-07-20*</small></small>
+- 💪【优化】限制URL、请求参数、请求头部等输入框内容长度最大为8k。
+- 💪【优化】禁止粘贴单行长度超过64k的文本，防止应用卡死。
+- 💪【优化】禁止压缩超过64k的JSON，防止应用卡死。
+- 🐞【修复】抓包详情中请求头部复制为JSON时未合并Cookie的bug。
+
+## v3.2.10 <small><small>*2026-07-17*</small></small>
+- 💪【优化】支持对包含注释和语法错误的JSON进行格式化。
+- 💪【优化】API请求测试头部等添加键值对复制按钮。
+- 💪【优化】API请求测试中JSON请求体注释字段后将自动删除多余的逗号。
+- 💪【优化】从调试列表创建API测试时关闭自动Cookie功能。
+- 💪【优化】从cURL创建API测试时关闭自动Cookie功能。
+- 💪【优化】从调试列表复制的cURL将自动合并多个Cookie头部。
+- 💪【优化】Content-Type缺失或者为二进制时自动推理类型。
+- 🐞【修复】SOCKS5代理未正确处理同一IP对应多个不同域名查找优先级的bug。
+- 🐞【修复】API请求测试头部复制为JSON时未合并Cookie的bug。
+- 🐞【修复】JSON格式化浮点型数据可能丢失精度的bug。
+
 ## v3.2.9 <small><small>*2026-07-15*</small></small>
 - 🐞【修复】代理SSL请求时不再检查证书安全性可能导致的其他问题。
 

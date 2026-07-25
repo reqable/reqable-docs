@@ -4,6 +4,32 @@ sidebar_position: 4
 
 # Android
 
+## v3.2.14 <small><small>*2026-07-24*</small></small>
+- 💪 [OPT] Automatically detect the actual data type of `binary/octet-stream`.
+- 💪 [OPT] SOCKS5 proxy DNS resolution uses local resolution instead of forcing the use of the `8.8.8.8` resolution server.
+- 💪 [OPT] Added a toast when pasting long-text.
+- 🐞 [Fix] The bug where WebSocket traffic capture `Sec-WebSocket-Extensions` response handling was incorrect.
+- 🐞 [Fix] The bug where compressing certain JSON strings would cause the app to freeze.
+- 🐞 [Fix] The bug where WebSocket closing would display status Aborted instead of Completed.
+
+## v3.2.11 <small><small>*2026-07-20*</small></small>
+- 💪 [OPT] Limit the maximum length of content in input fields such as URL, request parameters, and request headers to 8k.
+- 💪 [OPT] Prohibit pasting text lines longer than 64k to prevent application freezing.
+- 💪 [OPT] Prohibit compressing JSON payload larger than 64k to prevent application freezing.
+- 🐞 [FIX] The bug where copying the request header as JSON did not merge cookies.
+
+## v3.2.10 <small><small>*2026-07-17*</small></small>
+- 💪 [OPT] Support formatting JSON with comments and syntax errors.
+- 💪 [OPT] API testing header adds key-value pair copy icon button.
+- 💪 [OPT] In the JSON request body, extra commas after comment fields will be automatically removed.
+- 💪 [OPT] Close auto-cookie when creating API testing from the traffic list.
+- 💪 [OPT] Close auto-cookie when creating API testing from cURL.
+- 💪 [OPT] The cURL copied from the traffic list will automatically merge multiple Cookie headers.
+- 💪 [OPT] Automatically infer the type when Content-Type is missing or binary.
+- 🐞 [FIX] The bug where SOCKS5 proxy did not correctly handle the priority of domain lookups for the same IP.
+- 🐞 [FIX] The bug where copying the API testing header as JSON did not merge cookies.
+- 🐞 [FIX] The bug where JSON formatting could cause loss of precision in floating-point data.
+
 ## v3.2.9 <small><small>*2026-07-15*</small></small>
 - 🐞 [FIX] The bug where not checking certificate security when proxying SSL requests could cause other issues.
 
