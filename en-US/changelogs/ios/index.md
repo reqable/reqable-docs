@@ -4,13 +4,33 @@ sidebar_position: 5
 
 # iOS
 
+## v3.2.17 <small><small>*2026-07-29*</small></small>
+- 💪 [OPT] Added multi-language internationalization support for Traditional Chinese, Japanese, Korean, Spanish, French, German, and Russian.
+- 💪 [OPT] Added an option in Settings to choose whether to show a notification when a version update is detected.
+- 🐞 [FIX] A bug where the response body was not ignored for HEAD requests.
+- 🐞 [FIX] A bug where the tab label displayed incorrectly when image decoding failed.
+
+## v3.2.16 <small><small>*2026-07-28*</small></small>
+- 💪 [OPT] Added an option to preserve environment variables when exporting cURL.
+- 💪 [OPT] Removed URL validation during cURL import.
+- 💪 [OPT] Readonly JSON will be formatted using serialization.
+- 💪 [OPT] Auto-detect XML data and apply formatting.
+- 🐞 [OPT] A bug where certain types of responses would remain in a loading state indefinitely.
+
+## v3.2.15 <small><small>*2026-07-27*</small></small>
+- 💪 [OPT] Reduced network latency that occurred when there was an excessive amount of data in the traffic list.
+- 🐞 [FIX] Corrected several English spelling and grammar errors.
+- 🐞 [FIX] A bug where JSON minification did not correctly handle escape characters.
+- 🐞 [FIX] A bug in the cURL generation feature where `-d` was incorrectly used instead of `--data-raw` when the request headers did not contain `Content-Type`.
+- 🐞 [FIX] A bug in the cURL import feature where form data import was incorrectly used instead of raw import when the request headers did not contain `Content-Type`.
+
 ## v3.2.14 <small><small>*2026-07-24*</small></small>
 - 💪 [OPT] Automatically detect the actual data type of `binary/octet-stream`.
 - 💪 [OPT] SOCKS5 proxy DNS resolution uses local resolution instead of forcing the use of the `8.8.8.8` resolution server.
 - 💪 [OPT] Added a toast when pasting long-text.
-- 🐞 [Fix] The bug where WebSocket traffic capture `Sec-WebSocket-Extensions` response handling was incorrect.
-- 🐞 [Fix] The bug where compressing certain JSON strings would cause the app to freeze.
-- 🐞 [Fix] The bug where WebSocket closing would display status Aborted instead of Completed.
+- 🐞 [FIX] The bug where WebSocket traffic capture `Sec-WebSocket-Extensions` response handling was incorrect.
+- 🐞 [FIX] The bug where compressing certain JSON strings would cause the app to freeze.
+- 🐞 [FIX] The bug where WebSocket closing would display status Aborted instead of Completed.
 
 ## v3.2.11 <small><small>*2026-07-20*</small></small>
 - 💪 [OPT] Limit the maximum length of content in input fields such as URL, request parameters, and request headers to 8k.

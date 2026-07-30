@@ -4,26 +4,59 @@ sidebar_position: 0
 
 # Windows
 
+## v3.2.17 <small><small>*2026-07-29*</small></small>
+- 💪 [OPT] Added multi-language internationalization support for Traditional Chinese, Japanese, Korean, Spanish, French, German, and Russian.
+- 💪 [OPT] Added an option in Settings to choose whether to show a notification when a version update is detected.
+- 💪 [OPT] Added DNS cache option.
+- 💪 [OPT] No longer send the request to the server when doing a full replacement in rewrite rules.
+- 💪 [OPT] Removed WebSocket type from gateway block requests and suspend requests.
+- 💪 [OPT] Auto-install the new version after successful download.
+- 💪 [OPT] Disable dragging from the top of the window when in full-screen mode.
+- 🐞 [FIX] A bug where the response body was not ignored for HEAD requests.
+- 🐞 [FIX] A bug where the tab label displayed incorrectly when image decoding failed.
+
+## v3.2.16 <small><small>*2026-07-28*</small></small>
+- 💪 [OPT] Added an option to preserve environment variables when exporting cURL.
+- 💪 [OPT] Removed URL validation during cURL import.
+- 💪 [OPT] Readonly JSON will be formatted using serialization.
+- 💪 [OPT] Auto-detect XML data and apply formatting.
+- 💪 [OPT] Automatically fill the request method when creating rewrite, breakpoint, and script rules from the traffic list.
+- 💪 [OPT] Improved the accuracy of notifications for clearing history records and updated the button text.
+- 💪 [OPT] The automatically inferred packet capture data types can now be filtered by the quick filter bar.
+- 🐞 [OPT] A bug where certain types of responses would remain in a loading state indefinitely.
+
+## v3.2.15 <small><small>*2026-07-27*</small></small>
+- 💪 [OPT] Reduced network latency that occurred when there was an excessive amount of data in the traffic list.
+- 💪 [OPT] Adjusted the default size of sub windows.
+- 💪 [OPT] Display max 9999 in traffic list tab title.
+- 💪 [OPT] [MCP] Added MCP server enable status to the quick bar.
+- 💪 [OPT] [MCP] Added support for viewing which MCP clients have started and connected to the MCP server.
+- 💪 [OPT] [MCP] Added Tra, Qode, CodeBuddy setup guide.
+- 🐞 [FIX] Corrected several English spelling and grammar errors.
+- 🐞 [FIX] A bug where JSON minification did not correctly handle escape characters.
+- 🐞 [FIX] A bug in the cURL generation feature where `-d` was incorrectly used instead of `--data-raw` when the request headers did not contain `Content-Type`.
+- 🐞 [FIX] A bug in the cURL import feature where form data import was incorrectly used instead of raw import when the request headers did not contain `Content-Type`.
+
 ## v3.2.14 <small><small>*2026-07-24*</small></small>
 - 💪 [OPT] Automatically detect the actual data type of `binary/octet-stream`.
 - 💪 [OPT] SOCKS5 proxy DNS resolution uses local resolution instead of forcing the use of the `8.8.8.8` resolution server.
 - 💪 [OPT] Added a toast when pasting long-text.
 - 💪 [OPT] Added a regular expression tool to the toolbox.
 - 💪 [OPT] Added a Unicode codec tool to the toolbox.
-- 🐞 [Fix] The bug where WebSocket traffic capture `Sec-WebSocket-Extensions` response handling was incorrect.
-- 🐞 [Fix] The bug where compressing certain JSON strings would cause the app to freeze.
-- 🐞 [Fix] The bug where WebSocket closing would display status Aborted instead of Completed.
-- 🐞 [Fix] The bug where the traffic list could not open the details when there was only one item.
-- 🐞 [Fix] The bug where exiting the application could potentially cause a crash.
-- 🐞 [Fix] The bug where the automatic-close not working after successfully scanning the device QR code.
+- 🐞 [FIX] The bug where WebSocket traffic capture `Sec-WebSocket-Extensions` response handling was incorrect.
+- 🐞 [FIX] The bug where compressing certain JSON strings would cause the app to freeze.
+- 🐞 [FIX] The bug where WebSocket closing would display status Aborted instead of Completed.
+- 🐞 [FIX] The bug where the traffic list could not open the details when there was only one item.
+- 🐞 [FIX] The bug where exiting the application could potentially cause a crash.
+- 🐞 [FIX] The bug where the automatic-close not working after successfully scanning the device QR code.
 
 ## v3.2.13 <small><small>*2026-07-21*</small></small>
 - 💪 [OPT] [MCP] Set the timeout for each request to 30 seconds.
-- 🐞 [Fix] [MCP] The bug preventing the updating of collections and API documentation.
-- 🐞 [Fix] The bug where newly created scripts were missing the default template.
+- 🐞 [FIX] [MCP] The bug preventing the updating of collections and API documentation.
+- 🐞 [FIX] The bug where newly created scripts were missing the default template.
 
 ## v3.2.12 <small><small>*2026-07-21*</small></small>
-- 🐞 [Fix] A bug where causing the app freezing.
+- 🐞 [FIX] A bug where causing the app freezing.
 
 ## v3.2.11 <small><small>*2026-07-20*</small></small>
 - 💪 [OPT] Limit the maximum length of content in input fields such as URL, request parameters, and request headers to 8k.
@@ -37,8 +70,8 @@ sidebar_position: 0
 - 💪 [OPT] [MCP] Data exceeding 256k will return a temporary file path instead of directly returning the content.
 - 💪 [OPT] [MCP] Automatically close the Server process during version upgrades.
 - 🐞 [FIX] The bug where copying the request header as JSON did not merge cookies.
-- 🐞 [FIX] Fixed a bug where the MCP getting traffic ID list was incorrect.
-- 🐞 [Fix] Fixed a bug where the traffic list would auto-scroll when selecting items upwards while holding the Ctrl key.
+- 🐞 [FIX] FIXed a bug where the MCP getting traffic ID list was incorrect.
+- 🐞 [FIX] FIXed a bug where the traffic list would auto-scroll when selecting items upwards while holding the Ctrl key.
 - 🐞 [FIX] The bug where the window top could not adjust the window size.
 
 ## v3.2.10 <small><small>*2026-07-17*</small></small>
@@ -290,7 +323,7 @@ sidebar_position: 0
 ## v3.0.30 <small><small>*2025-12-08*</small></small>
 - 🚀 [New] Introduce Java VM root certificate automatic installation.
 - 💪 [OPT] form-data parts no longer send Content-Length headers.
-- 🐞 [FIX] Fixed the bug where clicking the window close button might not enter background mode.
+- 🐞 [FIX] FIXed the bug where clicking the window close button might not enter background mode.
 - 🐞 [FIX] The bug where built-in environment variables could not be used in Python scripts.
 - 🐞 [FIX] The bug where APIs created by the `+` button on the home page did not apply global settings.
 - 🐞 [FIX] The bug where cURL import failed due to CRLF line-break.
@@ -532,7 +565,7 @@ sidebar_position: 0
 - 💪 [OPT] API collection will check and fix duplicate IDs.
 - 💪 [OPT] Unify the size and color value of borders and dividers.
 - 💪 [OPT] Automatically refresh cookies when redirecting.
-- 💪 [OPT] Fixed traffic tab to the left when scrolling.
+- 💪 [OPT] FIXed traffic tab to the left when scrolling.
 - 💪 [OPT] Base64 tool supports loop decoding mode.
 - 💪 [OPT] Base64 tool supports fast transfer of output to input.
 - 💪 [OPT] Traffic bookmark filters support right-clicking folders to select all or unselect all.
@@ -1000,7 +1033,7 @@ sidebar_position: 0
 - 💪 [OPT] Right-click of traffic item can open url in browser.
 - 💪 [OPT] Limit the number of tabs opened at one time to a maximum of 32.
 - 💪 [OPT] Traffic search supports filtering unhighlighted data.
-- 🐞 [FIX] Fix the bug where reverse proxy access exception.
+- 🐞 [FIX] FIX the bug where reverse proxy access exception.
 
 ## v2.19.0 <small><small>*2024-06-26*</small></small>
 - 🚀 [NEW] The home page `+` right click can automatically create API from cURL/URL on pasteboard.
@@ -1143,8 +1176,8 @@ sidebar_position: 0
 - 🐞 [FIX] A bug that may cause crash when importing p12 certificate.
 - 🐞 [FIX] The bug that dragging selection in the editor cannot automatically request focus.
 - 🐞 [FIX] A bug where directly importing cURL into the API request input box would cause the app to freeze.
-- 🐞 [FIX] Fix the bug where the app information cannot be dumped in some cases.
-- 🐞 [FIX] Fix the bug where some chinese fonts are displayed abnormally.
+- 🐞 [FIX] FIX the bug where the app information cannot be dumped in some cases.
+- 🐞 [FIX] FIX the bug where some chinese fonts are displayed abnormally.
 
 ## v2.12.0 <small><small>*2024-04-13*</small></small>
 - 🚀 [NEW] Automatic generate a magisk module to install CA certificate.
@@ -1157,7 +1190,7 @@ sidebar_position: 0
 - 💪 [OPT] Prompt whether to clear license information when unregistering license.
 - 💪 [OPT] Automatically delete configuration backup files older than 14 days.
 - 💪 [OPT] Refactor the Android certificate installation guide.
-- 🐞 [FIX] Fix the bug where some limitation of the community do not take effect.
+- 🐞 [FIX] FIX the bug where some limitation of the community do not take effect.
 - 🐞 [FIX] The bug of window size calculation not considering the taskbar size.
 
 ## v2.11.1 <small><small>*2024-04-09*</small></small>
@@ -1392,25 +1425,25 @@ sidebar_position: 0
 - 💪 [OPT] Adds some prompts in SSL bypass editor.
 - 💪 [OPT] Double-clicking outside the traffic list will automatically close the details panel.
 - 💪 [OPT] Supports `Control + L` shortcut key to quickly locate the currently selected traffic item.
-- 🐞 [Fix] A bug that unverified license will cause the page to remain in the loading state forever.
-- 🐞 [Fix] A bug that code syntax highlighting may cause content display to be lost.
-- 🐞 [Fix] A bug where URL port number displayed in the traffic list was incorrectly in some cases.
-- 🐞 [Fix] A bug where clicking outside the traffic list may cancel the selected item.
-- 🐞 [Fix] A bug where response body replacement cannot automatically fill the original payload.
-- 🐞 [Fix] A bug that failed to import Postman collection if containing multi-file values.
-- 🐞 [Fix] A bug that failed to open some HAR files.
-- 🐞 [Fix] An infinite loop bug occurs when directly requesting the proxy port.
-- 🐞 [Fix] A bug where the close frame of Websocket was displayed incorrectly.
-- 🐞 [Fix] App may crash when failed to send a POST request.
-- 🐞 [Fix] A bug where the response content may not be updated after sending a request.
-- 🐞 [Fix] The bug of URL display overflow in API testing explorer.
-- 🐞 [Fix] A bug that the file content is empty when VS Code opens a new script.
-- 🐞 [Fix] A bug that the reset application in settings does not take effect.
+- 🐞 [FIX] A bug that unverified license will cause the page to remain in the loading state forever.
+- 🐞 [FIX] A bug that code syntax highlighting may cause content display to be lost.
+- 🐞 [FIX] A bug where URL port number displayed in the traffic list was incorrectly in some cases.
+- 🐞 [FIX] A bug where clicking outside the traffic list may cancel the selected item.
+- 🐞 [FIX] A bug where response body replacement cannot automatically fill the original payload.
+- 🐞 [FIX] A bug that failed to import Postman collection if containing multi-file values.
+- 🐞 [FIX] A bug that failed to open some HAR files.
+- 🐞 [FIX] An infinite loop bug occurs when directly requesting the proxy port.
+- 🐞 [FIX] A bug where the close frame of Websocket was displayed incorrectly.
+- 🐞 [FIX] App may crash when failed to send a POST request.
+- 🐞 [FIX] A bug where the response content may not be updated after sending a request.
+- 🐞 [FIX] The bug of URL display overflow in API testing explorer.
+- 🐞 [FIX] A bug that the file content is empty when VS Code opens a new script.
+- 🐞 [FIX] A bug that the reset application in settings does not take effect.
 
 ## v1.6.2 <small><small>*2023-10-12*</small></small>
 - 💪 [OPT] Reduce the number of traffic capture cache files.
-- 🐞 [Fix] The issue of flashing when opening a new window.
-- 🐞 [Fix] The bug of missing query parameters in rewrite redirection.
+- 🐞 [FIX] The issue of flashing when opening a new window.
+- 🐞 [FIX] The bug of missing query parameters in rewrite redirection.
 
 ## v1.6.1 <small><small>*2023-10-09*</small></small>
 - 💪 [OPT] Traffic list application filtering option displays remote device IP.
@@ -1418,18 +1451,18 @@ sidebar_position: 0
 - 💪 [OPT] URL rule wildcard matching.
 - 💪 [OPT] When a lower version application opens a higher version database, it will reset the database instead of reporting an error.
 - 💪 [OPT] The raw message displays the body encoding type.
-- 🐞 [Fix] The API testing tab that is no save prompt after the application is restarted.
-- 🐞 [Fix] The bug that API testing may prompt saving again when a saved API is closed.
-- 🐞 [Fix] The bug that requests in socks proxy mode cannot trigger interceptors such as rewriting, breakpoints, and scripts.
-- 🐞 [Fix] A bug where quotes were not escaped during code generation..
-- 🐞 [Fix] A bug where some cache files failed to be automatically cleared in incognito mode.
+- 🐞 [FIX] The API testing tab that is no save prompt after the application is restarted.
+- 🐞 [FIX] The bug that API testing may prompt saving again when a saved API is closed.
+- 🐞 [FIX] The bug that requests in socks proxy mode cannot trigger interceptors such as rewriting, breakpoints, and scripts.
+- 🐞 [FIX] A bug where quotes were not escaped during code generation..
+- 🐞 [FIX] A bug where some cache files failed to be automatically cleared in incognito mode.
 
 ## v1.6.0 <small><small>*2023-09-27*</small></small>
 - 🚀 [NEW] Supports detaching a new window to view traffic data details.
 - 🚀 [NEW] The middle mouse button can close the Tab.
 - 🚀 [NEW] The middle mouse button can close the sub-window.
 - 💪 [OPT] Better performance and memory usage.
-- 🐞 [Fix] The bug that the script editor cannot open `Visual Studio Code`.
+- 🐞 [FIX] The bug that the script editor cannot open `Visual Studio Code`.
 
 ## v1.5.1 <small><small>*2023-09-25*</small></small>
 - 💪 [OPT] The count of free tabs for history and file viewing has been increased from 1 to 2.
@@ -1439,18 +1472,18 @@ sidebar_position: 0
 - 💪 [OPT] Automatically change the port when MITM proxy port conflict is detected.
 - 💪 [OPT] Python scripts can be directly opened with `Visual Studio Code` for editing.
 - 💪 [OPT] Automatically merge the Cookie value of the request header when generating code snippet.
-- 🐞 [Fix] The bug that API testing request body `compress` and `prettify` did not take effect when actually sent.
-- 🐞 [Fix] The bug that API testing traffic will not appear in the traffic list when following the redirection in debug mode.
-- 🐞 [Fix] The bug that API testing traffic with mirroring is not displayed in the traffic list in debug mode.
-- 🐞 [Fix] The bug that rewriting redirected requests will automatically perform redirection based on the response.
-- 🐞 [Fix] The bug that `Reset App` in settings is not working.
-- 🐞 [Fix] A bug that caused abnormal composing input in some text fields.
-- 🐞 [Fix] The bug that the application info cannot be displayed for requests that have established a TCP connection before capture is enabled.
-- 🐞 [Fix] A Bug where `Host` header is missing in the raw message.
-- 🐞 [Fix] A bug that causes crash when exiting the app under certain circumstances.
-- 🐞 [Fix] A Bug where proxy protocol cannot be correctly identified in some cases.
-- 🐞 [Fix] Fixed the bug that the system network proxy cannot be automatically disabled after restarting the system and shutting down.
-- 🐞 [Fix] The bug that some devices cannot close the window to enter the background.
+- 🐞 [FIX] The bug that API testing request body `compress` and `prettify` did not take effect when actually sent.
+- 🐞 [FIX] The bug that API testing traffic will not appear in the traffic list when following the redirection in debug mode.
+- 🐞 [FIX] The bug that API testing traffic with mirroring is not displayed in the traffic list in debug mode.
+- 🐞 [FIX] The bug that rewriting redirected requests will automatically perform redirection based on the response.
+- 🐞 [FIX] The bug that `Reset App` in settings is not working.
+- 🐞 [FIX] A bug that caused abnormal composing input in some text fields.
+- 🐞 [FIX] The bug that the application info cannot be displayed for requests that have established a TCP connection before capture is enabled.
+- 🐞 [FIX] A Bug where `Host` header is missing in the raw message.
+- 🐞 [FIX] A bug that causes crash when exiting the app under certain circumstances.
+- 🐞 [FIX] A Bug where proxy protocol cannot be correctly identified in some cases.
+- 🐞 [FIX] FIXed the bug that the system network proxy cannot be automatically disabled after restarting the system and shutting down.
+- 🐞 [FIX] The bug that some devices cannot close the window to enter the background.
 
 ## v1.5.0 <small><small>*2023-09-21*</small></small>
 - 🚀 [NEW] Add HTTP request and response diff tool.
@@ -1459,23 +1492,23 @@ sidebar_position: 0
 - 💪 [OPT] Supports `Control + W` shortcut key to close sub windows.
 - 💪 [OPT] Use name instead of timestamp when exporting traffic history.
 - 💪 [OPT] Raw packet syntax supports JSON and XML highlighting.
-- 🐞 [Fix] In the API testing, the cURL import dialog will not automatically pop up if the command containing `WIDTH NO-BREAK SPACE`.
-- 🐞 [Fix] The bug of uploading crash and statistic configuration not taking effect.
-- 🐞 [Fix] `Space` and `*` in the `urlencode` of the Python script may cause some servers to fail to correctly obtain the request path.
-- 🐞 [Fix] The bug that the main window initial opening position is incorrect.
-- 🐞 [Fix] A bug causing abnormal size when the window moves between screens with different scales.
-- 🐞 [Fix] A bug where some application information cannot be dumped.
+- 🐞 [FIX] In the API testing, the cURL import dialog will not automatically pop up if the command containing `WIDTH NO-BREAK SPACE`.
+- 🐞 [FIX] The bug of uploading crash and statistic configuration not taking effect.
+- 🐞 [FIX] `Space` and `*` in the `urlencode` of the Python script may cause some servers to fail to correctly obtain the request path.
+- 🐞 [FIX] The bug that the main window initial opening position is incorrect.
+- 🐞 [FIX] A bug causing abnormal size when the window moves between screens with different scales.
+- 🐞 [FIX] A bug where some application information cannot be dumped.
 
 ## v1.4.1 <small><small>*2023-09-18*</small></small>
 - 💪 [OPT] Traffic list supports drag selection.
 - 💪 [OPT] Traffic list requests and responses are saved with default file names.
-- 🐞 [Fix] The bug that some JavaScript content searches have no results.
-- 🐞 [Fix] The bug that sending a request when the URL contains `WIDTH NO-BREAK SPACE` characters will cause the application to crash.
-- 🐞 [Fix] The bug that cURL export cannot parse commands containing `WIDTH NO-BREAK SPACE` characters.
-- 🐞 [Fix] The bug that the HTTP raw data copy content does not correctly handle the CRLF.
-- 🐞 [Fix] The bug of copying from a rewrite modification rule.
-- 🐞 [Fix] The bug that localhost requests are unresponsive when enabled `Loopback`.
-- 🐞 [Fix] There is a bug that some devices cannot obtain the system proxy configuration.
+- 🐞 [FIX] The bug that some JavaScript content searches have no results.
+- 🐞 [FIX] The bug that sending a request when the URL contains `WIDTH NO-BREAK SPACE` characters will cause the application to crash.
+- 🐞 [FIX] The bug that cURL export cannot parse commands containing `WIDTH NO-BREAK SPACE` characters.
+- 🐞 [FIX] The bug that the HTTP raw data copy content does not correctly handle the CRLF.
+- 🐞 [FIX] The bug of copying from a rewrite modification rule.
+- 🐞 [FIX] The bug that localhost requests are unresponsive when enabled `Loopback`.
+- 🐞 [FIX] There is a bug that some devices cannot obtain the system proxy configuration.
 
 ## v1.4.0 <small><small>*2023-09-14*</small></small>
 - 🚀 [NEW] `Code Snippet` supports cURL and Guzzle for PHP language.
@@ -1487,13 +1520,13 @@ sidebar_position: 0
 - 💪 [OPT] A prompt will be displayed after dragging unsupported files to the Reqable main window and releasing them.
 - 💪 [OPT] The session content area displays information about file or history opening failure.
 - 💪 [OPT] Opening HAR files no longer filters out `CONNECT` requests.
-- 🐞 [Fix] Reverse proxy certificate trust issue.
-- 🐞 [Fix] A bug where SSL handshake failure are not displayed.
-- 🐞 [Fix] A bug in which operations such as deleting, clearing, and editing bookmarks lead to incorrect bookmark selection status.
-- 🐞 [Fix] A bug in importing cURL that causes the URL parsing to fail due to the `--location` parameter.
-- 🐞 [Fix] The bug that the request cannot be sent due to malformed `Content-Type`.
-- 🐞 [Fix] The bug of incorrect application window position and size on certain resolution devices.
-- 🐞 [Fix] SOCKS proxy causing MySql database to be unable to connect.
+- 🐞 [FIX] Reverse proxy certificate trust issue.
+- 🐞 [FIX] A bug where SSL handshake failure are not displayed.
+- 🐞 [FIX] A bug in which operations such as deleting, clearing, and editing bookmarks lead to incorrect bookmark selection status.
+- 🐞 [FIX] A bug in importing cURL that causes the URL parsing to fail due to the `--location` parameter.
+- 🐞 [FIX] The bug that the request cannot be sent due to malformed `Content-Type`.
+- 🐞 [FIX] The bug of incorrect application window position and size on certain resolution devices.
+- 🐞 [FIX] SOCKS proxy causing MySql database to be unable to connect.
 
 ## v1.3.1 <small><small>*2023-09-11*</small></small>
 - 🚀 [NEW] Support `Reverse Proxy` now.
@@ -1503,11 +1536,11 @@ sidebar_position: 0
 - 💪 [OPT] API query parameters created from the traffic list are automatically URL decoded.
 - 💪 [OPT] The URL displayed in the traffic list removes the display of the default root path `/`.
 - 💪 [OPT] A new `Help` button is added to the secondary proxy configuration page.
-- 🐞 [Fix] A bug where expanding the sidebar may cause the gateway, mirror, script, rewrite, and breakpoint to not work.
-- 🐞 [Fix] A bug where clicking the start button might cause the content layout size to jump back to its previous size.
-- 🐞 [Fix] The bug that may cause the CONNECT proxy request status to be displayed as interrupted after the gateway successfully silences the request.
-- 🐞 [Fix] The bug of incorrect Toast style used in some error prompts.
-- 🐞 [Fix] The bug of incomplete display of changelogs in the version update window.
+- 🐞 [FIX] A bug where expanding the sidebar may cause the gateway, mirror, script, rewrite, and breakpoint to not work.
+- 🐞 [FIX] A bug where clicking the start button might cause the content layout size to jump back to its previous size.
+- 🐞 [FIX] The bug that may cause the CONNECT proxy request status to be displayed as interrupted after the gateway successfully silences the request.
+- 🐞 [FIX] The bug of incorrect Toast style used in some error prompts.
+- 🐞 [FIX] The bug of incomplete display of changelogs in the version update window.
 
 ## v1.3.0 <small><small>*2023-09-05*</small></small>
 - 🚀 [NEW] Display the application where the traffic from.
@@ -1517,17 +1550,17 @@ sidebar_position: 0
 - 💪 [OPT] Added type icon display in the structure tree.
 - 💪 [OPT] Importing cURL will automatically recognize the JSON/XML type.
 - 💪 [OPT] Explorer UI details adjustment.
-- 🐞 [Fix] The bug that the sub-window icon in the taskbar does not display the logo.
-- 🐞 [Fix] The bug that import cURL does not support the --insecure option.
-- 🐞 [Fix] The bug that import cURL escape character is lost.
-- 🐞 [Fix] the bug that cURL syntax highlighting causes the content to be incompletely displayed.
+- 🐞 [FIX] The bug that the sub-window icon in the taskbar does not display the logo.
+- 🐞 [FIX] The bug that import cURL does not support the --insecure option.
+- 🐞 [FIX] The bug that import cURL escape character is lost.
+- 🐞 [FIX] the bug that cURL syntax highlighting causes the content to be incompletely displayed.
 
 ## v1.2.5 <small><small>*2023-09-01*</small></small>
-- 🐞 [Fix] Fixed the bug that scripting broken the connection.
+- 🐞 [FIX] FIXed the bug that scripting broken the connection.
 
 ## v1.2.4 <small><small>*2023-09-01*</small></small>
-- 🐞 [Fix] Fixed the bug that an error was reported when opening the app after updating to version 1.2.3.
-- 🐞 [Fix] Fixed the bug that the name of the opened tab could not be updated synchronously after modifying the name of the capture history.
+- 🐞 [FIX] FIXed the bug that an error was reported when opening the app after updating to version 1.2.3.
+- 🐞 [FIX] FIXed the bug that the name of the opened tab could not be updated synchronously after modifying the name of the capture history.
 
 ## v1.2.3 <small><small>*2023-08-31*</small></small>
 - 🚀 [NEW] The traffic list read items are grayed out.
@@ -1544,10 +1577,10 @@ sidebar_position: 0
 - 🚀 [NEW] Supports adding SSL bypass from traffic list.
 - 💪 [OPT] Automatically changing context menu text color when hovering.
 - 💪 [OPT] The right click of the traffic list supports batch copying of URLs.
-- 🐞 [Fix] An exception occurs when generating python code when the root node of JSON is a list.
-- 🐞 [Fix] The bug that localhost requests will not be displayed when the API test is followed by debugging.
-- 🐞 [Fix] The bug that the SSL Bypass requests will not be displayed when the API test is followed by debugging.
-- 🐞 [Fix] The bug that the `Proxy-Connection` header was not removed when sending to remote server.
+- 🐞 [FIX] An exception occurs when generating python code when the root node of JSON is a list.
+- 🐞 [FIX] The bug that localhost requests will not be displayed when the API test is followed by debugging.
+- 🐞 [FIX] The bug that the SSL Bypass requests will not be displayed when the API test is followed by debugging.
+- 🐞 [FIX] The bug that the `Proxy-Connection` header was not removed when sending to remote server.
 
 ## v1.2.0 <small><small>*2023-08-24*</small></small>
 - 🚀 [NEW] Apps are signed with EV certificates.
@@ -1558,10 +1591,10 @@ sidebar_position: 0
 - 💪 [OPT] Change version upgrade pop-up window.
 - 💪 [OPT] The UX of expanding the app menu bar.
 - 💪 [OPT] Adding quotes to URL values in generated cURL commands.
-- 🐞 [Fix] The bug that the number of checks displayed in the domain filter of the traffic list is wrong.
-- 🐞 [Fix] The bug that the request or response cannot continue to execute after the breakpoint window is closed.
-- 🐞 [Fix] Possible duplicate `Content-Type` header bug in API created from traffic list.
-- 🐞 [Fix] The bug that the text display error in the API query parameter text editing mode.
+- 🐞 [FIX] The bug that the number of checks displayed in the domain filter of the traffic list is wrong.
+- 🐞 [FIX] The bug that the request or response cannot continue to execute after the breakpoint window is closed.
+- 🐞 [FIX] Possible duplicate `Content-Type` header bug in API created from traffic list.
+- 🐞 [FIX] The bug that the text display error in the API query parameter text editing mode.
 
 ## v1.1.8 <small><small>*2023-08-10*</small></small>
 - 🚀 [NEW] Support API session global settings.
@@ -1570,10 +1603,10 @@ sidebar_position: 0
 - 💪 [OPT] The traffic history data is stored in compression.
 - 💪 [OPT] Raw body data is automatically prettified.
 - 💪 [OPT] Exiting the program no longer automatically closes the system proxy if Reqable proxy is unset.
-- 🐞 [Fix] The bug that the request header in the imported API collection is incomplete.
-- 🐞 [Fix] The bug that the API repeatedly adds the Cookie header.
-- 🐞 [Fix] The bug that auto-cookie settings is not working.
-- 🐞 [Fix] The bug that API session shortcut keys are not working.
+- 🐞 [FIX] The bug that the request header in the imported API collection is incomplete.
+- 🐞 [FIX] The bug that the API repeatedly adds the Cookie header.
+- 🐞 [FIX] The bug that auto-cookie settings is not working.
+- 🐞 [FIX] The bug that API session shortcut keys are not working.
 
 ## v1.1.7 <small><small>*2023-08-07*</small></small>
 - 🚀 [NEW] Support export and import Reqable api collections.
@@ -1585,10 +1618,10 @@ sidebar_position: 0
 - 💪 [OPT] API collection naming and renaming verification.
 - 💪 [OPT] Some input boxes will change the border color after getting the focus.
 - 💪 [OPT] Configure web proxy no longer uses `powershell` to execute commands.
-- 🐞 [Fix] The bug that the remote device sll bypass does not take effect.
-- 🐞 [Fix] A bug that failed to read some traffic history.
-- 🐞 [Fix] Failed to clean up the websocket cache file after deleting traffic history.
-- 🐞 [Fix] A bug where input auto-completes were lost in traffic search items.
+- 🐞 [FIX] The bug that the remote device sll bypass does not take effect.
+- 🐞 [FIX] A bug that failed to read some traffic history.
+- 🐞 [FIX] Failed to clean up the websocket cache file after deleting traffic history.
+- 🐞 [FIX] A bug where input auto-completes were lost in traffic search items.
 
 ## v1.1.6 <small><small>*2023-08-03*</small></small>
 - 🚀 [NEW] Refactor capture multi-session UX.
@@ -1597,7 +1630,7 @@ sidebar_position: 0
 - 💪 [OPT] Improve application startup speed.
 - 💪 [OPT] Automatically clean up expired capture cache files.
 - 💪 [OPT] Bookmark filtering and domain name filtering conditions are changed from `and` to `or`.
-- 🐞 [Fix] The bug that the SSL traffic of the remote device is not decrypted when the computer does not have a certificate installed.
+- 🐞 [FIX] The bug that the SSL traffic of the remote device is not decrypted when the computer does not have a certificate installed.
 
 ## v1.1.5 <small><small>*2023-07-31*</small></small>
 - 🚀 [NEW] Support SSL bypass configuration (right-click the shield icon).
@@ -1608,5 +1641,5 @@ sidebar_position: 0
 - 💪 [OPT] Traffic list supports Home/End/PageUp/PageDown shortcut keys.
 - 💪 [OPT] The editor supports Home/End shortcut keys.
 - 💪 [OPT] The method of obtaining the unique ID of windows device.
-- 🐞 [Fix] Wildcard matching algorithm may enter an infinite loop.
-- 🐞 [Fix] cURL format for copying Multipart requests in the traffic list is incorrect.
+- 🐞 [FIX] Wildcard matching algorithm may enter an infinite loop.
+- 🐞 [FIX] cURL format for copying Multipart requests in the traffic list is incorrect.
