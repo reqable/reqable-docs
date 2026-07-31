@@ -13,7 +13,7 @@ Select `Network Condition` from the `Tools` menu or use the shortcut `Alt` + `J`
 
 ![](arts/network_condition_01.png)
 
-Users can configure different network conditions for different hosts, but only one network condititon configuration can be enabled at a time. Host supports wildcard `*` and `?`, and also supports the port number.
+Users can configure different network conditions for different hosts, but only one network condition configuration can be enabled at a time. Host supports wildcard `*` and `?`, and also supports the port number.
 
 ![](arts/network_condition_02.png)
 
@@ -26,14 +26,14 @@ Reqable has preset common network condition modes, and currently does not suppor
 |   Preset Mode  |  Uplink Bandwidth |  Downlink Bandwidth |  Latency  |  Packet Loss Rate  |
 |    ----    | ----  | ----  | ----  | ----  |
 |    Offline    |   0 bps  |  0 bps  |  0 ms | 100% |
-|    Bad Network    |0～1 Mbps|0～1 Mbps| 1000ms | 10% |
-|    Slow Network    |1～5 Mbps|1～5 Mbps| 100ms | 0% |
-|    Fast Network    |5～20 Mbps|5～20 Mbps| 30ms | 0% |
-|    2G    |0～240 kbps|0～200 kbps| 1200ms | 2.5% |
-|    3G    |0～780 kbps|0～330 kbps| 400ms | 0% |
-|    4G    |30～50 Mbps|5～10 Mbps| 50ms | 0% |
-|    5G    |40～70 Mbps|7～15 Mbps| 0ms | 0% |
-|    Wi-Fi    |25～40 Mbps|15～30 Mbps| 0ms | 0% |
+|    Bad Network    |0~1 Mbps|0~1 Mbps| 1000ms | 10% |
+|    Slow Network    |1~5 Mbps|1~5 Mbps| 100ms | 0% |
+|    Fast Network    |5~20 Mbps|5~20 Mbps| 30ms | 0% |
+|    2G    |0~240 kbps|0~200 kbps| 1200ms | 2.5% |
+|    3G    |0~780 kbps|0~330 kbps| 400ms | 0% |
+|    4G    |30~50 Mbps|5~10 Mbps| 50ms | 0% |
+|    5G    |40~70 Mbps|7~15 Mbps| 0ms | 0% |
+|    Wi-Fi    |25~40 Mbps|15~30 Mbps| 0ms | 0% |
 
 
 - Uplink Bandwidth: affects the speed of data upload. The actual bandwidth calculation will take a random value within the interval.

@@ -1,6 +1,6 @@
 # Proxy Terminal
 
-When sending HTTP(s) requests or executing scripts in the command line, the traffic of these requests will not pass through Reqable. The developer must to manually configure the environment variables (such as HTTP_PROXY) in the terminal, or specify the proxy address in the source code. Although these methods can work, but inefficient.
+When sending HTTP(s) requests or executing scripts in the command line, the traffic of these requests will not pass through Reqable. The developer must manually configure the environment variables (such as HTTP_PROXY) in the terminal, or specify the proxy address in the source code. Although these methods can work, they are inefficient.
 
 In addition, many network libs do not trust the CA certificates installed by the system. After setting up the debugging proxy, the request will still report an error, such as Python's requests.
 

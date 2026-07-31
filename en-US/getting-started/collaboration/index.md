@@ -25,7 +25,7 @@ Next, let’s configure the mobile app. Select Collaboration Mode and scan the Q
 
 ![](arts/collaborative_02.png)
 
-In this step, Reqable will automatically synchronize the root CA certificate from the desktop to the mobile app. The Reqable mobile app will remember the IP address and port of the remote device (desktop) and will automatically connect the next time it is started. If the IP address and port of the remote device change, yout can click the scan code icon in the drawer to scan again.
+In this step, Reqable will automatically synchronize the root CA certificate from the desktop to the mobile app. The Reqable mobile app will remember the IP address and port of the remote device (desktop) and will automatically connect the next time it is started. If the IP address and port of the remote device change, you can click the scan code icon in the drawer to scan again.
 
 If you have already initialized the Reqable mobile app, you can add a computer device from the `Remote Devices` in the sidebar by clicking the `+` button in the upper right corner.
 
@@ -33,7 +33,7 @@ Note that although the CA certificate has been synchronized from the desktop to 
 
 Next, we start installing the root certificate to the device, which is probably the most complicated step of the entire process. We can not complete this step automatically and need to handle it manually according to the device conditions and usage scenarios.
 
-Steps: Open Side Drawer -> Tap Certificate Management -> Install Root Certificate to Lcoal Machine.
+Steps: Open Side Drawer -> Tap Certificate Management -> Install Root Certificate to Local Machine.
 
 ![](arts/collaborative_03.png)
 
@@ -45,7 +45,7 @@ If you have completed this step, congratulations, the entire preparation process
 
 ## 2. Forward Traffic
 
-Before capturing traffic, we first select the remote device in the mobile side drawer. And then tab the floating action button to start recording.
+Before capturing traffic, we first select the remote device in the mobile side drawer. And then tap the floating action button to start recording.
 
 The Reqable mobile app will start the VPN service and forward the mobile traffic to the Reqable desktop. This is why it can capture traffic without Wi-Fi proxy. On Android, you can also capture traffic for specific apps and ignore others.
 

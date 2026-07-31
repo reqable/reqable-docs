@@ -24,6 +24,6 @@ Reqable currently only supports setting a custom web proxy. You need to specify 
 
 :::info Proxy Protocol
 
-If there is a need for proxy protocols such as Socks, you can configure it in the system and select **System** in settings.
+If there is a need for proxy protocols such as Socks, you can configure it in the system and select **Follow System** in settings.
 
 :::

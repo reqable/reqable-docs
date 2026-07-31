@@ -23,9 +23,9 @@ For mobile app, open `Report Server` from `⋮` -> `More`.
 :::
 
 Reqable also carries the following data in the request header:
-- x-reqable-platform：The platform name that Reqable runs on, such as windows, macos, linux, android, ios, etc.
-- x-reqable-reporter-host：The domain name of the current session, suc as `dev.reqable.com`.
-- x-reqable-reporter-rule：The rules of hit.
+- x-reqable-platform: The platform name that Reqable runs on, such as windows, macos, linux, android, ios, etc.
+- x-reqable-reporter-host: The domain name of the current session, such as `dev.reqable.com`.
+- x-reqable-reporter-rule: The rules of hit.
 
 :::caution
 Each HTTP session Reqable will only be sent once, and will not be retried if the sending fails.

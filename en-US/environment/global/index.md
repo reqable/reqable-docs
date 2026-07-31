@@ -1,6 +1,6 @@
 ---
 title: Global Environment
-description: Familiar with the concept and basic usage of global environment variables.
+description: Get familiar with the concept and basic usage of global environment variables.
 sidebar_position: 0
 ---
 
@@ -18,11 +18,11 @@ When using global environment variables in a request, just use double angle brac
 Global environment variables have a lower priority than other environment variables. If a variable with the same name exists in other environments, the variable specified in the other environment will be used first.
 :::
 
-Global variables are divided into two types, one is [Custom Variable](#custom), and the other is [Built-in Variable](#dynamic)。
+Global variables are divided into two types, one is [Custom Variable](#custom), and the other is [Built-in Variable](#dynamic).
 
 ## Custom Variable {#custom}
 
-Custom variables are defined by users. You can click the `Global` item in the environment panel to add, modify, delete and activate theme.
+Custom variables are defined by users. You can click the `Global` item in the environment panel to add, modify, delete and activate them.
 
 Variable name can only contain letter, number and underscore `_`, and must start with letter or an underscore `_`.
 
@@ -43,7 +43,7 @@ In Reqable, in addition to user custom variables, there are also some built-in v
 - `$randomCurrencyName` A random currency name.
 - `$randomEmail` A random email address.
 - `$randomHttpUrl` A random HTTP URL.
-- `$randomHttpsUrl` A random HTTP URL.
+- `$randomHttpsUrl` A random HTTPS URL.
 - `$randomImageUrl` A random image URL.
 - `$randomInt1` A random integer between 0 and 10.
 - `$randomInt2` A random integer between 0 and 100.

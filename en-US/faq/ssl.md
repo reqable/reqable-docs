@@ -16,7 +16,7 @@ If the mobile phone can capture SSL traffic in `Standalone Mode`, but PC cannot 
 
 ### 2. Built-in CA Store
 
-Some applications have built-in CA Stores instead of using the system CA Store for security reasons. Certificates installed in the system CA Store are invalid for these applications, which means that the SSL handshake requests of these applications fail. The most see one is the Firefox browser, but Firefox provides us with a solution for importing CA certificates, while some applications do not. There is no way to deal with this issue, need to ask the app owner for a solution.
+Some applications have built-in CA Stores instead of using the system CA Store for security reasons. Certificates installed in the system CA Store are invalid for these applications, which means that the SSL handshake requests of these applications fail. The most common one is the Firefox browser, but Firefox provides us with a solution for importing CA certificates, while some applications do not. There is no way to deal with this issue; you need to ask the app owner for a solution.
 
 ### 3. Certificate Pinning
 

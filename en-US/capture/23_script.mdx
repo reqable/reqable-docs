@@ -2,7 +2,7 @@
 
 import Shortcut from '@site/src/components/Shortcut';
 
-Script is one of the core debugging feature of Reqable, which supports writing Python scripts to process HTTP requests and responses. Reqable provides a set of Python-based APIs. In scripts, we can modify, replace or delete the request and response packets, and even interrupt the request and response. In addition to using Reqable's built-in API, users can also use various Python site-packages, such as `requests` and so on.
+Script is one of the core debugging features of Reqable, which supports writing Python scripts to process HTTP requests and responses. Reqable provides a set of Python-based APIs. In scripts, we can modify, replace or delete the request and response packets, and even interrupt the request and response. In addition to using Reqable's built-in API, users can also use various Python third-party packages, such as `requests` and so on.
 
 You can enable the script via the menu path `Traffic` -> `Script` -> `Enable` (Shortcut key <Shortcut>Shift + Control + P</Shortcut>). Once the script is enabled, an activation icon will appear on the toolbar.
 
@@ -26,7 +26,7 @@ There are some ways to create a script rule:
 - Tray -> Script -> Add Rule
 - Script List -> New
 - Script List -> Right-Click Menu -> New
-- Traffic list -> Select a item -> Right-click menu -> Script
+- Traffic list -> Select an item -> Right-click menu -> Script
 - Shortcut key <Shortcut>Shift + Alt + P</Shortcut>
 
 Enter the rule name and matching URL, the URL supports wildcard * and ? matching, then write Python scripts to handle HTTP request and response.
@@ -59,7 +59,7 @@ The function receives two parameters [CaptureContext](addons#api-context) and [H
 
 :::info Response Interrupt
 
-If you need to interrupt a request, the result of the onResponse function returns `None`!
+If you need to interrupt a response, the result of the onResponse function returns `None`!
 
 :::
 

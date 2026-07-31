@@ -44,7 +44,7 @@ For accessing some restricted websites, such as accessing Google in mainland Chi
 
 Enter the name, IP address, and port number of the secondary proxy server and save. The secondary proxy provides two modes: Include Mode and Exclude Mode.
 
-Include Mode: only allow traffic with specified domain name rules to goto the secondary proxy. Exclude Mode: traffic with specified domain name rules bypasses the secondary proxy.
+Include Mode: only allow traffic with specified domain name rules to go to the secondary proxy. Exclude Mode: traffic with specified domain name rules bypasses the secondary proxy.
 
 Users can configure multiple domain name rules, support wildcards `*` and `?`, one domain name per line. If only one `*` symbol is configured, it means matching all traffic.
 

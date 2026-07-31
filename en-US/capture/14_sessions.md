@@ -1,4 +1,4 @@
-# Muti-Sessions
+# Multi-Sessions
 
 In terms of design, Reqable fixes the traffic tab to the far left (it cannot be deleted or moved). If you want to record traffic to multiple sessions, you may not know how to do it. This article mainly explains how to use multi-sessions to record traffic.
 

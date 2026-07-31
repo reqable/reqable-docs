@@ -1,6 +1,6 @@
 # cURL
 
-Reqable provides support for cURL, your can import or export a curl command.
+Reqable provides support for cURL, you can import or export a curl command.
 
 ![](arts/curl_01.png)
 

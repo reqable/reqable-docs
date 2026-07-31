@@ -29,7 +29,7 @@ API documentation for the Reqable scripting.
 |*connection*|[Connection](#api-connection)|TCP connection information, read-only. This field is only available in traffic capture mode.|
 |*app*|[App](#api-app)|App/Process information, read-only. This field is only available in traffic capture mode.|
 |highlight|[Highlight](#api-highlight)|Set request highlighting in traffic list, added on v2.28.0.|
-|**env**|dict|A collection of variables for the global environment and currently actived custom environment.|
+|**env**|dict|A collection of variables for the global environment and currently activated custom environment.|
 |**shared**|-|A special variable used to share data between `onRequest` and `onResponse`, which can be auto-serializable variables such as str, int, list and dict.|
 
 Code example:
@@ -320,7 +320,7 @@ Code example:
 def onRequest(context, request):
   # Set `None` to body.
   request.body.none()
-  # Set `foobar`` to body.
+  # Set `foobar` to body.
   request.body.text('foobar')
   # Set the file content to body, body type is text.
   request.body.textFromFile('/User/Reqable/Desktop/body.json')
@@ -382,7 +382,7 @@ If you change the non-form type to form type, you must modify the headers and se
 |  ----  | ----  | ----  |
 |*id*|int|Connection id, starts from 0.|
 |*timestamp*|int|TCP connection established timestamp, in milliseconds.|
-|*locale*|[Address](#api-address)|The client address.|
+|*local*|[Address](#api-address)|The client address.|
 |*remote*|[Address](#api-address)|The server address.|
 
 Code example:
@@ -441,8 +441,8 @@ def onRequest(context, response):
 
 Code example:
 ```python
-def onRequest(context, response):
-  # Set request read highlight
+def onRequest(context, request):
+  # Set request red highlight
   context.highlight = Highlight.red
   # Done
   return request

@@ -2,7 +2,7 @@
 
 import Shortcut from '@site/src/components/Shortcut';
 
-Rewrite is one of Reqable's core debugging features, which automatically modifies requests or responses through preset rules. Reqable's rewriting supports 5 modes: [Redirection](#redirect), [Replace Request](#replace-req), [Replace Response](#replace-res), [Modify Request](#modify- req) and [Modify Response] (#modify-res).
+Rewrite is one of Reqable's core debugging features, which automatically modifies requests or responses through preset rules. Reqable's rewriting supports 5 modes: [Redirection](#redirect), [Replace Request](#replace-req), [Replace Response](#replace-res), [Modify Request](#modify-req) and [Modify Response](#modify-res).
 
 You can enable the rewrite via the menu path `Traffic` -> `Rewrite` -> `Enable` (Shortcut key <Shortcut>Shift + Control + K</Shortcut>). Once the rewrite is enabled, an activation icon will appear on the toolbar.
 
@@ -26,7 +26,7 @@ There are some ways to create a rewrite rule:
 - Tray -> Rewrite -> Add Rule
 - Rewrite List -> New
 - Rewrite List -> Right-Click Menu -> New
-- Traffic list -> Select a item -> Right-click menu -> Rewrite
+- Traffic list -> Select an item -> Right-click menu -> Rewrite
 - Shortcut key <Shortcut>Shift + Alt + K</Shortcut>
 
 ![](arts/rewrite_03.png)
@@ -70,7 +70,7 @@ https://world.com/new/foo/bar/ok?abc=123
 ```
 :::warning
 
-1. Under the implementation of the current version, if the server address of the original request cannot accessed, the request will directly fail (that is, no redirection request will be initiated).
+1. Under the implementation of the current version, if the server address of the original request cannot be accessed, the request will directly fail (that is, no redirection request will be initiated).
 2. A request can trigger at most one redirection rule.
 
 :::
@@ -91,7 +91,7 @@ No matter what the original request method and path are, it will be replaced wit
 
 ![](arts/rewrite_05.png)
 
-#### Replace Request Headers {#repleace-req-headers}
+#### Replace Request Headers {#replace-req-headers}
 
 Whatever the original request headers are, it will be replaced with the preset request headers.
 
@@ -103,7 +103,7 @@ Regardless of whether there is a preset Content-Length, the final Content-Length
 
 :::
 
-#### Replace Request Body {#repleace-req-body}
+#### Replace Request Body {#replace-req-body}
 
 Whatever the original request body is, it will be replaced with the preset request body.
 
@@ -123,11 +123,11 @@ Whatever the original response status is, it will be replaced with the preset re
 
 #### Replace Response Headers
 
-See [Replace Request Headers](#repleace-req-headers)
+See [Replace Request Headers](#replace-req-headers)
 
 #### Replace Response Body
 
-See [Replace Request Body](#repleace-req-body)
+See [Replace Request Body](#replace-req-body)
 
 ### Modify Request {#modify-req}
 
@@ -169,7 +169,7 @@ Same as [Modify Request](#modify-req).
 :::caution
 
 - This behavior does not support modifying the response status code.
-- Do not modify the value of the request header Content-Length, because the final value of Content-Length will be automatically recalculated.
+- Do not modify the value of the response header Content-Length, because the final value of Content-Length will be automatically recalculated.
 
 :::
 

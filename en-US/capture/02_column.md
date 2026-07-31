@@ -41,7 +41,7 @@ The last segment of the request URL path, which corresponds to a regular `GET` r
 
 ### Path
 
-The path of the request URL. For example, the path of the following request is `/zh-CN/img/logo.svg`.
+The path of the request URL. For example, the path of the following request is `/en-US/img/logo.svg`.
 > https://reqable.com/en-US/img/logo.svg
 
 ### URL
@@ -54,7 +54,7 @@ HTTP request method, `GET`, `POST`, `PUT`, etc.
 
 ### Code
 
-HTTP reponse status code, `200`, `404`, `500`, etc.
+HTTP response status code, `200`, `404`, `500`, etc.
 
 ### Protocol
 

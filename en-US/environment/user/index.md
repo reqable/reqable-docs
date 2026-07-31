@@ -1,6 +1,6 @@
 ---
 title: User Environment
-description: Familiar with the concept and basic usage of user environment variables.
+description: Get familiar with the concept and basic usage of user environment variables.
 sidebar_position: 1
 ---
 

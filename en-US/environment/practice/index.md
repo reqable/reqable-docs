@@ -12,7 +12,7 @@ Reqable currently supports the use of environment variables in API testing and P
 
 You can use angle brackets (such as `<<variable_name>>`) to reference the corresponding environment variables in the request. Reqable will automatically replace these references with the actual variable values when sending the request. Users can use environment variables in the URL, Query Parameters, Headers, Body, and Authorization.
 
-After entering a angle bracket `<` in the input box, the variable prompt will automatically appear, and the user can view the currently matching environment variables. When the mouse pointer hovers over a variable, the variable information will be automatically prompted.
+After entering an angle bracket `<` in the input box, the variable prompt will automatically appear, and the user can view the currently matching environment variables. When the mouse pointer hovers over a variable, the variable information will be automatically prompted.
 
 ![](arts/practice_01.png)
 

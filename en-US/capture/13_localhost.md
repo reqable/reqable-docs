@@ -8,7 +8,7 @@ To listen to localhost traffic, you need to enable the `Loopback` option in Reqa
 
 ### Mac & Linux
 
-We need to use the [mirror] feature to map `localhost`, for example, we can map `localhost` to `go` in the following way.
+We need to use the [Mirror](./mirror) feature to map `localhost`, for example, we can map `localhost` to `go` in the following way.
 
 ![](arts/localhost_01.png)
 

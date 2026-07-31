@@ -4,15 +4,15 @@ Reqable supports the use of built-in methods and custom methods.
 
 The built-in methods are as follows:
 
-- [GET](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/GET)
-- [POST](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/POST)
-- [PUT](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/PUT)
-- [PATCH](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/PATCH)
-- [DELETE](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/DELETE)
-- [HEAD](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/HEAD)
-- [OPTIONS](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/OPTIONS)
-- [CONNECT](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/CONNECT)
-- [TRACE](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods/TRACE)
+- [GET](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET)
+- [POST](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST)
+- [PUT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT)
+- [PATCH](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PATCH)
+- [DELETE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE)
+- [HEAD](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/HEAD)
+- [OPTIONS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/OPTIONS)
+- [CONNECT](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/CONNECT)
+- [TRACE](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/TRACE)
 
 In addition, custom method is supported.
 

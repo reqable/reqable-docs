@@ -1,6 +1,6 @@
 # Explorer
 
-In addition to the main content layout, Reqable also provides **Explorer** sidebar for auxiliary operation. Click the first icon in the sidebar to open the explorer panel. There are three parts in the explorer: [Favorite](#favorite)、[Bookmark](./search#bookmark)、[Device](./search#device)、[Application](./search#application)、[Domain](./search#domain) and [Structure](#structure).
+In addition to the main content layout, Reqable also provides an **Explorer** sidebar for auxiliary operation. Click the first icon in the sidebar to open the explorer panel. There are six parts in the explorer: [Favorite](#favorite), [Bookmark](./search#bookmark), [Device](./search#device), [Application](./search#application), [Domain](./search#domain), and [Structure](#structure).
 
 ![](arts/explorer_01.png)
 
@@ -8,7 +8,7 @@ Among these, `Bookmark`, `Device`, `Application`, and `Domain` serve as list fil
 
 ### Favorite {#favorite}
 
-Users can add traffic records to favorite folders in [Traffic List](./list) (right-click menu -> Add to -> Favorite Folders). In the Explorer, you can open the favorite folder to view and manage the favorite records. Reqable has a built-in `My Favorite` folder by default, and you can also create their own favorite folders.
+Users can add traffic records to favorite folders in [Traffic List](./list) (right-click menu -> Add to -> Favorite Folders). In the Explorer, you can open the favorite folder to view and manage the favorite records. Reqable has a built-in `My Favorite` folder by default, and you can also create your own favorite folders.
 
 ![](arts/explorer_02.png)
 

@@ -46,7 +46,7 @@ Check again whether the `Record Mode` is VPN. If this situation still occurs in 
 
 Case 3: Google is accessible, and traffic (including CONNECT requests) can also be seen.
 
-This indicates that the application is prohibited from working when VPN is actived. Please contact the application owner for a solution.
+This indicates that the application is prohibited from working when VPN is activated. Please contact the application owner for a solution.
 
 ### 4. The mobile device cannot connect to PC
 

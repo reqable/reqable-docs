@@ -4,7 +4,7 @@ Reqable supports analyzing SSL traffic. If the CA root certificate has been succ
 
 ![](arts/ssl_01.png)
 
-By default, Reqable automatically descrypt SSL traffic, which may cause some issues. For example, client pinned certificates, two-way authentication, etc., causing the request to fail. In this case, we need to configure some rules to specify which domains' traffic is SSL decrypted and which domains' SSL traffic bypasses SSL decryption. We call it `SSL Proxying`. You can open it through `Tools` -> `SSL Proxying` or right-click the shield icon.
+By default, Reqable automatically decrypt SSL traffic, which may cause some issues. For example, client pinned certificates, two-way authentication, etc., causing the request to fail. In this case, we need to configure some rules to specify which domains' traffic is SSL decrypted and which domains' SSL traffic bypasses SSL decryption. We call it `SSL Proxying`. You can open it through `Tools` -> `SSL Proxying` or right-click the shield icon.
 
 ![](arts/ssl_02.png)
 
@@ -20,7 +20,7 @@ https://www.apple.com/
 https://api.apple.com/
 ```
 
-Traffic matching the SSL bypass rule will still be shown in the list, and can be distinguished by the 🔒 icon. If you do not want it to be shown in the list, you can check the box `"Hide bypassed traffic`.
+Traffic matching the SSL bypass rule will still be shown in the list, and can be distinguished by the 🔒 icon. If you do not want it to be shown in the list, you can check the box `"Hide bypassed traffic"`.
 
 :::info
 - Configuring bypass rules helps filter out irrelevant traffic and is very helpful in improving performance.

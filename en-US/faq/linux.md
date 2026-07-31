@@ -26,9 +26,9 @@ Please update Reqable to the latest version before troubleshooting.
 Click the bottom bar of Reqable 5 times to open the log console to view the current log.
 :::
 
-### 3. Chrome and Safari prompts unsafe website
+### 3. Chrome and Firefox prompt an unsafe website
 
-Firefox and Safari use the built-in CA Store. The CA certificate installed by the system cannot take effect. You need to follow the Firefox certificate installation guide in the Reqable to install it.
+Firefox and Chrome use a built-in CA store. The CA certificate installed by the system cannot take effect. You need to follow the Firefox and Chrome certificate installation guides in Reqable to install it.
 
 ![](arts/linux_browser.png)
 

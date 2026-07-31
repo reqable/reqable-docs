@@ -41,6 +41,6 @@ Debugging proxy is a powerful way used by developers and network engineers to in
 - [HAR](./har)
 - [Turbo Mode](./turbo)
 - [Proxy Terminal](./proxy-terminal)
-- [Charse File](./chls)
+- [Charles File](./chls)
 
 

@@ -49,7 +49,7 @@ Check again whether the `Record Mode` is VPN. If this situation still occurs in 
 
 Case 3: Google is accessible, and traffic (including CONNECT requests) can also be seen.
 
-This indicates that the application is prohibited from working when VPN is actived. Please contact the application owner for a solution.
+This indicates that the application is prohibited from working when VPN is activated. Please contact the application owner for a solution.
 
 ### 4. The mobile device cannot connect to PC
 
@@ -70,8 +70,8 @@ You can follow the steps below to troubleshoot:
 
 Chrome's trust policy for certificates is constantly changing. For example, the latest version of Chrome will ignore the self-signed CA certificate installed in the Android system certificate directory. If you need to capture the Chrome traffic, please note:
 
-- If you using a higher version of Chrome, you need to install the CA certificate in the user certificate directory.
-- If you using a lower version of Chrome, you need to install the CA certificate in the system certificate directory.
+- If you are using a higher version of Chrome, you need to install the CA certificate in the user certificate directory.
+- If you are using a lower version of Chrome, you need to install the CA certificate in the system certificate directory.
 
 If you are not sure which method to choose, you can try them two.
 

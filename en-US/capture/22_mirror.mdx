@@ -2,7 +2,7 @@
 
 import Shortcut from '@site/src/components/Shortcut';
 
-Mirror is one of the core debugging feature of Reqable, and mirror refers to host mapping. For example, accessing host A (`www.foo.com`) is mapped to accessing host B (`www.bar.com`), all requests sent by the client to host A will be sent to host B. This feature is implemented at the proxy layer, not the application layer, and belongs to the overall redirection. If you need to redirect the specified path request, please use the [Rewrite——Redirect](rewrite#redirect) instead.
+Mirror is one of the core debugging features of Reqable, and mirror refers to host mapping. For example, accessing host A (`www.foo.com`) is mapped to accessing host B (`www.bar.com`), all requests sent by the client to host A will be sent to host B. This feature is implemented at the proxy layer, not the application layer, and belongs to the overall redirection. If you need to redirect the specified path request, please use the [Rewrite — Redirect](rewrite#redirect) instead.
 
 :::info
 
@@ -32,7 +32,7 @@ There are some ways to create a mirror rule:
 - Tray -> Mirror -> Add Rule
 - Mirror List -> New
 - Mirror List -> Right-Click Menu -> New
-- Traffic list -> Select a item -> Right-click menu -> Mirror
+- Traffic list -> Select an item -> Right-click menu -> Mirror
 - Shortcut key <Shortcut>Shift + Alt + M</Shortcut>
 
 ![](arts/mirror_03.png)
@@ -57,7 +57,7 @@ Server Name Indication, which is generally included in the handshake packet of S
 
 - Preserve, keep the SNI value unchanged.
 
-- Use CONNECT address, the CONNECT address generally refers tto the url address, such as `reqable.com:80`. This value is generally the same as the SNI.
+- Use CONNECT address, the CONNECT address generally refers to the url address, such as `reqable.com:80`. This value is generally the same as the SNI.
 
 - Use mirror address. will change SNI to the mirror value.
 
@@ -67,7 +67,7 @@ Common name of Certificate, this value will affect the verification of SSL certi
 
 - Preserve, keep the CN value unchanged.
 
-- Use CONNECT address, the CONNECT address generally refers tto the url address, such as `reqable.com:80`. This value is generally the same as the CN.
+- Use CONNECT address, the CONNECT address generally refers to the url address, such as `reqable.com:80`. This value is generally the same as the CN.
 
 - Use mirror address. will change CN to the mirror value.
 
