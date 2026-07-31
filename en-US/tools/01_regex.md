@@ -1,10 +1,10 @@
 ---
 title: Regular Expressions
-description: Regular expression help documentation.
+description: Help documentation for regular expressions.
 sidebar_position: 0
 ---
 
-A regular expression (regex) is a pattern language used to match, search, and replace text. In Reqable, regex is widely used in search filters, rewrite rules, content replacement, and more. You can also test patterns online with the Regex tool in the Toolbox.
+A regular expression (regex) is a pattern language used to match, search, and replace text. In Reqable, regex is widely used in search filters, rewrite rules, content replacement, and more. You can also test patterns interactively with the Regex tool in the Toolbox.
 
 This guide covers the basics, common syntax, and practical examples to help you get started quickly.
 
@@ -334,8 +334,8 @@ key=api-12345&foo=bar
 2. **Prefer non-greedy matching**: When extracting content inside tags or quotes, use `.*?` to avoid over-matching.
 3. **Watch escaping**: Dots, question marks, parentheses, slashes, and similar characters often need escaping.
 4. **Anchor when possible**: Use `^`, `$`, and `\b` to narrow the match and reduce false positives.
-5. **Test before applying**: Validate the pattern in Reqable’s Regex toolbox tool before using it in search or rewrite rules.
-6. **Keep it simple**: If contains/wildcard matching is enough, you do not need a complex regex.
+5. **Test before applying**: Validate the pattern with Reqable’s Regex tool in the Toolbox before using it in search or rewrite rules.
+6. **Keep it simple**: If contains or wildcard matching is enough, you do not need a complex regex.
 
 ## Quick Reference
 
