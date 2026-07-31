@@ -12,18 +12,18 @@ All protocol versions need to be supported by the server. If the server does not
 
 ### HTTP/1.1
 
-HTTP1.1 is currently the most popular version of the HTTP protocol, with well-known features such as maintaining connections and chunk transmission. Currently, almost all HTTP frameworks support this version. We can check the protocol version used on the response label.
+HTTP1.1 is currently the most popular version of the HTTP protocol, with well-known features such as persistent connections and chunked transfer. Currently, almost all HTTP frameworks support this version. We can check the protocol version used on the response label.
 
 ![](arts/protocol_02.png)
 
 ### HTTP/2
 
-HTTP2 is currently a very commonly used HTTP protocol version. Compared with HTTP/1.1, its features such as multiplexing and header compression have very obvious performance advantages, but not all HTTP frameworks support this version. If the server does not support the HTTP2 protocol version, it will be downgraded to the HTTP1.1 protocol version, and we can check the specific protocol version used on the response label.
+HTTP2 is currently a very commonly used HTTP protocol version. Compared with HTTP/1.1, features such as multiplexing and header compression offer significant performance advantages, but not all HTTP frameworks support this version. If the server does not support the HTTP2 protocol version, it will be downgraded to the HTTP1.1 protocol version, and we can check the specific protocol version used on the response label.
 
 ![](arts/protocol_03.png)
 
 ### HTTP/3
 
-HTTP3 is developed from [QUIC](https://www.ietf.org/rfc/rfc9000.txt). Compared with HTTP2, its performance and security have been further improved, but unfortunately, most HTTP frameworks do not yet support this version. As a new protocol in the future, Reqable still gives enough support. If the server does not support the HTTP3 protocol version, it will be downgraded to the HTTP/1.1 protocol version, and we can check the specific protocol version used on the response label.
+HTTP3 is developed from [QUIC](https://www.ietf.org/rfc/rfc9000.txt). Compared with HTTP2, its performance and security have been further improved, but unfortunately, most HTTP frameworks do not yet support this version. Reqable supports HTTP/3 even though server adoption is still limited. If the server does not support the HTTP3 protocol version, it will be downgraded to the HTTP/1.1 protocol version, and we can check the specific protocol version used on the response label.
 
 ![](arts/protocol_04.png)

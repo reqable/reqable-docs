@@ -4,13 +4,13 @@ Reqable supports analyzing SSL traffic. If the CA root certificate has been succ
 
 ![](arts/ssl_01.png)
 
-By default, Reqable automatically decrypt SSL traffic, which may cause some issues. For example, client pinned certificates, two-way authentication, etc., causing the request to fail. In this case, we need to configure some rules to specify which domains' traffic is SSL decrypted and which domains' SSL traffic bypasses SSL decryption. We call it `SSL Proxying`. You can open it through `Tools` -> `SSL Proxying` or right-click the shield icon.
+By default, Reqable automatically decrypts SSL traffic, which can cause issues—for example, certificate pinning or mutual TLS may make requests fail. Use rules to control which domains are decrypted and which bypass decryption. This is called `SSL Proxying`. You can open it through `Tools` -> `SSL Proxying` or right-click the shield icon.
 
 ![](arts/ssl_02.png)
 
 Reqable provides two built-in rule sets: Intercept All and Bypass All. Intercept All means to intercept all SSL traffic and decrypt it, while Bypass All means not to decrypt any SSL traffic.
 
-Of course, users can also add custom rules to set different SSL behavior modes.
+You can also add custom rules for different SSL behaviors.
 
 ![](arts/ssl_03.png)
 
@@ -28,7 +28,7 @@ Traffic matching the SSL bypass rule will still be shown in the list, and can be
 
 ## SSL Certificates {#ssl-certificates}
 
-Some HTTP requests may enable certificate pinning or two-way authentication. In these cases, Reqable cannot perform SSL decryption by default (manifested as SSL handshake failure or connection failure). For these scenarios, users can configure custom SSL certificates in Reqable, either client certificates or server certificates.
+Some HTTP requests may enable certificate pinning or two-way authentication. In these cases, Reqable cannot decrypt SSL traffic by default (shown as an SSL handshake or connection failure). For these scenarios, users can configure custom SSL certificates in Reqable, either client certificates or server certificates.
 
 ![](arts/ssl_04.png)
 

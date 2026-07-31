@@ -1,6 +1,6 @@
 # Proxy
 
-Reqable uses the MITM proxy server to intercept traffic. How to use and configure the proxy correctly is very important. By default, Reqable will automatically configure the system network proxy, without the need for users to manually open the system settings.
+Reqable uses the MITM proxy server to intercept traffic. Correct proxy setup is essential. By default, Reqable configures the system network proxy automatically, so you do not need to edit system settings manually.
 
 ![](arts/proxy_01.png)
 
@@ -12,7 +12,7 @@ When you need to perform traffic analysis on native applications (such as browse
 
 :::
 
-Under normal circumstances, a client application (such as a browser) will actively connect to Reqable proxy server according to the system network proxy configuration. However, some applications do not use the system network proxy configuration. In this case, users need to manually configure it in the settings of the client application. If an application neither uses the system network proxy configuration nor provides a way to manually set a proxy, Reqable will not be able to analyze its traffic. Of course, under the premise of obtaining the authorization of the target application, you can consider using tools such as `Proxifier` to forcibly forward its traffic to Reqable proxy server.
+Normally, client applications (such as browsers) connect to the Reqable proxy server using the system proxy settings. Some apps ignore the system proxy; in that case, configure a proxy in the app settings. If an app neither uses the system proxy nor allows manual proxy configuration, Reqable cannot analyze its traffic. With authorization from the app owner, you can use tools such as `Proxifier` to force traffic through the Reqable proxy server.
 
 For localhost traffic, it may not go through the Reqable proxy server, even if we have properly configured the system network proxy. About the workaround, please read [localhost](localhost).
 
@@ -34,11 +34,11 @@ The Mac OSX system supports the configuration of HTTP, HTTPS and SOCKS protocols
 
 #### Linux
 
-The Linux system is the same as the Mac OSX system, supports the configuration of HTTP, HTTPS and SOCKS protocols at the same time. Users can configure all three or only one in Reqable. In general, it is recommended to check all three protocols.
+Linux works the same way as macOS: it supports configuring HTTP, HTTPS, and SOCKS proxies simultaneously. Users can configure all three or only one in Reqable. In general, it is recommended to check all three protocols.
 
 ### Secondary Proxy {#secondary}
 
-For accessing some restricted websites, such as accessing Google in mainland China, you need to use some proxy software. However, only one proxy can be configured in the system settings. When Reqable is used as the system proxy, these websites will not be accessible. In this case, Reqable's secondary proxy needs to be used. The principle of Reqable's secondary proxy: When Reqable receives the client's proxy request, it will forward it to the secondary proxy server, and the secondary proxy server will carry out the actual communication. You can create a secondary proxy configuration via menu `Proxy` -> `Secondary Proxy` -> `New Secondary Proxy`.
+For accessing some restricted websites, such as accessing Google in mainland China, you need to use some proxy software. However, only one proxy can be configured in the system settings. When Reqable is used as the system proxy, these websites will not be accessible. In this case, Reqable's secondary proxy needs to be used. How it works: when Reqable receives a client proxy request, it forwards the request to the secondary proxy server, which handles the upstream connection. You can create a secondary proxy configuration via menu `Proxy` -> `Secondary Proxy` -> `New Secondary Proxy`.
 
 ![](arts/secondary_proxy_02.png)
 

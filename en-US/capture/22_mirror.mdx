@@ -2,7 +2,7 @@
 
 import Shortcut from '@site/src/components/Shortcut';
 
-Mirror is one of the core debugging features of Reqable, and mirror refers to host mapping. For example, accessing host A (`www.foo.com`) is mapped to accessing host B (`www.bar.com`), all requests sent by the client to host A will be sent to host B. This feature is implemented at the proxy layer, not the application layer, and belongs to the overall redirection. If you need to redirect the specified path request, please use the [Rewrite — Redirect](rewrite#redirect) instead.
+Mirror is one of Reqable's core debugging features. It maps one host to another—for example, requests to host A (`www.foo.com`) are sent to host B (`www.bar.com`). This runs at the proxy layer rather than the application layer and redirects all traffic for the host. To redirect a specific path, use [Rewrite — Redirect](rewrite#redirect) instead.
 
 :::info
 
@@ -77,6 +77,6 @@ Since the HTTP request of the browser or application may use `KeepAlive`, the mi
 
 ### Rules Management
 
-Rules are matched from top to bottom. The same request can match multiple rules. The one at the front will be executed first. Rules support folder-level management. You can adjust the position by long pressing and dragging. It also supports import and export, which is convenient for sharing and collaboration with others.
+Rules are matched from top to bottom. The same request can match multiple rules. The one at the front will be executed first. Rules support folder-level management. You can adjust the position by long pressing and dragging. Import and export are also supported for sharing rules with others.
 
 ![](arts/mirror_04.png)

@@ -1,6 +1,6 @@
 # Request ID
 
-Reqable supports automatically generating a unique ID identifier each time before a request is sent. Through `Reqable-Id`, it is convenient for developers to cooperate with the server to trace the request. The automatically generated ID format is as follows:
+Reqable can automatically generate a unique ID before each request is sent. `Reqable-Id` helps developers trace requests on the server. The generated ID format is:
 
 ```
 reqable-id-{UUID}

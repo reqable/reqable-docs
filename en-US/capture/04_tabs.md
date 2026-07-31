@@ -1,6 +1,6 @@
 # Tabs
 
-In the session details of HTTP traffic, we will display the data in the form of tabs. Click Tab to switch and view data in different parts.
+Reqable displays HTTP session details in tabs. Click a tab to view a different part of the request or response.
 
 ![](arts/tabs_01.png)
 

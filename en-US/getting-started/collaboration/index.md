@@ -4,20 +4,20 @@ description: How to work together between Reqable mobile and desktop.
 sidebar_position: 4
 ---
 
-Traffic analysis is a very important part of mobile application development and debugging, whether it is data mocking or malware analysis. Our most common method is to set up a Wi-Fi proxy on the mobile and proxy the traffic to the MITM server of the desktop apps, such as Charles and Fiddler.
+Traffic analysis is a core part of mobile development and debugging—whether for data mocking or malware analysis. A common approach is to set a Wi-Fi proxy on the phone and forward traffic to a desktop MITM tool such as Charles or Fiddler.
 
-But this is not an efficient way. Looking back at the entire step, we will find the following uncomfortable points.
+This approach is inefficient and has several drawbacks:
 
 - Wi-Fi proxy can only be configured manually and needs to be changed back after debugging.
 - Some application frameworks or network libraries do not respect system proxies, such as Flutter.
-- When installing the root CA certificate, it is inconvenient to import the certificate to the mobile phone.
-- Wi-Fi proxy is system global and cannot be applied to specific applications.
+- Importing a root CA certificate onto the phone is inconvenient.
+- A Wi-Fi proxy is system-wide and cannot target specific apps.
 
-Using Reqable's collaborative mode, you can effectively solve those issues.
+Reqable's collaboration mode addresses these issues.
 
 ## 1. Add Collaborative Device
 
-Start Reqable desktop application, and click the phone icon to open the QR code page, as follows:
+Start the Reqable desktop app and click the phone icon to open the QR code page:
 
 ![](arts/collaborative_01.png)
 
@@ -29,9 +29,9 @@ In this step, Reqable will automatically synchronize the root CA certificate fro
 
 If you have already initialized the Reqable mobile app, you can add a computer device from the `Remote Devices` in the sidebar by clicking the `+` button in the upper right corner.
 
-Note that although the CA certificate has been synchronized from the desktop to the mobile app, there is still a most important step left: installing it on the device.
+Note that although the CA certificate has been synchronized from the desktop to the mobile app, one critical step remains: installing it on the device.
 
-Next, we start installing the root certificate to the device, which is probably the most complicated step of the entire process. We can not complete this step automatically and need to handle it manually according to the device conditions and usage scenarios.
+Next, install the root certificate on the device. This is often the most involved step. Reqable cannot complete it automatically; you must install the certificate manually based on your device and use case.
 
 Steps: Open Side Drawer -> Tap Certificate Management -> Install Root Certificate to Local Machine.
 
@@ -41,15 +41,15 @@ For more information, please refer to: [Certificate Installation](../installatio
 
 The Reqable mobile app will automatically check the installation status of the certificate. If the installation is not successful, a red prompt will appear on the page: Certificate is not installed.
 
-If you have completed this step, congratulations, the entire preparation process is over. 🍺🍺🍺
+Once this step is complete, setup is finished.
 
 ## 2. Forward Traffic
 
-Before capturing traffic, we first select the remote device in the mobile side drawer. And then tap the floating action button to start recording.
+Before capturing traffic, select the remote device in the mobile side drawer, then tap the floating action button to start recording.
 
 The Reqable mobile app will start the VPN service and forward the mobile traffic to the Reqable desktop. This is why it can capture traffic without Wi-Fi proxy. On Android, you can also capture traffic for specific apps and ignore others.
 
-The system will prompt you to configure and enable VPN permissions, please click allow.
+When the system prompts you to configure and enable VPN permissions, tap Allow.
 
 ![](arts/collaborative_04.png)
 
@@ -57,7 +57,7 @@ After Reqable mobile app enters recording mode, Reqable desktop will also automa
 
 ![](arts/collaborative_05.png)
 
-When an HTTP request is processed, we can view and analyze it on the Reqable desktop. For example, use breakpoints, repeat, rewrites, scripts, etc.
+Once a request is captured, you can inspect and analyze it on the Reqable desktop—for example with breakpoints, repeat, rewrites, and scripts.
 
 :::note
 Reqable can detect application information on Android, but iOS does not support this due to technical limitations.

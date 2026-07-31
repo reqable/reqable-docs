@@ -16,13 +16,13 @@ Enter the address `https://reqable.com?foo=bar` in the address field and tap the
 
 ![](arts/api_02.png)
 
-Wait for a few seconds, you can receive the response from the server, a simple GET request is sent, and we can view the details of the response of this request.
+After a few seconds, the server response appears. Reqable sends a simple GET request, and you can inspect the response details.
 
 ![](arts/api_03.png)
 
 ## Follow Debug
 
-The API request supports interaction with the debugging features. Reqable can capture traffic while sending the API. Tap the signal button at the end of the address line to enable the debugging.
+API requests can work with capture features. Reqable can capture traffic while sending the request. Tap the signal button at the end of the address bar to enable Follow Debug.
 
 ![](arts/api_04.png)
 

@@ -6,11 +6,11 @@ sidebar_position: 2
 
 import Shortcut from '@site/src/components/Shortcut';
 
-In API debugging, capturing traffic is the first step and the most basic operation. Here we explain how to use Reqable to capture the traffic.
+In API debugging, capturing traffic is the first and most basic step. This tutorial shows how to capture traffic with Reqable.
 
 ## Enable Capture
 
-First, you need to enable the debugging, and tap the `Start` button in the toolbar to enter the debugging mode. In the debugging mode, any HTTP request passing through Reqable's MITM proxy server will be displayed on the traffic list.
+First, enable debugging and tap the `Start` button in the toolbar. In debugging mode, any HTTP request that passes through Reqable's MITM proxy server appears in the traffic list.
 
 To ensure that traffic passes through Reqable's MITM proxy server and trusts Reqable's CA certificate, please check the following two items:
 
@@ -22,7 +22,7 @@ If the system proxy has been overwritten, the network icon is green; if the syst
 
 If the CA certificate is installed successfully, the shield icon is green; if the CA certificate is not installed successfully, the shield icon is yellow, tap the shield icon to enter the CA certificate installation page, for detailed steps, please read [Install Certificate](../installation) .
 
-After everything is ready, we can see the following:
+When setup is complete, you should see:
 
 ![](arts/traffic_01.png)
 
@@ -39,15 +39,15 @@ If you are debugging a remote device such as a mobile phone, please check the fo
 
 ## Browser Testing
 
-Open a browser, enter the address `https://reqable.com` and go, here uses the Chrome. Back to Reqable, requests from the website have been captured in the traffic list.
+Open Chrome and go to `https://reqable.com`. Back in Reqable, requests from the site appear in the traffic list.
 
 ![](arts/traffic_02.png)
 
-We can select an image request, double-click to open the details panel, and see the detailed information of the request. Note that double-clicking the request again will close the details panel.
+Select an image request and double-click to open the details panel. Double-click the same request again to close it.
 
 ![](arts/traffic_03.png)
 
-Tap the `Explorer` icon in the sidebar to open the explorer panel of the traffic list. Then expand the structure tree of `reqable.com`, you can view the directory structure of all requests under this website, and select to view the details of the request.
+Tap the `Explorer` icon in the sidebar to open the explorer panel. Expand the `reqable.com` structure tree to browse requests under that site and open their details.
 
 ![](arts/traffic_04.png)
 
@@ -55,4 +55,4 @@ Tap the `Explorer` icon in the sidebar to open the explorer panel of the traffic
 Tap the trash can icon in the upper right corner (shortcut key <Shortcut>Shift + Control + R</Shortcut>) to clear the list.
 :::
 
-Here, we have completed the most basic operation of capturing traffic.
+That covers the basics of capturing traffic.

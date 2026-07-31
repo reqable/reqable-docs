@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Practice
 
-Reqable currently supports the use of environment variables in API testing and Python scripts. Below we will explain and demonstrate them in two parts.
+Reqable supports environment variables in API testing and Python scripts. The following sections cover both.
 
 ## API Testing
 
@@ -22,7 +22,7 @@ Reqable will automatically replace these references with actual variable values 
 
 ## Python Script
 
-In Python scripts, environment variables exist in the `env` field of the `context` attribute. You can use the following code to operate the environment variables.
+In Python scripts, environment variables exist in the `env` field of the `context` attribute. You can use the following code to read and write environment variables:
 
 ```python
 # Read the variable

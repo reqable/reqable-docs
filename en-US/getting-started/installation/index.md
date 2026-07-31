@@ -6,7 +6,7 @@ sidebar_position: 0
 
 ## Why should you install a certificate?
 
-Reqable uses the classic man-in-the-middle (MITM) technique to analyze HTTPS traffic. When the client communicates with Reqable proxy server (hereinafter referred to as `MITM`), the MITM needs to re-sign the SSL certificate of the remote server. In order to ensure the successful SSL handshake communication between the client and the MITM, it is necessary to install the MITM's root certificate (hereinafter referred to as `CA Certificate`) to the client's local certificate management center. If the CA Certificate isn't installed on your device, you might see the error `SSL Handshake Error`.
+Reqable uses the classic man-in-the-middle (MITM) technique to analyze HTTPS traffic. When the client communicates with the Reqable proxy server (called `MITM`), the MITM re-signs the remote server's SSL certificate. To complete the SSL handshake between the client and the MITM, you must install the MITM root certificate (called `CA Certificate`) in the client's certificate store. If the CA Certificate isn't installed on your device, you might see the error `SSL Handshake Error`.
 
 If the target client is a PC application, the CA Certificate needs to be installed in the certificate management center of the PC; if the target client is a mobile application, the CA certificate needs to be installed in the certificate management center of the mobile phone. If you do not need traffic analysis, you can ignore this step.
 
@@ -16,17 +16,17 @@ Reqable automatically generates a CA certificate for each user, and uses a rando
 
 ## Desktop {#desktop}
 
-Different desktop platforms (here mainly Windows/MacOS/Linux) have different certificate installation methods. In order to simplify the installation process, Reqable provides a one-click certificate installation way.
+Different desktop platforms (here mainly Windows/MacOS/Linux) have different certificate installation methods. To simplify setup, Reqable provides one-click certificate installation.
 
-The certificate installation page is located on the toolbar, click the shield icon to open the pop-up window.
+Open the certificate installation page from the toolbar by clicking the shield icon.
 
 ![](arts/installation_01.png)
 
-Just click `Install Now`:
+Click `Install Now`:
 
 ![](arts/installation_02.png)
 
-After clicking, the system will pop up a confirmation pop-up window or enter the account password to authorize, just follow the prompts to confirm. If everything goes smoothly, the certificate will be automatically installed successfully; if the automatic installation fails, you can switch to the Tab of `Manual` and follow the steps to install it manually.
+The system then shows a confirmation dialog or asks for your account password. Follow the prompts to confirm. If everything goes smoothly, the certificate is installed automatically. If automatic installation fails, switch to the `Manual` tab and follow the steps there.
 
 ![](arts/installation_03.png)
 
@@ -149,7 +149,7 @@ After completing the above steps, install the CA certificate in the user directo
 
 ### iOS
 
-Installing CA certificate on an iOS device is very easy. Just follow the steps below.
+To install the CA certificate on iOS, follow these steps.
 
 First, download and install the description file (certificate). The description file can be saved manually or downloaded through the browser.
 

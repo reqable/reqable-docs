@@ -8,7 +8,7 @@ sidebar_position: 6
 
 Most SSL issues are certificate trust issues. Different systems and applications have different SSL verification strategies. Many issues require specific analysis and there is no unified solution. Here are some FAQs and solutions for your reference.
 
-First is [CA Certificate Installation](../getting-started/installation), please read it carefully. Make sure the CA certificate is installed correctly on your device, then look at other issues.
+Start with [CA Certificate Installation](../getting-started/installation). Confirm the CA certificate is installed correctly on your device, then continue with the issues below.
 
 ### 1. SSL error on PC for mobile traffic
 
@@ -16,7 +16,7 @@ If the mobile phone can capture SSL traffic in `Standalone Mode`, but PC cannot 
 
 ### 2. Built-in CA Store
 
-Some applications have built-in CA Stores instead of using the system CA Store for security reasons. Certificates installed in the system CA Store are invalid for these applications, which means that the SSL handshake requests of these applications fail. The most common one is the Firefox browser, but Firefox provides us with a solution for importing CA certificates, while some applications do not. There is no way to deal with this issue; you need to ask the app owner for a solution.
+Some applications have built-in CA Stores instead of using the system CA Store for security reasons. Certificates installed in the system CA Store are invalid for these applications, which means that the SSL handshake requests of these applications fail. The most common one is the Firefox browser, but Firefox provides us with a solution for importing CA certificates, while some applications do not. There is no general workaround; contact the app vendor for guidance.
 
 ### 3. Certificate Pinning
 

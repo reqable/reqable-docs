@@ -46,7 +46,7 @@ The path of the request URL. For example, the path of the following request is `
 
 ### URL
 
-As the name implies, it is the complete URL of the request, including protocol, host, path, and parameters. Note that what is shown here is the decoded URL.
+The full request URL, including protocol, host, path, and query parameters. Note that what is shown here is the decoded URL.
 
 ### Method
 
@@ -70,7 +70,7 @@ The time difference between when the Reqable proxy server receives the request a
 
 ### Stream ID
 
-In the case of TCP connection multiplexing, multiple HTTP requests may be processed in one connection, and Reqable treats each HTTP request in this connection as a stream. Although in the HTTP1 specification, there is no concept of stream, but in order to better reflect the situation of connection reuse, Reqable assigns the value of stream ID to each HTTP request starting from 1, that is, the stream ID of the first request is 1, the stream ID of the second request is 2, and so on. In the HTTP2 specification, there is a concept of stream, so Reqable directly displays the ID number of the stream here. Note that according to the HTTP2 specification, the stream ID is assigned according to an odd number, that is, the stream ID of the first request is 1, and the stream ID of the second request is 3, which is slightly different from HTTP1.
+In the case of TCP connection multiplexing, multiple HTTP requests may be processed in one connection, and Reqable treats each HTTP request in this connection as a stream. HTTP/1 has no stream concept, but to reflect connection reuse, Reqable assigns a stream ID to each HTTP request starting from 1: the first request is 1, the second is 2, and so on. In the HTTP2 specification, there is a concept of stream, so Reqable directly displays the ID number of the stream here. Note that according to the HTTP2 specification, the stream ID is assigned according to an odd number, that is, the stream ID of the first request is 1, and the stream ID of the second request is 3, which is slightly different from HTTP1.
 
 ### Connection ID
 

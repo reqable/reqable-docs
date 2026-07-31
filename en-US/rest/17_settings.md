@@ -9,6 +9,6 @@ Each API session can independently set protocol, redirection, proxy, cookie and 
 - Cookie: Enabled
 - Reqable ID: Enabled
 
-Of course, Reqable also supports configuring global API settings. Open an API setting and modify it and tap the **Apply to global** icon.
+Reqable also supports global API settings. Open an API's settings, make your changes, then tap **Apply to global**.
 
 ![](arts/settings_01.png)
