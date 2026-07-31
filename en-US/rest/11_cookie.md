@@ -18,6 +18,6 @@ Expand the drop-down menu, select **Manage Cookie** to open `Cookie Jar`:
 
 ### Edit Cookie
 
-In the cookie manager, we can create, delete and edit cookies at any time. In addition to manually fill the content, you can also import it from the clipboard.
+In the cookie manager, we can create, delete and edit cookies at any time. In addition to manually filling in the content, you can also import it from the clipboard.
 
 ![](arts/cookie_05.png)

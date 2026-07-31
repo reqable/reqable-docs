@@ -33,7 +33,7 @@ JSON data supports comments. Commented content will not be sent with the request
 ![](arts/body_04.png)
 
 :::caution
-Formatting, minifying, and expand operations are not currently supported for JSON content that contains comments.
+Formatting, minifying, and expanding are not currently supported for JSON content that contains comments.
 :::
 
 ### Text {#text}

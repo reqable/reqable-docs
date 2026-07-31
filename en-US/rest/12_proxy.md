@@ -6,13 +6,13 @@ Proxy is one of the essential settings when testing APIs. We can configure proxy
 
 Reqable supports 4 proxy settings:
 - **Follow System** Use the proxy configured by the system.
-- **Follow Traffic** Use the MITM proxy.
+- **Follow Debug** Use the MITM proxy and work with capture features.
 - **Manual** To use a custom web proxy, just specify the proxy IP and port number.
 - **Unset** Disable any proxy.
 
-### Follow Traffic
+### Follow Debug
 
-**Follow Traffic** is an important feature of Reqable, you can use [Script](../capture/script) to intercept the request. The requests will also be displayed in the traffic list without enabling the debugging.
+**Follow Debug** is an important feature of Reqable. You can use [Script](../capture/script) and other capture features with the request. Requests are also displayed in the traffic list without enabling capture separately.
 
 ![](arts/proxy_02.png)
 

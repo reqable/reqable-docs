@@ -1,6 +1,6 @@
 # Access Control
 
-By default, Reqable's MITM proxy server will receive all access requests, which may be interfered by external parties in some cases, and may even cause access loops, which will greatly consume the performance of the running device. Now, users can control which IP devices can access the proxy server, and unauthorized IP devices will be rejected.
+By default, Reqable's MITM proxy server will receive all access requests, which may be subject to external interference in some cases, and may even cause access loops, which will greatly consume the performance of the running device. Now, users can control which IP addresses can access the proxy server, and unauthorized IP addresses will be rejected.
 
 :::info
 This feature is available in version v2.21.0+.

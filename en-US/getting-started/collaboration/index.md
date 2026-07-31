@@ -4,7 +4,7 @@ description: How to work together between Reqable mobile and desktop.
 sidebar_position: 4
 ---
 
-Traffic analysis is a very important part of mobile application development and debugging, whether it is data mocking or malware analysis. Our most common method is to setup a Wi-Fi proxy on the mobile and proxy the traffic to the MITM server of the desktop apps, such as Charles and Fiddler.
+Traffic analysis is a very important part of mobile application development and debugging, whether it is data mocking or malware analysis. Our most common method is to set up a Wi-Fi proxy on the mobile and proxy the traffic to the MITM server of the desktop apps, such as Charles and Fiddler.
 
 But this is not an efficient way. Looking back at the entire step, we will find the following uncomfortable points.
 
@@ -29,7 +29,7 @@ In this step, Reqable will automatically synchronize the root CA certificate fro
 
 If you have already initialized the Reqable mobile app, you can add a computer device from the `Remote Devices` in the sidebar by clicking the `+` button in the upper right corner.
 
-Note that although the CA certificate has been synchronized from the desktop to the mobile app, but there is still a most important step left: installing it on the device.
+Note that although the CA certificate has been synchronized from the desktop to the mobile app, there is still a most important step left: installing it on the device.
 
 Next, we start installing the root certificate to the device, which is probably the most complicated step of the entire process. We can not complete this step automatically and need to handle it manually according to the device conditions and usage scenarios.
 

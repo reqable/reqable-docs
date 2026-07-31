@@ -35,7 +35,7 @@ Debugging proxy is a powerful way used by developers and network engineers to in
 - [Rewrite](./rewrite)
 - [Reverse Proxy](./reverse-proxy)
 - [Diff](./diff)
-- [Network Condition](./network-condition)
+- [Network Throttling](./network-condition)
 - [Report Server](./report-server)
 - [Repeat](./repeat)
 - [HAR](./har)

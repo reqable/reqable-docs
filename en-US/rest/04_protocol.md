@@ -1,6 +1,6 @@
 # Protocol
 
-Reqable supports three HTTP protocols: [HTTP1.1](https://www.ietf.org/rfc/rfc2616.txt), [HTTP2](https://www.ietf.org/rfc/rfc7540.txt) And [HTTP3](https://www.ietf.org/rfc/rfc9114.txt), we can specify the protocol version in the request settings.
+Reqable supports three HTTP protocols: [HTTP1.1](https://www.ietf.org/rfc/rfc2616.txt), [HTTP2](https://www.ietf.org/rfc/rfc7540.txt), and [HTTP3](https://www.ietf.org/rfc/rfc9114.txt). We can specify the protocol version in the request settings.
 
 ![](arts/protocol_01.png)
 

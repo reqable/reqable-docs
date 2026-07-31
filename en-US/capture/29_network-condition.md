@@ -1,4 +1,4 @@
-# Network Condition
+# Network Throttling
 
 Reqable supports setting network conditions for specified domain names and simulating different network environments, such as offline, weak network, 2G, etc.
 
@@ -9,19 +9,19 @@ This feature is available in version v2.23.0+.
 
 ### How to use
 
-Select `Network Condition` from the `Tools` menu or use the shortcut `Alt` + `J` to open the configuration page.
+Select `Network Throttling` from the `Tools` menu or use the shortcut `Alt` + `J` to open the configuration page.
 
 ![](arts/network_condition_01.png)
 
-Users can configure different network conditions for different hosts, but only one network condition configuration can be enabled at a time. Host supports wildcard `*` and `?`, and also supports the port number.
+Users can configure different network throttling settings for different hosts, but only one configuration can be enabled at a time. Host supports wildcard `*` and `?`, and also supports the port number.
 
 ![](arts/network_condition_02.png)
 
 :::info
-If you need to configure the network condition globally, just fill in `*` in the host.
+If you need to configure network throttling globally, just fill in `*` in the host.
 :::
 
-Reqable has preset common network condition modes, and currently does not support user customization. The preset network condition is as follows:
+Reqable provides preset network throttling modes and currently does not support user customization. The presets are as follows:
 
 |   Preset Mode  |  Uplink Bandwidth |  Downlink Bandwidth |  Latency  |  Packet Loss Rate  |
 |    ----    | ----  | ----  | ----  | ----  |
@@ -37,6 +37,6 @@ Reqable has preset common network condition modes, and currently does not suppor
 
 
 - Uplink Bandwidth: affects the speed of data upload. The actual bandwidth calculation will take a random value within the interval.
-- Downlink bandwidth: affects the speed of data download. The actual bandwidth calculation will take a random value within the interval.
+- Downlink Bandwidth: affects the speed of data download. The actual bandwidth calculation will take a random value within the interval.
 - Latency: The minimum delay time for processing each data packet. If the bandwidth is not enough to trigger a delay, the actual delay may exceed this value.
-- Packet Loss Rate: simulates network abnormalities. If packet hits the loss, the request fails.
+- Packet Loss Rate: simulates network abnormalities. If a packet is lost, the request fails.

@@ -1,6 +1,6 @@
 # Authorization
 
-Reqable provides multiple authorizations:
+Reqable provides multiple authorization methods:
 
 - [Inherit](#inherit)
 - [Basic Auth](#basic-auth)

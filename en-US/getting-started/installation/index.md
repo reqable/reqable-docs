@@ -136,7 +136,7 @@ Chrome's trust policy for certificates is constantly changing. For example, the 
 - If you are using a higher version of Chrome, you need to install the CA certificate in the user certificate directory.
 - If you are using a lower version of Chrome, you need to install the CA certificate in the system certificate directory.
 
-If you are not sure which method to choose, you can try them two.
+If you are not sure which method to choose, you can try both.
 
 ##### Firefox Browser
 

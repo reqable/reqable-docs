@@ -1,6 +1,6 @@
 # Localhost Traffic
 
-For localhost traffic, it may not go through the Reqable proxy server, even if we have properly configured the system network proxy, some additional settings are required here. Note that different systems adopt different methods. Please choose your operation system to read below.
+For localhost traffic, it may not go through the Reqable proxy server, even if we have properly configured the system network proxy, some additional settings are required here. Note that different systems adopt different methods. Please choose your operating system below.
 
 ### Windows
 

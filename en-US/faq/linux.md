@@ -56,9 +56,9 @@ If the network icon is green, but the manual check of the network proxy in the s
 
 If there is no issue with the system proxy configuration, please proceed to the next step.
 
-#### 4.2 Check if can capture the browser's traffic
+#### 4.2 Check whether you can capture the browser's traffic
 
-After Reqable starts the capture, open the browser (Chrome or Edge is recommended) and visit the www.google.com.
+After Reqable starts the capture, open the browser (Chrome or Edge is recommended) and visit www.google.com.
 
 Case 1: Google cannot be accessed, and no traffic (including CONNECT requests) can be seen.
 
@@ -83,7 +83,7 @@ This means that Reqable is working properly, but the application does not use th
 
 ### 5. Unable to capture localhost traffic
 
-By default, localhost traffic will not go through the system network proxy and needs to be specially processed using the mirroring feature. Please refer to [localhost traffic](../capture/localhost).
+By default, localhost traffic will not go through the system network proxy and needs to be specially processed using the Mirror feature. Please refer to [localhost traffic](../capture/localhost).
 
 ### 6. The mobile device cannot connect to PC
 

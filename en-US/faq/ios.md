@@ -63,7 +63,7 @@ You can follow the steps below to troubleshoot:
 - Reqable mobile app disables or enables `Enhanced mode` and try again.
 - Change the port of Reqable on PC, and then scan the code to connect again.
 
-### 6. Firefox prompts unsafe website{#firefox}
+### 6. Firefox prompts an unsafe website {#firefox}
 
 Firefox uses a built-in CA store. Regardless of whether the Reqable CA certificate is installed in the system directory or the user directory, it will not be trusted, and the user needs to perform additional actions.
 

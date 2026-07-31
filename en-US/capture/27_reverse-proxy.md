@@ -13,11 +13,11 @@ If you are debugging on a remote device, you need to replace `localhost` above w
 The network framework of some applications may not support setting a network proxy, or may not support using the network proxy in the system settings. In these cases, Reqable will not be able to perform traffic analysis and debugging on it. Reverse proxy is used to solve such problems.
 
 :::info
-If the application network framework you are using supports proxy configuration, then directly configuring the MITM proxy server address as Reqable will be more efficient than using the `Reverse Proxy`.
+If the application network framework you are using supports proxy configuration, then directly configuring the proxy server address to Reqable will be more efficient than using the `Reverse Proxy`.
 :::
 
 Using a reverse proxy also has the following advantages:
-- The original HTTPS request becomes a clear text request to communicate with the local web server, so the client no longer needs to install the CA root certificate.
+- The original HTTPS request becomes a plaintext request to communicate with the local web server, so the client no longer needs to install the CA root certificate.
 - The remote device only needs to ensure that it is in the same LAN as the PC device, and there is no need to set up a Wi-Fi proxy.
 
 Using a reverse proxy has the following disadvantages:

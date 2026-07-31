@@ -26,7 +26,7 @@ To prevent abuse, Reqable does not provide this feature on mobile app.
 
 ### Create Mirror
 
-There are some ways to create a mirror rule:
+You can create a mirror rule in several ways:
 - Traffic menu -> Mirror -> Add Rule
 - Mirror icon right-click menu -> Add Rule
 - Tray -> Mirror -> Add Rule
@@ -48,8 +48,8 @@ If the mirror port number is not specified, the port number of the original doma
 Each HTTP request header basically contains `Host`, such as `Host: reqable.com:80`. The mirror function can specify the strategy of this value.
 
 - Preserve, keep the `Host` unchanged.
-- Use  CONNECT address, the CONNECT address generally refers to the url address, such as `reqable.com:80`. This value is generally the same as the Host header.
-- Use mirror address, will change the value of `Host` to the mirror value.
+- Use CONNECT address. The CONNECT address generally refers to the URL address, such as `reqable.com:80`. This value is generally the same as the Host header.
+- Use mirror address. This changes the value of `Host` to the mirror value.
 
 #### SNI
 
@@ -57,9 +57,8 @@ Server Name Indication, which is generally included in the handshake packet of S
 
 - Preserve, keep the SNI value unchanged.
 
-- Use CONNECT address, the CONNECT address generally refers to the url address, such as `reqable.com:80`. This value is generally the same as the SNI.
-
-- Use mirror address. will change SNI to the mirror value.
+- Use CONNECT address. The CONNECT address generally refers to the original domain, such as `reqable.com`. This value is generally the same as the SNI.
+- Use mirror address. This changes the SNI to the mirror value.
 
 #### Certificate CN
 
@@ -67,9 +66,8 @@ Common name of Certificate, this value will affect the verification of SSL certi
 
 - Preserve, keep the CN value unchanged.
 
-- Use CONNECT address, the CONNECT address generally refers to the url address, such as `reqable.com:80`. This value is generally the same as the CN.
-
-- Use mirror address. will change CN to the mirror value.
+- Use CONNECT address. The CONNECT address generally refers to the original domain, such as `reqable.com`. This value is generally the same as the CN.
+- Use mirror address. This changes the CN to the mirror value.
 
 :::caution
 

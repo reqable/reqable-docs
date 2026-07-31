@@ -16,20 +16,20 @@ The unique integer ID number is automatically generated according to the order i
 |  ----  | ----  |
 |![](icons/ic_editor_locked.svg)|Indicates that the SSL proxy request is not decrypted. When the CA root certificate is not installed or SSL Bypass is configured, the proxy request will display this icon.|
 |![](icons/ic_editor_link.svg)|Indicates a proxy request in progress. This icon is displayed when the Reqable proxy server has received client request, but has not been able to establish a communication with the remote server.|
-|![](icons/ic_editor_json.svg)|Indicates that the response body is a JSON.|
-|![](icons/ic_editor_xml.svg)|Indicates that the response body is a XML.|
-|![](icons/ic_editor_web.svg)|Indicates that the response body is a Web.|
-|![](icons/ic_editor_js.svg)|Indicates that the response body is a Javascript.|
-|![](icons/ic_editor_css.svg)|Indicates that the response body is a CSS.|
-|![](icons/ic_editor_raw.svg)|Indicates that the response body is a raw text.|
-|![](icons/ic_editor_image.svg)|Indicates that the response body is an image.|
-|![](icons/ic_editor_music.svg)|Indicates that the response body is an audio.|
-|![](icons/ic_editor_video.svg)|Indicates that the response body is a video.|
-|![](icons/ic_editor_zip.svg)|Indicates that the response body is a compressed file.|
-|![](icons/ic_editor_protobuf.svg)|Indicates that the response body is a Protobuf.|
-|![](icons/ic_editor_binary.svg)|Indicates that the response body is a binary.|
+|![](icons/ic_editor_json.svg)|Indicates a JSON response body.|
+|![](icons/ic_editor_xml.svg)|Indicates an XML response body.|
+|![](icons/ic_editor_web.svg)|Indicates a web page response body.|
+|![](icons/ic_editor_js.svg)|Indicates a JavaScript response body.|
+|![](icons/ic_editor_css.svg)|Indicates a CSS response body.|
+|![](icons/ic_editor_raw.svg)|Indicates a raw text response body.|
+|![](icons/ic_editor_image.svg)|Indicates an image response body.|
+|![](icons/ic_editor_music.svg)|Indicates an audio response body.|
+|![](icons/ic_editor_video.svg)|Indicates a video response body.|
+|![](icons/ic_editor_zip.svg)|Indicates a compressed-file response body.|
+|![](icons/ic_editor_protobuf.svg)|Indicates a Protobuf response body.|
+|![](icons/ic_editor_binary.svg)|Indicates a binary response body.|
 |![](icons/ic_editor_certificate.svg)|Indicates that this is a certificate-related request.|
-|![](icons/ic_editor_chat.svg)|Indicates that this is a Websocket request.|
+|![](icons/ic_editor_chat.svg)|Indicates that this is a WebSocket request.|
 |![](icons/ic_editor_event.svg)|Indicates that this is a SSE(Server Sent Events) request.|
 |![](icons/ic_editor_zero.svg)|Indicates that this is an empty response.|
 |![](icons/ic_editor_unknown.svg)|Indicates that this is an unknown type request.|
@@ -62,7 +62,7 @@ HTTP protocol version name, `HTTP/1.1` means HTTP protocol version 1.1, `h2` mea
 
 ### Host
 
-Request the domain name in the URL. Note that the IP address may be displayed here.
+The domain name in the request URL. Note that the IP address may be displayed here.
 
 ### Duration
 
@@ -101,7 +101,7 @@ This feature is supported in `v1.1.4`.
 
 ### Device
 
-Displays the device associated with this traffic. The device is identified based on the source IP address of the traffic. In `Collaborative Mode`, the name of the connected device is displayed. in `Non-Collaborative Mode`, the source IP address is shown. You can set an alias for a device via the right-click context menu of the device in the [Explorer](./explorer) sidebar.
+Displays the device associated with this traffic. The device is identified based on the source IP address of the traffic. In `Collaborative Mode`, the name of the connected device is displayed. In `Non-Collaborative Mode`, the source IP address is shown. You can set an alias for a device via the right-click context menu of the device in the [Explorer](./explorer) sidebar.
 
 :::info
 This feature is supported in `v3.0.21`.
@@ -145,7 +145,7 @@ The point in time when the Reqable proxy server receives the request. Indicates 
 
 ### Time - Request End
 
-The point in time when the  proxy server finishes accepting the request.
+The point in time when the Reqable proxy server finishes accepting the request.
 
 ### Time - Response Start
 

@@ -31,5 +31,5 @@ The default terminal app can be switched in the context menu of the icon.
 The proxy terminal currently supports the following network libs:
 
 - NodeJS's axios, got, fetch.
-- Python's request, requests, aiohttp, httplib.
+- Python's urllib.request, requests, aiohttp, httplib.
 - Ruby's http, net/http.

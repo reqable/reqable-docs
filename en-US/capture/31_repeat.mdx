@@ -2,7 +2,7 @@
 
 import Shortcut from '@site/src/components/Shortcut';
 
-Reqable can replay one or more requests. Select the requests that need to be replay and right-click:
+Reqable can replay one or more requests. Select the requests that need to be replayed and right-click:
 
 ![](arts/repeat_01.png)
 
@@ -17,7 +17,7 @@ Reqable also supports customization of replaying requests, including times, dela
 - Iterations: The number of times the request was sent.
 - Delay: Indicates how long it takes for the request to start sending, in milliseconds.
 - Interval: Indicates the time interval sent between each request, in milliseconds. Valid for sending times greater than 1.
-- Proxy: You can set the proxy configuration for the request, including not using a proxy, using a debug proxy, and using a system proxy.
+- Proxy: You can set the proxy configuration for the request, including Unset, Follow Debug, and Follow System.
 
 For example:
 ```
@@ -32,7 +32,7 @@ Requests are performed concurrently, and there can be up to **255** connections 
 
 :::caution
 
-- If you want the request to appear in the traffic list, please set the proxy to **Debug**.
+- If you want the request to appear in the traffic list, please set the proxy to **Follow Debug**.
 - If you use this function to stress test the server, it is recommended to set the proxy to **Unset**.
 
 :::

@@ -66,16 +66,16 @@ You can follow the steps below to troubleshoot:
 - Reqable mobile app disables or enables `Enhanced mode` and try again.
 - Change the port of Reqable on PC, and then scan the code to connect again.
 
-### 6. Chrome prompts unsafe website{#chrome}
+### 6. Chrome prompts an unsafe website {#chrome}
 
 Chrome's trust policy for certificates is constantly changing. For example, the latest version of Chrome will ignore the self-signed CA certificate installed in the Android system certificate directory. If you need to capture the Chrome traffic, please note:
 
 - If you are using a higher version of Chrome, you need to install the CA certificate in the user certificate directory.
 - If you are using a lower version of Chrome, you need to install the CA certificate in the system certificate directory.
 
-If you are not sure which method to choose, you can try them two.
+If you are not sure which method to choose, you can try both.
 
-### 7. Firefox prompts unsafe website{#firefox}
+### 7. Firefox prompts an unsafe website {#firefox}
 
 Firefox uses a built-in CA store. Regardless of whether the Reqable CA certificate is installed in the system directory or the user directory, it will not be trusted, and the user needs to perform additional actions.
 

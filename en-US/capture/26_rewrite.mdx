@@ -20,7 +20,7 @@ To prevent abuse, Reqable does not provide this feature on mobile app.
 
 ### Create Rewrite
 
-There are some ways to create a rewrite rule:
+You can create a rewrite rule in several ways:
 - Traffic menu -> Rewrite -> Add Rule
 - Rewrite icon right-click menu -> Add Rule
 - Tray -> Rewrite -> Add Rule
@@ -31,7 +31,7 @@ There are some ways to create a rewrite rule:
 
 ![](arts/rewrite_03.png)
 
-Enter the rule name and matching URL, the URL supports wildcard * and ? matching. Finally set an rewriting behavior. Reqable supports the following five rewriting behaviors.
+Enter the rule name and matching URL, the URL supports wildcard * and ? matching. Finally, set a rewriting behavior. Reqable supports the following five rewriting behaviors.
 
 - [Redirection](#redirect)
 - [Replace Request](#replace-req)
@@ -45,14 +45,14 @@ The priority of rewriting behavior is redirection > replacement > modification. 
 - A request can trigger multiple modification rules, which are executed in the order of the rule list.
 - Replacement and modification rules will match the new URL after redirection instead of the original request URL.
 
-### Redirection{#redirect}
+### Redirection {#redirect}
 
 Compared with [Mirror](mirror), rewrite redirection provides more fine-grained operation, for example, the request A: `https://hello.com/foo`, can be redirected to request B: `https://hello.com/bar`. Rewrite redirection is request forwarding, which can be understood as `Map Remote`, and is different from the redirection of HTTP protocol 3xx status code.
 
 ![](arts/rewrite_04.png)
 
 The picture above is the redirection edit page, there are a few points to note:
-- **Reserve host in headers** When requesting a new URL address, whether to keep the Host value of the request header as the original address. It is generally not recommended to enable this option. Different server frameworks have different processing logic for Host, which may cause request failure.
+- **Preserve host in headers** When requesting a new URL address, whether to keep the Host value of the request header as the original address. It is generally not recommended to enable this option. Different server frameworks have different processing logic for Host, which may cause request failure.
 - **Directory Match** If the new URL address ends with /*, it means match the subdirectory of the original address.
 - **Exclude URL** This is optional, and can be configured when the redirected URL needs to be excluded.
 
@@ -75,7 +75,7 @@ https://world.com/new/foo/bar/ok?abc=123
 
 :::
 
-### Replace Request{#replace-req}
+### Replace Request {#replace-req}
 
 This rewriting behavior means to directly replace the request data, supports method, path, headers and body.
 

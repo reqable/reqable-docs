@@ -8,7 +8,7 @@ This feature is available in version v2.20.0+.
 
 ### How it works
 
-Users need to deploy a server to receive data reported by Reqable. Reqable communicates with the server using the HTTP protocol, request method is `POST`, and the request path can be defined by the user. Whenever Reqable detects that a HTTP session is completed, it sends the data to the server in the HTTP Archive format (JSON). After receiving the data, the server parses the data according to the HTTP Archive format and performs customized operations. The transmission supports compression, and users can choose an algorithm like Gzip, Brotli, and Zstandard.
+Users need to deploy a server to receive data reported by Reqable. Reqable communicates with the server using the HTTP protocol, request method is `POST`, and the request path can be defined by the user. Whenever Reqable detects that an HTTP session is completed, it sends the data to the server in the HTTP Archive format (JSON). After receiving the data, the server parses the data according to the HTTP Archive format and performs customized operations. The transmission supports compression, and users can choose an algorithm like Gzip, Brotli, and Zstandard.
 
 ### How to use
 
@@ -25,7 +25,7 @@ For mobile app, open `Report Server` from `⋮` -> `More`.
 Reqable also carries the following data in the request header:
 - x-reqable-platform: The platform name that Reqable runs on, such as windows, macos, linux, android, ios, etc.
 - x-reqable-reporter-host: The domain name of the current session, such as `dev.reqable.com`.
-- x-reqable-reporter-rule: The rules of hit.
+- x-reqable-reporter-rule: The matched rule.
 
 :::caution
 Each HTTP session Reqable will only be sent once, and will not be retried if the sending fails.

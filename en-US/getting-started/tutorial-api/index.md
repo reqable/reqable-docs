@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Api Testing
+title: Tutorial - API Testing
 description: Learn how to send HTTP requests using API testing.
 sidebar_position: 3
 ---

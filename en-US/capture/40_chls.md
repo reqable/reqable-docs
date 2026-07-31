@@ -6,4 +6,4 @@ If the directory where the Charles application is located is not configured in a
 
 ![](arts/chls_01.png)
 
-After the configuration is ok, click `Convert`.
+Once configured, click `Convert`.

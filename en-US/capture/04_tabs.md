@@ -70,7 +70,7 @@ The cookie tab will display the cookie data of the request. If a request has no 
 
 ![](arts/tabs_cookie.png)
 
-### Set-Cookie {#cookie}
+### Set-Cookie {#set-cookie}
 
 The set-cookie tab will display the cookie data of the response. If a response has no cookies, this tab will not be displayed.
 

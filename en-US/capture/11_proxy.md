@@ -20,7 +20,7 @@ In addition, on Windows, some clients do not support default proxy rule. Please 
 
 ### Proxy Protocol
 
-Reqable supports five proxy protocols including HTTP, HTTPS, Socks4, Socks4a, and Socks5. Reqable proxy server listens to the same port (port 9000 by default), and automatically determines the protocol based on the client's message content. Reqable cannot specify which proxy protocol the target application adopts, it can only be configured in the proxy settings of the system, which is determined by the client program itself. Regarding proxy settings, different computer systems provide different methods. Please read the following according to the operation system you are using.
+Reqable supports five proxy protocols including HTTP, HTTPS, Socks4, Socks4a, and Socks5. Reqable proxy server listens to the same port (port 9000 by default), and automatically determines the protocol based on the client's message content. Reqable cannot specify which proxy protocol the target application adopts, it can only be configured in the proxy settings of the system, which is determined by the client program itself. Regarding proxy settings, different computer systems provide different methods. Please read the following according to the operating system you are using.
 
 #### Windows
 

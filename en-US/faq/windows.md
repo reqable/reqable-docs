@@ -50,9 +50,9 @@ If the network icon is green, but the manual check of the network proxy in the s
 
 If there is no issue with the system proxy configuration, please proceed to the next step.
 
-#### 3.2 Check if can capture the browser's traffic
+#### 3.2 Check whether you can capture the browser's traffic
 
-After Reqable starts the capture, open the browser (Chrome or Edge is recommended) and visit the www.google.com.
+After Reqable starts the capture, open the browser (Chrome or Edge is recommended) and visit www.google.com.
 
 Case 1: Google cannot be accessed, and no traffic (including CONNECT requests) can be seen.
 
@@ -86,8 +86,8 @@ Check if the 'Loopback' is turned on in the 'Proxy' menu of Reqable. If the issu
 - Try connecting the PC to the mobile's hotspot, and then scan the QR code on the mobile to connect to the PC.
 - Check if the system firewall has disabled the inbound and outbound traffic of the Reqable proxy port number.
 
-### 7. Firefox prompts unsafe website
+### 6. Firefox prompts an unsafe website
 
-The Firefox browser uses the built-in CA Store. The CA certificate installed by the system cannot take effect. You need to follow the Firefox certificate installation guide in the Reqable to install it.
+The Firefox browser uses the built-in CA Store. The CA certificate installed by the system cannot take effect. You need to follow the Firefox certificate installation guide in Reqable to install it.
 
 ![](arts/windows_firefox.png)

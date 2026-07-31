@@ -4,7 +4,7 @@ In addition to the main content layout, Reqable also provides an **Explorer** si
 
 ![](arts/explorer_01.png)
 
-Among these, `Bookmark`, `Device`, `Application`, and `Domain` serve as list filters, their specific functions can be found in [Filter and Search](./search).
+Among these, `Bookmark`, `Device`, `Application`, and `Domain` serve as list filters; their specific functions can be found in [Filter and Search](./search).
 
 ### Favorite {#favorite}
 

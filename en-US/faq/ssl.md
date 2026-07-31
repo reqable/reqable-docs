@@ -8,7 +8,7 @@ sidebar_position: 6
 
 Most SSL issues are certificate trust issues. Different systems and applications have different SSL verification strategies. Many issues require specific analysis and there is no unified solution. Here are some FAQs and solutions for your reference.
 
-First is [CA Certificate Installation](../getting-started/installation), please read it carefully. Make sure the CA certificate is installed correctly in your device, then look at other issues.
+First is [CA Certificate Installation](../getting-started/installation), please read it carefully. Make sure the CA certificate is installed correctly on your device, then look at other issues.
 
 ### 1. SSL error on PC for mobile traffic
 
@@ -20,7 +20,7 @@ Some applications have built-in CA Stores instead of using the system CA Store f
 
 ### 3. Certificate Pinning
 
-SSL Pinning refers to the SSL certificate of the server specified by the application client. The SSL certificate issued by the Reqable MITM cannot be verified. If you have the server's SSL certificate (certificate + private key), you can configure it to Reqable's SSL certificate (server). For details, please refer to [SSL Certificate](../capture/ssl#ssl-certificates).
+Certificate pinning (SSL pinning) means the app only trusts specific server certificates, so the certificate issued by Reqable MITM cannot be verified. If you have the server's SSL certificate (certificate + private key), you can configure it to Reqable's SSL certificate (server). For details, please refer to [SSL Certificate](../capture/ssl#ssl-certificates).
 
 ### 4. Two-way authentication
 
