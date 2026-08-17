@@ -4,6 +4,31 @@ sidebar_position: 1
 
 # Macos
 
+## v3.2.23 <small><small>*2026-08-10*</small></small>
+- 💪 [OPT] Improved the performance of the log console.
+- 🐞 [FIX] A bug where the content of HTTP plaintext requests might be displayed incorrectly.
+- 🐞 [FIX] A bug where custom request headers were not populated when creating WebSocket from the traffic list.
+- 🐞 [FIX] A bug where SSL handshake `group_list` parameter was not set correctly.
+- 🐞 [FIX] A bug where WebSocket requests could not be moved in the API collection.
+
+## v3.2.21 <small><small>*2026-08-07*</small></small>
+- 💪 [OPT] Copy and paste now supports `Ctrl + Insert` and `Shift + Insert` shortcuts.
+- 🐞 [FIX] A bug where copying URL and cURL from the right-click menu of API request records did not inherit the collection's common parameters, headers, and authorization.
+
+## v3.2.19 <small><small>*2026-08-05*</small></small>
+- 💪 [OPT] Support saving WebSocket message list.
+- 🐞 [FIX] A bug where HTML format was not correctly recognized.
+
+## v3.2.18 <small><small>*2026-08-04*</small></small>
+- 💪 [OPT] Improved the text quality of internationalization.
+- 💪 [OPT] SOCKS5 UDP proxy automatically blocks HTTP3/QUIC requests.
+- 💪 [OPT] cURL import now supports recognizing content with `//` and `#` comments.
+- 💪 [OPT] cURL import now ignores the -o parameter.
+- 💪 [OPT] Improved the gateway's handling of WebSocket detection.
+- 🐞 [FIX] A bug where readonly text could be modified using keyboard shortcuts.
+- 🐞 [FIX] A bug where the app could get stuck when exiting due to an error restoring the proxy.
+- 🐞 [FIX] A bug where keyboard key anomalies could not be restored.
+
 ## v3.2.17 <small><small>*2026-07-29*</small></small>
 - 💪 [OPT] Added multi-language internationalization support for Traditional Chinese, Japanese, Korean, Spanish, French, German, and Russian.
 - 💪 [OPT] Added an option in Settings to choose whether to show a notification when a version update is detected.

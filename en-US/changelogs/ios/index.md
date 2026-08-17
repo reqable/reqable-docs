@@ -4,6 +4,22 @@ sidebar_position: 5
 
 # iOS
 
+## v3.2.23 <small><small>*2026-08-10*</small></small>
+- 💪 [OPT] Improved the performance of the log console.
+- 🐞 [FIX] A bug where the content of HTTP plaintext requests might be displayed incorrectly.
+- 🐞 [FIX] A bug where custom request headers were not populated when creating WebSocket from the traffic list.
+- 🐞 [FIX] A bug where SSL handshake `group_list` parameter was not set correctly.
+
+## v3.2.19 <small><small>*2026-08-05*</small></small>
+- 💪 [OPT] Support saving WebSocket message list.
+- 🐞 [FIX] A bug where HTML format was not correctly recognized.
+
+## v3.2.18 <small><small>*2026-08-04*</small></small>
+- 💪 [OPT] Improved the text quality of internationalization.
+- 💪 [OPT] SOCKS5 UDP proxy automatically blocks HTTP3/QUIC requests.
+- 💪 [OPT] cURL import now supports recognizing content with `//` and `#` comments.
+- 💪 [OPT] cURL import now ignores the -o parameter.
+
 ## v3.2.17 <small><small>*2026-07-29*</small></small>
 - 💪 [OPT] Added multi-language internationalization support for Traditional Chinese, Japanese, Korean, Spanish, French, German, and Russian.
 - 💪 [OPT] Added an option in Settings to choose whether to show a notification when a version update is detected.

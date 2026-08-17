@@ -4,6 +4,31 @@ sidebar_position: 1
 
 # Macos
 
+## v3.2.23 <small><small>*2026-08-10*</small></small>
+- 💪【优化】提高日志控制台性能。
+- 🐞【修复】HTTP明文请求显示内容可能不正确的bug。
+- 🐞【修复】从调试列表创建WebSocket时未填充自定义请求头的bug。
+- 🐞【修复】SSL握手group_list参数未正确设置的bug。
+- 🐞【修复】API集合中可能无法移动WebSocket请求的bug。
+
+## v3.2.21 <small><small>*2026-08-07*</small></small>
+- 💪【优化】复制粘贴支持`Ctrl + Insert`和`Shift + Insert`快捷键。
+- 🐞【修复】API请求记录右键菜单复制URL和cURL未继承集合公共参数、头部和授权的bug。
+
+## v3.2.19 <small><small>*2026-08-05*</small></small>
+- 💪【优化】支持保存WebSocket消息列表。
+- 🐞【修复】未能正确识别HTML格式的bug。
+
+## v3.2.18 <small><small>*2026-08-04*</small></small>
+- 💪【优化】提高多语言国际化的文本内容质量。
+- 💪【优化】SOCKS5 UDP代理自动阻断HTTP3/QUIC请求。
+- 💪【优化】cURL导入支持识别带有`//`和`#`注释的内容。
+- 💪【优化】cURL导入忽略-o参数。
+- 💪【优化】完善网关对WebSocket的判断逻辑。
+- 🐞【修复】只读文本可以被快捷键粘贴修改的bug。
+- 🐞【修复】退出App时可能因恢复代理报错导致卡住的bug。
+- 🐞【修复】键盘按键异常无法恢复的bug。
+
 ## v3.2.17 <small><small>*2026-07-29*</small></small>
 - 💪【优化】多语言国际化支持繁体中文、日语、韩语、西班牙语、法语、德语和俄语。
 - 💪【优化】设置中添加检测到版本更新是否进行提示的选项。
