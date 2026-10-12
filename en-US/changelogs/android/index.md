@@ -4,6 +4,27 @@ sidebar_position: 4
 
 # Android
 
+## v3.3.0 <small><small>*2026-10-12*</small></small>
+- 🚀 [NEW] Full support for gRPC testing and traffic capturing.
+- 🚀 [NEW] Added HTTP raw message editing mode.
+- 🚀 [NEW] Added an option in the settings page to listen on the loopback interface.
+- 🚀 [NEW] Enhanced mode has been changed to a premium feature.
+- 💪 [OPT] WebSocket request testing supports automatic saving to history.
+- 💪 [OPT] WebSocket request testing message list will automatically restore after the app restarts.
+- 💪 [OPT] cURL import now supports recognizing `curl.exe`.
+- 💪 [OPT] Removed the `StackTrace` tab.
+- 💪 [OPT] The URL input prompt option has been migrated to the app global settings.
+- 💪 [OPT] Enhanced mode provides the option to switch between SOCKS proxy and HTTP proxy.
+- 💪 [OPT] Enhanced mode provides the option to enable DNS caching.
+- 💪 [OPT] Redesigned the environment variable editing feature.
+- 🐞 [FIX] A bug where API global settings did not take effect for new APIs.
+- 🐞 [FIX] A bug where the default language did not use the system language.
+- 🐞 [FIX] A bug where reverse search in the traffic list did not work.
+- 🐞 [FIX] A bug where SSE parsing did not correctly handle cases where there was no space after the name.
+- 🐞 [FIX] A bug where SSE search results were abnormal.
+- 🐞 [FIX] A bug where the request header, response header, and other lists were not sorted in descending order correctly.
+- 🐞 [FIX] A bug where the version detection was incorrect in collaborative mode.
+
 ## v3.2.23 <small><small>*2026-08-10*</small></small>
 - 💪 [OPT] Improved the performance of the log console.
 - 🐞 [FIX] A bug where the content of HTTP plaintext requests might be displayed incorrectly.
