@@ -4,6 +4,29 @@ sidebar_position: 0
 
 # Windows
 
+## v3.3.3 <small><small>*2026-10-20*</small></small>
+- 🐞 [FIX] A bug where gRPC methods might not be selectable.
+
+## v3.3.2 <small><small>*2026-10-19*</small></small>
+- 💪 [OPT] Added Yaml type to HTTP testing.
+- 💪 [OPT] Moved the request body tab before the request header tab in HTTP testing.
+- 💪 [OPT] In HTTP testing, automatically switch to the request body tab when a request body exists.
+- 💪 [OPT] In HTTP testing, the protocol version information is displayed in the metrics tab.
+- 💪 [OPT] Added import path configuration for gRPC and Protobuf.
+- 💪 [OPT] gRPC testing supports inputting bytes type data as an int array.
+- 💪 [OPT] In gRPC testing, detailed message conversion error information is displayed.
+- 💪 [OPT] In the gRPC testing settings, added options for inputting and outputting bytes type data as an array.
+- 💪 [OPT] gRPC and Protobuf data in the Raw tab now display Unicode characters instead of escape sequences.
+- 💪 [OPT] Added an entry icon in the gRPC and Protobuf views to open the configuration definition.
+- 💪 [OPT] Adjusted the display strategy when gRPC service and method are too long.
+- 💪 [OPT] Support exporting specification files and folders.
+- 💪 [OPT] HTTP API testing supports customizing the labels on the tab bar, including protocol, status code, timing, and data size.
+- 💪 [OPT] HTTP capture details support customizing the labels on the tab bar, including protocol, status code, timing, and data size.
+- 💪 [OPT] Added an option to modify the proxy port in the command palette.
+- 💪 [OPT] Added an option to configure the script Python environment in the command palette.
+- 🐞 [FIX] A bug where the Proto specification file references were not handled correctly.
+- 🐞 [FIX] A bug where the file selector did not correctly restrict the selectable file types.
+
 ## v3.3.1 <small><small>*2026-10-12*</small></small>
 - 💪 [OPT] The command palette initially displays commonly used features.
 - 💪 [OPT] Added gRPC and Protobuf definition configuration options in the command palette.

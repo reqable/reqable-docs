@@ -4,6 +4,27 @@ sidebar_position: 4
 
 # Android
 
+## v3.3.3 <small><small>*2026-10-20*</small></small>
+- 🐞 [FIX] A bug where gRPC methods might not be selectable.
+
+## v3.3.2 <small><small>*2026-10-19*</small></small>
+- 💪 [OPT] Added Yaml type to HTTP testing.
+- 💪 [OPT] Moved the request body tab before the request header tab in HTTP testing.
+- 💪 [OPT] In HTTP testing, automatically switch to the request body tab when a request body exists.
+- 💪 [OPT] In HTTP testing, the protocol version information is displayed in the metrics tab.
+- 💪 [OPT] Added import path configuration for gRPC and Protobuf.
+- 💪 [OPT] gRPC testing supports inputting bytes type data as an int array.
+- 💪 [OPT] In gRPC testing, detailed message conversion error information is displayed.
+- 💪 [OPT] In the gRPC testing settings, added options for inputting and outputting bytes type data as an array.
+- 💪 [OPT] gRPC and Protobuf data in the Raw tab now display Unicode characters instead of escape sequences.
+- 💪 [OPT] Added an entry icon in the gRPC and Protobuf views to open the configuration definition.
+- 💪 [OPT] Adjusted the display strategy when gRPC service and method are too long.
+- 💪 [OPT] In HTTP testing, the status code, timing, and data size information is displayed in the subtitle.
+- 💪 [OPT] The HTTP capture details tab bar will no longer display the request method, protocol, and status code labels.
+- 🐞 [FIX] A bug where the Proto specification file references were not handled correctly.
+- 🐞 [FIX] A bug where the file selector did not correctly restrict the selectable file types.
+- 🐞 [FIX] A bug where the help document link address on the Protobuf definition configuration page was incorrect.
+
 ## v3.3.0 <small><small>*2026-10-12*</small></small>
 - 🚀 [NEW] Full support for gRPC testing and traffic capturing.
 - 🚀 [NEW] Added HTTP raw message editing mode.
