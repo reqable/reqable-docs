@@ -1,6 +1,6 @@
 # gPRC
 
-gRPC请求使用 [Protobuf](/protobuf) 格式传输和接收数据，没有Proto文件的情况下，可以在 `Raw` 标签下查看到不完整的数据。
+gRPC请求使用 [Protobuf](./protobuf) 格式传输和接收数据，没有Proto文件的情况下，可以在 `Raw` 标签下查看到不完整的数据。
 
 ![](arts/grpc_01.png)
 
