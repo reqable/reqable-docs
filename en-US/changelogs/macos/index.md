@@ -4,6 +4,20 @@ sidebar_position: 1
 
 # Macos
 
+## v3.3.5 <small><small>*2026-10-22*</small></small>
+- 💪 [OPT] Support importing intermediate CA certificates such as eMudhra.
+- 💪 [OPT] Imported intermediate CA certificates are now marked as installed and trusted by default.
+- 💪 [OPT] All UI text related to root certificates has been changed to CA certificates.
+- 💪 [OPT] Deduplicated the display of methods in the gRPC service list.
+- 💪 [OPT] Data marked as Javascript type but actually in JSON format will now be displayed as JSON.
+- 🐞 [FIX] A bug where the `:authority` header in imported cURL requests was not handled correctly.
+
+## v3.3.4 <small><small>*2026-10-21*</small></small>
+- 💪 [OPT] gRPC now automatically selects the first defined method.
+- 🐞 [FIX] A bug where gRPC reflection failed for non-443 port services.
+- 🐞 [FIX] A bug where the request path was not handled correctly when using a secondary proxy after intercepting traffic with a SOCKS proxy.
+- 🐞 [FIX] A bug where selecting "Delete Others" in the right-click menu of unknown apps in the traffic list would delete all records.
+
 ## v3.3.3 <small><small>*2026-10-20*</small></small>
 - 🐞 [FIX] A bug where gRPC methods might not be selectable.
 

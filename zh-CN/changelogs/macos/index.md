@@ -4,6 +4,20 @@ sidebar_position: 1
 
 # Macos
 
+## v3.3.5 <small><small>*2026-10-23*</small></small>
+- 💪【优化】支持导入eMudhra等中间CA证书。
+- 💪【优化】导入的中间CA证书默认标记为已安装并信任状态。
+- 💪【优化】根证书相关的UI文案全部改成CA证书。
+- 💪【优化】gRPC服务列表方法显示去重。
+- 💪【优化】标记为Javascript类型但是实际为JSON的数据将会按照JSON显示。
+- 🐞【修复】导入cURL请求头部`:authority`处理不正确的bug。
+
+## v3.3.4 <small><small>*2026-10-21*</small></small>
+- 💪【优化】gRPC现在会自动选择定义的首个服务方法。
+- 🐞【修复】gRPC反射非443端口服务失败的bug。
+- 🐞【修复】使用SOCKS代理拦截流量后使用二级代理情况下请求路径处理不正确的bug。
+- 🐞【修复】调试列表未知应用右键菜单中删除其他会删除全部记录的bug。
+
 ## v3.3.3 <small><small>*2026-10-20*</small></small>
 - 🐞【修复】gRPC方法可能无法选择的bug。
 
