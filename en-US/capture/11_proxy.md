@@ -57,7 +57,8 @@ If you have multiple proxy servers, you can create multiple configurations and m
 ![](arts/secondary_proxy_01.png)
 
 :::caution
-If the secondary proxy is configured and enabled, but the secondary proxy server is not started, requests to the secondary proxy will fail.
+- If the secondary proxy is configured and enabled, but the secondary proxy server is not started, requests to the secondary proxy will fail.
+- When sending an API request manually, select `Follow Traffic` as the proxy in the settings tab, and you can directly use the secondary proxy configuration.
 :::
 
 There are two solutions for mobile apps that need to access restricted traffic.
