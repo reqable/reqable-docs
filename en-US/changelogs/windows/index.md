@@ -4,6 +4,58 @@ sidebar_position: 0
 
 # Windows
 
+## v3.3.11 <small><small>*2026-11-07*</small></small>
+- 💪 [OPT] Environment variables now support nested definitions.
+- 💪 [OPT] Support for GraphQL view.
+- 💪 [OPT] Support for DNS message parsing results view.
+- 💪 [OPT] gRPC message parsing now supports configuring service methods.
+- 💪 [OPT] Access control now supports configuring CIDR address rules.
+- 💪 [OPT] Loopback address detection is no longer limited to 127.0.0.1.
+- 💪 [OPT] Support for previewing images of type `image/vnd.microsoft.icon`.
+- 💪 [OPT] A new IP query tool has been added to the toolbox.
+- 💪 [OPT] The script editor now uses the rule name as the file name when exporting scripts.
+- 💪 [OPT] Configuration files now use timestamps in their names when exported.
+- 💪 [OPT] When setting the system proxy, automatic detection settings and the use of configuration scripts will be disabled.
+- 🐞 [FIX] A bug where localhost was forcibly resolved to 127.0.0.1.
+- 🐞 [FIX] A bug where loopback listening would not take effect after the application restarts.
+- 🐞 [FIX] A bug where the server address in the overview tab of the traffic details was not displayed correctly in IPv6 format.
+- 🐞 [FIX] A bug where the system proxy status has a delay in updating.
+
+## v3.3.10 <small><small>*2026-11-04*</small></small>
+- 💪 [OPT] MCP now supports analyzing captured data across multiple tabs.
+- 💪 [OPT] API service and MCP server now default to data masking (can be disabled in settings).
+- 💪 [OPT] Support opening multiple HAR files at once from the file manager.
+- 💪 [OPT] HTTP request header text mode now supports editing built-in headers.
+- 💪 [OPT] The context menu for HAR files now provides an option to copy the name.
+- 💪 [OPT] Importing a Postman collection will also import the documentation.
+- 🐞 [FIX] A bug where mouse-triggered shortcut key events did not work.
+
+## v3.3.9 <small><small>*2026-10-30*</small></small>
+- ❗ [IMP] For security reasons, the MCP service now requires the configuration of an access token.
+- 💪 [OPT] The API service is disabled by default for security reasons and must be manually enabled in the settings, with the access token being mandatory.
+- 🐞 [FIX] A bug where some MCP tools might not work correctly due to access token issues.
+
+## v3.3.8 <small><small>*2026-10-29*</small></small>
+- 🐞 [FIX] A bug where the main window could not be brought to the front from a child window.
+
+## v3.3.7 <small><small>*2026-10-29*</small></small>
+- 💪 [OPT] Axios code generation now provides an option to use async/await syntax.
+- 💪 [OPT] Improved Python-Requests code generation for form requests.
+- 💪 [OPT] The command panel can now search for CA certificate management.
+- 💪 [OPT] When creating a Spec file from a child window, the main window will be automatically brought to the front.
+- 🐞 [FIX] A bug where sending Digest authorization requests would cause the application to crash.
+- 🐞 [FIX] A bug where the request path might lose the `/http` and `/https` prefixes for some HTTP/1.1 protocol requests during capture.
+- 🐞 [FIX] A bug where the original CA certificates would be lost when creating or importing CA certificates for the first time after upgrading from an older version.
+- 🐞 [FIX] A bug where some MCP HTTP mode configuration tutorials were missing.
+- 🐞 [FIX] A bug where data in the child window would not update promptly when creating, editing, or deleting Spec files.
+- 🐞 [FIX] A bug where the Reqable icon was not displayed in the system app list.
+
+## v3.3.6 <small><small>*2026-10-28*</small></small>
+- 💪 [OPT] Support enabling access tokens for the Reqable API and MCP.
+- 💪 [OPT] Adjusted the categorization and order of options in the settings interface.
+- 💪 [OPT] In URLEncoded request bodies, the `+` sign is now decoded as a space by default.
+- 💪 [OPT] Support saving multiple CA certificates for easy switching and management.
+
 ## v3.3.5 <small><small>*2026-10-22*</small></small>
 - 💪 [OPT] Support importing intermediate CA certificates such as eMudhra.
 - 💪 [OPT] Imported intermediate CA certificates are now marked as installed and trusted by default.

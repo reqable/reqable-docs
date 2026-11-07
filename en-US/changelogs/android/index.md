@@ -4,6 +4,46 @@ sidebar_position: 4
 
 # Android
 
+## v3.3.11 <small><small>*2026-11-07*</small></small>
+- 💪 [OPT] Environment variables now support nested definitions.
+- 💪 [OPT] Support for GraphQL view.
+- 💪 [OPT] Support for DNS message parsing results view.
+- 💪 [OPT] gRPC message parsing now supports configuring service methods.
+- 💪 [OPT] Access control now supports configuring CIDR address rules.
+- 💪 [OPT] Loopback address detection is no longer limited to 127.0.0.1.
+- 💪 [OPT] Support for previewing images of type `image/vnd.microsoft.icon`.
+- 🐞 [FIX] A bug where localhost was forcibly resolved to 127.0.0.1.
+- 🐞 [FIX] A bug where loopback listening would not take effect after the application restarts.
+- 🐞 [FIX] A bug where the server address in the overview tab of the traffic details was not displayed correctly in IPv6 format.
+
+## v3.3.10 <small><small>*2026-11-04*</small></small>
+- ❗ [IMP] Adjusted the minimum system version to Android 6 (API 23).
+- ❗ [IMP] Upgraded target SDK version to 36.
+- 💪 [OPT] MCP now supports analyzing captured data across multiple tabs.
+- 💪 [OPT] API service and MCP server now default to data masking (can be disabled in settings).
+- 💪 [OPT] Support opening multiple HAR files at once from the file manager.
+- 💪 [OPT] HTTP request header text mode now supports editing built-in headers.
+- 💪 [OPT] The context menu for HAR files now provides an option to copy the name.
+
+## v3.3.9 <small><small>*2026-10-30*</small></small>
+- ❗ [IMP] For security reasons, the MCP service now requires the configuration of an access token.
+- 💪 [OPT] The API service is disabled by default for security reasons and must be manually enabled in the settings, with the access token being mandatory.
+- 💪 [OPT] SSL proxy, access control, report server, and secondary proxy now support control via MCP.
+- 🐞 [FIX] A bug where some MCP tools might not work correctly due to access token issues.
+
+## v3.3.7 <small><small>*2026-10-29*</small></small>
+- 💪 [OPT] Axios code generation now provides an option to use async/await syntax.
+- 💪 [OPT] Improved Python-Requests code generation for form requests.
+- 🐞 [FIX] A bug where sending Digest authorization requests would cause the application to crash.
+- 🐞 [FIX] A bug where the request path might lose the `/http` and `/https` prefixes for some HTTP/1.1 protocol requests during capture.
+- 🐞 [FIX] A bug where the Socks proxy option in enhanced mode was not effective.
+
+## v3.3.6 <small><small>*2026-10-28*</small></small>
+- 🚀 [NEW] Added support for MCP.
+- 💪 [OPT] Support enabling access tokens for the Reqable API and MCP.
+- 💪 [OPT] Adjusted the categorization and order of options in the settings interface.
+- 💪 [OPT] In URLEncoded request bodies, the `+` sign is now decoded as a space by default.
+
 ## v3.3.5 <small><small>*2026-10-22*</small></small>
 - 💪 [OPT] Support importing intermediate CA certificates such as eMudhra.
 - 💪 [OPT] Imported intermediate CA certificates are now marked as installed and trusted by default.
