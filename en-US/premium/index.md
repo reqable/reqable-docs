@@ -32,6 +32,10 @@ When cloud data mode is enabled, stored data syncs in real time across devices s
 
 You can manage your signed-in devices in the account center. After you remove a device, you will need to sign in again on that device.
 
+### MCP Operations {#mcp}
+
+For Basic members, MCP supports read-only operations, such as reading captured traffic from the capture list and retrieving API information from API collections. Premium members also have access to write operations, such as adding data to API collections, updating API documentation, and creating debugging scripts.
+
 ### HTTP3 Testing {#http3_testing}
 
 Reqable supports sending `HTTP/1.1`, `HTTP2`, and `HTTP3(QUIC)` requests. `HTTP3(QUIC)` is available exclusively to Premium members.
