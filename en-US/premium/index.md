@@ -46,6 +46,12 @@ Reqable supports sending `HTTP/1.1`, `HTTP2`, and `HTTP3(QUIC)` requests. `HTTP3
 If the server does not support `HTTP3(QUIC)`, the request falls back to `HTTP/1.1`. You can check the protocol version actually used in the response tab.
 :::
 
+### Capture Preview Mode {#capture_grid_view}
+
+In addition to the default list view, Reqable also provides a preview mode for captured traffic, making it easier to quickly locate images and other media resources.
+
+![](./arts/grid.png)
+
 ### Custom Themes {#custom_accent_color}
 
 Reqable includes sixteen built-in accent colors. Premium members can set a custom accent color.
@@ -249,6 +255,16 @@ Basic members can open one detached window to view captured traffic details. Pre
 This feature is not yet available on mobile devices.
 :::
 
+### IP Lookup {#ip_query}
+
+The Reqable toolbox includes an IP geolocation lookup tool. This feature is available exclusively to Premium members.
+
+![](./arts/ip.png)
+
+:::info
+This feature is not yet available on mobile devices.
+:::
+
 ### Multi-Device Capture Collaboration {#unlimited_collaborations}
 
 When adding collaboration devices on mobile, Basic members can add only one device. Premium members can add an unlimited number of devices.
@@ -283,16 +299,6 @@ Enhanced mode is not yet available on desktop, but support is planned.
 The Reqable toolbox includes an AES encryption and decryption tool that supports `CBC`, `CFB`, `CTR`, `ECB`, `OFB`, `SIC`, and `GCM` modes. This feature is available exclusively to Premium members.
 
 ![](./arts/aes.png)
-
-:::info
-This feature is not yet available on mobile devices.
-:::
-
-### IP Lookup {#ip_query}
-
-The Reqable toolbox includes an IP geolocation lookup tool. This feature is available exclusively to Premium members.
-
-![](./arts/ip.png)
 
 :::info
 This feature is not yet available on mobile devices.
