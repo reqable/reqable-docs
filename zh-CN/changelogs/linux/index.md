@@ -4,6 +4,37 @@ sidebar_position: 3
 
 # Linux
 
+## v3.3.15 <small><small>*2026-11-24*</small></small>
+- 💪【优化】调试列表新增预览模式。
+- 🐞【修复】zstd编解码存在内存泄漏的bug。
+- 🐞【修复】首页标签页右键菜单栏显示多余分割线的bug。
+- 🐞【修复】zstd编解码导致应用闪退的bug。
+
+## v3.3.14 <small><small>*2026-11-20*</small></small>
+- 💪【优化】导出和导入HAR文件将会处理Trailers。
+- 💪【优化】抓包代理的OpenSSL安全等级检查由2降低到1。
+- 💪【优化】提高应用FD上限。
+- 🐞【修复】包含Trailers的chunked编码数据解析出现异常的bug。
+- 🐞【修复】包含Trailers的chunked编码数据在修改后结束符处理不正确的bug。
+- 🐞【修复】抓包代理处理HTTP2请求的SETTINGS帧顺序不正确的bug。
+- 🐞【修复】抓包代理SSL握手未正确处理SecP521r1MLKEM1024算法的bug。
+
+## v3.3.13 <small><small>*2026-11-18*</small></small>
+- 💪【优化】提升调试列表搜索性能。
+- 💪【优化】gRPC请求的UA使用`Reqable/版本号`。
+- 🐞【修复】导出HAR文件时强制添加`.har`后缀的bug。
+- 🐞【修复】从调试列表创建gRPC请求丢失metadata的bug。
+- 🐞【修复】抓包代理会导致数据量超过134M的请求卡住的bug。
+- 🐞【修复】抓包代理在处理Content—Length时出现32位整数溢出的bug。
+- 🐞【修复】开启和关闭调试时系统代理状态显示可能不正确的bug。
+
+## v3.3.12 <small><small>*2026-11-12*</small></small>
+- 💪【优化】Protobuf未指定消息类型时提示未配置而不是解析错误。
+- 💪【优化】Protobuf支持取消已设置的消息类型。
+- 💪【优化】付费功能添加详情介绍。
+- 💪【优化】完善安装Android证书ADB未扫描到设备的提示文案。
+- 🐞【修复】部分高级会员功能因重构代码导致未正常校验的bug。
+
 ## v3.3.11 <small><small>*2026-11-07*</small></small>
 - 💪【优化】环境变量支持嵌套定义。
 - 💪【优化】支持GraphQL格式化视图。

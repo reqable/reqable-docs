@@ -4,6 +4,36 @@ sidebar_position: 0
 
 # Windows
 
+## v3.3.15 <small><small>*2026-11-24*</small></small>
+- 💪 [OPT] Added preview mode in the traffic list.
+- 🐞 [FIX] A bug where zstd codec would cause memory leaks.
+- 🐞 [FIX] A bug where the right-click menu bar on the home tab would display extra separators.
+
+## v3.3.14 <small><small>*2026-11-20*</small></small>
+- 💪 [OPT] Exporting and importing HAR files will now handle Trailers.
+- 💪 [OPT] OpenSSL security level check reduced from 2 to 1.
+- 🐞 [FIX] A bug where chunked encoded data with Trailers would cause parsing exceptions.
+- 🐞 [FIX] A bug where chunked encoded data with Trailers would not handle terminators correctly after modification.
+- 🐞 [FIX] A bug where the traffic proxy would handle HTTP2 request SETTINGS frames in the wrong order.
+- 🐞 [FIX] A bug where the traffic proxy would not correctly handle the SecP521r1MLKEM1024 algorithm during SSL handshake.
+
+## v3.3.13 <small><small>*2026-11-18*</small></small>
+- 💪 [OPT] Improved the search performance in the traffic list.
+- 💪 [OPT] gRPC requests now use `Reqable/Version` as the User-Agent.
+- 🐞 [FIX] A bug where exporting HAR files would forcibly add the `.har` suffix.
+- 🐞 [FIX] A bug where creating gRPC APIs from the traffic list would lose metadata.
+- 🐞 [FIX] A bug where the debugging proxy would cause requests with data exceeding 134M to hang.
+- 🐞 [FIX] A bug where the traffic proxy would cause a 32-bit integer overflow when processing Content-Length.
+- 🐞 [FIX] A bug where the system proxy status might not display correctly when enabling and disabling debugging.
+
+## v3.3.12 <small><small>*2026-11-12*</small></small>
+- 💪 [OPT] When the Protobuf message type is not specified, it will prompt as not configured instead of a parsing error.
+- 💪 [OPT] Protobuf now supports unsetting the message type.
+- 💪 [OPT] Added detailed introduction for premium features.
+- 💪 [OPT] Improved the prompt message when installing the Android certificate if ADB does not detect the device.
+- 🐞 [FIX] A bug where some premium features were not properly validated due to code refactoring.
+- 🐞 [FIX] A bug where the system tray might have resource leaks.
+
 ## v3.3.11 <small><small>*2026-11-07*</small></small>
 - 💪 [OPT] Environment variables now support nested definitions.
 - 💪 [OPT] Support for GraphQL view.
